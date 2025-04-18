@@ -45,13 +45,15 @@ public class DistortionToggle : MonoBehaviour
         if(canDistort == true){
             audioSource.Stop();
             backgroundArt.sprite = distortedBackground;
-            audioSource.PlayOneShot(distortedMusic);
+            audioSource.clip = distortedMusic;
+            audioSource.Play();
             SwapFonts(distortedFont);
             
         }else{
             audioSource.Stop();
             backgroundArt.sprite = normalBackground;
-            audioSource.PlayOneShot(normalMusic);
+            audioSource.clip = normalMusic;
+            audioSource.Play();
             SwapFonts(normalFont);
             
         }

@@ -47,7 +47,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -179,6 +179,9 @@ MonoBehaviour:
   normalMusic: {fileID: 8300000, guid: 0a8471489476449aa91db952b5dd2472, type: 3}
   distortedMusic: {fileID: 8300000, guid: 5bb2ede93e76c496a8a2f400c8385a93, type: 3}
   backgroundArt: {fileID: 0}
+  textToChangeFont: []
+  normalFont: {fileID: 0}
+  distortedFont: {fileID: 0}
   backgroundImage: {fileID: 0}
 --- !u!1 &7472888571392876749
 GameObject:

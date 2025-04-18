@@ -12,13 +12,15 @@ public class MenuDistortionToggle : DistortionToggle
         if(canDistort == true){
             audioSource.Stop();
             backgroundImage.sprite = distortedBackground;
-            audioSource.PlayOneShot(distortedMusic);
+            audioSource.clip = distortedMusic;
+            audioSource.Play();
             SwapFonts(distortedFont);
             
         }else{
             audioSource.Stop();
             backgroundImage.sprite = normalBackground;
-            audioSource.PlayOneShot(normalMusic);
+            audioSource.clip = normalMusic;
+            audioSource.Play();
             SwapFonts(normalFont);
         }
     }
