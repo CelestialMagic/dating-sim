@@ -13,10 +13,13 @@ public class MenuDistortionToggle : DistortionToggle
             audioSource.Stop();
             backgroundImage.sprite = distortedBackground;
             audioSource.PlayOneShot(distortedMusic);
+            SwapFonts(distortedFont);
+            
         }else{
             audioSource.Stop();
             backgroundImage.sprite = normalBackground;
             audioSource.PlayOneShot(normalMusic);
+            SwapFonts(normalFont);
         }
     }
 }

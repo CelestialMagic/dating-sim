@@ -1120,7 +1120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da3db6a00dd754291a583e2fc03e0858, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterSelectionScreen: TitleScreen
+  characterSelectionScreen: CharacterSelectionScreen
 --- !u!4 &1810507019
 Transform:
   m_ObjectHideFlags: 0

@@ -46,12 +46,14 @@ public class DistortionToggle : MonoBehaviour
             audioSource.Stop();
             backgroundArt.sprite = distortedBackground;
             audioSource.PlayOneShot(distortedMusic);
-            SwapFonts(normalFont);
+            SwapFonts(distortedFont);
+            
         }else{
             audioSource.Stop();
             backgroundArt.sprite = normalBackground;
             audioSource.PlayOneShot(normalMusic);
-            SwapFonts(distortedFont);
+            SwapFonts(normalFont);
+            
         }
     }
 
