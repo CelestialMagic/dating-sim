@@ -14,5 +14,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CharacterSelectionScene.unity
     guid: 9a8db3c3756a64ac2af8ac935defc0b5
+  - enabled: 1
+    path: Assets/Scenes/Routes/Ben/BenAct1.unity
+    guid: 7f18cc790bc58467ebce388194a553c8
+  - enabled: 1
+    path: Assets/Scenes/Routes/Jane/JaneAct1.unity
+    guid: f8de6af2ded1548a5a90e6b1b14e82af
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

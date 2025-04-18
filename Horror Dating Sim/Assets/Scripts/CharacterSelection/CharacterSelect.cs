@@ -38,7 +38,11 @@ public class CharacterSelect : MonoBehaviour
     
     public void OnMouseDown(){
         playerData.CurrentRoute = characterName; 
+        RouteManager.SetRouteStart(characterName);
+
         //saveDataJSON.SaveData();
 
     }
+
+    
 }
