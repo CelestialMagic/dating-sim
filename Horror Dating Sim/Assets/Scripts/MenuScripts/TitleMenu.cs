@@ -12,4 +12,5 @@ public class TitleMenu : MonoBehaviour
     public void QuitGame(){
         Application.Quit();
     }
+
 }
