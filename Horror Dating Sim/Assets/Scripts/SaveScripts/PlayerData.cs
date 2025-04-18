@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class PlayerData
 {
-    public int failures;
-    public bool finishedJane;
-    public bool finishedBen; 
+    public int Failures;
+    public string CurrentScene; 
+    public bool FinishedJane;
+    public bool FinishedBen; 
 
-    public delegate void OnPlayerDataChange(int failures, bool fJane, bool fBen); 
+    public delegate void OnPlayerDataChange(int failures, string currentScene, bool finishedJane, bool finishedBen); 
     public static event OnPlayerDataChange OnDataChange; 
 
 
@@ -19,23 +20,25 @@ public class PlayerData
     {
         get{
             if(_instance == null){
-                _instance = new PlayerData(0, false, false);
+                _instance = new PlayerData(0, "", false, false);
             }
             return _instance; 
         }
     }
 
-    private PlayerData(int f, bool jane, bool ben){
-        this.failures = f;
-        this.finishedJane = jane;
-        this.finishedBen = ben; 
+    private PlayerData(int f, string scene, bool jane, bool ben){
+        this.Failures = f;
+        this.CurrentScene = scene; 
+        this.FinishedJane = jane;
+        this.FinishedBen = ben; 
     }
 
-    public void SetPlayerData(int f, bool jane, bool ben){
-        this.failures = f;
-        this.finishedJane = jane;
-        this.finishedBen = ben; 
+    public void SetPlayerData(int f, string scene, bool jane, bool ben){
+        this.Failures = f;
+        this.CurrentScene = scene; 
+        this.FinishedJane = jane;
+        this.FinishedBen = ben; 
 
-        OnDataChange?.Invoke(f, jane, ben);
+        OnDataChange?.Invoke(f, scene, jane, ben);
     }
 }

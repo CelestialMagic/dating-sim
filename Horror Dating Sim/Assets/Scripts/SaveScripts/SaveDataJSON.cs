@@ -33,7 +33,7 @@ public class SaveDataJSON : MonoBehaviour
             json = reader.ReadToEnd();
         }
         PlayerData data = JsonUtility.FromJson<PlayerData>(json);
-        playerData.SetPlayerData(data.failures, data.finishedJane, data.finishedBen);
+        playerData.SetPlayerData(data.Failures, data.CurrentScene, data.FinishedJane, data.FinishedBen);
 
     }
 }
