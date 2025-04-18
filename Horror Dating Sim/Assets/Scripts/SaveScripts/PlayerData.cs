@@ -12,9 +12,26 @@ public class PlayerData: MonoBehaviour
 
     public bool FullyCorrupted;
 
-    public void Start(){
-        DontDestroyOnLoad(gameObject);
+    public static PlayerData Instance; 
+
+    void Awake(){
+        InstantiatePlayerData();
+
     }
+
+//Removes Repeating PlayerData Bug
+    private void InstantiatePlayerData(){
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(this);
+        }
+        else if (this != Instance)
+        {
+            Destroy(this.gameObject);
+        }
+
+    } 
 
     public void SetAllData(string route, string scene, bool jane, bool ben, bool corrupted){
         CurrentRoute = route;

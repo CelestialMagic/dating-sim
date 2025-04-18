@@ -1,31 +1,39 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections.Generic;
 using TMPro;
 
 public class DistortionToggle : MonoBehaviour
 {
-    private PlayerData playerData;
+    protected PlayerData playerData;//The player data to refer to
 
     [SerializeField]
-    private Sprite normalBackground, distortedBackground;
+    protected Sprite normalBackground, distortedBackground;//The normal and regular BG Art
 
     [SerializeField]
-    private AudioSource audioSource;
+    protected AudioSource audioSource;//The audio source to play music
 
     [SerializeField]
-    private AudioClip normalMusic, distortedMusic; 
+    protected AudioClip normalMusic, distortedMusic;//The music clips 
+
+    protected bool previousValue;//Used to determine when to switch between normal and distorted versions
 
     [SerializeField]
-    private Image backgroundImage; 
+    private SpriteRenderer backgroundArt;//Used for scenes where a sprite is used
 
-    private bool previousValue; 
+    [SerializeField]
+    protected List<TMP_Text> textToChangeFont;//A list of text to change fonts
 
-    public void Start(){
+    [SerializeField]
+    protected TMP_FontAsset normalFont, distortedFont; 
+
+
+    protected void Start(){
         playerData = FindObjectOfType<PlayerData>();
         DistortionEvent(playerData.FullyCorrupted);
     }
 
-    private void Update(){
+    protected void Update(){
         if(playerData.FullyCorrupted != previousValue){
             DistortionEvent(playerData.FullyCorrupted);
             previousValue = playerData.FullyCorrupted; 
@@ -33,15 +41,23 @@ public class DistortionToggle : MonoBehaviour
     }
     
     // Update is called once per frame
-    private void DistortionEvent(bool canDistort){
+    protected virtual void DistortionEvent(bool canDistort){
         if(canDistort == true){
             audioSource.Stop();
-            backgroundImage.sprite = distortedBackground;
+            backgroundArt.sprite = distortedBackground;
             audioSource.PlayOneShot(distortedMusic);
+            SwapFonts(normalFont);
         }else{
             audioSource.Stop();
-            backgroundImage.sprite = normalBackground;
+            backgroundArt.sprite = normalBackground;
             audioSource.PlayOneShot(normalMusic);
+            SwapFonts(distortedFont);
+        }
+    }
+
+    protected virtual void SwapFonts(TMP_FontAsset fontAsset){
+        foreach(TMP_Text t in textToChangeFont){
+            t.font = fontAsset; 
         }
     }
 }
