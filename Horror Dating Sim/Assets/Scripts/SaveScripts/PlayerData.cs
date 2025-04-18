@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerData
+public class PlayerData: MonoBehaviour
 {
     public int Failures;
     public string CurrentScene; 
@@ -11,6 +11,11 @@ public class PlayerData
 
     public delegate void OnPlayerDataChange(int failures, string currentScene, bool finishedJane, bool finishedBen); 
     public static event OnPlayerDataChange OnDataChange; 
+
+    public void Start(){
+        DontDestroyOnLoad(gameObject);
+
+    }
 
 
 
@@ -41,4 +46,6 @@ public class PlayerData
 
         OnDataChange?.Invoke(f, scene, jane, ben);
     }
+
+
 }
