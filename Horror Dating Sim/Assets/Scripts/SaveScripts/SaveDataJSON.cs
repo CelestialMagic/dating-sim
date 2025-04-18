@@ -11,7 +11,7 @@ public class SaveDataJSON : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playerData = PlayerData.Instance; 
+        playerData = FindObjectOfType<PlayerData>();
     }
 
     public void SaveData(){
@@ -33,7 +33,7 @@ public class SaveDataJSON : MonoBehaviour
             json = reader.ReadToEnd();
         }
         PlayerData data = JsonUtility.FromJson<PlayerData>(json);
-        playerData.SetPlayerData(data.Failures, data.CurrentScene, data.FinishedJane, data.FinishedBen);
+        playerData.SetAllData(data.CurrentRoute, data.CurrentScene, data.FinishedJane, data.FinishedBen);
 
     }
 }
