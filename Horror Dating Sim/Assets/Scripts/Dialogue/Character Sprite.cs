@@ -3,7 +3,6 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
-
 /// <summary>
 /// 
 /// 
@@ -14,15 +13,13 @@ public class CharacterSprite : MonoBehaviour
     #region Serialized Fields
 
     [Header("Character Sprite Properties")]
-    [SerializeField] private Image _spriteImage; //
+    [SerializeField] private Image _spriteImage; // 
     [Space]
     [SerializeField] private ActOnChangeValue<bool> _isSubject; // 
     [SerializeField] private ActOnChangeValue<bool> _isRevealed; // 
     [SerializeField] private ActOnChangeValue<bool> _hasArrived; // 
 
     #endregion
-
-    private LayoutGroup _group; // 
 
     #region Constants
 
@@ -71,15 +68,13 @@ public class CharacterSprite : MonoBehaviour
     /// </summary>
     public void SetUp()
     {
-        if (_group == null) _group = GetComponentInParent<HorizontalLayoutGroup>();
-
-        if (_isSubject.ActionsOnChangedValue == null) _isSubject.ActionsOnChangedValue += b => StartCoroutine(_toggleTransition(b, SUBJECT_TRANSITION_TIME, t => _scaleInLayoutGroup(Vector3.one * Mathf.SmoothStep(1f, 1.2f, t), transform, _group)));
+        if (_isSubject.ActionsOnChangedValue == null) _isSubject.ActionsOnChangedValue += b => StartCoroutine(_toggleTransition(b, SUBJECT_TRANSITION_TIME, t => _scaleInLayoutGroup(Vector3.one * Mathf.SmoothStep(1f, 1.2f, t))));
         if (_isRevealed.ActionsOnChangedValue == null) _isRevealed.ActionsOnChangedValue += b => StartCoroutine(_toggleTransition(b, REVEALED_TRANSITION_TIME, t => _changeColor(Color.Lerp(Color.black, Color.white, t), _spriteImage.color.a)));
         if (_hasArrived.ActionsOnChangedValue == null) _hasArrived.ActionsOnChangedValue += b => {
             if (b)
-                StartCoroutine(_toggleTransition(b, INTRODUCED_TRANSITION_TIME, t => _scaleInLayoutGroup(Vector3.one * Mathf.SmoothStep(0f, 1f, t), transform, _group), _toggleTransition(b, ARRIVING_TRANSITION_TIME, t => _changeColor(_spriteImage.color, Mathf.SmoothStep(0, 1f, t)))));
+                StartCoroutine(_toggleTransition(b, INTRODUCED_TRANSITION_TIME, t => _scaleInLayoutGroup(Vector3.one * Mathf.SmoothStep(0f, 1f, t)), _toggleTransition(b, ARRIVING_TRANSITION_TIME, t => _changeColor(_spriteImage.color, Mathf.SmoothStep(0, 1f, t)))));
             else
-                StartCoroutine(_toggleTransition(b, ARRIVING_TRANSITION_TIME, t => _changeColor(_spriteImage.color, Mathf.SmoothStep(0, 1f, t)), _toggleTransition(b, INTRODUCED_TRANSITION_TIME, t => _scaleInLayoutGroup(Vector3.one * Mathf.SmoothStep(0f, 1f, t), transform, _group))));
+                StartCoroutine(_toggleTransition(b, ARRIVING_TRANSITION_TIME, t => _changeColor(_spriteImage.color, Mathf.SmoothStep(0, 1f, t)), _toggleTransition(b, INTRODUCED_TRANSITION_TIME, t => _scaleInLayoutGroup(Vector3.one * Mathf.SmoothStep(0f, 1f, t)))));
         };
 
         _isSubject.ActOnValue();
@@ -116,13 +111,19 @@ public class CharacterSprite : MonoBehaviour
         if (nextCoroutine != null) StartCoroutine(nextCoroutine);
     }
 
-    private void _scaleInLayoutGroup(Vector3 newScale, Transform target, LayoutGroup group)
+    // Scales the character sprite and updates the display in the layout group
+    private void _scaleInLayoutGroup(Vector3 newScale)
     {
-        target.localScale = newScale;
-        group.CalculateLayoutInputVertical();
-        group.CalculateLayoutInputHorizontal();
-        group.SetLayoutVertical();
-        group.SetLayoutHorizontal();
+        transform.localScale = newScale;
+
+        LayoutGroup group = transform.GetComponentInParent<LayoutGroup>();
+        if (group != null)
+        {
+            group.CalculateLayoutInputVertical();
+            group.CalculateLayoutInputHorizontal();
+            group.SetLayoutVertical();
+            group.SetLayoutHorizontal();
+        }
     }
 
     #endregion

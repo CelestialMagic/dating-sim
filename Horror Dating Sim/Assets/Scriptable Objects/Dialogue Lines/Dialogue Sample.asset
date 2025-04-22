@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0315219a1dc2de42851a0d312cdb6c0, type: 3}
+  m_Name: Dialogue Sample
+  m_EditorClassIdentifier: 
+  _dialogueLines:
+  - _speakerIndex: 0
+    _speakerIsHidden: 0
+    _line: Hello, There!
+  - _speakerIndex: 0
+    _speakerIsHidden: 0
+    _line: 'Can we go to the cafeteria?
+
+      We need more\tsustenance...'
+  - _speakerIndex: 0
+    _speakerIsHidden: 1
+    _line: '<color=red>Nice to see you! <sprite=0></color> '
+  - _speakerIndex: 0
+    _speakerIsHidden: 0
+    _line: 'I''ll be hiking at the <color=blue><b>mountain</b></color>.
+
+      <i>Would
+      you like to join?</i>'
+  - _speakerIndex: 0
+    _speakerIsHidden: 0
+    _line: Let's> <Name> <color=yellow><<see>></color>   <see slide.
