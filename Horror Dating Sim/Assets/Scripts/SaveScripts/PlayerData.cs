@@ -9,6 +9,9 @@ public class PlayerData: MonoBehaviour
     public string CurrentScene; 
     public bool FinishedJane;
     public bool FinishedBen; 
+    
+    public int BenNumber;//The number of times routes have been finished with Ben 
+    public int JaneNumber;//The number of times routes have been finished with Jane
 
 
     public bool FullyCorrupted;
