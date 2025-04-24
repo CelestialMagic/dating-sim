@@ -52,30 +52,18 @@ public class CharacterSprite : MonoBehaviour
     #region Monobehavior Callbacks
 
     // 
+    private void Start()
+    {
+        _isSubject.ActionsOnChangedValue += b => StartCoroutine(_toggleTransition(b, SUBJECT_TRANSITION_TIME, t => _scaleInLayoutGroup(Vector3.one * Mathf.SmoothStep(1f, 1.2f, t))));
+        _isRevealed.ActionsOnChangedValue += b => StartCoroutine(_toggleTransition(b, REVEALED_TRANSITION_TIME, t => _changeColor(Color.Lerp(Color.black, Color.white, t), _spriteImage.color.a)));
+        _hasArrived.ActionsOnChangedValue += b => StartCoroutine(b ? _toggleTransition(b, INTRODUCED_TRANSITION_TIME, t => _scaleInLayoutGroup(Vector3.one * Mathf.SmoothStep(0f, 1f, t)), _toggleTransition(b, ARRIVING_TRANSITION_TIME, t => _changeColor(_spriteImage.color, Mathf.SmoothStep(0, 1f, t)))) : 
+                                                                     _toggleTransition(b, ARRIVING_TRANSITION_TIME, t => _changeColor(_spriteImage.color, Mathf.SmoothStep(0, 1f, t)), _toggleTransition(b, INTRODUCED_TRANSITION_TIME, t => _scaleInLayoutGroup(Vector3.one * Mathf.SmoothStep(0f, 1f, t)))));
+    }
+
+    // 
     private void OnValidate()
     {
         if (!Application.isPlaying) return;
-
-        SetUp();
-    }
-
-    #endregion
-
-    #region Public Methods
-
-    /// <summary>
-    /// Sets up the character sprite values, events, and references
-    /// </summary>
-    public void SetUp()
-    {
-        if (_isSubject.ActionsOnChangedValue == null) _isSubject.ActionsOnChangedValue += b => StartCoroutine(_toggleTransition(b, SUBJECT_TRANSITION_TIME, t => _scaleInLayoutGroup(Vector3.one * Mathf.SmoothStep(1f, 1.2f, t))));
-        if (_isRevealed.ActionsOnChangedValue == null) _isRevealed.ActionsOnChangedValue += b => StartCoroutine(_toggleTransition(b, REVEALED_TRANSITION_TIME, t => _changeColor(Color.Lerp(Color.black, Color.white, t), _spriteImage.color.a)));
-        if (_hasArrived.ActionsOnChangedValue == null) _hasArrived.ActionsOnChangedValue += b => {
-            if (b)
-                StartCoroutine(_toggleTransition(b, INTRODUCED_TRANSITION_TIME, t => _scaleInLayoutGroup(Vector3.one * Mathf.SmoothStep(0f, 1f, t)), _toggleTransition(b, ARRIVING_TRANSITION_TIME, t => _changeColor(_spriteImage.color, Mathf.SmoothStep(0, 1f, t)))));
-            else
-                StartCoroutine(_toggleTransition(b, ARRIVING_TRANSITION_TIME, t => _changeColor(_spriteImage.color, Mathf.SmoothStep(0, 1f, t)), _toggleTransition(b, INTRODUCED_TRANSITION_TIME, t => _scaleInLayoutGroup(Vector3.one * Mathf.SmoothStep(0f, 1f, t)))));
-        };
 
         _isSubject.ActOnValue();
         _isRevealed.ActOnValue();
@@ -127,4 +115,37 @@ public class CharacterSprite : MonoBehaviour
     }
 
     #endregion
+}
+
+/// <summary>
+/// 
+/// </summary>
+[Serializable]
+public struct CharacterSpriteSettingsSheet
+{
+    /// <summary>
+    /// 
+    /// </summary>
+    public bool IsSubject;
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public bool IsRevealed;
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public bool HasArrived;
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="sprite"></param>
+    public void ToggleCharacterSprite(CharacterSprite sprite)
+    {
+        sprite.IsSubject = IsSubject;
+        sprite.IsRevealed = IsRevealed;
+        sprite.HasArrived = HasArrived;
+    }
 }
