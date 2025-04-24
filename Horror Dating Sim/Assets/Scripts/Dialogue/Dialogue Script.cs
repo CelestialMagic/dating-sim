@@ -10,7 +10,7 @@ public class DialogueScript : ScriptableObject
 {
     #region Serialized Fields
     
-    [SerializeField] private LineOfDialogue[] _dialogueLines; // 
+    [SerializeField] private DialogueLine[] _dialogueLines; // 
 
     #endregion
 
@@ -19,7 +19,7 @@ public class DialogueScript : ScriptableObject
     /// <summary>
     /// 
     /// </summary>
-    public LineOfDialogue[] DialogueLines { get => _dialogueLines; }
+    public DialogueLine[] DialogueLines { get => _dialogueLines; }
 
     #endregion
 }
@@ -30,7 +30,7 @@ public class DialogueScript : ScriptableObject
 /// Author: William Min
 /// </summary>
 [System.Serializable]
-public class LineOfDialogue
+public class DialogueLine
 {
     #region Serialized Fields
 
