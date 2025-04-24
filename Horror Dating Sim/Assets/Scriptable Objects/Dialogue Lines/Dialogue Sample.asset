@@ -12,24 +12,69 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0315219a1dc2de42851a0d312cdb6c0, type: 3}
   m_Name: Dialogue Sample
   m_EditorClassIdentifier: 
+  _characters:
+  - {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+  - {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
   _dialogueLines:
-  - _speakerIndex: 0
-    _speakerIsHidden: 0
+  - _speakerProperties:
+    - _speakerIndex: 0
+      _isHidden: 0
+    - _speakerIndex: 1
+      _isHidden: 0
+    - _speakerIndex: 1
+      _isHidden: 0
+    - _speakerIndex: 1
+      _isHidden: 1
+    _characterSpriteSettings:
+    - IsSubject: 0
+      IsRevealed: 1
+      HasArrived: 1
+    - IsSubject: 0
+      IsRevealed: 1
+      HasArrived: 1
     _line: Hello, There!
-  - _speakerIndex: 0
-    _speakerIsHidden: 0
+  - _speakerProperties:
+    - _speakerIndex: 0
+      _isHidden: 0
+    - _speakerIndex: 1
+      _isHidden: 0
+    _characterSpriteSettings:
+    - IsSubject: 1
+      IsRevealed: 1
+      HasArrived: 1
+    - IsSubject: 1
+      IsRevealed: 1
+      HasArrived: 1
     _line: 'Can we go to the cafeteria?
 
       We need more\tsustenance...'
-  - _speakerIndex: 0
-    _speakerIsHidden: 1
+  - _speakerProperties:
+    - _speakerIndex: -1
+      _isHidden: 0
+    _characterSpriteSettings:
+    - IsSubject: 0
+      IsRevealed: 0
+      HasArrived: 1
+    - IsSubject: 0
+      IsRevealed: 0
+      HasArrived: 1
     _line: '<color=red>Nice to see you! <sprite=0></color> '
-  - _speakerIndex: 0
-    _speakerIsHidden: 0
+  - _speakerProperties:
+    - _speakerIndex: 1
+      _isHidden: 0
+    _characterSpriteSettings:
+    - IsSubject: 1
+      IsRevealed: 1
+      HasArrived: 1
+    - IsSubject: 0
+      IsRevealed: 1
+      HasArrived: 1
     _line: 'I''ll be hiking at the <color=blue><b>mountain</b></color>.
 
       <i>Would
       you like to join?</i>'
-  - _speakerIndex: 0
-    _speakerIsHidden: 0
+  - _speakerProperties:
+    - _speakerIndex: 0
+      _isHidden: 0
+    _characterSpriteSettings: []
     _line: Let's> <Name> <color=yellow><<see>></color>   <see slide.

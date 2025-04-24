@@ -1728,10 +1728,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _script: {fileID: 11400000, guid: 6085302089b323349864b9a84564d339, type: 2}
-  _currentLineIndex: 0
+  _currentLineIndex: 2
   _timeBetweenCharacters: 0.05
   _dialogueText: {fileID: 709031734}
   _nameText: {fileID: 1984030831}
+  _spriteParent: {fileID: 2131740056}
+  _spritePrefab: {fileID: 0}
 --- !u!1 &1480323600
 GameObject:
   m_ObjectHideFlags: 0

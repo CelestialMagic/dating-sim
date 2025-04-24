@@ -20,6 +20,8 @@ public class DialogueHandler : MonoBehaviour
     [Header("Dialogue Handler References")]
     [SerializeField] private TMP_Text _dialogueText; // Reference to text box containing current dialogue line
     [SerializeField] private TMP_Text _nameText; // Reference to text box containing current speaker name
+    [SerializeField] private Transform _spriteParent;
+    [SerializeField] private GameObject _spritePrefab;
 
     #endregion
 
@@ -63,7 +65,7 @@ public class DialogueHandler : MonoBehaviour
     /// <summary>
     /// 
     /// </summary>
-    public string CurrentSpeakerName { get => CurrentLine == null ? "[No Speaker]" : CurrentLine.SpeakerIsHidden ? "???" : CurrentLine.SpeakerIndex + ""; }
+    public CharacterList CurrentSpeakers { get => _script == null ? null : _script.GetSpeakersFromLineIndex(CurrentLineIndex); }
 
     /// <summary>
     /// 
@@ -90,7 +92,6 @@ public class DialogueHandler : MonoBehaviour
         CurrentLineIndex = _currentLineIndex;
         if (_currentLineIndex == LineCount) CurrentLineIndex--;
         _hasSkimmedLine = true;
-        //_startLine();
     }
 
     #endregion
@@ -202,7 +203,7 @@ public class DialogueHandler : MonoBehaviour
         _currentTextCoroutine = null;
         _hasSkimmedLine = false;
 
-        _nameText.text = CurrentSpeakerName; // Sets up name for text box
+        _nameText.text = CurrentSpeakers.GetListString("Narrator", "Player", "???"); // Sets up name for text box
 
         _currentTextCoroutine = StartCoroutine(_typeLine()); // Starts line typing
     }
