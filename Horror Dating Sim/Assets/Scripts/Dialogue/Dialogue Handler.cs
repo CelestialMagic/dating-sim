@@ -58,7 +58,7 @@ public class DialogueHandler : MonoBehaviour
     /// <summary>
     /// 
     /// </summary>
-    public LineOfDialogue CurrentLine { get => _script == null ? null : _script.DialogueLines[CurrentLineIndex]; }
+    public DialogueLine CurrentLine { get => _script == null ? null : _script.DialogueLines[CurrentLineIndex]; }
 
     /// <summary>
     /// 
