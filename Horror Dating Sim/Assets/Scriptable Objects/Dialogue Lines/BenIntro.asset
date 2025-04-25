@@ -1,0 +1,151 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0315219a1dc2de42851a0d312cdb6c0, type: 3}
+  m_Name: BenIntro
+  m_EditorClassIdentifier: 
+  _characters:
+  - {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+  _dialogueLines:
+  - _speakerProperties:
+    - _speakerIndex: -2
+      _isHidden: 0
+    _characterSpriteSettings:
+    - IsSubject: 0
+      IsRevealed: 0
+      HasArrived: 0
+    _line: '(First day of the new quarter)
+
+'
+  - _speakerProperties:
+    - _speakerIndex: -1
+      _isHidden: 0
+    _characterSpriteSettings:
+    - IsSubject: 0
+      IsRevealed: 0
+      HasArrived: 0
+    _line: (Man, school's always such a drag. Day-in and day-out, it's hard to even
+      keep my eyes open in class anymore. At least, that's how it's been for the
+      last few quarters...)
+  - _speakerProperties:
+    - _speakerIndex: -1
+      _isHidden: 0
+    _characterSpriteSettings:
+    - IsSubject: 0
+      IsRevealed: 0
+      HasArrived: 1
+    _line: (But this quarter? I'm finally in the same class as him!)
+  - _speakerProperties:
+    - _speakerIndex: -1
+      _isHidden: 0
+    _characterSpriteSettings:
+    - IsSubject: 0
+      IsRevealed: 0
+      HasArrived: 1
+    _line: (This guy's name is Ben Trawler. I've heard of him on a few occasions
+      since last quarter, but this is my first time seeing him in the flesh.)
+  - _speakerProperties:
+    - _speakerIndex: -1
+      _isHidden: 0
+    _characterSpriteSettings:
+    - IsSubject: 0
+      IsRevealed: 0
+      HasArrived: 1
+    _line: '(Oh, shoot. The professor''s coming in now. Guess I''d better get ready
+      for class.)
+
+'
+  - _speakerProperties:
+    - _speakerIndex: -1
+      _isHidden: 0
+    _characterSpriteSettings:
+    - IsSubject: 0
+      IsRevealed: 0
+      HasArrived: 0
+    _line: '(Hm, that... actually wasn''t too bad. I only took this marine biology
+      class to fulfill my general education requirements, but it''s honestly kinda
+      interesting.)
+
+'
+  - _speakerProperties:
+    - _speakerIndex: -1
+      _isHidden: 0
+    _characterSpriteSettings:
+    - IsSubject: 0
+      IsRevealed: 0
+      HasArrived: 0
+    _line: (I couldn't help but notice that Ben was sitting at attention, nodding
+      along to everything the teacher said, too. Maybe he likes marine life?)
+  - _speakerProperties:
+    - _speakerIndex: -1
+      _isHidden: 0
+    _characterSpriteSettings:
+    - IsSubject: 1
+      IsRevealed: 0
+      HasArrived: 1
+    _line: '(It''s a bit scary, but... I''m gonna go talk to him. Can''t hit a homer
+      if you don''t swing the bat, right?)
+
+'
+  - _speakerProperties:
+    - _speakerIndex: 0
+      _isHidden: 1
+    _characterSpriteSettings:
+    - IsSubject: 1
+      IsRevealed: 1
+      HasArrived: 1
+    _line: 'Oh, hey there. I don''t think we''ve met before, have we?
+
+'
+  - _speakerProperties:
+    - _speakerIndex: 0
+      _isHidden: 0
+    _characterSpriteSettings:
+    - IsSubject: 1
+      IsRevealed: 1
+      HasArrived: 1
+    _line: My name's Ben, though I guess you already knew that, huh? What's yours?
+  - _speakerProperties:
+    - _speakerIndex: 0
+      _isHidden: 0
+    _characterSpriteSettings:
+    - IsSubject: 1
+      IsRevealed: 1
+      HasArrived: 1
+    _line: Nice to meet you. So what can I do for you? You interested in marine biology,
+      too?
+  - _speakerProperties:
+    - _speakerIndex: 0
+      _isHidden: 0
+    _characterSpriteSettings:
+    - IsSubject: 1
+      IsRevealed: 1
+      HasArrived: 1
+    _line: Oh, that's what it was, huh? Yeah, I'm pretty big on fishing! That's actually
+      why I took this class in the first place.
+  - _speakerProperties:
+    - _speakerIndex: 0
+      _isHidden: 0
+    _characterSpriteSettings:
+    - IsSubject: 1
+      IsRevealed: 1
+      HasArrived: 1
+    _line: I, uh, figured if I knew a little more about the fish I was catching,
+      it'd make things easier for me. I'm not all that good at fishing yet, but I'm
+      not throwing in the towel yet.
+  - _speakerProperties:
+    - _speakerIndex: 0
+      _isHidden: 0
+    _characterSpriteSettings:
+    - IsSubject: 1
+      IsRevealed: 1
+      HasArrived: 1
+    _line: Hey, have you ever gone fishing before?
