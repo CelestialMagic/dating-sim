@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Pool;
 
 /// <summary>
 /// 
@@ -18,6 +19,13 @@ public class CharacterSprite : MonoBehaviour
     [SerializeField] private ActOnChangeValue<bool> _isSubject; // 
     [SerializeField] private ActOnChangeValue<bool> _isRevealed; // 
     [SerializeField] private ActOnChangeValue<bool> _hasArrived; // 
+
+    #endregion
+
+    #region Private Fields
+
+    private float _currentScale = 1; // 
+    private ObjectPool<CharacterSprite> _pool;
 
     #endregion
 
@@ -54,10 +62,10 @@ public class CharacterSprite : MonoBehaviour
     // 
     private void Start()
     {
-        _isSubject.ActionsOnChangedValue += b => StartCoroutine(_toggleTransition(b, SUBJECT_TRANSITION_TIME, t => _scaleInLayoutGroup(Vector3.one * Mathf.SmoothStep(1f, 1.2f, t))));
+        _isSubject.ActionsOnChangedValue += b => StartCoroutine(_toggleTransition(b, SUBJECT_TRANSITION_TIME, t => { _scaleInLayoutGroup(Vector3.one * Mathf.SmoothStep(1f, 1.2f, t)); _currentScale = transform.localScale.x; }));
         _isRevealed.ActionsOnChangedValue += b => StartCoroutine(_toggleTransition(b, REVEALED_TRANSITION_TIME, t => _changeColor(Color.Lerp(Color.black, Color.white, t), _spriteImage.color.a)));
-        _hasArrived.ActionsOnChangedValue += b => StartCoroutine(b ? _toggleTransition(b, INTRODUCED_TRANSITION_TIME, t => _scaleInLayoutGroup(Vector3.one * Mathf.SmoothStep(0f, 1f, t)), _toggleTransition(b, ARRIVING_TRANSITION_TIME, t => _changeColor(_spriteImage.color, Mathf.SmoothStep(0, 1f, t)))) : 
-                                                                     _toggleTransition(b, ARRIVING_TRANSITION_TIME, t => _changeColor(_spriteImage.color, Mathf.SmoothStep(0, 1f, t)), _toggleTransition(b, INTRODUCED_TRANSITION_TIME, t => _scaleInLayoutGroup(Vector3.one * Mathf.SmoothStep(0f, 1f, t)))));
+        _hasArrived.ActionsOnChangedValue += b => StartCoroutine(b ? _toggleTransition(b, INTRODUCED_TRANSITION_TIME, t => _scaleInLayoutGroup(Vector3.one * Mathf.SmoothStep(0f, _currentScale, t)), _toggleTransition(b, ARRIVING_TRANSITION_TIME, t => _changeColor(_spriteImage.color, Mathf.SmoothStep(0, 1f, t)))) : 
+                                                                     _toggleTransition(b, ARRIVING_TRANSITION_TIME, t => _changeColor(_spriteImage.color, Mathf.SmoothStep(0, 1f, t)), _toggleTransition(b, INTRODUCED_TRANSITION_TIME, t => _scaleInLayoutGroup(Vector3.one * Mathf.SmoothStep(0f, _currentScale, t)))));
     }
 
     // 
@@ -68,6 +76,15 @@ public class CharacterSprite : MonoBehaviour
         _isSubject.ActOnValue();
         _isRevealed.ActOnValue();
         _hasArrived.ActOnValue();
+    }
+
+    #endregion
+
+    #region Public Methods
+
+    public void SetPool(ObjectPool<CharacterSprite> pool)
+    {
+        _pool = pool;
     }
 
     #endregion
@@ -119,10 +136,14 @@ public class CharacterSprite : MonoBehaviour
 
 /// <summary>
 /// 
+/// 
+/// Author: William Min
 /// </summary>
 [Serializable]
 public struct CharacterSpriteSettingsSheet
 {
+    #region Public Fields
+
     /// <summary>
     /// 
     /// </summary>
@@ -138,14 +159,20 @@ public struct CharacterSpriteSettingsSheet
     /// </summary>
     public bool HasArrived;
 
+    #endregion
+
+    #region Public Methods
+
     /// <summary>
     /// 
     /// </summary>
     /// <param name="sprite"></param>
     public void ToggleCharacterSprite(CharacterSprite sprite)
     {
-        sprite.IsSubject = IsSubject;
-        sprite.IsRevealed = IsRevealed;
         sprite.HasArrived = HasArrived;
+        sprite.IsRevealed = IsRevealed;
+        sprite.IsSubject = IsSubject;
     }
+
+    #endregion
 }
