@@ -533,8 +533,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startRouteButton: {fileID: 452689264}
-  benRouteName: BenAct1
-  janeRouteName: JaneAct1
+  benRouteName: BenIntro
+  janeRouteName: JaneIntro
 --- !u!4 &424529277
 Transform:
   m_ObjectHideFlags: 0
