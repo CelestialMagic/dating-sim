@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
@@ -17,6 +18,11 @@ public class DialogueScript : ScriptableObject
     #endregion
 
     #region Properties
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public CharacterProfile[] Characters { get => _characters; }
 
     /// <summary>
     /// 
@@ -65,6 +71,8 @@ public class DialogueLine
     /// </summary>
     public string Line { get => _line; }
 
+
+
     #endregion
 
     #region Public Methods
@@ -112,6 +120,17 @@ public class DialogueLine
         }
 
         return new CharacterList(profiles, playerInstances, narratorInstances, hiddenToggles);
+    }
+
+    public void ToggleCharacterSprites(List<CharacterSprite> characterSprites)
+    {
+        int i = 0;
+
+        while (i < _characterSpriteSettings.Length && i < characterSprites.Count)
+        {
+            _characterSpriteSettings[i].ToggleCharacterSprite(characterSprites[i]);
+            i++;
+        }
     }
 
     #endregion

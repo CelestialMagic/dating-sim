@@ -20,8 +20,8 @@ public class DialogueHandler : MonoBehaviour
     [Header("Dialogue Handler References")]
     [SerializeField] private TMP_Text _dialogueText; // Reference to text box containing current dialogue line
     [SerializeField] private TMP_Text _nameText; // Reference to text box containing current speaker name
-    [SerializeField] private Transform _spriteParent;
-    [SerializeField] private GameObject _spritePrefab;
+    [SerializeField] private CharacterSpriteSpawner _spriteSpawner; // 
+    [SerializeField] private Transform _spriteParent; // 
 
     #endregion
 
@@ -87,11 +87,13 @@ public class DialogueHandler : MonoBehaviour
     #region Monobehavior Callbacks
 
     // Sets up current index and starts line from there
-    private void Awake()
+    private void Start()
     {
         CurrentLineIndex = _currentLineIndex;
         if (_currentLineIndex == LineCount) CurrentLineIndex--;
         _hasSkimmedLine = true;
+        for (int i = 0; i < _script.Characters.Length; i++)
+            _spriteSpawner.CreateSprite(_spriteParent);
     }
 
     #endregion
@@ -128,51 +130,72 @@ public class DialogueHandler : MonoBehaviour
         for (int i = 0; i < CurrentLineString.Length; i++)
         {
             string nextText = ""; // Sets up text to next be displayed
+            bool continueAdding = true;
 
             // Loop uses i as the starting index of the rich text modifier
-            while (i < CurrentLineString.Length && CurrentLineString[i] == '<')
+            while (continueAdding && i < CurrentLineString.Length && CurrentLineString[i] == '<')
             {
                 int endingIndex = CurrentLineString.IndexOf('>', i); // Find the ending index of the rich text
 
-                string potentialRichText = CurrentLineString.Substring(i, endingIndex + 1 - i); // Potential rich text modifier
-                string richTextContents = potentialRichText.Substring(1, potentialRichText.Length - 2); // Contents of potential modifier
-
-                RichText textType = RichText.NOT_RICH_TEXT;
-
-                // Checks what type of rich text it is or if it isn't rich text at all
-                if (Array.IndexOf(RICH_TEXT_WITHOUT_INDEX_SPACE, richTextContents) >= 0)
-                    textType = RichText.MODIFYING_TEXT;
-                else if (Array.IndexOf(RICH_TEXT_WITH_INDEX_SPACE, richTextContents) >= 0)
-                    textType = RichText.STAND_ALONE_TEXT;
+                if (endingIndex < 0)
+                {
+                    nextText += CurrentLineString[i];
+                    continueAdding = false;
+                }
                 else
                 {
-                    string endTest = richTextContents.Substring(1);
+                    string potentialRichText = CurrentLineString.Substring(i, endingIndex + 1 - i); // Potential rich text modifier
+                    string richTextContents = potentialRichText.Substring(1, potentialRichText.Length - 2); // Contents of potential modifier
 
-                    if (Array.IndexOf(RICH_TEXT_WITHOUT_INDEX_SPACE, endTest) >= 0)
+                    // Checks what type of rich text it is or if it isn't rich text at all
+                    RichText textType = RichText.NOT_RICH_TEXT;
+                    if (Array.IndexOf(RICH_TEXT_WITHOUT_INDEX_SPACE, richTextContents) >= 0)
                         textType = RichText.MODIFYING_TEXT;
-                    else if (Array.IndexOf(RICH_TEXT_WITH_INDEX_SPACE, endTest) >= 0)
+                    else if (Array.IndexOf(RICH_TEXT_WITH_INDEX_SPACE, richTextContents) >= 0)
                         textType = RichText.STAND_ALONE_TEXT;
                     else
                     {
-                        int equalIndex = richTextContents.IndexOf('=');
+                        string endTest = richTextContents.Substring(1);
 
-                        string startTest = richTextContents.Substring(0, equalIndex >= 0 ? equalIndex : 0).Trim();
-
-                        if (Array.IndexOf(RICH_TEXT_WITHOUT_INDEX_SPACE, startTest) >= 0)
+                        if (Array.IndexOf(RICH_TEXT_WITHOUT_INDEX_SPACE, endTest) >= 0)
                             textType = RichText.MODIFYING_TEXT;
-                        else if (Array.IndexOf(RICH_TEXT_WITH_INDEX_SPACE, startTest) >= 0)
+                        else if (Array.IndexOf(RICH_TEXT_WITH_INDEX_SPACE, endTest) >= 0)
                             textType = RichText.STAND_ALONE_TEXT;
+                        else
+                        {
+                            int equalIndex = richTextContents.IndexOf('=');
+
+                            string startTest = richTextContents.Substring(0, equalIndex >= 0 ? equalIndex : 0).Trim();
+
+                            if (Array.IndexOf(RICH_TEXT_WITHOUT_INDEX_SPACE, startTest) >= 0)
+                                textType = RichText.MODIFYING_TEXT;
+                            else if (Array.IndexOf(RICH_TEXT_WITH_INDEX_SPACE, startTest) >= 0)
+                                textType = RichText.STAND_ALONE_TEXT;
+                        }
+                    }
+
+                    switch (textType)
+                    {
+                        case RichText.STAND_ALONE_TEXT:
+                            nextText += potentialRichText;
+                            i = endingIndex;
+                            continueAdding = false;
+                            break;
+
+                        case RichText.MODIFYING_TEXT:
+                            nextText += potentialRichText;
+                            i = endingIndex + 1;
+                            break;
+
+                        case RichText.NOT_RICH_TEXT:
+                            nextText += CurrentLineString[i];
+                            continueAdding = false;
+                            break;
                     }
                 }
-
-                // Adds text if it is a modifier
-                if (textType == RichText.STAND_ALONE_TEXT || textType == RichText.MODIFYING_TEXT)
-                    nextText += potentialRichText;
-
-                i = endingIndex + 1; // Increment i by the ending index and 1
             }
 
-            if (i < CurrentLineString.Length)
+            if (continueAdding && i < CurrentLineString.Length)
             {
                 // Process a whitespace character as a single character
                 if (CurrentLineString[i] == '\\')
@@ -204,6 +227,7 @@ public class DialogueHandler : MonoBehaviour
         _hasSkimmedLine = false;
 
         _nameText.text = CurrentSpeakers.GetListString("Narrator", "Player", "???"); // Sets up name for text box
+        CurrentLine.ToggleCharacterSprites(_spriteSpawner.ActiveSprites);
 
         _currentTextCoroutine = StartCoroutine(_typeLine()); // Starts line typing
     }

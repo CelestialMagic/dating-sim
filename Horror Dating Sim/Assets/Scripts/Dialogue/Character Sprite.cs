@@ -20,6 +20,9 @@ public class CharacterSprite : MonoBehaviour
     [SerializeField] private ActOnChangeValue<bool> _isRevealed; // 
     [SerializeField] private ActOnChangeValue<bool> _hasArrived; // 
 
+    [Header("Character Sprite References")]
+    [SerializeField] private CharacterProfile _profile; // 
+
     #endregion
 
     #region Private Fields
@@ -76,6 +79,14 @@ public class CharacterSprite : MonoBehaviour
         _isSubject.ActOnValue();
         _isRevealed.ActOnValue();
         _hasArrived.ActOnValue();
+    }
+
+    // Sets sprite toggles
+    private void OnEnable()
+    {
+        IsSubject = false;
+        IsRevealed = false;
+        HasArrived = false;
     }
 
     #endregion
