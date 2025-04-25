@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 
 /// <summary>
-/// 
+/// Dialogue script filled with characters and their lines
 /// 
 /// Author: William Min
 /// </summary>
@@ -27,6 +27,11 @@ public class DialogueScript : ScriptableObject
 
     #region Public Methods
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="index"></param>
+    /// <returns></returns>
     public CharacterList GetSpeakersFromLineIndex(int index)
     {
         if (index < 0 || index >= _dialogueLines.Length) return null;
@@ -64,6 +69,11 @@ public class DialogueLine
 
     #region Public Methods
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="featuredCharacters"></param>
+    /// <returns></returns>
     public CharacterList GetSpeakerProfiles(CharacterProfile[] featuredCharacters)
     {
         Array.Sort(_speakerProperties);
@@ -107,20 +117,65 @@ public class DialogueLine
     #endregion
 }
 
+/// <summary>
+/// 
+/// 
+/// Author: William Min
+/// </summary>
 public class CharacterList
 {
-    private int _narratorInstances;
-    private int _playerInstances;
-    private CharacterProfile[] _featuredCharacters;
-    private bool[] _hiddenToggles;
+    #region Private Fields
 
+    private int _narratorInstances; // 
+    private int _playerInstances; // 
+    private CharacterProfile[] _featuredCharacters; // 
+    private bool[] _hiddenToggles; // 
+
+    #endregion
+
+    #region Properties
+
+    /// <summary>
+    /// 
+    /// </summary>
     public int NarratorInstances { get => _narratorInstances; }
+
+    /// <summary>
+    /// 
+    /// </summary>
     public int PlayerInstances { get => _playerInstances; }
+
+    /// <summary>
+    /// 
+    /// </summary>
     public CharacterProfile[] FeaturedCharacters { get => _featuredCharacters; }
+
+    /// <summary>
+    /// 
+    /// </summary>
     public int FeaturedCharacterCount { get => _featuredCharacters == null ? 0 : _featuredCharacters.Length; }
+
+    /// <summary>
+    /// 
+    /// </summary>
     public bool[] HiddenToggles { get => _hiddenToggles; }
+
+    /// <summary>
+    /// 
+    /// </summary>
     public int TotalCharacterCount { get => _narratorInstances + _playerInstances + FeaturedCharacterCount; }
 
+    #endregion
+
+    #region Constructors
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="featuredCharacters"></param>
+    /// <param name="playerInstances"></param>
+    /// <param name="narratorInstances"></param>
+    /// <param name="hiddenToggles"></param>
     public CharacterList(CharacterProfile[] featuredCharacters, int playerInstances, int narratorInstances, bool[] hiddenToggles)
     {
         _narratorInstances = narratorInstances;
@@ -129,6 +184,17 @@ public class CharacterList
         _hiddenToggles = hiddenToggles;
     }
 
+    #endregion
+
+    #region Public Methods
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="narratorName"></param>
+    /// <param name="playerName"></param>
+    /// <param name="unknown"></param>
+    /// <returns></returns>
     public string GetListString(string narratorName, string playerName, string unknown)
     {
         string[] names = new string[TotalCharacterCount];
@@ -150,6 +216,13 @@ public class CharacterList
         return ReplaceLastOccurrence(String.Join(", ", names), ", ", ", and ");
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="source"></param>
+    /// <param name="find"></param>
+    /// <param name="replace"></param>
+    /// <returns></returns>
     public static string ReplaceLastOccurrence(string source, string find, string replace)
     {
         int place = source.LastIndexOf(find);
@@ -159,13 +232,26 @@ public class CharacterList
 
         return source.Remove(place, find.Length).Insert(place, replace);
     }
+
+    #endregion
 }
 
+/// <summary>
+/// 
+/// 
+/// Author: William Min
+/// </summary>
 [Serializable]
 public struct SpeakerProperties : IComparable
 {
+    #region Serialized Fields
+
     [SerializeField] private int _speakerIndex; // 
     [SerializeField] private bool _isHidden; // 
+
+    #endregion
+
+    #region Properties
 
     /// <summary>
     /// 
@@ -177,13 +263,23 @@ public struct SpeakerProperties : IComparable
     /// </summary>
     public bool IsHidden { get => _isHidden; }
 
+    #endregion
+
+    #region IComparable Callbacks
+
     /// <summary>
     /// 
     /// </summary>
-    /// <param name="obj"></param>
-    /// <returns></returns>
+    /// <param name="obj">Object to compare to</param>
+    /// <returns>
+    /// If the returned value is les than 0, then it is lower than the compared object.
+    /// If the returned value is equal to 0, then it is equal in order to the compared object.
+    /// If the returned value is greater than 0, then it is higher than the compared object.
+    /// </returns>
     public int CompareTo(object obj)
     {
         return obj == null || obj.GetType() != typeof(SpeakerProperties) ? 0 : _speakerIndex.CompareTo(((SpeakerProperties)obj)._speakerIndex);
     }
+
+    #endregion
 }
