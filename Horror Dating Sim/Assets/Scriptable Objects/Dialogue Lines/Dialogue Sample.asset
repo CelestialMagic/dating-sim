@@ -26,7 +26,7 @@ MonoBehaviour:
     - _speakerIndex: 1
       _isHidden: 1
     _characterSpriteSettings:
-    - IsSubject: 0
+    - IsSubject: 1
       IsRevealed: 1
       HasArrived: 1
     - IsSubject: 0
@@ -47,14 +47,14 @@ MonoBehaviour:
       HasArrived: 1
     _line: 'Can we go to the cafeteria?
 
-      We need more\tsustenance...'
+      We need\tmore sustenance...'
   - _speakerProperties:
     - _speakerIndex: -1
       _isHidden: 0
     _characterSpriteSettings:
     - IsSubject: 0
       IsRevealed: 0
-      HasArrived: 1
+      HasArrived: 0
     - IsSubject: 0
       IsRevealed: 0
       HasArrived: 1
@@ -76,5 +76,11 @@ MonoBehaviour:
   - _speakerProperties:
     - _speakerIndex: 0
       _isHidden: 0
-    _characterSpriteSettings: []
+    _characterSpriteSettings:
+    - IsSubject: 0
+      IsRevealed: 0
+      HasArrived: 1
+    - IsSubject: 0
+      IsRevealed: 0
+      HasArrived: 0
     _line: Let's> <Name> <color=yellow><<see>></color>   <see slide.
