@@ -602,7 +602,7 @@ PrefabInstance:
     - target: {fileID: 4659855750879887971, guid: 6658eb160d34b495f824dd804c667a9b, type: 3}
       propertyPath: distortedFont
       value: 
-      objectReference: {fileID: 11400000, guid: 62b5430d558f94061ab5254889be4c1c, type: 2}
+      objectReference: {fileID: 11400000, guid: 3a4caa17b09534b379155140715ff0d1, type: 2}
     - target: {fileID: 4659855750879887971, guid: 6658eb160d34b495f824dd804c667a9b, type: 3}
       propertyPath: normalBackground
       value: 

@@ -179,8 +179,8 @@ MonoBehaviour:
   distortedMusic: {fileID: 8300000, guid: ebfb934bce8314bd0b26a97318c56eec, type: 3}
   backgroundArt: {fileID: 0}
   textToChangeFont: []
-  normalFont: {fileID: 0}
-  distortedFont: {fileID: 0}
+  normalFont: {fileID: 11400000, guid: 4e14870e8187e48b9bbea349e71254c6, type: 2}
+  distortedFont: {fileID: 11400000, guid: 3a4caa17b09534b379155140715ff0d1, type: 2}
 --- !u!1 &7472888571392876749
 GameObject:
   m_ObjectHideFlags: 0
