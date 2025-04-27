@@ -20,8 +20,7 @@ public class DialogueHandler : MonoBehaviour
     [Header("Dialogue Handler References")]
     [SerializeField] private TMP_Text _dialogueText; // Reference to text box containing current dialogue line
     [SerializeField] private TMP_Text _nameText; // Reference to text box containing current speaker name
-    [SerializeField] private CharacterSpriteSpawner _spriteSpawner; // 
-    [SerializeField] private Transform _spriteParent; // 
+    [SerializeField] private Transform _spriteParent; // Parent transform to house all sprites
 
     #endregion
 
@@ -92,8 +91,9 @@ public class DialogueHandler : MonoBehaviour
         CurrentLineIndex = _currentLineIndex;
         if (_currentLineIndex == LineCount) CurrentLineIndex--;
         _hasSkimmedLine = true;
-        for (int i = 0; i < _script.Characters.Length; i++)
-            _spriteSpawner.CreateSprite(_spriteParent);
+
+        foreach (CharacterProfile profile in _script.Characters)
+            CharacterSpriteSpawner.CreateSprite(profile, _spriteParent);
     }
 
     #endregion
@@ -227,7 +227,7 @@ public class DialogueHandler : MonoBehaviour
         _hasSkimmedLine = false;
 
         _nameText.text = CurrentSpeakers.GetListString("Narrator", "Player", "???"); // Sets up name for text box
-        CurrentLine.ToggleCharacterSprites(_spriteSpawner.ActiveSprites);
+        CurrentLine.ToggleCharacterSprites(CharacterSpriteSpawner.ActiveSprites);
 
         _currentTextCoroutine = StartCoroutine(_typeLine()); // Starts line typing
     }

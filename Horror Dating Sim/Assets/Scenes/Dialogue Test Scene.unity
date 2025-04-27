@@ -750,7 +750,6 @@ MonoBehaviour:
   _timeBetweenCharacters: 0.05
   _dialogueText: {fileID: 709031734}
   _nameText: {fileID: 1984030831}
-  _spriteSpawner: {fileID: 1495182458}
   _spriteParent: {fileID: 2131740056}
 --- !u!1 &1480323600
 GameObject:
