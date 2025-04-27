@@ -1,17 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class SelectableObject : MonoBehaviour
 {
     [SerializeField]
     private CharacterSelect character;
 
+    [SerializeField]
+    private GameObject textObject; 
+
+    [SerializeField]
+    private TMP_Text name; 
+
     private PlayerData playerData;
 
 
+
       public void Start(){
-        playerData = FindObjectOfType<PlayerData>(); 
+        playerData = FindObjectOfType<PlayerData>();
+        name.text = character.characterName;  
+        ToggleTextVisibility(false);
         //saveDataJSON = FindObjectOfType<SaveDataJSON>(); 
         switch(character.internalName){
             case CharacterSelect.CharacterName.Ben:
@@ -33,5 +43,21 @@ public class SelectableObject : MonoBehaviour
         RouteManager.SetRouteStart(character.internalName);
         //saveDataJSON.SaveData();
     }
+
+    public void OnMouseOver(){
+        ToggleTextVisibility(true);
+
+    }
+
+    public void OnMouseExit(){
+        ToggleTextVisibility(false);
+    }
+
+    private void ToggleTextVisibility(bool isVisible){
+        textObject.SetActive(isVisible);
+
+    }
+
+
 
 }
