@@ -26,12 +26,46 @@ MonoBehaviour:
     - _speakerIndex: 1
       _isHidden: 1
     _characterSpriteSettings:
-    - IsSubject: 1
-      IsRevealed: 1
-      HasArrived: 1
-    - IsSubject: 0
-      IsRevealed: 1
-      HasArrived: 1
+    - IsSubject:
+        _isEnabled: 1
+        _value: 0
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 1
+        _value: {x: 0, y: 30}
+      StartingDimensions:
+        _isEnabled: 1
+        _value: {x: 750, y: 900}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _imageType: 0
+          _version: 1
+    - IsSubject:
+        _isEnabled: 1
+        _value: 0
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 1
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 1
+        _value: {x: 400, y: 900}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _imageType: 0
+          _version: 0
     _line: Hello, There!
   - _speakerProperties:
     - _speakerIndex: 0
@@ -39,12 +73,46 @@ MonoBehaviour:
     - _speakerIndex: 1
       _isHidden: 0
     _characterSpriteSettings:
-    - IsSubject: 1
-      IsRevealed: 1
-      HasArrived: 1
-    - IsSubject: 1
-      IsRevealed: 1
-      HasArrived: 1
+    - IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 0
+        _value: 0
+      HasArrived:
+        _isEnabled: 0
+        _value: 0
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 0
+        _value:
+          _imageType: 0
+          _version: 0
+    - IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 0
+        _value: 0
+      HasArrived:
+        _isEnabled: 0
+        _value: 0
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 0
+        _value:
+          _imageType: 0
+          _version: 0
     _line: 'Can we go to the cafeteria?
 
       We need\tmore sustenance...'
@@ -52,23 +120,91 @@ MonoBehaviour:
     - _speakerIndex: -1
       _isHidden: 0
     _characterSpriteSettings:
-    - IsSubject: 0
-      IsRevealed: 0
-      HasArrived: 0
-    - IsSubject: 0
-      IsRevealed: 0
-      HasArrived: 1
+    - IsSubject:
+        _isEnabled: 1
+        _value: 0
+      IsRevealed:
+        _isEnabled: 1
+        _value: 0
+      HasArrived:
+        _isEnabled: 1
+        _value: 0
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 0
+        _value:
+          _imageType: 0
+          _version: 0
+    - IsSubject:
+        _isEnabled: 1
+        _value: 0
+      IsRevealed:
+        _isEnabled: 1
+        _value: 0
+      HasArrived:
+        _isEnabled: 0
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 0
+        _value:
+          _imageType: 0
+          _version: 0
     _line: '<color=red>Nice to see you! <sprite=0></color> '
   - _speakerProperties:
     - _speakerIndex: 1
       _isHidden: 0
     _characterSpriteSettings:
-    - IsSubject: 1
-      IsRevealed: 1
-      HasArrived: 1
-    - IsSubject: 0
-      IsRevealed: 1
-      HasArrived: 1
+    - IsSubject:
+        _isEnabled: 0
+        _value: 0
+      IsRevealed:
+        _isEnabled: 0
+        _value: 0
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 0
+        _value:
+          _imageType: 0
+          _version: 0
+    - IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 0
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 0
+        _value:
+          _imageType: 0
+          _version: 0
     _line: 'I''ll be hiking at the <color=blue><b>mountain</b></color>.
 
       <i>Would
@@ -77,10 +213,44 @@ MonoBehaviour:
     - _speakerIndex: 0
       _isHidden: 0
     _characterSpriteSettings:
-    - IsSubject: 0
-      IsRevealed: 0
-      HasArrived: 1
-    - IsSubject: 0
-      IsRevealed: 0
-      HasArrived: 0
+    - IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 0
+        _value: 0
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 0
+        _value:
+          _imageType: 0
+          _version: 0
+    - IsSubject:
+        _isEnabled: 1
+        _value: 0
+      IsRevealed:
+        _isEnabled: 0
+        _value: 0
+      HasArrived:
+        _isEnabled: 1
+        _value: 0
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 0
+        _value:
+          _imageType: 0
+          _version: 0
     _line: Let's> <Name> <color=yellow><<see>></color>   <see slide.

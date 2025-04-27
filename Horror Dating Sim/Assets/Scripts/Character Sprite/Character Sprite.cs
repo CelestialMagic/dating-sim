@@ -28,7 +28,7 @@ public class CharacterSprite : MonoBehaviour
     #region Private Fields
 
     private float _currentScale = 1; // 
-    private ObjectPool<CharacterSprite> _pool;
+    private RectTransform _spriteTransform; // 
 
     #endregion
 
@@ -58,6 +58,18 @@ public class CharacterSprite : MonoBehaviour
     /// </summary>
     public bool HasArrived { get => _hasArrived.Value; set => _hasArrived.Value = value; }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    public Vector2 SpritePosition { get => _spriteTransform.anchoredPosition; set => _spriteTransform.anchoredPosition = value; }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public Vector2 SpriteScale { get => _spriteTransform.sizeDelta; set => _spriteTransform.sizeDelta = value; }
+
+    public CharacterProfile Profile { get => _profile; set => _profile = value; }
+
     #endregion
 
     #region Monobehavior Callbacks
@@ -65,6 +77,8 @@ public class CharacterSprite : MonoBehaviour
     // 
     private void Start()
     {
+        _spriteTransform = _spriteImage.rectTransform;
+
         _isSubject.ActionsOnChangedValue += b => StartCoroutine(_toggleTransition(b, SUBJECT_TRANSITION_TIME, t => { _scaleInLayoutGroup(Vector3.one * Mathf.SmoothStep(1f, 1.2f, t)); _currentScale = transform.localScale.x; }));
         _isRevealed.ActionsOnChangedValue += b => StartCoroutine(_toggleTransition(b, REVEALED_TRANSITION_TIME, t => _changeColor(Color.Lerp(Color.black, Color.white, t), _spriteImage.color.a)));
         _hasArrived.ActionsOnChangedValue += b => StartCoroutine(b ? _toggleTransition(b, INTRODUCED_TRANSITION_TIME, t => _scaleInLayoutGroup(Vector3.one * Mathf.SmoothStep(0f, _currentScale, t)), _toggleTransition(b, ARRIVING_TRANSITION_TIME, t => _changeColor(_spriteImage.color, Mathf.SmoothStep(0, 1f, t)))) : 
@@ -93,9 +107,24 @@ public class CharacterSprite : MonoBehaviour
 
     #region Public Methods
 
-    public void SetPool(ObjectPool<CharacterSprite> pool)
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="type"></param>
+    /// <param name="version"></param>
+    public void ChangeImage(CharacterImage.ImageType type, int version = 1)
     {
-        _pool = pool;
+        Sprite sprite = _profile.GetSprite(type, version);
+        _spriteImage.sprite = sprite;
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="search"></param>
+    public void ChangeImage(SpriteSearch search)
+    {
+        ChangeImage(search.ImageType, search.Version);
     }
 
     #endregion
@@ -140,49 +169,6 @@ public class CharacterSprite : MonoBehaviour
             group.SetLayoutVertical();
             group.SetLayoutHorizontal();
         }
-    }
-
-    #endregion
-}
-
-/// <summary>
-/// 
-/// 
-/// Author: William Min
-/// </summary>
-[Serializable]
-public struct CharacterSpriteSettingsSheet
-{
-    #region Public Fields
-
-    /// <summary>
-    /// 
-    /// </summary>
-    public bool IsSubject;
-
-    /// <summary>
-    /// 
-    /// </summary>
-    public bool IsRevealed;
-
-    /// <summary>
-    /// 
-    /// </summary>
-    public bool HasArrived;
-
-    #endregion
-
-    #region Public Methods
-
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <param name="sprite"></param>
-    public void ToggleCharacterSprite(CharacterSprite sprite)
-    {
-        sprite.HasArrived = HasArrived;
-        sprite.IsRevealed = IsRevealed;
-        sprite.IsSubject = IsSubject;
     }
 
     #endregion
