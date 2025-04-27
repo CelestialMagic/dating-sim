@@ -19,9 +19,26 @@ MonoBehaviour:
     - _speakerIndex: -2
       _isHidden: 0
     _characterSpriteSettings:
-    - IsSubject: 0
-      IsRevealed: 0
-      HasArrived: 0
+    - IsSubject:
+        _isEnabled: 0
+        _value: 0
+      IsRevealed:
+        _isEnabled: 0
+        _value: 0
+      HasArrived:
+        _isEnabled: 0
+        _value: 0
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 0
+        _value:
+          _imageType: 0
+          _version: 0
     _line: '(First day of the new quarter)
 
 '
@@ -29,9 +46,26 @@ MonoBehaviour:
     - _speakerIndex: -1
       _isHidden: 0
     _characterSpriteSettings:
-    - IsSubject: 0
-      IsRevealed: 0
-      HasArrived: 0
+    - IsSubject:
+        _isEnabled: 0
+        _value: 0
+      IsRevealed:
+        _isEnabled: 0
+        _value: 0
+      HasArrived:
+        _isEnabled: 0
+        _value: 0
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 0
+        _value:
+          _imageType: 0
+          _version: 0
     _line: (Man, school's always such a drag. Day-in and day-out, it's hard to even
       keep my eyes open in class anymore. At least, that's how it's been for the
       last few quarters...)
@@ -39,26 +73,77 @@ MonoBehaviour:
     - _speakerIndex: -1
       _isHidden: 0
     _characterSpriteSettings:
-    - IsSubject: 0
-      IsRevealed: 0
-      HasArrived: 1
+    - IsSubject:
+        _isEnabled: 1
+        _value: 0
+      IsRevealed:
+        _isEnabled: 1
+        _value: 0
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _imageType: 0
+          _version: 1
     _line: (But this quarter? I'm finally in the same class as him!)
   - _speakerProperties:
     - _speakerIndex: -1
       _isHidden: 0
     _characterSpriteSettings:
-    - IsSubject: 0
-      IsRevealed: 0
-      HasArrived: 1
+    - IsSubject:
+        _isEnabled: 1
+        _value: 0
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _imageType: 0
+          _version: 1
     _line: (This guy's name is Ben Trawler. I've heard of him on a few occasions
       since last quarter, but this is my first time seeing him in the flesh.)
   - _speakerProperties:
     - _speakerIndex: -1
       _isHidden: 0
     _characterSpriteSettings:
-    - IsSubject: 0
-      IsRevealed: 0
-      HasArrived: 1
+    - IsSubject:
+        _isEnabled: 1
+        _value: 0
+      IsRevealed:
+        _isEnabled: 1
+        _value: 0
+      HasArrived:
+        _isEnabled: 1
+        _value: 0
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 0
+        _value:
+          _imageType: 0
+          _version: 0
     _line: '(Oh, shoot. The professor''s coming in now. Guess I''d better get ready
       for class.)
 
@@ -67,9 +152,26 @@ MonoBehaviour:
     - _speakerIndex: -1
       _isHidden: 0
     _characterSpriteSettings:
-    - IsSubject: 0
-      IsRevealed: 0
-      HasArrived: 0
+    - IsSubject:
+        _isEnabled: 0
+        _value: 0
+      IsRevealed:
+        _isEnabled: 0
+        _value: 0
+      HasArrived:
+        _isEnabled: 0
+        _value: 0
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 0
+        _value:
+          _imageType: 0
+          _version: 0
     _line: '(Hm, that... actually wasn''t too bad. I only took this marine biology
       class to fulfill my general education requirements, but it''s honestly kinda
       interesting.)
@@ -79,18 +181,52 @@ MonoBehaviour:
     - _speakerIndex: -1
       _isHidden: 0
     _characterSpriteSettings:
-    - IsSubject: 0
-      IsRevealed: 0
-      HasArrived: 0
+    - IsSubject:
+        _isEnabled: 0
+        _value: 0
+      IsRevealed:
+        _isEnabled: 0
+        _value: 0
+      HasArrived:
+        _isEnabled: 0
+        _value: 0
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 0
+        _value:
+          _imageType: 0
+          _version: 0
     _line: (I couldn't help but notice that Ben was sitting at attention, nodding
       along to everything the teacher said, too. Maybe he likes marine life?)
   - _speakerProperties:
     - _speakerIndex: -1
       _isHidden: 0
     _characterSpriteSettings:
-    - IsSubject: 1
-      IsRevealed: 0
-      HasArrived: 1
+    - IsSubject:
+        _isEnabled: 1
+        _value: 0
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _imageType: 0
+          _version: 1
     _line: '(It''s a bit scary, but... I''m gonna go talk to him. Can''t hit a homer
       if you don''t swing the bat, right?)
 
@@ -99,9 +235,26 @@ MonoBehaviour:
     - _speakerIndex: 0
       _isHidden: 1
     _characterSpriteSettings:
-    - IsSubject: 1
-      IsRevealed: 1
-      HasArrived: 1
+    - IsSubject:
+        _isEnabled: 1
+        _value: 0
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _imageType: 0
+          _version: 1
     _line: 'Oh, hey there. I don''t think we''ve met before, have we?
 
 '
@@ -109,35 +262,103 @@ MonoBehaviour:
     - _speakerIndex: 0
       _isHidden: 0
     _characterSpriteSettings:
-    - IsSubject: 1
-      IsRevealed: 1
-      HasArrived: 1
+    - IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _imageType: 0
+          _version: 1
     _line: My name's Ben, though I guess you already knew that, huh? What's yours?
   - _speakerProperties:
     - _speakerIndex: 0
       _isHidden: 0
     _characterSpriteSettings:
-    - IsSubject: 1
-      IsRevealed: 1
-      HasArrived: 1
+    - IsSubject:
+        _isEnabled: 0
+        _value: 0
+      IsRevealed:
+        _isEnabled: 0
+        _value: 0
+      HasArrived:
+        _isEnabled: 0
+        _value: 0
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 0
+        _value:
+          _imageType: 0
+          _version: 0
     _line: Nice to meet you. So what can I do for you? You interested in marine biology,
       too?
   - _speakerProperties:
     - _speakerIndex: 0
       _isHidden: 0
     _characterSpriteSettings:
-    - IsSubject: 1
-      IsRevealed: 1
-      HasArrived: 1
+    - IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _imageType: 0
+          _version: 1
     _line: Oh, that's what it was, huh? Yeah, I'm pretty big on fishing! That's actually
       why I took this class in the first place.
   - _speakerProperties:
     - _speakerIndex: 0
       _isHidden: 0
     _characterSpriteSettings:
-    - IsSubject: 1
-      IsRevealed: 1
-      HasArrived: 1
+    - IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _imageType: 0
+          _version: 1
     _line: I, uh, figured if I knew a little more about the fish I was catching,
       it'd make things easier for me. I'm not all that good at fishing yet, but I'm
       not throwing in the towel yet.
@@ -145,7 +366,24 @@ MonoBehaviour:
     - _speakerIndex: 0
       _isHidden: 0
     _characterSpriteSettings:
-    - IsSubject: 1
-      IsRevealed: 1
-      HasArrived: 1
+    - IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _imageType: 0
+          _version: 1
     _line: Hey, have you ever gone fishing before?
