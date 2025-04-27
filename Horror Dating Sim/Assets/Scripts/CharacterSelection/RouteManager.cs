@@ -5,7 +5,7 @@ public class RouteManager : MonoBehaviour
 {
     private PlayerData playerData;
 
-    private static string routeToFollow; 
+    private static CharacterSelect.CharacterName routeToFollow; 
 
     [SerializeField]
     private GameObject startRouteButton;
@@ -15,20 +15,21 @@ public class RouteManager : MonoBehaviour
 
 
 
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         playerData = FindObjectOfType<PlayerData>(); 
-        routeToFollow = ""; 
+        routeToFollow = CharacterSelect.CharacterName.NA; 
         startRouteButton.SetActive(false);
     }
-    public static void SetRouteStart(string routeName){
-        routeToFollow = routeName; 
+    public static void SetRouteStart(CharacterSelect.CharacterName characterName){
+        routeToFollow = characterName; 
         
     }
 
     private void Update(){
-        if(routeToFollow != "")
+        if(routeToFollow != CharacterSelect.CharacterName.NA)
             startRouteButton.SetActive(true);
     }
 
@@ -36,12 +37,12 @@ public class RouteManager : MonoBehaviour
 
     public void LoadRouteStart(){
         switch(routeToFollow){
-            case "Ben":
+            case CharacterSelect.CharacterName.Ben:
             SceneManager.LoadScene(benRouteName);
 
             break;
 
-            case "Jane":
+            case CharacterSelect.CharacterName.Jane:
             SceneManager.LoadScene(janeRouteName);
              break;
 

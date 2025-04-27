@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerData: MonoBehaviour
 {
-    public string CurrentRoute;
+    public CharacterSelect.CharacterName CurrentRoute;
     public string CurrentScene; 
     public bool FinishedJane;
     public bool FinishedBen; 
@@ -39,7 +39,7 @@ public class PlayerData: MonoBehaviour
 
     } 
 
-    public void SetAllData(string route, string scene, bool jane, bool ben, bool corrupted, string pName){
+    public void SetAllData(CharacterSelect.CharacterName route, string scene, bool jane, bool ben, bool corrupted, string pName){
         CurrentRoute = route;
         CurrentScene = scene;
         FinishedJane = jane; 

@@ -1018,8 +1018,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1129870733}
   - component: {fileID: 1129870732}
-  - component: {fileID: 1129870731}
   - component: {fileID: 1129870730}
+  - component: {fileID: 1129870734}
   m_Layer: 0
   m_Name: Jane
   m_TagString: Untagged
@@ -1072,20 +1072,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1129870731
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1129870729}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7dd21d8f07f544c07995e826e0f1511c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterName: Jane
-  internalName: 1
 --- !u!212 &1129870732
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1153,6 +1139,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1129870734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1129870729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c64995b73d4f4b6fa801e070aaf80ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  character: {fileID: 11400000, guid: 9eb923ebffd574297a45207c80f2013b, type: 2}
 --- !u!1 &1608622189
 GameObject:
   m_ObjectHideFlags: 0
@@ -1248,7 +1247,7 @@ GameObject:
   - component: {fileID: 1640006827}
   - component: {fileID: 1640006826}
   - component: {fileID: 1640006825}
-  - component: {fileID: 1640006824}
+  - component: {fileID: 1640006828}
   m_Layer: 0
   m_Name: Ben
   m_TagString: Untagged
@@ -1256,20 +1255,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1640006824
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1640006823}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7dd21d8f07f544c07995e826e0f1511c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterName: Ben
-  internalName: 0
 --- !u!60 &1640006825
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1461,6 +1446,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1640006828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1640006823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c64995b73d4f4b6fa801e070aaf80ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  character: {fileID: 11400000, guid: 20487e8f714604a9aa4b81a164cb210a, type: 2}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
