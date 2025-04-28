@@ -1,7 +1,7 @@
 using UnityEngine;
 
 /// <summary>
-/// 
+/// A field for storing a scene asset.
 /// 
 /// Author: William Min
 /// </summary>
@@ -10,8 +10,8 @@ public class SceneField
 {
     #region Serialized Fields
 
-    [SerializeField] private Object _sceneAsset; // 
-    [SerializeField] private string _sceneName = ""; // 
+    [SerializeField] private Object _sceneAsset; // Reference to a scene asset
+    [SerializeField] private string _sceneName = ""; // Name of the scene asset
 
     #endregion
 

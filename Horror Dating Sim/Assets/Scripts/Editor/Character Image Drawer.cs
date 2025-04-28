@@ -2,12 +2,12 @@ using UnityEngine;
 using UnityEditor;
 
 /// <summary>
-/// 
+/// Property drawer of a CharacterImage instance.
 /// 
 /// Author: William Min
 /// </summary>
 [CustomPropertyDrawer(typeof(CharacterImage))]
-public class CharacterImageFieldDrawer : PropertyDrawer
+public class CharacterImageDrawer : PropertyDrawer
 {
     /// <summary>
     /// 

@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEditor;
 
 /// <summary>
-/// 
+/// Property drawer of a SpriteSearch instance.
 /// 
 /// Author: William Min
 /// </summary>
@@ -10,11 +10,11 @@ using UnityEditor;
 public class SpriteSearchDrawer : PropertyDrawer
 {
     /// <summary>
-    /// 
+    /// Draws the SpriteSearch instance.
     /// </summary>
-    /// <param name="position"></param>
-    /// <param name="property"></param>
-    /// <param name="label"></param>
+    /// <param name="position">Current position and dimensions of drawing the instance</param>
+    /// <param name="property">Reference to property to be drawn</param>
+    /// <param name="label">The display mode of drawing the instance</param>
     public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
     {
         EditorGUI.BeginProperty(position, label, property);

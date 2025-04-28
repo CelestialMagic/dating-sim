@@ -86,7 +86,7 @@ public class DialogueHandler : MonoBehaviour
         foreach (CharacterProfile profile in _script.Characters)
         {
             profile.Process();
-            CharacterSpriteSpawner.CreateSprite(profile, _spriteParent);
+            CharacterSpriteSpawner.SpawnSprite(profile, _spriteParent);
         }
 
         _script.Process(); // Processes the script itself

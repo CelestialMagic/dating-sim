@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.Pool;
 
 /// <summary>
-/// OpjectPool Spawner of character sprites
+/// OpjectPool Spawner of character sprites.
 /// 
 /// Author: William Min
 /// </summary>
@@ -25,7 +25,7 @@ public class CharacterSpriteSpawner : MonoBehaviour
     #region Properties
 
     /// <summary>
-    /// 
+    /// Returns a list of currently active sprites.
     /// </summary>
     public static List<CharacterSprite> ActiveSprites { get => Instance._activeSprites; }
 
@@ -59,12 +59,12 @@ public class CharacterSpriteSpawner : MonoBehaviour
     #region Public Methods
 
     /// <summary>
-    /// Creates a sprite from the object pool, assigns its character profile, and sets its local position and rotation to default
+    /// Spawns a sprite from the object pool, assigns its character profile, and sets its local position and rotation to default
     /// </summary>
     /// <param name="profile">Character profile for the sprite to reference</param>
     /// <param name="parent">Parent transform for the pulled sprite</param>
     /// <returns>Newly created character sprite from the object pool</returns>
-    public static CharacterSprite CreateSprite(CharacterProfile profile, Transform parent = null)
+    public static CharacterSprite SpawnSprite(CharacterProfile profile, Transform parent = null)
     {
         CharacterSprite sprite = Instance._pool.Get();
 
@@ -79,10 +79,10 @@ public class CharacterSpriteSpawner : MonoBehaviour
     }
 
     /// <summary>
-    /// 
+    /// Despawns a sprite and returns it to the pool.
     /// </summary>
     /// <param name="sprite">Character sprite to be released</param>
-    public static void ReleaseSprite(CharacterSprite sprite)
+    public static void DespawnSprite(CharacterSprite sprite)
     {
         Instance._pool.Release(sprite);
     }
@@ -98,21 +98,21 @@ public class CharacterSpriteSpawner : MonoBehaviour
         return sprite;
     }
 
-    // 
+    // Takes a given inactive sprite from the pool and sets it up for use
     private void _onTakeSpriteFromPool(CharacterSprite sprite)
     {
         _activeSprites.Add(sprite);
         sprite.gameObject.SetActive(true);
     }
 
-    // 
+    // Returns a given active sprite to the pool and deactivates it
     private void _onReturnSpriteFromPool(CharacterSprite sprite)
     {
         _activeSprites.Remove(sprite);
         sprite.gameObject.SetActive(false);
     }
 
-    // 
+    // Destroys the given sprite
     private void _onDestroySprite(CharacterSprite sprite)
     {
         _activeSprites.Remove(sprite);
