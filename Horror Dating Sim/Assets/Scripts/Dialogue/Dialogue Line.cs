@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// 
+/// A line of dialogue with data on the line, the featured speakers, and the sprite settings for those featured in the script.
 /// 
 /// Author: William Min
 /// </summary>
@@ -18,12 +18,29 @@ public class DialogueLine
 
     #endregion
 
+    #region Private Fields
+
+    private string[] _speakerNames;
+    private string _speakerNamesDisplay;
+
+    #endregion
+
     #region Properties
 
     /// <summary>
-    /// Line of Dialogue as a string
+    /// Returns the line of dialogue as a string.
     /// </summary>
     public string Line { get => _line; }
+
+    /// <summary>
+    /// Returns the list of speaker names featured in the line.
+    /// </summary>
+    public string[] SpeakerNames { get => _speakerNames; }
+
+    /// <summary>
+    /// Returns the whole string displaying all the speaker names in the line.
+    /// </summary>
+    public string SpeakerNamesDisplay { get => _speakerNamesDisplay; }
 
     #endregion
 
@@ -33,47 +50,61 @@ public class DialogueLine
     /// 
     /// </summary>
     /// <param name="featuredCharacters"></param>
-    /// <returns></returns>
-    public CharacterList GetSpeakerProfiles(CharacterProfile[] featuredCharacters)
+    /// <param name="narratorName"></param>
+    /// <param name="playerName"></param>
+    /// <param name="hiddenName"></param>
+    public void ProcessSpeakerNames(CharacterProfile[] featuredCharacters, string narratorName, string playerName, string hiddenName)
     {
-        Array.Sort(_speakerProperties);
-        int narratorInstances = 0;
-        int playerInstances = 0;
-        CharacterProfile[] profiles = null;
         int indexLength = _speakerProperties.Length;
-        bool[] hiddenToggles = new bool[indexLength];
-        int totalNonCharacters = 0;
+        _speakerNames = new string[indexLength];
 
         for (int i = 0; i < indexLength; i++)
         {
-            int index = _speakerProperties[i].SpeakerIndex;
+            int speakerIndex = _speakerProperties[i].SpeakerIndex;
+            string name = null;
 
-            switch (index)
+            if (_speakerProperties[i].IsHidden)
+                name = hiddenName;
+            else
             {
-                case -2:
-                    narratorInstances++;
-                    break;
+                switch (speakerIndex)
+                {
+                    case -2:
+                        name = narratorName;
+                        break;
 
-                case -1:
-                    playerInstances++;
-                    break;
+                    case -1:
+                        name = playerName;
+                        break;
 
-                default:
-                    if (profiles == null)
-                    {
-                        totalNonCharacters = narratorInstances + playerInstances;
-                        profiles = new CharacterProfile[indexLength - totalNonCharacters];
-                    }
-                    profiles[i - totalNonCharacters] = featuredCharacters[index];
-                    break;
+                    default:
+                        name = featuredCharacters[speakerIndex].CharacterName;
+                        break;
+                }
             }
 
-            hiddenToggles[i] = _speakerProperties[i].IsHidden;
+            if (name != null) _speakerNames[i] = name;
         }
-
-        return new CharacterList(profiles, playerInstances, narratorInstances, hiddenToggles);
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    public void ProcessSpeakerNamesDisplay()
+    {
+        if (_speakerNames == null)
+        {
+            Debug.LogError($"The list of speaker names hasn't been processed for this line.");
+            return;
+        }
+
+        _speakerNamesDisplay = _replaceLastOccurrence(String.Join(", ", _speakerNames), ", ", _speakerNames.Length > 2 ? ", and " : " and ");
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="characterSprites"></param>
     public void ToggleCharacterSprites(List<CharacterSprite> characterSprites)
     {
         int i = 0;
@@ -83,6 +114,21 @@ public class DialogueLine
             _characterSpriteSettings[i].UpdateCharacterSprite(characterSprites[i]);
             i++;
         }
+    }
+
+    #endregion
+
+    #region Private Methods
+
+    // Returns a string that has the last occurrence of a substring in the given source string replaced by the new substring.
+    private static string _replaceLastOccurrence(string source, string find, string replace)
+    {
+        int place = source.LastIndexOf(find);
+
+        if (place == -1)
+            return source;
+
+        return source.Remove(place, find.Length).Insert(place, replace);
     }
 
     #endregion
