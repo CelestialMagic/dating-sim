@@ -1,7 +1,8 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// 
+/// Profile that represents an npc speaker in the dialogue.
 /// 
 /// Author: William Min
 /// </summary>
@@ -10,15 +11,21 @@ public class CharacterProfile : ScriptableObject
 {
     #region Serialized Fields
 
-    [SerializeField] private string _characterName; // 
-    [SerializeField] private CharacterImage[] _characterImages; // 
+    [SerializeField] private string _characterName; // String name of the character
+    [SerializeField] private CharacterImage[] _characterImages; // Sprites under sprite types for the character
+
+    #endregion
+
+    #region Private Fields
+
+    private Dictionary<CharacterImage.ImageType, List<Sprite>> _spriteDatabase; // Database containing the sprites and their types after processing the profile
 
     #endregion
 
     #region Properties
 
     /// <summary>
-    /// 
+    /// Returns the name of the character.
     /// </summary>
     public string CharacterName { get => _characterName; }
 
@@ -27,52 +34,89 @@ public class CharacterProfile : ScriptableObject
     #region Public Methods
 
     /// <summary>
-    /// 
+    /// Processes the profile before usage.
+    /// Order of sprites in each type is based on order of appearance.
     /// </summary>
-    /// <param name="type"></param>
-    /// <param name="version"></param>
-    /// <returns></returns>
-    public Sprite GetSprite(CharacterImage.ImageType type, int version = 1)
+    public void Process()
     {
-        // Error if version is 0 or lower
-        if (version <= 0)
-        {
-            Debug.LogWarning($"Version = {version}. Version cannot be equal to or below 0.");
-            return null;
-        }
+        // Cleans up the database
+        if (_spriteDatabase == null) _spriteDatabase = new Dictionary<CharacterImage.ImageType, List<Sprite>>();
+        _spriteDatabase.Clear();
 
-        Sprite sprite = null;
-
+        // Processes all the sprites into their respective sprite types
         foreach (CharacterImage image in _characterImages)
         {
-            if (image.SpriteType == type)
-            {
-                version--;
-                sprite = image.ImageSprite;
+            CharacterImage.ImageType type = image.SpriteType;
 
-                if (version <= 0)
-                    return sprite;
-            }
+            if (!_spriteDatabase.ContainsKey(type))
+                _spriteDatabase[type] = new List<Sprite>();
+
+            _spriteDatabase[type].Add(image.ImageSprite);
         }
-
-        Debug.LogWarning(sprite == null ? $"Character profile {name} does not have a sprite with the type {type}." : $"Character profile {name} cannot provide version {version} of sprite type {type} as it doesn't exist.");
-        return null;
     }
 
     /// <summary>
-    /// 
+    /// Returns the sprite based on a given sprite type and version.
     /// </summary>
-    /// <param name="type"></param>
-    /// <returns></returns>
+    /// <param name="type">The type of sprite</param>
+    /// <param name="version">The version of the type of sprite</param>
+    /// <returns>The sprite corresponding to the type and version given</returns>
+    public Sprite GetSprite(CharacterImage.ImageType type, int version = 1)
+    {
+        if (!_checkDatabase())
+            return null;
+
+        // Error if version is 0 or lower
+        if (version <= 0)
+        {
+            Debug.LogError($"Version = {version}. Version cannot be equal to or below 0.");
+            return null;
+        }
+
+        int count = GetSpriteTypeCount(type);
+
+        if (count < 0)
+        {
+            Debug.LogError($"Character profile {name} does not have a sprite under the type {type}.");
+            return null;
+        }
+        else if (version > count)
+        {
+            Debug.LogError($"Character profile {name} only has {count} sprites under type {type}. Cannot provide version {version}.");
+            return null;
+        }
+        else
+            return _spriteDatabase[type][version - 1];
+    }
+
+    /// <summary>
+    /// Returns the count of sprites for the type.
+    /// Will return -1 if the type is not in the profile.
+    /// </summary>
+    /// <param name="type">The type of sprite to return the count of</param>
+    /// <returns>Int value repreesnting the count of sprites under the given type</returns>
     public int GetSpriteTypeCount(CharacterImage.ImageType type)
     {
-        int count = 0;
+        if (!_checkDatabase())
+            return -1;
 
-        foreach (CharacterImage image in _characterImages)
-            if (image.SpriteType == type)
-                count++;
+        return _spriteDatabase.ContainsKey(type) ? _spriteDatabase[type].Count : -1;
+    }
 
-        return count;
+    #endregion
+
+    #region Private Methods
+
+    // Checks the database before using it
+    private bool _checkDatabase()
+    {
+        if (_spriteDatabase == null)
+        {
+            Debug.LogError($"Character profile {name} has not processed itself yet through the ProcessProfile method.");
+            return false;
+        }
+        else
+            return true;
     }
 
     #endregion
