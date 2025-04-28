@@ -12,19 +12,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0315219a1dc2de42851a0d312cdb6c0, type: 3}
   m_Name: Dialogue Sample
   m_EditorClassIdentifier: 
+  _narratorName: Narrator
+  _playerName: Player
+  _hiddenName: ???
   _characters:
   - {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
   - {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
+  - {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
   _dialogueLines:
   - _speakerProperties:
-    - _speakerIndex: 0
-      _isHidden: 0
-    - _speakerIndex: 1
-      _isHidden: 0
     - _speakerIndex: 1
       _isHidden: 0
     - _speakerIndex: 1
       _isHidden: 1
+    - _speakerIndex: 0
+      _isHidden: 0
+    - _speakerIndex: 1
+      _isHidden: 0
     _characterSpriteSettings:
     - IsSubject:
         _isEnabled: 1
@@ -36,8 +40,8 @@ MonoBehaviour:
         _isEnabled: 1
         _value: 1
       StartingAnchorPosition:
-        _isEnabled: 1
-        _value: {x: 0, y: 30}
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
       StartingDimensions:
         _isEnabled: 1
         _value: {x: 750, y: 900}
@@ -56,16 +60,36 @@ MonoBehaviour:
         _isEnabled: 1
         _value: 1
       StartingAnchorPosition:
-        _isEnabled: 1
+        _isEnabled: 0
         _value: {x: 0, y: 0}
       StartingDimensions:
         _isEnabled: 1
         _value: {x: 400, y: 900}
       ImageSearchParameters:
-        _isEnabled: 1
+        _isEnabled: 0
         _value:
           _imageType: 0
           _version: 0
+    - IsSubject:
+        _isEnabled: 1
+        _value: 0
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 1
+        _value: {x: 750, y: 900}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _imageType: 0
+          _version: 1
     _line: Hello, There!
   - _speakerProperties:
     - _speakerIndex: 0
