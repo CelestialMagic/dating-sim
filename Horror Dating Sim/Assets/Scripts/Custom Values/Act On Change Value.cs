@@ -13,21 +13,21 @@ public struct ActOnChangeValue<T>
 {
     #region Serialized Fields
 
-    [SerializeField] private T _value; // 
+    [SerializeField] private T _value; // The stored value
 
     #endregion
 
     #region Private Fields
 
-    private T _originalValue; // 
-    private UnityEvent _unityEventsOnChangedValue; // 
+    private T _originalValue; // The original value
+    private UnityEvent _unityEventsOnChangedValue; // The UnityEvents invoked when the vale is acted upon
 
     #endregion
 
     #region Public Fields
 
     /// <summary>
-    /// 
+    /// The Actions invoked when the value is acted upon.
     /// </summary>
     public Action<T> ActionsOnChangedValue;
 
@@ -36,12 +36,14 @@ public struct ActOnChangeValue<T>
     #region Propertiees
 
     /// <summary>
-    /// 
+    /// The UnityEvents invoked when the value is acted upon.
+    /// Will return a new UnityEvent on the first call.
     /// </summary>
     public UnityEvent UnityEventsOnChangedValue { get { if (_unityEventsOnChangedValue == null) _unityEventsOnChangedValue = new UnityEvent(); return _unityEventsOnChangedValue; } set => _unityEventsOnChangedValue = value; }
 
     /// <summary>
-    /// 
+    /// The stored value.
+    /// Will activate the events if the value is changed.
     /// </summary>
     public T Value
     {
@@ -59,7 +61,7 @@ public struct ActOnChangeValue<T>
     #region Public Methods
 
     /// <summary>
-    /// Invokes actions and events on the value
+    /// Invokes actions and events on the value.
     /// </summary>
     public void ActOnValue()
     {

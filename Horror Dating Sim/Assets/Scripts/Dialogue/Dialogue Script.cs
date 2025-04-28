@@ -1,7 +1,7 @@
 using UnityEngine;
 
 /// <summary>
-/// Dialogue script filled with characters and their lines
+/// Dialogue script filled with characters and their lines.
 /// 
 /// Author: William Min
 /// </summary>
@@ -10,20 +10,28 @@ public class DialogueScript : ScriptableObject
 {
     #region Serialized Fields
 
-    [SerializeField] private CharacterProfile[] _characters; // 
-    [SerializeField] private DialogueLine[] _dialogueLines; // 
+    [Header("Character Properties")]
+    [Space]
+    [SerializeField] private string _narratorPlaceholder = "Narrator"; // Placeholder string for the narrator name
+    [SerializeField] private string _hiddenPlaceholder = "???"; // Placeholder string for any hidden names
+    [Space]
+    [SerializeField] private CharacterProfile[] _characters; // List of character profiles featured in the script
+
+    [Header ("Script Properties")]
+    [Space]
+    [SerializeField] private DialogueLine[] _dialogueLines; // List of lines of dialogue
 
     #endregion
 
     #region Properties
 
     /// <summary>
-    /// 
+    /// Returns the character profiles featured in the dialogue script.
     /// </summary>
     public CharacterProfile[] Characters { get => _characters; }
 
     /// <summary>
-    /// 
+    /// Returns the list of lines of dialogue, each containing the line itself and various display properties.
     /// </summary>
     public DialogueLine[] DialogueLines { get => _dialogueLines; }
 
@@ -32,15 +40,15 @@ public class DialogueScript : ScriptableObject
     #region Public Methods
 
     /// <summary>
-    /// 
+    /// Processes the dialogue script.
     /// </summary>
-    /// <param name="index"></param>
-    /// <returns></returns>
-    public CharacterList GetSpeakersFromLineIndex(int index)
+    public void Process()
     {
-        if (index < 0 || index >= _dialogueLines.Length) return null;
-
-        return _dialogueLines[index].GetSpeakerProfiles(_characters);
+        foreach (DialogueLine line in _dialogueLines)
+        {
+            line.ProcessSpeakerNames(_characters, _narratorPlaceholder, PlayerData.Instance == null ? "Player" : PlayerData.Instance.PlayerName, _hiddenPlaceholder);
+            line.ProcessSpeakerNamesDisplay();
+        }
     }
 
     #endregion

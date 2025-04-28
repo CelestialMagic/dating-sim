@@ -1086,14 +1086,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f30876215201422f9430128c05c7fb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentRoute: 
+  CurrentRoute: 0
   CurrentScene: 
   FinishedJane: 0
   FinishedBen: 0
   BenNumber: 0
   JaneNumber: 0
   FullyCorrupted: 0
-  PlayerName: 
+  PlayerName: Philip
 --- !u!1 &1810507017
 GameObject:
   m_ObjectHideFlags: 0
