@@ -898,7 +898,7 @@ MonoBehaviour:
   dialogueHandler: {fileID: 0}
   startingAlpha: 1
   endingAlpha: 0
-  fadeRate: 0.5
+  fadeRate: 2
 --- !u!114 &455644776
 MonoBehaviour:
   m_ObjectHideFlags: 0
