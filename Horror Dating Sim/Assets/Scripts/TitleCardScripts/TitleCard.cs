@@ -18,6 +18,7 @@ public class TitleCard : MonoBehaviour
 
 //Sets the FadeOnClick() value to true
     public void FadeOnClick(){
+        dialogueHandler.ProceedWithText(); 
         startFade = true;
     }
 
@@ -33,7 +34,6 @@ public class TitleCard : MonoBehaviour
             panel.alpha = startingAlpha;
             if(startingAlpha == endingAlpha){
                 panel.gameObject.SetActive(false);
-                dialogueHandler.ProceedWithText(); 
                 startFade = false; 
             }
             

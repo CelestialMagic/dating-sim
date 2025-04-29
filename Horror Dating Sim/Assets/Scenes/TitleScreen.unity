@@ -180,7 +180,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 86e9bd74cd74845518742966be7d26d0, type: 3}
+  m_Sprite: {fileID: -4967698549972470801, guid: 40a0660e0afbf40e7a25e8c5be261f01, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1389,6 +1389,14 @@ PrefabInstance:
       propertyPath: backgroundImage
       value: 
       objectReference: {fileID: 25904819}
+    - target: {fileID: 8501462850275819915, guid: 060bd9c75da9b41fdb98635985e93134, type: 3}
+      propertyPath: normalBackground
+      value: 
+      objectReference: {fileID: -4967698549972470801, guid: 40a0660e0afbf40e7a25e8c5be261f01, type: 3}
+    - target: {fileID: 8501462850275819915, guid: 060bd9c75da9b41fdb98635985e93134, type: 3}
+      propertyPath: distortedBackground
+      value: 
+      objectReference: {fileID: 21300000, guid: c1761c654a25d47478ab227edb13b5a7, type: 3}
     - target: {fileID: 8501462850275819915, guid: 060bd9c75da9b41fdb98635985e93134, type: 3}
       propertyPath: textToChangeFont.Array.size
       value: 3
