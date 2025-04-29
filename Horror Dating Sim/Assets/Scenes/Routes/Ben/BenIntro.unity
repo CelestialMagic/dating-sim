@@ -730,6 +730,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 4e14870e8187e48b9bbea349e71254c6, type: 2}
     - target: {fileID: 4659855750879887971, guid: 6658eb160d34b495f824dd804c667a9b, type: 3}
+      propertyPath: normalMusic
+      value: 
+      objectReference: {fileID: 8300000, guid: 254cc7576630e4a0f8bf79553df47a11, type: 3}
+    - target: {fileID: 4659855750879887971, guid: 6658eb160d34b495f824dd804c667a9b, type: 3}
       propertyPath: backgroundArt
       value: 
       objectReference: {fileID: 517528063}
@@ -737,6 +741,10 @@ PrefabInstance:
       propertyPath: distortedFont
       value: 
       objectReference: {fileID: 11400000, guid: 3a4caa17b09534b379155140715ff0d1, type: 2}
+    - target: {fileID: 4659855750879887971, guid: 6658eb160d34b495f824dd804c667a9b, type: 3}
+      propertyPath: distortedMusic
+      value: 
+      objectReference: {fileID: 8300000, guid: a27f2dce0e72a46d4ba05e7d722f3513, type: 3}
     - target: {fileID: 4659855750879887971, guid: 6658eb160d34b495f824dd804c667a9b, type: 3}
       propertyPath: normalBackground
       value: 
