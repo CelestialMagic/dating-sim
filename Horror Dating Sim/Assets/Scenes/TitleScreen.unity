@@ -1378,6 +1378,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 4e14870e8187e48b9bbea349e71254c6, type: 2}
     - target: {fileID: 8501462850275819915, guid: 060bd9c75da9b41fdb98635985e93134, type: 3}
+      propertyPath: normalMusic
+      value: 
+      objectReference: {fileID: 8300000, guid: 0a8471489476449aa91db952b5dd2472, type: 3}
+    - target: {fileID: 8501462850275819915, guid: 060bd9c75da9b41fdb98635985e93134, type: 3}
       propertyPath: distortedFont
       value: 
       objectReference: {fileID: 11400000, guid: 3a4caa17b09534b379155140715ff0d1, type: 2}
