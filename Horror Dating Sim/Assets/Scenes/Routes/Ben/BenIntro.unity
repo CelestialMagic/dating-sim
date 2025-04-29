@@ -1599,7 +1599,7 @@ MonoBehaviour:
   dialogueHandler: {fileID: 1389154686}
   startingAlpha: 1
   endingAlpha: 0
-  fadeRate: 2
+  fadeRate: 0.5
 --- !u!4 &1934545886
 Transform:
   m_ObjectHideFlags: 0

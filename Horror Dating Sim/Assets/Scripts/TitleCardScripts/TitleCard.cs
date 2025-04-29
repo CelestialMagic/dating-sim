@@ -18,7 +18,8 @@ public class TitleCard : MonoBehaviour
 
 //Sets the FadeOnClick() value to true
     public void FadeOnClick(){
-        dialogueHandler.ProceedWithText(); 
+        if(dialogueHandler != null)
+            dialogueHandler.ProceedWithText(); 
         startFade = true;
     }
 
