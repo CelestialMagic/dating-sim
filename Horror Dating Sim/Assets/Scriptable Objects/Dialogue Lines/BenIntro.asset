@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0315219a1dc2de42851a0d312cdb6c0, type: 3}
   m_Name: BenIntro
   m_EditorClassIdentifier: 
+  _narratorPlaceholder: Narrator
+  _hiddenPlaceholder: ???
   _characters:
   - {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
   _dialogueLines:
@@ -253,7 +255,7 @@ MonoBehaviour:
       ImageSearchParameters:
         _isEnabled: 1
         _value:
-          _imageType: 0
+          _imageType: 1
           _version: 1
     _line: 'Oh, hey there. I don''t think we''ve met before, have we?
 
@@ -331,7 +333,7 @@ MonoBehaviour:
       ImageSearchParameters:
         _isEnabled: 1
         _value:
-          _imageType: 0
+          _imageType: 1
           _version: 1
     _line: Oh, that's what it was, huh? Yeah, I'm pretty big on fishing! That's actually
       why I took this class in the first place.
@@ -357,7 +359,7 @@ MonoBehaviour:
       ImageSearchParameters:
         _isEnabled: 1
         _value:
-          _imageType: 0
+          _imageType: 4
           _version: 1
     _line: I, uh, figured if I knew a little more about the fish I was catching,
       it'd make things easier for me. I'm not all that good at fishing yet, but I'm
