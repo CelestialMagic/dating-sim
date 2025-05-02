@@ -38,7 +38,7 @@ public class CharacterSpriteSpawner : MonoBehaviour
     /// </summary>
     public static CharacterSpriteSpawner Instance { get; private set; }
 
-    // Initializes singleton and sets up spawner variables
+    // Initializes singleton and sets up variables
     private void Awake()
     {
         if (Instance != null && Instance != this)
