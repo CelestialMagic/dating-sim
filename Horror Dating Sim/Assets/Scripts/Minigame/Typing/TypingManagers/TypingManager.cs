@@ -31,6 +31,8 @@ public class TypingManager : MonoBehaviour
     [SerializeField]
     protected AudioClip typeSound;
 
+    public bool wonMinigame = false; 
+
     // Start is called before the first frame update
     //Sets the input field active
     protected void Start()
@@ -74,6 +76,7 @@ public class TypingManager : MonoBehaviour
             selectedWord = "";
             SetPromptText();
             promptText.gameObject.SetActive(false);
+            wonMinigame = true;
         }
             
         
