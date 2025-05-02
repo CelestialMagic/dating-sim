@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff7994881be9148d5bdf88178bdcb254, type: 3}
   m_Name: TestPrompt
   m_EditorClassIdentifier: 
-  sentence: This is a test. Should work in theory?
+  sentence: This is a test. Should work in theory? If not, oh well!
