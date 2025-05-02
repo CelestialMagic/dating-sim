@@ -9,31 +9,31 @@ public class TypingManager : MonoBehaviour
 {
 
     [SerializeField]
-    private TMP_InputField inputField;//A field to enter in the text
+    protected TMP_InputField inputField;//A field to enter in the text
 
     [SerializeField]
-    private TMP_Text promptText, storyTracker;//Text to prompt the user to type the word 
+    protected TMP_Text promptText, storyTracker;//Text to prompt the user to type the word 
 
     [SerializeField]
-    private TypingPrompt typingPrompt;
+    protected TypingPrompt typingPrompt;
 
-    private List<string> promptWords;//A list of words that will be randomly selected.
+    protected List<string> promptWords;//A list of words that will be randomly selected.
 
 
 
-    private string selectedWord; //A word from the list of strings in promptWords
+    protected string selectedWord; //A word from the list of strings in promptWords
 
-    private int index = 0; //An index to track the current string
-
-    [SerializeField]
-    private AudioSource audioSource;
+    protected int index = 0; //An index to track the current string
 
     [SerializeField]
-    private AudioClip typeSound;
+    protected AudioSource audioSource;
+
+    [SerializeField]
+    protected AudioClip typeSound;
 
     // Start is called before the first frame update
     //Sets the input field active
-    void Start()
+    protected void Start()
     {
         inputField.ActivateInputField();
         promptWords = typingPrompt.GetWords();
@@ -41,12 +41,12 @@ public class TypingManager : MonoBehaviour
         SetPromptText();
     }
 
-    void UpdateStory(){
+    protected void UpdateStory(){
         storyTracker.text += " " + promptWords[index];
     }
 
     // Update is called once per frame
-    void Update()
+    protected virtual void Update()
     {
         if(inputField.isFocused && Input.anyKeyDown){
             TypingSFX();
@@ -60,11 +60,11 @@ public class TypingManager : MonoBehaviour
         
     }
 
-    private void SelectRandomWord(){
+    protected void SelectRandomWord(){
         SetSelectedWord(promptWords[UnityEngine.Random.Range(0, promptWords.Count)]);
     }
 
-    private void AdvanceSelectedWord(){
+    protected void AdvanceSelectedWord(){
         
         if(index < promptWords.Count && index + 1 != promptWords.Count){
             index++;
@@ -79,15 +79,15 @@ public class TypingManager : MonoBehaviour
         
     }
 
-    private void SetPromptText(){
+    protected void SetPromptText(){
            promptText.text = selectedWord;
     }
 
-    private void SetSelectedWord(string word){
+    protected void SetSelectedWord(string word){
         selectedWord = word;
     }
 
-    public void TypingSFX()
+    protected void TypingSFX()
     {
         int[] Semitones = new[] {0, 2, 4, 7, 9};
         int random = UnityEngine.Random.Range(0, 2);

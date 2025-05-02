@@ -836,8 +836,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Typing Words
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4e14870e8187e48b9bbea349e71254c6, type: 2}
-  m_sharedMaterial: {fileID: 2151618881952311473, guid: 4e14870e8187e48b9bbea349e71254c6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a6cc84c40dd034ea5b72f851b9af534c, type: 2}
+  m_sharedMaterial: {fileID: 2151618881952311473, guid: a6cc84c40dd034ea5b72f851b9af534c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1433,6 +1433,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1415415398}
   - component: {fileID: 1415415399}
+  - component: {fileID: 1415415400}
   m_Layer: 0
   m_Name: TypingManager
   m_TagString: Untagged
@@ -1462,7 +1463,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1415415397}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e581928b0fe8747708246dc8f3ce3005, type: 3}
   m_Name: 
@@ -1473,6 +1474,26 @@ MonoBehaviour:
   typingPrompt: {fileID: 11400000, guid: 728bbffc44e6e4b22b8e387bd5bf0b9a, type: 2}
   audioSource: {fileID: 1257045964}
   typeSound: {fileID: 8300000, guid: 38103d283518b4f17ab11f2a7a828b7e, type: 3}
+--- !u!114 &1415415400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1415415397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b92f9b43b711340208b9800da042038c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputField: {fileID: 1409514326}
+  promptText: {fileID: 1103089295}
+  storyTracker: {fileID: 772245064}
+  typingPrompt: {fileID: 11400000, guid: 728bbffc44e6e4b22b8e387bd5bf0b9a, type: 2}
+  audioSource: {fileID: 1257045964}
+  typeSound: {fileID: 8300000, guid: 38103d283518b4f17ab11f2a7a828b7e, type: 3}
+  backgroundMusic: {fileID: 779869372}
+  pitchModifier: 0.1
 --- !u!1 &1486435771
 GameObject:
   m_ObjectHideFlags: 0
