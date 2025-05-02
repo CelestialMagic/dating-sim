@@ -26,7 +26,11 @@ public struct CharacterImage
         HAPPY,
         SAD,
         ANGRY,
-        SURPRISED
+        SURPRISED,
+        DISTORTED,
+        DISGUSTED,
+        CRYING,
+
     }
 
     #endregion
