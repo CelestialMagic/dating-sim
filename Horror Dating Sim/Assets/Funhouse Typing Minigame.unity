@@ -460,7 +460,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 803cdc7e497634f06af063aeb3ae3d25, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1167,7 +1167,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 86e9bd74cd74845518742966be7d26d0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2363c29ffb5a84ad494486a3209afe06, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1407,11 +1407,7 @@ MonoBehaviour:
   inputField: {fileID: 1409514326}
   promptText: {fileID: 1103089295}
   storyTracker: {fileID: 772245064}
-  promptWords:
-  - This
-  - is
-  - a
-  - test
+  typingPrompt: {fileID: 11400000, guid: 728bbffc44e6e4b22b8e387bd5bf0b9a, type: 2}
   audioSource: {fileID: 1257045964}
   typeSound: {fileID: 8300000, guid: 38103d283518b4f17ab11f2a7a828b7e, type: 3}
 --- !u!1 &1486435771
