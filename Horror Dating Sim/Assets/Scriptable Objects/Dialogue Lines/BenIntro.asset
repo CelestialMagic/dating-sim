@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0315219a1dc2de42851a0d312cdb6c0, type: 3}
   m_Name: BenIntro
   m_EditorClassIdentifier: 
+  _narratorPlaceholder: Narrator
+  _hiddenPlaceholder: ???
   _characters:
   - {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
   _dialogueLines:
@@ -253,7 +255,7 @@ MonoBehaviour:
       ImageSearchParameters:
         _isEnabled: 1
         _value:
-          _imageType: 0
+          _imageType: 1
           _version: 1
     _line: 'Oh, hey there. I don''t think we''ve met before, have we?
 
@@ -331,7 +333,7 @@ MonoBehaviour:
       ImageSearchParameters:
         _isEnabled: 1
         _value:
-          _imageType: 0
+          _imageType: 1
           _version: 1
     _line: Oh, that's what it was, huh? Yeah, I'm pretty big on fishing! That's actually
       why I took this class in the first place.
@@ -357,7 +359,7 @@ MonoBehaviour:
       ImageSearchParameters:
         _isEnabled: 1
         _value:
-          _imageType: 0
+          _imageType: 4
           _version: 1
     _line: I, uh, figured if I knew a little more about the fish I was catching,
       it'd make things easier for me. I'm not all that good at fishing yet, but I'm
@@ -387,3 +389,190 @@ MonoBehaviour:
           _imageType: 0
           _version: 1
     _line: Hey, have you ever gone fishing before?
+  - _speakerProperties:
+    - _speakerIndex: 0
+      _isHidden: 0
+    _characterSpriteSettings:
+    - IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _imageType: 1
+          _version: 1
+    _line: 'Y''know, I was actually thinking of going fishing at this local spot
+      I know near campus this afternoon. If you don''t have classes, wanna come with
+      me?
+
+'
+  - _speakerProperties:
+    - _speakerIndex: -1
+      _isHidden: 0
+    _characterSpriteSettings:
+    - IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _imageType: 0
+          _version: 1
+    _line: '(This is the perfect chance to get close to Ben. I''ve gotta seize this
+      opportunity!)
+
+
+'
+  - _speakerProperties:
+    - _speakerIndex: -1
+      _isHidden: 0
+    _characterSpriteSettings:
+    - IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _imageType: 0
+          _version: 1
+    _line: Sure, I'd love to!
+  - _speakerProperties:
+    - _speakerIndex: 0
+      _isHidden: 0
+    _characterSpriteSettings:
+    - IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _imageType: 1
+          _version: 1
+    _line: Well alright! Here, gimme your phone number. I'll text ya the GPS location
+      for the spot, and we'll meet up around 3:00. Oh, and I'll bring the gear we
+      need, too, so don't worry about that.
+  - _speakerProperties:
+    - _speakerIndex: -1
+      _isHidden: 0
+    _characterSpriteSettings:
+    - IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _imageType: 1
+          _version: 1
+    _line: See you then, Ben!
+  - _speakerProperties:
+    - _speakerIndex: -2
+      _isHidden: 0
+    _characterSpriteSettings:
+    - IsSubject:
+        _isEnabled: 1
+        _value: 0
+      IsRevealed:
+        _isEnabled: 1
+        _value: 0
+      HasArrived:
+        _isEnabled: 1
+        _value: 0
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _imageType: 0
+          _version: 1
+    _line: Ben hefts his bag over one shoulder, then saunters out of class. He seems
+      just as excited as you are about this.
+  - _speakerProperties:
+    - _speakerIndex: -2
+      _isHidden: 0
+    _characterSpriteSettings:
+    - IsSubject:
+        _isEnabled: 0
+        _value: 0
+      IsRevealed:
+        _isEnabled: 0
+        _value: 0
+      HasArrived:
+        _isEnabled: 0
+        _value: 0
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _imageType: 4
+          _version: 1
+    _line: Guess it takes a certain kind of person to agree to a... well, a fishing
+      date.
