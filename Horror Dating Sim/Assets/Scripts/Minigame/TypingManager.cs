@@ -73,6 +73,7 @@ public class TypingManager : MonoBehaviour
         }else{
             selectedWord = "";
             SetPromptText();
+            promptText.gameObject.SetActive(false);
         }
             
         
