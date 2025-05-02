@@ -85,7 +85,7 @@ public class TypingManager : MonoBehaviour
     {
         int[] Semitones = new[] {0, 2, 4, 7, 9};
         int random = UnityEngine.Random.Range(0, 2);
-        audioSource.pitch = 3f;
+        audioSource.pitch = 2f;
 
         for (int i = 0; i < Semitones[random]; i++)
             audioSource.pitch *= 1.059463f;

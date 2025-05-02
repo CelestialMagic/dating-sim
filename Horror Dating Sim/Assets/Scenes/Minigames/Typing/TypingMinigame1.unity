@@ -1413,7 +1413,7 @@ MonoBehaviour:
   - a
   - test
   audioSource: {fileID: 1257045964}
-  typeSound: {fileID: 8300000, guid: f9bdc7589f75a42e1ac534af365862f2, type: 3}
+  typeSound: {fileID: 8300000, guid: 38103d283518b4f17ab11f2a7a828b7e, type: 3}
 --- !u!1 &1486435771
 GameObject:
   m_ObjectHideFlags: 0
