@@ -1,6 +1,10 @@
 using UnityEngine;
-using UnityEditor;
 
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
+
+#if UNITY_EDITOR
 /// <summary>
 /// Property drawer of a SpeakerProperties instance.
 /// 
@@ -40,3 +44,4 @@ public class SpeakerPropertiesDrawer : PropertyDrawer
         EditorGUI.EndProperty();
     }
 }
+#endif

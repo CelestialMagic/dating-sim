@@ -1,6 +1,10 @@
 using UnityEngine;
-using UnityEditor;
 
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
+
+#if UNITY_EDITOR
 /// <summary>
 /// Property drawer of a ToggledField<T> instance.
 /// 
@@ -42,3 +46,4 @@ public class ToggledFieldDrawer : PropertyDrawer
         EditorGUI.EndProperty();
     }
 }
+#endif

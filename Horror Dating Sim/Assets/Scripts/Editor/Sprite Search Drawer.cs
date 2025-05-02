@@ -1,6 +1,10 @@
 using UnityEngine;
-using UnityEditor;
 
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
+
+#if UNITY_EDITOR
 /// <summary>
 /// Property drawer of a SpriteSearch instance.
 /// 
@@ -39,3 +43,4 @@ public class SpriteSearchDrawer : PropertyDrawer
         EditorGUI.EndProperty();
     }
 }
+#endif
