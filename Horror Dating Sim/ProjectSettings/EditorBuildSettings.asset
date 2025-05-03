@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Routes/Ben/BenIntro.unity
     guid: a4b487bada1b346ec9a93d0256df4873
+  - enabled: 1
+    path: Assets/Scenes/Minigames/Typing/Funhouse Typing Minigame.unity
+    guid: 186fea1be3d0044058cc7ae6b0a32e90
   m_configObjects: {}

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class TypingTimer : MonoBehaviour
@@ -19,7 +20,10 @@ public class TypingTimer : MonoBehaviour
     private TypingManager typingManager; 
 
     [SerializeField]
-    private GameObject wonCanvas, lostCanvas, minigameCanvas; 
+    private GameObject lostCanvas, minigameCanvas; 
+
+    [SerializeField]
+    private string nextScene, resetScene;
 
     // Start is called before the first frame update
     void Start()
@@ -51,15 +55,13 @@ public class TypingTimer : MonoBehaviour
 
         if(typingManager.wonMinigame){
             StopTimer();
-            SetCanvasVisibility(wonCanvas, true);
-            SetCanvasVisibility(minigameCanvas, false);
+            NextScene();
 
         }
         
         if(currentTime <= 0){
             if(typingManager.wonMinigame){
-                SetCanvasVisibility(wonCanvas, true);
-                SetCanvasVisibility(minigameCanvas, false);
+                NextScene();
 
             }
             else{
@@ -75,6 +77,14 @@ public class TypingTimer : MonoBehaviour
 
     public void StopTimer(){
         stopTimer = true; 
+    }
+
+    public void ResetScene(){
+        SceneManager.LoadScene(resetScene);
+    }
+
+    public void NextScene(){
+        SceneManager.LoadScene(nextScene);
     }
 
 
