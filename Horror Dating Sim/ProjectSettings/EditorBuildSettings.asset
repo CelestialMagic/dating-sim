@@ -8,10 +8,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/TitleScreen.unity
     guid: 66083e28c919c41bbb221d5f7527d9c1
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/CharacterSelectionScene.unity
     guid: 9a8db3c3756a64ac2af8ac935defc0b5
   - enabled: 0
@@ -20,16 +20,16 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Routes/Jane/JaneAct1.unity
     guid: f8de6af2ded1548a5a90e6b1b14e82af
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Minigames/Fishing/FishingMinigame1.unity
     guid: c8fe12444fcd0448da7425afae13f3e7
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Minigames/Fishing/FishingMinigame2.unity
     guid: 2b2f6649697d84bd78074427362aa4f5
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Minigames/Fishing/FishingMinigame3.unity
     guid: 818d992ba0ddd4778beaa2f16cf654e4
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Routes/Ben/BenIntro.unity
     guid: a4b487bada1b346ec9a93d0256df4873
   - enabled: 1
