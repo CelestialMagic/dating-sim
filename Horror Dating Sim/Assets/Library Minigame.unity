@@ -733,8 +733,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4e14870e8187e48b9bbea349e71254c6, type: 2}
-  m_sharedMaterial: {fileID: 2151618881952311473, guid: 4e14870e8187e48b9bbea349e71254c6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ba0862c61482e47f1aaf6d879d0aa9bf, type: 2}
+  m_sharedMaterial: {fileID: 1399657967587244100, guid: ba0862c61482e47f1aaf6d879d0aa9bf, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -758,8 +758,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 34
+  m_fontSizeBase: 34
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -986,7 +986,7 @@ MonoBehaviour:
   lostCanvas: {fileID: 1799052854}
   minigameCanvas: {fileID: 16687491}
   nextScene: 
-  resetScene: Funhouse Typing Minigame
+  resetScene: Library Minigame
 --- !u!1 &996090478
 GameObject:
   m_ObjectHideFlags: 0
@@ -1131,8 +1131,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Enter text...
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4e14870e8187e48b9bbea349e71254c6, type: 2}
-  m_sharedMaterial: {fileID: 2151618881952311473, guid: 4e14870e8187e48b9bbea349e71254c6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ba0862c61482e47f1aaf6d879d0aa9bf, type: 2}
+  m_sharedMaterial: {fileID: 1399657967587244100, guid: ba0862c61482e47f1aaf6d879d0aa9bf, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1304,8 +1304,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Typing Words
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: a6cc84c40dd034ea5b72f851b9af534c, type: 2}
-  m_sharedMaterial: {fileID: 2151618881952311473, guid: a6cc84c40dd034ea5b72f851b9af534c, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 25a1493292db846f792290b33bf71ff8, type: 2}
+  m_sharedMaterial: {fileID: 1399657967587244100, guid: 25a1493292db846f792290b33bf71ff8, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1419,8 +1419,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u200B"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4e14870e8187e48b9bbea349e71254c6, type: 2}
-  m_sharedMaterial: {fileID: 2151618881952311473, guid: 4e14870e8187e48b9bbea349e71254c6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ba0862c61482e47f1aaf6d879d0aa9bf, type: 2}
+  m_sharedMaterial: {fileID: 1399657967587244100, guid: ba0862c61482e47f1aaf6d879d0aa9bf, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1969,7 +1969,7 @@ MonoBehaviour:
   inputField: {fileID: 1409514326}
   promptText: {fileID: 1103089295}
   storyTracker: {fileID: 772245064}
-  typingPrompt: {fileID: 11400000, guid: 728bbffc44e6e4b22b8e387bd5bf0b9a, type: 2}
+  typingPrompt: {fileID: 11400000, guid: 512633e624b5c46d1a196560a3a363f4, type: 2}
   audioSource: {fileID: 1257045964}
   typeSound: {fileID: 8300000, guid: 38103d283518b4f17ab11f2a7a828b7e, type: 3}
   wonMinigame: 0
@@ -2389,8 +2389,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Timer
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4e14870e8187e48b9bbea349e71254c6, type: 2}
-  m_sharedMaterial: {fileID: 2151618881952311473, guid: 4e14870e8187e48b9bbea349e71254c6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 25a1493292db846f792290b33bf71ff8, type: 2}
+  m_sharedMaterial: {fileID: 1399657967587244100, guid: 25a1493292db846f792290b33bf71ff8, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
