@@ -1,0 +1,411 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0315219a1dc2de42851a0d312cdb6c0, type: 3}
+  m_Name: JaneAct1Intro
+  m_EditorClassIdentifier: 
+  _narratorPlaceholder: Narrator
+  _hiddenPlaceholder: ???
+  _characters:
+  - {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+  _dialogueLines:
+  - _speakerProperties:
+    - _speakerIndex: -2
+      _isHidden: 0
+    _characterSpriteSettings:
+    - IsSubject:
+        _isEnabled: 0
+        _value: 0
+      IsRevealed:
+        _isEnabled: 0
+        _value: 0
+      HasArrived:
+        _isEnabled: 0
+        _value: 0
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 0
+        _value:
+          _imageType: 0
+          _version: 0
+    _line: '(First day of the new quarter)
+
+'
+  - _speakerProperties:
+    - _speakerIndex: -1
+      _isHidden: 0
+    _characterSpriteSettings:
+    - IsSubject:
+        _isEnabled: 0
+        _value: 0
+      IsRevealed:
+        _isEnabled: 0
+        _value: 0
+      HasArrived:
+        _isEnabled: 0
+        _value: 0
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 0
+        _value:
+          _imageType: 0
+          _version: 0
+    _line: '(Man, school''s always such a drag. Dreary assignments, boring lectures.
+      I find myself barely smiling anymore.)
+
+'
+  - _speakerProperties:
+    - _speakerIndex: -1
+      _isHidden: 0
+    _characterSpriteSettings:
+    - IsSubject:
+        _isEnabled: 0
+        _value: 0
+      IsRevealed:
+        _isEnabled: 0
+        _value: 0
+      HasArrived:
+        _isEnabled: 0
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 0
+        _value:
+          _imageType: 0
+          _version: 1
+    _line: "(Seems like everyday there\u2019s a test to study for, a project to have
+      meetings on, or a new paper to write. I\u2019m not sure if I\u2019ll survive
+      another quarter of this.)\n"
+  - _speakerProperties:
+    - _speakerIndex: -1
+      _isHidden: 0
+    _characterSpriteSettings:
+    - IsSubject:
+        _isEnabled: 0
+        _value: 0
+      IsRevealed:
+        _isEnabled: 0
+        _value: 1
+      HasArrived:
+        _isEnabled: 0
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 0
+        _value:
+          _imageType: 0
+          _version: 1
+    _line: "(Today I\u2019m at the library. I decided that for my last GE botany
+      would suffice. Who would\u2019ve thought that you needed so many books for
+      botany?)\n"
+  - _speakerProperties:
+    - _speakerIndex: -1
+      _isHidden: 0
+    _characterSpriteSettings:
+    - IsSubject:
+        _isEnabled: 0
+        _value: 0
+      IsRevealed:
+        _isEnabled: 0
+        _value: 0
+      HasArrived:
+        _isEnabled: 0
+        _value: 0
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 0
+        _value:
+          _imageType: 0
+          _version: 0
+    _line: "(I\u2019ve got most of my books now, I just need to find the last one-)\n"
+  - _speakerProperties:
+    - _speakerIndex: -2
+      _isHidden: 0
+    _characterSpriteSettings:
+    - IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 0
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 0
+        _value:
+          _imageType: 0
+          _version: 0
+    _line: While going down the aisle, you accidentally bump into someone.
+  - _speakerProperties:
+    - _speakerIndex: 0
+      _isHidden: 1
+    _characterSpriteSettings:
+    - IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 0
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 0
+        _value:
+          _imageType: 0
+          _version: 0
+    _line: Owee!
+  - _speakerProperties:
+    - _speakerIndex: -1
+      _isHidden: 0
+    _characterSpriteSettings:
+    - IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _imageType: 0
+          _version: 1
+    _line: "(It\u2019s\u2026 Jane! She\u2019s been a classmate of yours for a few
+      classes, but you\u2019ve never really had a chance to talk with each other.)\n"
+  - _speakerProperties:
+    - _speakerIndex: 0
+      _isHidden: 1
+    _characterSpriteSettings:
+    - IsSubject:
+        _isEnabled: 1
+        _value: 0
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _imageType: 1
+          _version: 1
+    _line: 'Oh, hey there. I don''t think we''ve met before, have we?
+
+'
+  - _speakerProperties:
+    - _speakerIndex: -1
+      _isHidden: 0
+    _characterSpriteSettings:
+    - IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _imageType: 0
+          _version: 1
+    _line: "(It\u2019s the first time you\u2019ve met her outside of class, and finally
+      an opportunity to talk! But she seems to have some pretty bad bags under her
+      eyes, is she getting enough sleep?)\n"
+  - _speakerProperties:
+    - _speakerIndex: -1
+      _isHidden: 0
+    _characterSpriteSettings:
+    - IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 0
+        _value:
+          _imageType: 0
+          _version: 0
+    _line: "(You both apologize and begin helping each other pick up the scattered
+      books. You notice that she had a few hunting books and a journal, but also
+      a book with a white lily drawn on it. It\u2019s the book you\u2019ve been looking
+      for.)"
+  - _speakerProperties:
+    - _speakerIndex: 0
+      _isHidden: 0
+    _characterSpriteSettings:
+    - IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _imageType: 1
+          _version: 1
+    _line: "Thanks for the help, stranger. I don\u2019t believe I caught a name?"
+  - _speakerProperties:
+    - _speakerIndex: 0
+      _isHidden: 0
+    _characterSpriteSettings:
+    - IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _imageType: 4
+          _version: 1
+    _line: What a charming little name! Mines LJ.
+  - _speakerProperties:
+    - _speakerIndex: -1
+      _isHidden: 0
+    _characterSpriteSettings:
+    - IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _imageType: 0
+          _version: 1
+    _line: LJ? I thought your name was Jane?
+  - _speakerProperties:
+    - _speakerIndex: 0
+      _isHidden: 0
+    _characterSpriteSettings:
+    - IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _imageType: 1
+          _version: 1
+    _line: Well the J is for Jane. The L stands for something quite funny!
