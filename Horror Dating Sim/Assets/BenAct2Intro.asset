@@ -1,0 +1,539 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0315219a1dc2de42851a0d312cdb6c0, type: 3}
+  m_Name: BenAct2Intro
+  m_EditorClassIdentifier: 
+  _narratorPlaceholder: Narrator
+  _hiddenPlaceholder: ???
+  _characters:
+  - {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+  _dialogueLines:
+  - _speakerProperties:
+    - _speakerIndex: -1
+      _isHidden: 0
+    _characterSpriteSettings:
+    - IsSubject:
+        _isEnabled: 0
+        _value: 0
+      IsRevealed:
+        _isEnabled: 0
+        _value: 0
+      HasArrived:
+        _isEnabled: 0
+        _value: 0
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 0
+        _value:
+          _imageType: 0
+          _version: 0
+    _line: (Another day of marine biology. I'm honestly really enjoying my time in
+      this class. Wonder what's contributing more, the material, or...)
+  - _speakerProperties:
+    - _speakerIndex: -2
+      _isHidden: 0
+    _characterSpriteSettings:
+    - IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _imageType: 1
+          _version: 1
+    _line: You catch the corner of Ben's gaze, and he grins and waves back at you.
+  - _speakerProperties:
+    - _speakerIndex: -1
+      _isHidden: 0
+    _characterSpriteSettings:
+    - IsSubject:
+        _isEnabled: 0
+        _value: 0
+      IsRevealed:
+        _isEnabled: 0
+        _value: 0
+      HasArrived:
+        _isEnabled: 0
+        _value: 0
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 0
+        _value:
+          _imageType: 0
+          _version: 1
+    _line: '(Nope, wasn''t even a question, was it?)
+
+'
+  - _speakerProperties:
+    - _speakerIndex: -1
+      _isHidden: 0
+    _characterSpriteSettings:
+    - IsSubject:
+        _isEnabled: 1
+        _value: 0
+      IsRevealed:
+        _isEnabled: 1
+        _value: 0
+      HasArrived:
+        _isEnabled: 1
+        _value: 0
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 0
+        _value:
+          _imageType: 0
+          _version: 1
+    _line: '(I could go on like this forever...)
+
+'
+  - _speakerProperties:
+    - _speakerIndex: -1
+      _isHidden: 0
+    _characterSpriteSettings:
+    - IsSubject:
+        _isEnabled: 0
+        _value: 0
+      IsRevealed:
+        _isEnabled: 0
+        _value: 0
+      HasArrived:
+        _isEnabled: 0
+        _value: 0
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 0
+        _value:
+          _imageType: 0
+          _version: 0
+    _line: '(Oh, that''s the bell. Let''s go see what Ben''s up to today.)
+
+'
+  - _speakerProperties:
+    - _speakerIndex: 0
+      _isHidden: 0
+    _characterSpriteSettings:
+    - IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _imageType: 1
+          _version: 1
+    _line: Heya! What'd you think of the lecture today? I felt super engaged!
+  - _speakerProperties:
+    - _speakerIndex: -1
+      _isHidden: 0
+    _characterSpriteSettings:
+    - IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _imageType: 0
+          _version: 1
+    _line: Yeah, I honestly didn't think we'd talk about divers and how they help
+      with marine biology research, but I guess it makes sense.
+  - _speakerProperties:
+    - _speakerIndex: -1
+      _isHidden: 0
+    _characterSpriteSettings:
+    - IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _imageType: 0
+          _version: 1
+    _line: 'Although, the part about oxygen tanks got me a little on edge, honestly.
+
+'
+  - _speakerProperties:
+    - _speakerIndex: 0
+      _isHidden: 1
+    _characterSpriteSettings:
+    - IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _imageType: 6
+          _version: 1
+    _line: Oh, I totally get you. Framing the whole diving experience as being in
+      a claustrophobic space with limited oxygen... yeah, it kinda takes the magic
+      out of it, huh?
+  - _speakerProperties:
+    - _speakerIndex: 0
+      _isHidden: 0
+    _characterSpriteSettings:
+    - IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _imageType: 1
+          _version: 1
+    _line: I think I know just the thing to cheer you up, though!
+  - _speakerProperties:
+    - _speakerIndex: -1
+      _isHidden: 0
+    _characterSpriteSettings:
+    - IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _imageType: 1
+          _version: 1
+    _line: (Whoa... He's concerned about me? That's so sweet...)
+  - _speakerProperties:
+    - _speakerIndex: -1
+      _isHidden: 0
+    _characterSpriteSettings:
+    - IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _imageType: 0
+          _version: 1
+    _line: What is it, Ben?
+  - _speakerProperties:
+    - _speakerIndex: 0
+      _isHidden: 0
+    _characterSpriteSettings:
+    - IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _imageType: 4
+          _version: 1
+    _line: I'm holding a little get-together with a few buddies at my house later.
+      You wanna come with? It'll be a super low-key kinda thing, so if you're not
+      good with crowds, that shouldn't be an issue.
+  - _speakerProperties:
+    - _speakerIndex: 0
+      _isHidden: 0
+    _characterSpriteSettings:
+    - IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _imageType: 1
+          _version: 1
+    _line: Oh, and we've got a pool, too! If you like swimming as much as you like
+      fishing, hehe.
+  - _speakerProperties:
+    - _speakerIndex: -1
+      _isHidden: 0
+    _characterSpriteSettings:
+    - IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _imageType: 4
+          _version: 1
+    _line: Sounds great! I'd love to spend some time with you today!
+  - _speakerProperties:
+    - _speakerIndex: -1
+      _isHidden: 0
+    _characterSpriteSettings:
+    - IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _imageType: 4
+          _version: 1
+    _line: '(Going to Ben''s house... to hang out with him? Am I dreaming?)
+
+'
+  - _speakerProperties:
+    - _speakerIndex: 0
+      _isHidden: 0
+    _characterSpriteSettings:
+    - IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _imageType: 1
+          _version: 1
+    _line: Alright, sweet! We're gonna meet up at around 8pm, so be ready around
+      then. Oh, and here's my address. Do you have a car? I can come pick you up
+      if nah.
+  - _speakerProperties:
+    - _speakerIndex: 0
+      _isHidden: 0
+    _characterSpriteSettings:
+    - IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _imageType: 0
+          _version: 1
+    _line: No, I've got a car, so don't worry about it. I bet you'll be busy enough
+      as it is getting things ready.
+  - _speakerProperties:
+    - _speakerIndex: 0
+      _isHidden: 0
+    _characterSpriteSettings:
+    - IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _imageType: 1
+          _version: 1
+    _line: Aw, that's nice of you. Well, I guess I'll catch you later then!
+  - _speakerProperties:
+    - _speakerIndex: -1
+      _isHidden: 0
+    _characterSpriteSettings:
+    - IsSubject:
+        _isEnabled: 1
+        _value: 0
+      IsRevealed:
+        _isEnabled: 1
+        _value: 0
+      HasArrived:
+        _isEnabled: 1
+        _value: 0
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _imageType: 4
+          _version: 1
+    _line: 
