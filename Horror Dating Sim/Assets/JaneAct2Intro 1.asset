@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0315219a1dc2de42851a0d312cdb6c0, type: 3}
+  m_Name: JaneAct2Intro 1
+  m_EditorClassIdentifier: 
+  _narratorPlaceholder: Narrator
+  _hiddenPlaceholder: ???
+  _characters:
+  - {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+  _dialogueLines:
+  - _speakerProperties:
+    - _speakerIndex: -2
+      _isHidden: 0
+    _characterSpriteSettings:
+    - IsSubject:
+        _isEnabled: 0
+        _value: 0
+      IsRevealed:
+        _isEnabled: 0
+        _value: 0
+      HasArrived:
+        _isEnabled: 0
+        _value: 0
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 0
+        _value:
+          _imageType: 0
+          _version: 0
+    _line: The county fair, a lively and cheap affair.
+  - _speakerProperties:
+    - _speakerIndex: 0
+      _isHidden: 0
+    _characterSpriteSettings:
+    - IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 0
+        _value:
+          _imageType: 0
+          _version: 0
+    _line: Wow, you got here even before I did!
