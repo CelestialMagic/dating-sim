@@ -10,14 +10,8 @@ public class DialogueScript : ScriptableObject
 {
     #region Serialized Fields
 
-    [Header("Character Properties")]
-    [Space]
-    [SerializeField] private string _narratorPlaceholder = "Narrator"; // Placeholder string for the narrator name
-    [SerializeField] private string _hiddenPlaceholder = "???"; // Placeholder string for any hidden names
-    [Space]
-    [SerializeField] private CharacterProfile[] _characters; // List of character profiles featured in the script
-
-    [Header ("Script Properties")]
+    [Header("Script Properties")]
+    [SerializeField] private int _spriteCount; // 
     [Space]
     [SerializeField] private DialogueLine[] _dialogueLines; // List of lines of dialogue
 
@@ -26,9 +20,9 @@ public class DialogueScript : ScriptableObject
     #region Properties
 
     /// <summary>
-    /// Returns the character profiles featured in the dialogue script.
+    /// 
     /// </summary>
-    public CharacterProfile[] Characters { get => _characters; }
+    public int SpriteCount { get => _spriteCount; }
 
     /// <summary>
     /// Returns the list of lines of dialogue, each containing the line itself and various display properties.
@@ -46,7 +40,7 @@ public class DialogueScript : ScriptableObject
     {
         foreach (DialogueLine line in _dialogueLines)
         {
-            line.ProcessSpeakerNames(_characters, _narratorPlaceholder, PlayerData.Instance == null ? "Player" : PlayerData.Instance.PlayerName, _hiddenPlaceholder);
+            line.ProcessSpeakerNames();
             line.ProcessSpeakerNamesDisplay();
         }
     }
