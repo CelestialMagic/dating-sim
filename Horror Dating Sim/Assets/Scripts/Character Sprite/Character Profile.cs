@@ -63,7 +63,7 @@ public class CharacterProfile : ScriptableObject
     /// <returns>The sprite corresponding to the type and version given</returns>
     public Sprite GetSprite(CharacterImage.ImageType type, int version = 1)
     {
-        if (!_checkDatabase())
+        if (!_databaseIsUsable())
             return null;
 
         // Error if version is 0 or lower
@@ -97,7 +97,7 @@ public class CharacterProfile : ScriptableObject
     /// <returns>Int value repreesnting the count of sprites under the given type</returns>
     public int GetSpriteTypeCount(CharacterImage.ImageType type)
     {
-        if (!_checkDatabase())
+        if (!_databaseIsUsable())
             return -1;
 
         return _spriteDatabase.ContainsKey(type) ? _spriteDatabase[type].Count : -1;
@@ -108,7 +108,7 @@ public class CharacterProfile : ScriptableObject
     #region Private Methods
 
     // Checks the database before using it
-    private bool _checkDatabase()
+    private bool _databaseIsUsable()
     {
         if (_spriteDatabase == null)
         {

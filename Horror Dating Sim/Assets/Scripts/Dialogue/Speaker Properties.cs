@@ -7,43 +7,49 @@ using UnityEngine;
 /// Author: William Min
 /// </summary>
 [Serializable]
-public struct SpeakerProperties : IComparable
+public struct SpeakerProperties
 {
     #region Serialized Fields
 
-    [SerializeField] private int _speakerIndex; // Index of the speaker in relation to the list of character profiles
-    [SerializeField] private bool _isHidden; // True if the name will be displayed as hidden
+    [SerializeField] private SpeakerType _speakerType;  // Type of speaker
+    [SerializeField] private string _name;              // Name of the speaker if allowed as a string itself
+    [SerializeField] private CharacterProfile _profile; // Character profile containing a character name
 
     #endregion
 
-    #region Properties
+    #region Enums
 
     /// <summary>
-    /// Returns the index of the speaker in relation to the list of character profiles.
+    /// Represents the type of speaker
     /// </summary>
-    public int SpeakerIndex { get => _speakerIndex; }
-
-    /// <summary>
-    /// Returns true if the name will be displayed as a hidden name.
-    /// </summary>
-    public bool IsHidden { get => _isHidden; }
-
-    #endregion
-
-    #region IComparable Callbacks
-
-    /// <summary>
-    /// Compares the object to another object during a comparison operation.
-    /// </summary>
-    /// <param name="obj">Object to compare to</param>
-    /// <returns>
-    /// If the returned value is less than 0, then it is lower than the compared object.
-    /// If the returned value is equal to 0, then it is equal in order to the compared object.
-    /// If the returned value is greater than 0, then it is higher than the compared object.
-    /// </returns>
-    public int CompareTo(object obj)
+    public enum SpeakerType
     {
-        return obj == null || obj.GetType() != typeof(SpeakerProperties) ? 0 : _speakerIndex.CompareTo(((SpeakerProperties)obj)._speakerIndex);
+        STRING_NAME = 0,
+        PLAYER = 1,
+        CHARACTER_NAME = 2
+    }
+
+    #endregion
+
+    #region Public Methods
+
+    /// <summary>
+    /// Returns a string representing the speaker's name.
+    /// </summary>
+    /// <returns>The name of the speaker as a string</returns>
+    public string GetName()
+    {
+        switch (_speakerType)
+        {
+            case SpeakerType.STRING_NAME:
+                return _name;
+
+            case SpeakerType.PLAYER:
+                return PlayerData.Instance == null ? "Player" : PlayerData.Instance.PlayerName;
+
+            default:
+                return _profile.CharacterName;
+        }
     }
 
     #endregion

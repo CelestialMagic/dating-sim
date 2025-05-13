@@ -20,9 +20,6 @@ public class CharacterSprite : MonoBehaviour
     [SerializeField] private ActOnChangeValue<bool> _isRevealed; // 
     [SerializeField] private ActOnChangeValue<bool> _hasArrived; // 
 
-    [Header("Character Sprite References")]
-    [SerializeField] private CharacterProfile _profile; // 
-
     #endregion
 
     #region Private Fields
@@ -66,9 +63,7 @@ public class CharacterSprite : MonoBehaviour
     /// <summary>
     /// 
     /// </summary>
-    public Vector2 SpriteScale { get => _spriteTransform.sizeDelta; set => _spriteTransform.sizeDelta = value; }
-
-    public CharacterProfile Profile { get => _profile; set => _profile = value; }
+    public Vector2 SpriteDimensions { get => _spriteTransform.sizeDelta; set => _spriteTransform.sizeDelta = value; }
 
     #endregion
 
@@ -77,7 +72,7 @@ public class CharacterSprite : MonoBehaviour
     // 
     private void Start()
     {
-        _spriteTransform = _spriteImage.rectTransform;
+        ResetSprite();
 
         _isSubject.ActionsOnChangedValue += b => StartCoroutine(_toggleTransition(b, SUBJECT_TRANSITION_TIME, t => { _scaleInLayoutGroup(Vector3.one * Mathf.SmoothStep(1f, 1.2f, t)); _currentScale = transform.localScale.x; }));
         _isRevealed.ActionsOnChangedValue += b => StartCoroutine(_toggleTransition(b, REVEALED_TRANSITION_TIME, t => _changeColor(Color.Lerp(Color.black, Color.white, t), _spriteImage.color.a)));
@@ -110,21 +105,36 @@ public class CharacterSprite : MonoBehaviour
     /// <summary>
     /// 
     /// </summary>
+    /// <param name="profile"></param>
     /// <param name="type"></param>
     /// <param name="version"></param>
-    public void ChangeImage(CharacterImage.ImageType type, int version = 1)
+    public void ChangeImage(CharacterProfile profile, CharacterImage.ImageType type, int version = 1)
     {
-        Sprite sprite = _profile.GetSprite(type, version);
-        _spriteImage.sprite = sprite;
+        _spriteImage.sprite = profile.GetSprite(type, version);
     }
 
     /// <summary>
     /// 
     /// </summary>
-    /// <param name="search"></param>
-    public void ChangeImage(SpriteSearch search)
+    /// <param name="imageSearchParameters"></param>
+    public void ChangeImage(SpriteSearch imageSearchParameters)
     {
-        ChangeImage(search.ImageType, search.Version);
+        imageSearchParameters.ChangeImage(_spriteImage);
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public void ResetSprite()
+    {
+        IsSubject = false;
+        IsRevealed = false;
+        HasArrived = false;
+        transform.localScale = Vector3.zero;
+        if (_spriteTransform == null) _spriteTransform = _spriteImage.rectTransform;
+        _spriteImage.sprite = null;
+        SpritePosition = Vector2.zero;
+        SpriteDimensions = Vector2.one * 100;
     }
 
     #endregion

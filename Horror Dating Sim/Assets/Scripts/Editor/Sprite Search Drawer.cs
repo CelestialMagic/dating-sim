@@ -23,20 +23,22 @@ public class SpriteSearchDrawer : PropertyDrawer
     {
         EditorGUI.BeginProperty(position, label, property);
 
+        SerializedProperty profile = property.FindPropertyRelative("_profile");
         SerializedProperty imageType = property.FindPropertyRelative("_imageType");
         SerializedProperty version = property.FindPropertyRelative("_version");
 
         int indent = EditorGUI.indentLevel;
         EditorGUI.indentLevel = 0;
 
-        float variableWidth = position.width / 2;
+        float variableWidth = position.width / 3;
         float prefixWidth = variableWidth * 5 / 8;
         float fieldWidth = variableWidth * 3 / 8;
         float offsetSize = 10;
 
-        EditorGUI.PropertyField(new Rect(position.x, position.y, variableWidth - offsetSize, position.height), imageType, GUIContent.none);
-        EditorGUI.PrefixLabel(new Rect(position.x + variableWidth, position.y, prefixWidth - offsetSize, position.height), new GUIContent(version.displayName));
-        EditorGUI.PropertyField(new Rect(position.x + variableWidth + prefixWidth, position.y, fieldWidth - offsetSize, position.height), version, GUIContent.none);
+        EditorGUI.PropertyField(new Rect(position.x, position.y, variableWidth - offsetSize, position.height), profile, GUIContent.none);
+        EditorGUI.PropertyField(new Rect(position.x + variableWidth, position.y, variableWidth - offsetSize, position.height), imageType, GUIContent.none);
+        EditorGUI.PrefixLabel(new Rect(position.x + variableWidth * 2, position.y, prefixWidth - offsetSize, position.height), new GUIContent(version.displayName));
+        EditorGUI.PropertyField(new Rect(position.x + variableWidth * 2 + prefixWidth, position.y, fieldWidth - offsetSize, position.height), version, GUIContent.none);
 
         EditorGUI.indentLevel = indent;
 

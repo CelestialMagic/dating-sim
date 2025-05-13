@@ -13,6 +13,9 @@ using UnityEditor;
 [CustomPropertyDrawer(typeof(SpeakerProperties))]
 public class SpeakerPropertiesDrawer : PropertyDrawer
 {
+    private const int STRING_NAME_ENUM_INDEX = (int)SpeakerProperties.SpeakerType.STRING_NAME;
+    private const int CHARACTER_NAME_ENUM_INDEX = (int)SpeakerProperties.SpeakerType.CHARACTER_NAME;
+
     /// <summary>
     /// Draws the SpeakerProperties instance.
     /// </summary>
@@ -23,25 +26,41 @@ public class SpeakerPropertiesDrawer : PropertyDrawer
     {
         EditorGUI.BeginProperty(position, label, property);
 
-        SerializedProperty speakerIndex = property.FindPropertyRelative("_speakerIndex");
-        SerializedProperty isHidden = property.FindPropertyRelative("_isHidden");
-
         int indent = EditorGUI.indentLevel;
         EditorGUI.indentLevel = 0;
 
         float variableWidth = position.width / 2;
-        float prefixWidth = variableWidth * 3 / 8;
-        float fieldWidth = variableWidth * 5 / 8;
+        float prefixWidth = variableWidth * 3 / 16;
+        float fieldWidth = variableWidth * 13 / 16;
         float offsetSize = 10;
 
-        EditorGUI.PrefixLabel(new Rect(position.x, position.y, prefixWidth - offsetSize, position.height), new GUIContent(speakerIndex.displayName));
-        EditorGUI.PropertyField(new Rect(position.x + prefixWidth, position.y, fieldWidth - offsetSize, position.height), speakerIndex, GUIContent.none);
-        EditorGUI.PrefixLabel(new Rect(position.x + variableWidth, position.y, prefixWidth - offsetSize, position.height), new GUIContent(isHidden.displayName));
-        EditorGUI.PropertyField(new Rect(position.x + variableWidth + prefixWidth, position.y, fieldWidth - offsetSize, position.height), isHidden, GUIContent.none);
+        SerializedProperty speakerType = property.FindPropertyRelative("_speakerType");
+        EditorGUI.PrefixLabel(new Rect(position.x, position.y, prefixWidth - offsetSize, position.height), new GUIContent(speakerType.displayName));
+        EditorGUI.PropertyField(new Rect(position.x + prefixWidth, position.y, fieldWidth - offsetSize, position.height), speakerType, GUIContent.none);
+
+        SerializedProperty revealedProperty = null;
+
+        switch (speakerType.enumValueIndex)
+        {
+            case STRING_NAME_ENUM_INDEX:
+                revealedProperty = property.FindPropertyRelative("_name");
+                break;
+
+            case CHARACTER_NAME_ENUM_INDEX:
+                revealedProperty = property.FindPropertyRelative("_profile");
+                break;
+        }
+
+        if (revealedProperty != null)
+        {
+            EditorGUI.PrefixLabel(new Rect(position.x + variableWidth, position.y, prefixWidth - offsetSize, position.height), new GUIContent(revealedProperty.displayName));
+            EditorGUI.PropertyField(new Rect(position.x + variableWidth + prefixWidth, position.y, fieldWidth - offsetSize, position.height), revealedProperty, GUIContent.none);
+        }
 
         EditorGUI.indentLevel = indent;
 
         EditorGUI.EndProperty();
     }
+
 }
 #endif

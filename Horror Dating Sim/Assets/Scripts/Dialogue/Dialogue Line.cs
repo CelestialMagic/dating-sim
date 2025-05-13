@@ -12,16 +12,18 @@ public class DialogueLine
 {
     #region Serialized Fields
 
+    [TextArea] [SerializeField] private string _line; // 
+    [Space]
     [SerializeField] private SpeakerProperties[] _speakerProperties; // 
+    [Space]
     [SerializeField] private SpriteSettings[] _characterSpriteSettings; // 
-    [TextArea(3, 20)] [SerializeField] private string _line; // 
 
     #endregion
 
     #region Private Fields
 
-    private string[] _speakerNames;
-    private string _speakerNamesDisplay;
+    private string[] _speakerNames; // 
+    private string _speakerNamesDisplay; // 
 
     #endregion
 
@@ -49,42 +51,13 @@ public class DialogueLine
     /// <summary>
     /// 
     /// </summary>
-    /// <param name="featuredCharacters"></param>
-    /// <param name="narratorName"></param>
-    /// <param name="playerName"></param>
-    /// <param name="hiddenName"></param>
-    public void ProcessSpeakerNames(CharacterProfile[] featuredCharacters, string narratorName, string playerName, string hiddenName)
+    public void ProcessSpeakerNames()
     {
         int indexLength = _speakerProperties.Length;
         _speakerNames = new string[indexLength];
 
         for (int i = 0; i < indexLength; i++)
-        {
-            int speakerIndex = _speakerProperties[i].SpeakerIndex;
-            string name = null;
-
-            if (_speakerProperties[i].IsHidden)
-                name = hiddenName;
-            else
-            {
-                switch (speakerIndex)
-                {
-                    case -2:
-                        name = narratorName;
-                        break;
-
-                    case -1:
-                        name = playerName;
-                        break;
-
-                    default:
-                        name = featuredCharacters[speakerIndex].CharacterName;
-                        break;
-                }
-            }
-
-            if (name != null) _speakerNames[i] = name;
-        }
+            _speakerNames[i] = _speakerProperties[i].GetName();
     }
 
     /// <summary>
@@ -109,9 +82,9 @@ public class DialogueLine
     {
         int i = 0;
 
-        while (i < _characterSpriteSettings.Length && i < characterSprites.Count)
+        while (i < _characterSpriteSettings.Length)
         {
-            _characterSpriteSettings[i].UpdateCharacterSprite(characterSprites[i]);
+            _characterSpriteSettings[i].UpdateCharacterSprite(characterSprites.ToArray());
             i++;
         }
     }
