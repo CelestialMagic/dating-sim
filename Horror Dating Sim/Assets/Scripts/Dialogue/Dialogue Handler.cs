@@ -13,15 +13,15 @@ public class DialogueHandler : MonoBehaviour
     #region Serialized Fields
 
     [Header("Dialogue Handler Properties")]
-    [SerializeField] private DialogueScript _script;                // Dialogue script container
+    [SerializeField] private DialogueSkit _script;                  // Dialogue script container
     [SerializeField] private int _currentLineIndex = 0;             // Index of current line in dialogue script
     [SerializeField] private float _timeBetweenCharacters = 0.1f;   // Default time in seconds between typing characters
 
-    //[SerializeField] private DialogueDisplay _display;
-    [SerializeField] private UnityEvent _onSkipDialogue = new UnityEvent();
-    [SerializeField] private UnityEvent _onMoveToNextLine = new UnityEvent();
-    [SerializeField] private UnityEvent _onProcessScript = new UnityEvent();
-    [SerializeField] private UnityEvent _onFinishScript = new UnityEvent();
+    [Space]
+    [SerializeField] private UnityEvent _onSkipDialogue = new UnityEvent();     // 
+    [SerializeField] private UnityEvent _onMoveToNextLine = new UnityEvent();   // 
+    [SerializeField] private UnityEvent _onProcessScript = new UnityEvent();    // 
+    [SerializeField] private UnityEvent _onFinishScript = new UnityEvent();     // 
 
     #endregion
 
@@ -33,6 +33,8 @@ public class DialogueHandler : MonoBehaviour
 
     private Action<string> _onChangeDialogue;   // 
     private Action<string> _onChangeName;       //
+    private Action<int> _onChangeSpriteCount;   //
+    private Action<int> _onChangeChoiceCount;   //
 
     // Modes of rich text
     private enum RichText
@@ -122,7 +124,7 @@ public class DialogueHandler : MonoBehaviour
     {
         if (!_hasSkimmedLine)
         {
-            //_display.DialogueText = _currentLineString;
+            if (_currentTextCoroutine != null) StopCoroutine(_currentTextCoroutine);
             _onChangeDialogue(_currentLineString);
             _hasSkimmedLine = true;
             _onSkipDialogue?.Invoke();
@@ -156,7 +158,6 @@ public class DialogueHandler : MonoBehaviour
         string currentLineText = "";
 
         _onChangeDialogue(currentLineText);
-        //_display.DialogueText = ""; // Empties dialogue box
 
         for (int i = 0; i < _currentLineString.Length; i++)
         {
@@ -234,9 +235,8 @@ public class DialogueHandler : MonoBehaviour
             }
 
             currentLineText += nextText;
-            if (!_hasSkimmedLine) _onChangeDialogue(currentLineText);//_display.DialogueText += nextText; // Adds next text bunch to dialogue text box
+            _onChangeDialogue(currentLineText);
 
-            Debug.Log("Play Gibber Sound"); // Plays gibber sound
             yield return new WaitForSeconds(_timeBetweenCharacters); // Creates delay
         }
 

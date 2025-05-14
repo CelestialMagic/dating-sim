@@ -5,8 +5,8 @@ using UnityEngine;
 /// 
 /// Author: William Min
 /// </summary>
-[CreateAssetMenu(fileName = "New Dialogue Script", menuName = "Simulation Game Objects/Dialogue Script", order = 0)]
-public class DialogueScript : ScriptableObject
+[CreateAssetMenu(fileName = "New Dialogue Skit", menuName = "Simulation Game Objects/Dialogue Skit", order = 0)]
+public class DialogueSkit : ScriptableObject
 {
     #region Serialized Fields
 
