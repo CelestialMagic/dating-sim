@@ -1020,6 +1020,53 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &983431447
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 983431449}
+  - component: {fileID: 983431448}
+  m_Layer: 0
+  m_Name: SceneHandler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &983431448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983431447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db95bc48ed04647f2ad6c62ecf956f9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToLoad:
+    _sceneAsset: {fileID: 102900000, guid: c8fe12444fcd0448da7425afae13f3e7, type: 3}
+    _sceneName: FishingMinigame1
+--- !u!4 &983431449
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983431447}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 979.0386, y: 548.7562, z: 9.685715}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1168808845
 GameObject:
   m_ObjectHideFlags: 0
@@ -1200,9 +1247,30 @@ MonoBehaviour:
   _script: {fileID: 11400000, guid: 98c5d8ab780da4afc83aed09f78e1adc, type: 2}
   _currentLineIndex: 0
   _timeBetweenCharacters: 0.05
-  _dialogueText: {fileID: 709031734}
-  _nameText: {fileID: 1984030831}
-  _spriteParent: {fileID: 2131740056}
+  _onSkipDialogue:
+    m_PersistentCalls:
+      m_Calls: []
+  _onMoveToNextLine:
+    m_PersistentCalls:
+      m_Calls: []
+  _onProcessScript:
+    m_PersistentCalls:
+      m_Calls: []
+  _onFinishScript:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 983431448}
+        m_TargetAssemblyTypeName: SceneTransition, NewAssembly
+        m_MethodName: LoadNextScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1480323600
 GameObject:
   m_ObjectHideFlags: 0
@@ -1336,7 +1404,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62e01a0c305d6344fabc01694995dec8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _spawnedPrefab: {fileID: 2124834068089228481, guid: 5d78ff3e5bcc2c84c909dd1dddd0668b, type: 3}
+  _spawnedPrefab: {fileID: 4658853592849656101, guid: 5d78ff3e5bcc2c84c909dd1dddd0668b, type: 3}
+  _defaultCount: 5
+  _maxCount: 10
 --- !u!4 &1495182459
 Transform:
   m_ObjectHideFlags: 0
@@ -1914,3 +1984,4 @@ SceneRoots:
   - {fileID: 517528064}
   - {fileID: 521401191}
   - {fileID: 1934545886}
+  - {fileID: 983431449}

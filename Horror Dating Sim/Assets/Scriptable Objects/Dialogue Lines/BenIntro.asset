@@ -12,30 +12,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0315219a1dc2de42851a0d312cdb6c0, type: 3}
   m_Name: BenIntro
   m_EditorClassIdentifier: 
-  _narratorPlaceholder: Narrator
-  _hiddenPlaceholder: ???
-  _characters:
-  - {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+  _spriteCount: 1
   _dialogueLines:
-  - _speakerProperties:
-    - _speakerIndex: -2
-      _isHidden: 0
-    _characterSpriteSettings: []
-    _line: '(First day of the new quarter)
+  - _line: '(First day of the new quarter)
 
 '
-  - _speakerProperties:
-    - _speakerIndex: -1
-      _isHidden: 0
+    _speakerProperties:
+    - _speakerType: 1
+      _name: Narrator
+      _profile: {fileID: 0}
     _characterSpriteSettings: []
-    _line: (Man, school's always such a drag. Day-in and day-out, it's hard to even
+  - _line: (Man, school's always such a drag. Day-in and day-out, it's hard to even
       keep my eyes open in class anymore. At least, that's how it's been for the
       last few quarters...)
-  - _speakerProperties:
-    - _speakerIndex: -1
-      _isHidden: 0
+    _speakerProperties:
+    - _speakerType: 0
+      _name: 
+      _profile: {fileID: 0}
+    _characterSpriteSettings: []
+  - _line: (But this quarter? I'm finally in the same class as him!)
+    _speakerProperties:
+    - _speakerType: 0
+      _name: 
+      _profile: {fileID: 0}
     _characterSpriteSettings:
-    - _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+    - _spriteIndex: 0
       IsSubject:
         _isEnabled: 1
         _value: 0
@@ -54,50 +55,26 @@ MonoBehaviour:
       ImageSearchParameters:
         _isEnabled: 1
         _value:
+          _profile: {fileID: 0}
           _imageType: 0
           _version: 1
-    _line: (But this quarter? I'm finally in the same class as him!)
-  - _speakerProperties:
-    - _speakerIndex: -1
-      _isHidden: 0
-    _characterSpriteSettings:
-    - _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
-      IsSubject:
-        _isEnabled: 0
-        _value: 0
-      IsRevealed:
-        _isEnabled: 1
-        _value: 1
-      HasArrived:
-        _isEnabled: 0
-        _value: 1
-      StartingAnchorPosition:
-        _isEnabled: 0
-        _value: {x: 0, y: 0}
-      StartingDimensions:
-        _isEnabled: 0
-        _value: {x: 0, y: 0}
-      ImageSearchParameters:
-        _isEnabled: 0
-        _value:
-          _imageType: 0
-          _version: 1
-    _line: (This guy's name is Ben Trawler. I've heard of him on a few occasions
+  - _line: (This guy's name is Ben Trawler. I've heard of him on a few occasions
       since last quarter, but this is my first time seeing him in the flesh.)
-  - _speakerProperties:
-    - _speakerIndex: -1
-      _isHidden: 0
+    _speakerProperties:
+    - _speakerType: 0
+      _name: 
+      _profile: {fileID: 0}
     _characterSpriteSettings:
-    - _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+    - _spriteIndex: 0
       IsSubject:
-        _isEnabled: 1
+        _isEnabled: 0
         _value: 0
       IsRevealed:
         _isEnabled: 1
-        _value: 0
+        _value: 1
       HasArrived:
-        _isEnabled: 1
-        _value: 0
+        _isEnabled: 0
+        _value: 1
       StartingAnchorPosition:
         _isEnabled: 0
         _value: {x: 0, y: 0}
@@ -107,61 +84,97 @@ MonoBehaviour:
       ImageSearchParameters:
         _isEnabled: 0
         _value:
+          _profile: {fileID: 0}
           _imageType: 0
-          _version: 0
-    _line: '(Oh, shoot. The professor''s coming in now. Guess I''d better get ready
+          _version: 1
+  - _line: '(Oh, shoot. The professor''s coming in now. Guess I''d better get ready
       for class.)
 
 '
-  - _speakerProperties:
-    - _speakerIndex: -1
-      _isHidden: 0
-    _characterSpriteSettings: []
-    _line: '(Hm, that... actually wasn''t too bad. I only took this marine biology
+    _speakerProperties:
+    - _speakerType: 0
+      _name: 
+      _profile: {fileID: 0}
+    _characterSpriteSettings:
+    - _spriteIndex: 0
+      IsSubject:
+        _isEnabled: 1
+        _value: 0
+      IsRevealed:
+        _isEnabled: 1
+        _value: 0
+      HasArrived:
+        _isEnabled: 1
+        _value: 0
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 0
+        _value:
+          _profile: {fileID: 0}
+          _imageType: 0
+          _version: 0
+  - _line: '(Hm, that... actually wasn''t too bad. I only took this marine biology
       class to fulfill my general education requirements, but it''s honestly kinda
       interesting.)
 
 '
-  - _speakerProperties:
-    - _speakerIndex: -1
-      _isHidden: 0
+    _speakerProperties:
+    - _speakerType: 0
+      _name: 
+      _profile: {fileID: 0}
     _characterSpriteSettings: []
-    _line: (I couldn't help but notice that Ben was sitting at attention, nodding
+  - _line: (I couldn't help but notice that Ben was sitting at attention, nodding
       along to everything the teacher said, too. Maybe he likes marine life?)
-  - _speakerProperties:
-    - _speakerIndex: -1
-      _isHidden: 0
-    _characterSpriteSettings:
-    - _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
-      IsSubject:
-        _isEnabled: 1
-        _value: 0
-      IsRevealed:
-        _isEnabled: 1
-        _value: 1
-      HasArrived:
-        _isEnabled: 1
-        _value: 1
-      StartingAnchorPosition:
-        _isEnabled: 0
-        _value: {x: 0, y: 0}
-      StartingDimensions:
-        _isEnabled: 0
-        _value: {x: 0, y: 0}
-      ImageSearchParameters:
-        _isEnabled: 1
-        _value:
-          _imageType: 0
-          _version: 1
-    _line: '(It''s a bit scary, but... I''m gonna go talk to him. Can''t hit a homer
+    _speakerProperties:
+    - _speakerType: 0
+      _name: 
+      _profile: {fileID: 0}
+    _characterSpriteSettings: []
+  - _line: '(It''s a bit scary, but... I''m gonna go talk to him. Can''t hit a homer
       if you don''t swing the bat, right?)
 
 '
-  - _speakerProperties:
-    - _speakerIndex: 0
-      _isHidden: 1
+    _speakerProperties:
+    - _speakerType: 0
+      _name: 
+      _profile: {fileID: 0}
     _characterSpriteSettings:
-    - _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+    - _spriteIndex: 0
+      IsSubject:
+        _isEnabled: 1
+        _value: 0
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _profile: {fileID: 0}
+          _imageType: 0
+          _version: 1
+  - _line: 'Oh, hey there. I don''t think we''ve met before, have we?
+
+'
+    _speakerProperties:
+    - _speakerType: 0
+      _name: 
+      _profile: {fileID: 0}
+    _characterSpriteSettings:
+    - _spriteIndex: 0
       IsSubject:
         _isEnabled: 0
         _value: 0
@@ -180,16 +193,16 @@ MonoBehaviour:
       ImageSearchParameters:
         _isEnabled: 1
         _value:
+          _profile: {fileID: 0}
           _imageType: 1
           _version: 1
-    _line: 'Oh, hey there. I don''t think we''ve met before, have we?
-
-'
-  - _speakerProperties:
-    - _speakerIndex: 0
-      _isHidden: 0
+  - _line: My name's Ben, though I guess you already knew that, huh? What's yours?
+    _speakerProperties:
+    - _speakerType: 0
+      _name: 
+      _profile: {fileID: 0}
     _characterSpriteSettings:
-    - _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+    - _spriteIndex: 0
       IsSubject:
         _isEnabled: 1
         _value: 1
@@ -208,20 +221,24 @@ MonoBehaviour:
       ImageSearchParameters:
         _isEnabled: 1
         _value:
+          _profile: {fileID: 0}
           _imageType: 0
           _version: 1
-    _line: My name's Ben, though I guess you already knew that, huh? What's yours?
-  - _speakerProperties:
-    - _speakerIndex: 0
-      _isHidden: 0
-    _characterSpriteSettings: []
-    _line: Nice to meet you. So what can I do for you? You interested in marine biology,
+  - _line: Nice to meet you. So what can I do for you? You interested in marine biology,
       too?
-  - _speakerProperties:
-    - _speakerIndex: 0
-      _isHidden: 0
+    _speakerProperties:
+    - _speakerType: 0
+      _name: 
+      _profile: {fileID: 0}
+    _characterSpriteSettings: []
+  - _line: Oh, that's what it was, huh? Yeah, I'm pretty big on fishing! That's actually
+      why I took this class in the first place.
+    _speakerProperties:
+    - _speakerType: 0
+      _name: 
+      _profile: {fileID: 0}
     _characterSpriteSettings:
-    - _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+    - _spriteIndex: 0
       IsSubject:
         _isEnabled: 0
         _value: 1
@@ -240,43 +257,18 @@ MonoBehaviour:
       ImageSearchParameters:
         _isEnabled: 1
         _value:
+          _profile: {fileID: 0}
           _imageType: 1
           _version: 1
-    _line: Oh, that's what it was, huh? Yeah, I'm pretty big on fishing! That's actually
-      why I took this class in the first place.
-  - _speakerProperties:
-    - _speakerIndex: 0
-      _isHidden: 0
-    _characterSpriteSettings:
-    - _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
-      IsSubject:
-        _isEnabled: 1
-        _value: 1
-      IsRevealed:
-        _isEnabled: 1
-        _value: 1
-      HasArrived:
-        _isEnabled: 1
-        _value: 1
-      StartingAnchorPosition:
-        _isEnabled: 0
-        _value: {x: 0, y: 0}
-      StartingDimensions:
-        _isEnabled: 0
-        _value: {x: 0, y: 0}
-      ImageSearchParameters:
-        _isEnabled: 1
-        _value:
-          _imageType: 4
-          _version: 1
-    _line: I, uh, figured if I knew a little more about the fish I was catching,
+  - _line: I, uh, figured if I knew a little more about the fish I was catching,
       it'd make things easier for me. I'm not all that good at fishing yet, but I'm
       not throwing in the towel yet.
-  - _speakerProperties:
-    - _speakerIndex: 0
-      _isHidden: 0
+    _speakerProperties:
+    - _speakerType: 0
+      _name: 
+      _profile: {fileID: 0}
     _characterSpriteSettings:
-    - _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+    - _spriteIndex: 0
       IsSubject:
         _isEnabled: 1
         _value: 1
@@ -295,44 +287,48 @@ MonoBehaviour:
       ImageSearchParameters:
         _isEnabled: 1
         _value:
+          _profile: {fileID: 0}
+          _imageType: 4
+          _version: 1
+  - _line: Hey, have you ever gone fishing before?
+    _speakerProperties:
+    - _speakerType: 0
+      _name: 
+      _profile: {fileID: 0}
+    _characterSpriteSettings:
+    - _spriteIndex: 0
+      IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _profile: {fileID: 0}
           _imageType: 0
           _version: 1
-    _line: Hey, have you ever gone fishing before?
-  - _speakerProperties:
-    - _speakerIndex: 0
-      _isHidden: 0
-    _characterSpriteSettings:
-    - _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
-      IsSubject:
-        _isEnabled: 1
-        _value: 1
-      IsRevealed:
-        _isEnabled: 1
-        _value: 1
-      HasArrived:
-        _isEnabled: 1
-        _value: 1
-      StartingAnchorPosition:
-        _isEnabled: 0
-        _value: {x: 0, y: 0}
-      StartingDimensions:
-        _isEnabled: 0
-        _value: {x: 0, y: 0}
-      ImageSearchParameters:
-        _isEnabled: 1
-        _value:
-          _imageType: 1
-          _version: 1
-    _line: 'Y''know, I was actually thinking of going fishing at this local spot
+  - _line: 'Y''know, I was actually thinking of going fishing at this local spot
       I know near campus this afternoon. If you don''t have classes, wanna come with
       me?
 
 '
-  - _speakerProperties:
-    - _speakerIndex: -1
-      _isHidden: 0
+    _speakerProperties:
+    - _speakerType: 0
+      _name: 
+      _profile: {fileID: 0}
     _characterSpriteSettings:
-    - _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+    - _spriteIndex: 0
       IsSubject:
         _isEnabled: 1
         _value: 1
@@ -351,18 +347,20 @@ MonoBehaviour:
       ImageSearchParameters:
         _isEnabled: 1
         _value:
-          _imageType: 0
+          _profile: {fileID: 0}
+          _imageType: 1
           _version: 1
-    _line: '(This is the perfect chance to get close to Ben. I''ve gotta seize this
+  - _line: '(This is the perfect chance to get close to Ben. I''ve gotta seize this
       opportunity!)
 
 
 '
-  - _speakerProperties:
-    - _speakerIndex: -1
-      _isHidden: 0
+    _speakerProperties:
+    - _speakerType: 0
+      _name: 
+      _profile: {fileID: 0}
     _characterSpriteSettings:
-    - _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+    - _spriteIndex: 0
       IsSubject:
         _isEnabled: 1
         _value: 1
@@ -381,14 +379,16 @@ MonoBehaviour:
       ImageSearchParameters:
         _isEnabled: 1
         _value:
+          _profile: {fileID: 0}
           _imageType: 0
           _version: 1
-    _line: Sure, I'd love to!
-  - _speakerProperties:
-    - _speakerIndex: 0
-      _isHidden: 0
+  - _line: Sure, I'd love to!
+    _speakerProperties:
+    - _speakerType: 0
+      _name: 
+      _profile: {fileID: 0}
     _characterSpriteSettings:
-    - _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+    - _spriteIndex: 0
       IsSubject:
         _isEnabled: 1
         _value: 1
@@ -407,16 +407,18 @@ MonoBehaviour:
       ImageSearchParameters:
         _isEnabled: 1
         _value:
-          _imageType: 1
+          _profile: {fileID: 0}
+          _imageType: 0
           _version: 1
-    _line: Well alright! Here, gimme your phone number. I'll text ya the GPS location
+  - _line: Well alright! Here, gimme your phone number. I'll text ya the GPS location
       for the spot, and we'll meet up around 3:00. Oh, and I'll bring the gear we
       need, too, so don't worry about that.
-  - _speakerProperties:
-    - _speakerIndex: -1
-      _isHidden: 0
+    _speakerProperties:
+    - _speakerType: 0
+      _name: 
+      _profile: {fileID: 0}
     _characterSpriteSettings:
-    - _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+    - _spriteIndex: 0
       IsSubject:
         _isEnabled: 1
         _value: 1
@@ -435,14 +437,45 @@ MonoBehaviour:
       ImageSearchParameters:
         _isEnabled: 1
         _value:
+          _profile: {fileID: 0}
           _imageType: 1
           _version: 1
-    _line: See you then, Ben!
-  - _speakerProperties:
-    - _speakerIndex: -2
-      _isHidden: 0
+  - _line: See you then, Ben!
+    _speakerProperties:
+    - _speakerType: 0
+      _name: 
+      _profile: {fileID: 0}
     _characterSpriteSettings:
-    - _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+    - _spriteIndex: 0
+      IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _profile: {fileID: 0}
+          _imageType: 1
+          _version: 1
+  - _line: Ben hefts his bag over one shoulder, then saunters out of class. He seems
+      just as excited as you are about this.
+    _speakerProperties:
+    - _speakerType: 0
+      _name: 
+      _profile: {fileID: 0}
+    _characterSpriteSettings:
+    - _spriteIndex: 0
       IsSubject:
         _isEnabled: 1
         _value: 0
@@ -461,15 +494,17 @@ MonoBehaviour:
       ImageSearchParameters:
         _isEnabled: 1
         _value:
+          _profile: {fileID: 0}
           _imageType: 0
           _version: 1
-    _line: Ben hefts his bag over one shoulder, then saunters out of class. He seems
-      just as excited as you are about this.
-  - _speakerProperties:
-    - _speakerIndex: -2
-      _isHidden: 0
+  - _line: Guess it takes a certain kind of person to agree to a... well, a fishing
+      date.
+    _speakerProperties:
+    - _speakerType: 0
+      _name: 
+      _profile: {fileID: 0}
     _characterSpriteSettings:
-    - _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+    - _spriteIndex: 0
       IsSubject:
         _isEnabled: 0
         _value: 0
@@ -488,7 +523,6 @@ MonoBehaviour:
       ImageSearchParameters:
         _isEnabled: 1
         _value:
+          _profile: {fileID: 0}
           _imageType: 4
           _version: 1
-    _line: Guess it takes a certain kind of person to agree to a... well, a fishing
-      date.
