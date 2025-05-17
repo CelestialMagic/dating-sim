@@ -881,6 +881,8 @@ GameObject:
   - component: {fileID: 678005871}
   - component: {fileID: 678005873}
   - component: {fileID: 678005872}
+  - component: {fileID: 678005875}
+  - component: {fileID: 678005874}
   m_Layer: 5
   m_Name: Background Image
   m_TagString: Untagged
@@ -945,6 +947,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 678005870}
   m_CullTransparentMesh: 1
+--- !u!114 &678005874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 678005870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 555063e2a65d14042aa66a2ddd20f094, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panel: {fileID: 678005875}
+  dialogueHandler: {fileID: 1389154686}
+  startingAlpha: 1
+  endingAlpha: 0
+  fadeRate: 0.2
+--- !u!225 &678005875
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 678005870}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &709031732
 GameObject:
   m_ObjectHideFlags: 0

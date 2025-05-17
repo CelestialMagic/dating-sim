@@ -94,6 +94,11 @@ public class DialogueHandler : MonoBehaviour
     /// </summary>
     public Action<string> OnChangeName { get => _onChangeName; set => _onChangeName = value; }
 
+    public int GetCurrentIndex()
+    {
+        return CurrentLineIndex;
+    }
+
     #endregion
 
     #region Monobehavior Callbacks
