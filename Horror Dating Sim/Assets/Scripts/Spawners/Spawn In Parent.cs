@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
@@ -6,22 +7,29 @@ using UnityEngine;
 /// Author: William Min
 /// </summary>
 /// <typeparam name="T"></typeparam>
-[System.Serializable]
-public class SpawnerWithParent<T>
+public class SpawnInParent<T> : MonoBehaviour
 {
     #region Serialized Fields
 
-    [SerializeField] private Transform _spawnerParent;  // 
-    [SerializeField] private Spawner<T> _spawner;       //  
+    [SerializeField] private Transform _spawnerParent;
 
     #endregion
 
     #region Private Fields
 
-    private T[] _spawnedInParent;           //
-    private GameObject[] _objectsInParent;  //
-    //
-    private int _spawnedCount { get => _spawnedInParent == null ? 0 : _spawnedInParent.Length; }
+    protected Spawner<T> _spawner;      // 
+    private List<T> _spawnedInParent;   //
+
+    #endregion
+
+    #region Monobehavior Callbacks
+
+    // Sets up spawner with parent
+    protected virtual void Awake()
+    {
+        if (_spawnedInParent == null) _spawnerParent = transform;
+        _spawnedInParent = new List<T>();
+    }
 
     #endregion
 
@@ -34,7 +42,7 @@ public class SpawnerWithParent<T>
     /// <returns></returns>
     public T GetSpawned(int index)
     {
-        if (index >= 0 && index < _spawnedCount)
+        if (index >= 0 && index < _spawnedInParent.Count)
             return _spawnedInParent[index];
         else
         {
@@ -46,19 +54,28 @@ public class SpawnerWithParent<T>
     /// <summary>
     /// 
     /// </summary>
+    /// <returns></returns>
+    public T[] GetAllSpawned()
+    {
+        return _spawnedInParent.ToArray();
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
     /// <param name="count"></param>
     public void SetSpawnedCount(int count)
     {
-        if (count != _spawnedCount)
+        int spawnedCount = _spawnedInParent.Count;
+
+        if (count != spawnedCount)
         {
-            if (count > _spawnedCount)
-                for (int i = _spawnedCount; i < count; i++)
+            if (count > spawnedCount)
+                for (int i = spawnedCount; i < count; i++)
                     SpawnInstance(Vector3.zero, Quaternion.identity, Vector3.one);
             else
-                for (int i = _spawnedCount - 1; i >= count; i--)
+                for (int i = spawnedCount - 1; i >= count; i--)
                     DespawnInstance(i);
-
-            _updateSpawnCollection();
         }
     }
 
@@ -72,7 +89,7 @@ public class SpawnerWithParent<T>
     public T SpawnInstance(Vector3 localPosition, Quaternion localRotation, Vector3 localScale)
     {
         T component = _spawnInstance(localPosition, localRotation, localScale);
-        _updateSpawnCollection();
+        _spawnedInParent.Add(component);
         return component;
     }
 
@@ -82,8 +99,13 @@ public class SpawnerWithParent<T>
     /// <param name="spawnedInstance"></param>
     public void DespawnInstance(GameObject spawnedInstance)
     {
-        _despawnInstance(spawnedInstance);
-        _updateSpawnCollection();
+        if (spawnedInstance.TryGetComponent<T>(out T component) && _spawnedInParent.Contains(component))
+        {
+            _despawnInstance(spawnedInstance);
+            _spawnedInParent.Remove(component);
+        }
+        else
+            Debug.LogError($"{spawnedInstance} does not have a {typeof(T)} component in {name}'s transform.");
     }
 
     /// <summary>
@@ -92,8 +114,8 @@ public class SpawnerWithParent<T>
     /// <param name="index"></param>
     public void DespawnInstance(int index)
     {
-        if (index >= 0 && index < _spawnedInParent.Length)
-            DespawnInstance(_objectsInParent[index]);
+        if (index >= 0 && index < _spawnedInParent.Count)
+            DespawnInstance(_spawnerParent.GetChild(index).gameObject);
         else
             Debug.LogError("Index out of range for collection in parent.");
     }
@@ -112,20 +134,6 @@ public class SpawnerWithParent<T>
     private void _despawnInstance(GameObject spawnedInstance)
     {
         _spawner.Despawn(spawnedInstance);
-    }
-
-    // 
-    private void _updateSpawnCollection()
-    {
-        int childCount = _spawnerParent.childCount;
-        _spawnedInParent = new T[childCount];
-        _objectsInParent = new GameObject[childCount];
-
-        for (int i = 0; i < childCount; i++)
-        {
-            _objectsInParent[i] = _spawnerParent.GetChild(i).gameObject;
-            _spawnedInParent[i] = _objectsInParent[i].GetComponent<T>();
-        }
     }
 
     #endregion
