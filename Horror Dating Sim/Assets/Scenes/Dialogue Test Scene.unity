@@ -1343,7 +1343,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _skits:
-  - {fileID: 11400000, guid: 6085302089b323349864b9a84564d339, type: 2}
+  - {fileID: 11400000, guid: 1f15b8f870d634a44a1afbc7e3c0a3dd, type: 2}
   _currentLineIndex: 0
   _currentSkitIndex: 0
   _timeBetweenCharacters: 0.05

@@ -27,7 +27,7 @@ public class SpawnInParent<T> : MonoBehaviour
     // Sets up spawner with parent
     protected virtual void Awake()
     {
-        if (_spawnedInParent == null) _spawnerParent = transform;
+        if (_spawnerParent == null || !_spawnerParent) _spawnerParent = transform;
         _spawnedInParent = new List<T>();
     }
 

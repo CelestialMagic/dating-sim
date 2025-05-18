@@ -16,9 +16,9 @@ public struct ChoiceOption
 
     [Header("Choice Button Properties")]
     [TextArea] [SerializeField] private string _choicePrompt;   // 
-    [SerializeField] private Vector2 _buttonLocalPosition;      // 
-    [SerializeField] private Vector2 _buttonDimensions;         // 
-    [SerializeField] private Vector2 _buttonLocalScale;         // 
+    [SerializeField] private ToggledField<Vector2> _localPosition;  // Local position of button in space.
+    [SerializeField] private ToggledField<Vector2> _dimensions;     // Dimensions of button.
+    [SerializeField] private ToggledField<Vector2> _localScale;     // Lacl scale of button in space.
 
     #endregion
 
@@ -69,9 +69,9 @@ public struct ChoiceOption
         textBox.text = _choicePrompt;
 
         RectTransform buttonTransform = choiceButton.GetComponent<RectTransform>();
-        buttonTransform.anchoredPosition = _buttonLocalPosition;
-        buttonTransform.sizeDelta = _buttonDimensions;
-        buttonTransform.localScale = _buttonLocalScale;
+        if (_localPosition.IsEnabled) buttonTransform.anchoredPosition = _localPosition.Value;
+        if (_dimensions.IsEnabled) buttonTransform.sizeDelta = _dimensions.Value;
+        if (_localScale.IsEnabled) buttonTransform.localScale = _localScale.Value;
     }
 
     #endregion
