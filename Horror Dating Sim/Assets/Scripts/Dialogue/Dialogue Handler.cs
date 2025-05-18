@@ -53,6 +53,11 @@ public class DialogueHandler : MonoBehaviour
 
     #endregion
 
+    public int GetCurrentIndex()
+    {
+        return _currentLineIndex;
+    }
+
     #region Constants
 
     private static readonly string[] RICH_TEXT_WITHOUT_INDEX_SPACE = new string[] { "b", "i", "size", "color" }; // Rich text types that are not considered as individual characters
@@ -96,11 +101,6 @@ public class DialogueHandler : MonoBehaviour
     /// 
     /// </summary>
     public Action<string> OnChangeName { get => _onChangeName; set => _onChangeName = value; }
-
-    public int GetCurrentIndex()
-    {
-        return CurrentLineIndex;
-    }
 
     #endregion
 

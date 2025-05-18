@@ -601,106 +601,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 536760572}
   m_CullTransparentMesh: 1
---- !u!1 &542770607
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 542770608}
-  - component: {fileID: 542770609}
-  m_Layer: 0
-  m_Name: Animation Handler
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &542770608
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 542770607}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 860.44525, y: 622.6049, z: -16.115183}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &542770609
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 542770607}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9341bb31a36fa7546ab0ce539a67cde6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &575614262
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 575614264}
-  - component: {fileID: 575614263}
-  m_Layer: 0
-  m_Name: Dialogue Display
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &575614263
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 575614262}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f90b81d6056679d4291fed93c5c6c5a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _dialogueText: {fileID: 709031734}
-  _nameText: {fileID: 1984030831}
-  _proceedHolder: {fileID: 1623684418}
-  _choiceHolder: {fileID: 209400543}
-  _spriteCount: 5
-  _spriteSpawner:
-    _spawnerParent: {fileID: 2131740056}
-    _spawner: {fileID: 1495182458}
-  _buttonCount: 30
-  _buttonSpawner:
-    _spawnerParent: {fileID: 209400544}
-    _spawner: {fileID: 1495182460}
---- !u!4 &575614264
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 575614262}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1042.9603, y: 530.8156, z: -1.1717863}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &605408009
 GameObject:
   m_ObjectHideFlags: 0
@@ -712,7 +612,7 @@ GameObject:
   - component: {fileID: 605408011}
   - component: {fileID: 605408010}
   m_Layer: 0
-  m_Name: SceneHandler
+  m_Name: Scene Handler
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -922,7 +822,7 @@ GameObject:
   - component: {fileID: 697626965}
   - component: {fileID: 697626964}
   m_Layer: 0
-  m_Name: BackgroundHandler
+  m_Name: Background Handler
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1443,7 +1343,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _skits:
-  - {fileID: 11400000, guid: 1f15b8f870d634a44a1afbc7e3c0a3dd, type: 2}
+  - {fileID: 11400000, guid: 6085302089b323349864b9a84564d339, type: 2}
   _currentLineIndex: 0
   _currentSkitIndex: 0
   _timeBetweenCharacters: 0.05
@@ -1981,7 +1881,7 @@ GameObject:
   - component: {fileID: 1783997246}
   - component: {fileID: 1783997247}
   m_Layer: 0
-  m_Name: Dialogue DIsplay
+  m_Name: Dialogue Display
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2242,3 +2142,4 @@ SceneRoots:
   - {fileID: 1543587108}
   - {fileID: 605408011}
   - {fileID: 697626965}
+  - {fileID: 906522088}
