@@ -40,7 +40,7 @@ public class CharacterProfile : ScriptableObject
     public void Process()
     {
         // Cleans up the database
-        if (_spriteDatabase == null) _spriteDatabase = new Dictionary<CharacterImage.ImageType, List<Sprite>>();
+        if (!DatabaseIsLoaded()) _spriteDatabase = new Dictionary<CharacterImage.ImageType, List<Sprite>>();
         _spriteDatabase.Clear();
 
         // Processes all the sprites into their respective sprite types
@@ -101,6 +101,15 @@ public class CharacterProfile : ScriptableObject
             return -1;
 
         return _spriteDatabase.ContainsKey(type) ? _spriteDatabase[type].Count : -1;
+    }
+
+    /// <summary>
+    /// Returns true if the database is already loaded.
+    /// </summary>
+    /// <returns>True if the database is loaded already</returns>
+    public bool DatabaseIsLoaded()
+    {
+        return _spriteDatabase != null;
     }
 
     #endregion

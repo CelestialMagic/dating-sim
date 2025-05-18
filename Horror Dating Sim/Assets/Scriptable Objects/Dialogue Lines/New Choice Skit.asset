@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e159a59b25652ad45a34a6e1416aefbc, type: 3}
+  m_Name: New Choice Skit
+  m_EditorClassIdentifier: 
+  _spriteCount: 0
+  _questionLine:
+    _line: What should I do?
+    _speakerProperties:
+    - _speakerType: 1
+      _name: 
+      _profile: {fileID: 0}
+    _characterSpriteSettings: []
+  _choiceOptions:
+  - _skitFromChoice: {fileID: 11400000, guid: 6085302089b323349864b9a84564d339, type: 2}
+    _choicePrompt: Help
+    _buttonLocalPosition: {x: 100, y: 100}
+    _buttonDimensions: {x: 100, y: 20}
+    _buttonLocalScale: {x: 1, y: 1}
+  - _skitFromChoice: {fileID: 11400000, guid: 6085302089b323349864b9a84564d339, type: 2}
+    _choicePrompt: Hurt
+    _buttonLocalPosition: {x: 20, y: 60}
+    _buttonDimensions: {x: 100, y: 20}
+    _buttonLocalScale: {x: 1, y: 1}
+  - _skitFromChoice: {fileID: 11400000, guid: 6085302089b323349864b9a84564d339, type: 2}
+    _choicePrompt: Nothing
+    _buttonLocalPosition: {x: -80, y: -50}
+    _buttonDimensions: {x: 100, y: 20}
+    _buttonLocalScale: {x: 1, y: 1}
