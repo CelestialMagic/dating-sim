@@ -13,28 +13,35 @@ public class DialogueHandler : MonoBehaviour
     #region Serialized Fields
 
     [Header("Dialogue Handler Properties")]
-    [SerializeField] private DialogueSkit _script;                  // Dialogue script container
-    [SerializeField] private int _currentLineIndex = 0;             // Index of current line in dialogue script
+    [SerializeField] private Skit[] _skits;                         // List of skits to play in scene
+    [SerializeField] private int _currentLineIndex = 0;             // Index of current line in skit
+    [SerializeField] private int _currentSkitIndex = 0;             // Index of current skit
     [SerializeField] private float _timeBetweenCharacters = 0.1f;   // Default time in seconds between typing characters
 
-    [Space]
+    [Header("Dialogue Handler Events")]
     [SerializeField] private UnityEvent _onSkipDialogue = new UnityEvent();     // 
-    [SerializeField] private UnityEvent _onMoveToNextLine = new UnityEvent();   // 
-    [SerializeField] private UnityEvent _onProcessScript = new UnityEvent();    // 
-    [SerializeField] private UnityEvent _onFinishScript = new UnityEvent();     // 
+    [SerializeField] private UnityEvent _onBeginLine = new UnityEvent();   // 
+    [SerializeField] private UnityEvent _onEndLine = new UnityEvent();   // 
+    [SerializeField] private UnityEvent _onBeginSkit = new UnityEvent();    //
+    [SerializeField] private UnityEvent _onEndSkit = new UnityEvent();     // 
+    [SerializeField] private UnityEvent _onFinishAllSkits = new UnityEvent(); //
 
     #endregion
 
     #region Private Fields
 
-    private Coroutine _currentTextCoroutine; // Current coroutine playing current line
-    private bool _hasSkimmedLine = false;   // True if playr has skimmed over line
-    private bool _firstTime = true;         // True if this is the first time player has interacted with dialogue
+    private Skit _currentSkit { get => _skits[_currentSkitIndex]; } // 
+    private DialogueLine _currentLine { get => _currentSkit.GetLine(_currentLineIndex); } // 
+    private string _currentLineString { get => _currentLine.Line; } //
+    private int _skitCount { get => _skits.Length; } // 
+    private int _currentLineCount { get => _currentSkit.GetLineCount(); } // 
+
+    private Coroutine _currentTextCoroutine;    // Current coroutine playing current line
+    private bool _hasSkimmedLine = false;       // True if player has skimmed over line
+    private bool _firstTime;                    // True if this is the first time player has interacted with dialogue
 
     private Action<string> _onChangeDialogue;   // 
     private Action<string> _onChangeName;       //
-    private Action<int> _onChangeSpriteCount;   //
-    private Action<int> _onChangeChoiceCount;   //
 
     // Modes of rich text
     private enum RichText
@@ -43,15 +50,6 @@ public class DialogueHandler : MonoBehaviour
         MODIFYING_TEXT,
         STAND_ALONE_TEXT
     }
-
-    private DialogueLine _currentLine { get => _script == null || CurrentLineIndex < 0 || CurrentLineIndex >= _script.DialogueLines.Length ? null : _script.DialogueLines[CurrentLineIndex]; } // Returns the current line the dialogue handler is on.
-    private string _currentLineString { get => _currentLine == null ? "[Dialogue Line]" : _currentLine.Line; }  // Returns the current line the dialogue handler is on as a string.
-    private int _lineCount { get => _script == null ? 0 : _script.DialogueLines.Length; }                       // Returns the number of lines in the script.
-
-    // Index of current line in dialogue script.
-    // Will clamp the new value within the line count.
-    // Will return -1 if no script is available.
-    private int CurrentLineIndex { get => _script == null ? -1 : _currentLineIndex; set { if (_script != null) _currentLineIndex = Mathf.Clamp(value, 0, _lineCount); } }
 
     #endregion
 
@@ -72,17 +70,22 @@ public class DialogueHandler : MonoBehaviour
     /// <summary>
     /// 
     /// </summary>
-    public UnityEvent OnMoveToNextLine { get => _onMoveToNextLine; }
+    public UnityEvent OnBeginLine { get => _onBeginLine; }
 
     /// <summary>
     /// 
     /// </summary>
-    public UnityEvent OnProcessScript { get => _onProcessScript; }
+    public UnityEvent OnEndLine { get => _onEndLine; }
 
     /// <summary>
     /// 
     /// </summary>
-    public UnityEvent OnFinishScript { get => _onFinishScript; }
+    public UnityEvent OnBeginSkit { get => _onBeginSkit; }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public UnityEvent OnEndSkit { get => _onEndSkit; }
 
     /// <summary>
     /// 
@@ -106,16 +109,31 @@ public class DialogueHandler : MonoBehaviour
     // Sets up current index and starts line from there
     private void Start()
     {
-        CurrentLineIndex = _currentLineIndex;
-        if (_currentLineIndex == _lineCount) CurrentLineIndex--;
+        foreach (Skit skit in _skits)
+            skit.SetupSkit();
+
+        _firstTime = true;
         _hasSkimmedLine = true;
 
-        _onProcessScript.AddListener(() => _script.Process());
-        _onProcessScript?.Invoke();
+        if (_currentSkitIndex < 0)
+            _currentSkitIndex = 0;
+        else if (_currentSkitIndex >= _skitCount)
+            _currentSkitIndex = _skitCount - 1;
 
-        _onMoveToNextLine.AddListener(() => Debug.Log("Moved to Next Line"));
-        _onFinishScript.AddListener(() => Debug.Log("Finished Script"));
+        if (_currentLineIndex < 0)
+            _currentLineIndex = 0;
+        else if (_currentLineIndex >= _currentLineCount)
+            _currentLineIndex = _currentLineCount - 1;
+
+        _currentSkit.Process();
+        _onBeginSkit?.Invoke();
+
         _onChangeDialogue += s => Debug.Log("Played Gibber Sound Before Skip.");
+
+        _onEndLine.AddListener(() => Debug.Log("Ended Line"));
+        _onBeginLine.AddListener(() => Debug.Log("Started Line"));
+        _onEndSkit.AddListener(() => Debug.Log("Ended Skit"));
+        _onFinishAllSkits.AddListener(() => Debug.Log("Finished All Skits"));
     }
 
     #endregion
@@ -133,22 +151,43 @@ public class DialogueHandler : MonoBehaviour
             _onChangeDialogue(_currentLineString);
             _hasSkimmedLine = true;
             _onSkipDialogue?.Invoke();
+            _onEndLine?.Invoke();
         }
         else
         {
-            // Decides if this call will increment or not
-            if (_firstTime)
-                _firstTime = false;
-            else
-                CurrentLineIndex++;
-
-            // Either starts a new line or noves to new script
-            if (CurrentLineIndex == _lineCount)
-                _onFinishScript?.Invoke();
+            // Check if handler has finished all skits
+            if (_currentSkitIndex >= _skitCount)
+                _onFinishAllSkits?.Invoke();
             else
             {
-                _startLine();
-                _onMoveToNextLine?.Invoke();
+                // Decides if this call will increment or not
+                if (_firstTime)
+                    _firstTime = false;
+                else
+                    _currentLineIndex++;
+
+                // Check if handler is at last line of current skit
+                if (_currentLineIndex >= _currentLineCount)
+                {
+                    _onEndSkit?.Invoke();
+
+                    _currentSkitIndex++;
+
+                    // Check if handler has finished all skits
+                    if (_currentSkitIndex >= _skitCount)
+                        _onFinishAllSkits?.Invoke();
+
+                    // Provess new skit, reset variables, and play line
+                    else
+                    {
+                        _currentSkit.Process();
+                        _currentLineIndex = 0;
+                        _onBeginSkit?.Invoke();
+                        _startLine();
+                    }
+                }
+                else
+                    _startLine();
             }
         }
     }
@@ -161,82 +200,92 @@ public class DialogueHandler : MonoBehaviour
     private IEnumerator _typeLine()
     {
         string currentLineText = "";
-
         _onChangeDialogue(currentLineText);
 
-        for (int i = 0; i < _currentLineString.Length; i++)
-        {
-            string nextText = ""; // Sets up text to next be displayed
-            bool continueAdding = true;
-  
-            // Loop uses i as the starting index of the rich text modifier
-            while (continueAdding && i < _currentLineString.Length && _currentLineString[i] == '<')
-            {
-                int endingIndex = _currentLineString.IndexOf('>', i); // Find the ending index of the rich text
+        // Initialization of loop and storage variables
+        int i = 0;
+        int lineLength = _currentLineString.Length;
+        string nextText = "";
 
-                if (endingIndex < 0) // If no brackets are found, break out of loop;
-                    break;
+        void _addNormalCharacter()
+        {
+            nextText += _currentLineString[i]; // Inserts next character
+            i++;
+        }
+
+        while (i < lineLength)
+        {
+            nextText = ""; // Sets up text to next be displayed
+
+            // Adds character if current character is not potential beginning of rich text
+            if (_currentLineString[i] != '<')
+                _addNormalCharacter();
+
+            // Checks for rich text
+            else
+            {
+                int endingIndex = _currentLineString.IndexOf('>', i);
+
+                // Adds character if rich text is not complete
+                if (endingIndex < 0)
+                    _addNormalCharacter();
+
+                // Checks for valid rich text
                 else
                 {
-                    string potentialRichText = _currentLineString.Substring(i, endingIndex + 1 - i); // Potential rich text modifier
-                    string richTextContents = potentialRichText.Substring(1, potentialRichText.Length - 2); // Contents of potential modifier
+                    RichText textType = RichText.NOT_RICH_TEXT; // Records type of text analyzed
 
-                    // Checks what type of rich text it is or if it isn't rich text at all
-                    RichText textType = RichText.NOT_RICH_TEXT;
-                    if (Array.IndexOf(RICH_TEXT_WITHOUT_INDEX_SPACE, richTextContents) >= 0)
-                        textType = RichText.MODIFYING_TEXT;
-                    else if (Array.IndexOf(RICH_TEXT_WITH_INDEX_SPACE, richTextContents) >= 0)
-                        textType = RichText.STAND_ALONE_TEXT;
-                    else
+                    while (i < lineLength && endingIndex >= 0 && _currentLineString[i] == '<')
                     {
-                        string endTest = richTextContents.Substring(1);
+                        string potentialRichText = _currentLineString.Substring(i, endingIndex + 1 - i); // Potential rich text modifier
+                        string richTextContents = potentialRichText.Substring(1, potentialRichText.Length - 2); // Contents of potential modifier
 
-                        if (Array.IndexOf(RICH_TEXT_WITHOUT_INDEX_SPACE, endTest) >= 0)
-                            textType = RichText.MODIFYING_TEXT;
-                        else if (Array.IndexOf(RICH_TEXT_WITH_INDEX_SPACE, endTest) >= 0)
-                            textType = RichText.STAND_ALONE_TEXT;
-                        else
+                        // Finds out what type of text is being read
+                        textType = RichText.NOT_RICH_TEXT;
+
+                        bool _analyzeTextType(string textContents)
+                        {
+                            if (Array.IndexOf(RICH_TEXT_WITHOUT_INDEX_SPACE, textContents) >= 0)
+                            {
+                                textType = RichText.MODIFYING_TEXT;
+                                return true;
+                            }
+                            else if (Array.IndexOf(RICH_TEXT_WITH_INDEX_SPACE, textContents) >= 0)
+                            {
+                                textType = RichText.STAND_ALONE_TEXT;
+                                return true;
+                            }
+                            else
+                                return false;
+                        }
+
+                        if (!_analyzeTextType(richTextContents) && !_analyzeTextType(richTextContents.Substring(1)))
                         {
                             int equalIndex = richTextContents.IndexOf('=');
-
-                            string startTest = richTextContents.Substring(0, equalIndex >= 0 ? equalIndex : 0).Trim();
-
-                            if (Array.IndexOf(RICH_TEXT_WITHOUT_INDEX_SPACE, startTest) >= 0)
-                                textType = RichText.MODIFYING_TEXT;
-                            else if (Array.IndexOf(RICH_TEXT_WITH_INDEX_SPACE, startTest) >= 0)
-                                textType = RichText.STAND_ALONE_TEXT;
+                            _analyzeTextType(richTextContents.Substring(0, equalIndex >= 0 ? equalIndex : 0).Trim());
                         }
+
+                        // Adds to nextText based on text type
+                        if (textType == RichText.STAND_ALONE_TEXT)
+                        {
+                            nextText += potentialRichText;
+                            i = endingIndex + 1;
+                            endingIndex = -1;
+                        }
+                        else if (textType == RichText.MODIFYING_TEXT)
+                        {
+                            nextText += potentialRichText;
+                            i = endingIndex + 1;
+                            endingIndex = i >= lineLength ? -1 : _currentLineString.IndexOf('>', i);
+                        }
+                        else if (textType == RichText.NOT_RICH_TEXT)
+                            _addNormalCharacter();
                     }
 
-                    if (textType == RichText.STAND_ALONE_TEXT)
-                    {
-                        nextText += potentialRichText;
-                        i = endingIndex;
-                        continueAdding = false;
-                    }
-                    else if (textType == RichText.MODIFYING_TEXT)
-                    {
-                        nextText += potentialRichText;
-                        i = endingIndex + 1;
-                    }
-                    else if (textType == RichText.NOT_RICH_TEXT)
-                    {
-                        break;
-                    }
+                    // Checks if previous text type was a modifier
+                    if (textType == RichText.MODIFYING_TEXT && i < lineLength)
+                        _addNormalCharacter();
                 }
-            }
-
-            // Will add a character if previous loop permits it
-            if (continueAdding && i < _currentLineString.Length)
-            {
-                // Process a whitespace character as a single character
-                if (i < _currentLineString.Length - 1 && _currentLineString[i] == '\\')
-                {
-                    nextText += _currentLineString.Substring(i, 2);
-                    i++;
-                }
-                else
-                    nextText += _currentLineString[i]; // Inserts next character
             }
 
             currentLineText += nextText;
@@ -245,14 +294,13 @@ public class DialogueHandler : MonoBehaviour
             yield return new WaitForSeconds(_timeBetweenCharacters); // Creates delay
         }
 
-        _hasSkimmedLine = true; // Autmatically marks the line skimmed when the line finishes typing
+        _hasSkimmedLine = true; // Automatically marks the line skimmed when the line finishes typing
+        _onEndLine?.Invoke();
     }
 
     // Starts the current line
     private void _startLine()
     {
-        if (CurrentLineIndex >= _script.DialogueLines.Length) return;
-
         // Resets Variables
         if (_currentTextCoroutine != null) StopCoroutine(_currentTextCoroutine);
         _currentTextCoroutine = null;
@@ -260,9 +308,11 @@ public class DialogueHandler : MonoBehaviour
 
         // Sets up dialogue box display
         _onChangeName(_currentLine.SpeakerNamesDisplay);
-        _currentLine.ToggleCharacterSprites(CharacterSpriteSpawner.Instance.SpawnedObjects);
+        _currentLine.ToggleCharacterSprites(Skit.SPRITE_SPAWNER.GetAllSpawned());
 
         _currentTextCoroutine = StartCoroutine(_typeLine()); // Starts line typing
+
+        _onBeginLine?.Invoke();
     }
 
     #endregion

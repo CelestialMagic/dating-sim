@@ -30,13 +30,13 @@ public class SpeakerPropertiesDrawer : PropertyDrawer
         EditorGUI.indentLevel = 0;
 
         float variableWidth = position.width / 2;
-        float prefixWidth = variableWidth * 3 / 16;
-        float fieldWidth = variableWidth * 13 / 16;
+        float typePrefixWidth = variableWidth * 5 / 16;
+        float typeFieldWidth = variableWidth / 2;
         float offsetSize = 10;
 
         SerializedProperty speakerType = property.FindPropertyRelative("_speakerType");
-        EditorGUI.PrefixLabel(new Rect(position.x, position.y, prefixWidth - offsetSize, position.height), new GUIContent(speakerType.displayName));
-        EditorGUI.PropertyField(new Rect(position.x + prefixWidth, position.y, fieldWidth - offsetSize, position.height), speakerType, GUIContent.none);
+        EditorGUI.PrefixLabel(new Rect(position.x, position.y, typePrefixWidth - offsetSize, position.height), new GUIContent(speakerType.displayName));
+        EditorGUI.PropertyField(new Rect(position.x + typePrefixWidth, position.y, typeFieldWidth - offsetSize, position.height), speakerType, GUIContent.none);
 
         SerializedProperty revealedProperty = null;
 
@@ -51,10 +51,13 @@ public class SpeakerPropertiesDrawer : PropertyDrawer
                 break;
         }
 
+        float valuePrefixWidth = variableWidth * 3 / 16;
+        float valueFieldWidth = variableWidth * 13 / 16;
+
         if (revealedProperty != null)
         {
-            EditorGUI.PrefixLabel(new Rect(position.x + variableWidth, position.y, prefixWidth - offsetSize, position.height), new GUIContent(revealedProperty.displayName));
-            EditorGUI.PropertyField(new Rect(position.x + variableWidth + prefixWidth, position.y, fieldWidth - offsetSize, position.height), revealedProperty, GUIContent.none);
+            EditorGUI.PrefixLabel(new Rect(position.x + variableWidth, position.y, valuePrefixWidth - offsetSize, position.height), new GUIContent(revealedProperty.displayName));
+            EditorGUI.PropertyField(new Rect(position.x + variableWidth + valuePrefixWidth, position.y, valueFieldWidth - offsetSize, position.height), revealedProperty, GUIContent.none);
         }
 
         EditorGUI.indentLevel = indent;

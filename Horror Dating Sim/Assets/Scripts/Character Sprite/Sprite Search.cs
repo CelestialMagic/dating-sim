@@ -27,6 +27,7 @@ public struct SpriteSearch
     /// <param name="spriteImage">Image reference to change sprite</param>
     public void ChangeImage(Image spriteImage)
     {
+        if (!_profile.DatabaseIsLoaded()) _profile.Process();
         spriteImage.sprite = _profile.GetSprite(_imageType, _version);
     }
 }

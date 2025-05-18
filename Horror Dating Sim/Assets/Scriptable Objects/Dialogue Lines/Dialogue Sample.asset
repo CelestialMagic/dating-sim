@@ -117,9 +117,7 @@ MonoBehaviour:
           _profile: {fileID: 0}
           _imageType: 0
           _version: 1
-  - _line: 'Can we go to the cafeteria?
-
-      We need\tmore sustenance...'
+  - _line: "We need more\tsustenance..."
     _speakerProperties:
     - _speakerType: 2
       _name: 

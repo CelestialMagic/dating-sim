@@ -27,7 +27,7 @@ public struct SpriteSettings
     /// Updates the given sprite with its parameters.
     /// </summary>
     /// <param name="sprites">character sprite list to modify</param>
-    public void UpdateCharacterSprite(CharacterSprite[] sprites)
+    public void UpdateCharacterSprites(CharacterSprite[] sprites)
     {
         if (_spriteIndex < 0 || _spriteIndex >= sprites.Length)
             return;

@@ -58,6 +58,8 @@ public class DialogueLine
 
         for (int i = 0; i < indexLength; i++)
             _speakerNames[i] = _speakerProperties[i].GetName();
+
+        ProcessSpeakerNamesDisplay();
     }
 
     /// <summary>
@@ -78,13 +80,13 @@ public class DialogueLine
     /// 
     /// </summary>
     /// <param name="characterSprites"></param>
-    public void ToggleCharacterSprites(List<CharacterSprite> characterSprites)
+    public void ToggleCharacterSprites(CharacterSprite[] characterSprites)
     {
         int i = 0;
 
         while (i < _characterSpriteSettings.Length)
         {
-            _characterSpriteSettings[i].UpdateCharacterSprite(characterSprites.ToArray());
+            _characterSpriteSettings[i].UpdateCharacterSprites(characterSprites);
             i++;
         }
     }

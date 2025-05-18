@@ -32,11 +32,6 @@ public abstract class Spawner<T> : MonoBehaviour
     /// </summary>
     public List<T> SpawnedObjects { get => _spawnedObjects; }
 
-    /// <summary>
-    /// 
-    /// </summary>
-    public Action<T> DefaultSpawnSetUp { get => _defaultSpawnSetUp; set => _defaultSpawnSetUp = value; }
-
     #endregion
 
     // Initializes spawner and sets up variables
@@ -82,8 +77,7 @@ public abstract class Spawner<T> : MonoBehaviour
 
             _setupSpawned(newObject, component);
 
-            if (DefaultSpawnSetUp != null)
-                DefaultSpawnSetUp.Invoke(component);
+            //if (_defaultSpawnSetUp != null) _defaultSpawnSetUp.Invoke(component);
 
             Transform objTransform = newObject.transform;
             if (parent != null) objTransform.SetParent(parent);
@@ -120,7 +114,7 @@ public abstract class Spawner<T> : MonoBehaviour
 
     #region Protected Methods
 
-    //
+    // Sets up the traits of a newly spawned object
     protected abstract void _setupSpawned(GameObject spawnedObject, T component);
 
     #endregion
