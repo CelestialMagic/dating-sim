@@ -6,13 +6,13 @@ using UnityEngine;
 public class TitleCard : MonoBehaviour
 {
     [SerializeField]
-    private CanvasGroup panel; 
+    protected CanvasGroup panel; 
 
     [SerializeField]
-    private DialogueHandler dialogueHandler; 
+    protected DialogueHandler dialogueHandler; 
 
     [SerializeField]
-    private float startingAlpha, endingAlpha, fadeRate;
+    protected float startingAlpha, endingAlpha, fadeRate;
 
     private bool startFade = false; 
 
@@ -24,12 +24,12 @@ public class TitleCard : MonoBehaviour
     }
 
 //FadeAway() is called using Update
-    private void Update(){
+    protected virtual void Update(){
         FadeAway(); 
     }
 
 //FadeAway() slowly changes the alpha value of the canvas group 
-   private void FadeAway(){
+   protected virtual void FadeAway(){
         if(startFade){
             startingAlpha = Mathf.MoveTowards(startingAlpha, endingAlpha, fadeRate * Time.deltaTime);
             panel.alpha = startingAlpha;
