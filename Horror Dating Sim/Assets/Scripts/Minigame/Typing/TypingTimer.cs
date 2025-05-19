@@ -8,31 +8,31 @@ public class TypingTimer : MonoBehaviour
 {
 
     [SerializeField]
-    private TMP_Text timerText; 
+    protected TMP_Text timerText; 
 
     [SerializeField]
-    private float originalTime; 
-    private float currentTime;
+    protected float originalTime; 
+    protected float currentTime;
 
-    private bool stopTimer = false;
+    protected bool stopTimer = false;
 
     [SerializeField]
     private TypingManager typingManager; 
 
     [SerializeField]
-    private GameObject lostCanvas, minigameCanvas; 
+    protected GameObject lostCanvas, minigameCanvas; 
 
     [SerializeField]
-    private string nextScene, resetScene;
+    protected string nextScene, resetScene;
 
     // Start is called before the first frame update
-    void Start()
+    protected void Start()
     {
         currentTime = originalTime;
         UpdateText();
     }
 
-    private void SetCanvasVisibility(GameObject canvas, bool value){
+    protected void SetCanvasVisibility(GameObject canvas, bool value){
         canvas.SetActive(value);
 
     }
@@ -40,12 +40,12 @@ public class TypingTimer : MonoBehaviour
     
 
 
-    private void UpdateText(){
+    protected void UpdateText(){
         timerText.text = $"{Mathf.FloorToInt(currentTime)}";
     }
 
     // Update is called once per frame
-    void Update()
+    protected virtual void Update()
     {
         if(stopTimer == false){
             currentTime -= Time.deltaTime;
