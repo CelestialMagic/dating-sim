@@ -12,4 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cf421ec46471504c97a379dd06eb2a7, type: 3}
   m_Name: Laughing Jack
   m_EditorClassIdentifier: 
-  _characterName: Laughing Jack
+  _characterName: Jane
+  _characterImages:
+  - _spriteType: 0
+    _imageSprite: {fileID: 0}
