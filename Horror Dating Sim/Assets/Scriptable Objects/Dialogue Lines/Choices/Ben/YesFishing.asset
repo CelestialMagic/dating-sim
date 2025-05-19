@@ -28,10 +28,10 @@ MonoBehaviour:
         _value: 1
       IsRevealed:
         _isEnabled: 1
-        _value: 1
+        _value: 0
       HasArrived:
         _isEnabled: 1
-        _value: 1
+        _value: 0
       StartingAnchorPosition:
         _isEnabled: 0
         _value: {x: 0, y: 0}

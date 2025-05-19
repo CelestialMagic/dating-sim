@@ -49,10 +49,10 @@ MonoBehaviour:
     _choicePrompt: No, I haven't.
     _localPosition:
       _isEnabled: 1
-      _value: {x: 50, y: -100}
+      _value: {x: -75, y: 100}
     _dimensions:
-      _isEnabled: 0
-      _value: {x: 0, y: 0}
+      _isEnabled: 1
+      _value: {x: 300, y: 100}
     _localScale:
       _isEnabled: 0
       _value: {x: 0, y: 0}
@@ -60,10 +60,10 @@ MonoBehaviour:
     _choicePrompt: Yeah, once or twice.
     _localPosition:
       _isEnabled: 1
-      _value: {x: -100, y: 50}
+      _value: {x: -75, y: -50}
     _dimensions:
-      _isEnabled: 0
-      _value: {x: 400, y: 400}
+      _isEnabled: 1
+      _value: {x: 300, y: 100}
     _localScale:
       _isEnabled: 0
       _value: {x: 0, y: 0}
