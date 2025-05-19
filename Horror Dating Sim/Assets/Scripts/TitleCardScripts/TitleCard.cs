@@ -14,7 +14,7 @@ public class TitleCard : MonoBehaviour
     [SerializeField]
     protected float startingAlpha, endingAlpha, fadeRate;
 
-    private bool startFade = false; 
+    protected bool startFade = false; 
 
 //Sets the FadeOnClick() value to true
     public void FadeOnClick(){

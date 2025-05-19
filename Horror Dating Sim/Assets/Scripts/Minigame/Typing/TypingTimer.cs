@@ -79,7 +79,13 @@ public class TypingTimer : MonoBehaviour
         stopTimer = true; 
     }
 
-    public void ResetScene(){
+    public void StartTimer()
+    {
+        stopTimer = false; 
+    }
+
+    public void ResetScene()
+    {
         SceneManager.LoadScene(resetScene);
     }
 

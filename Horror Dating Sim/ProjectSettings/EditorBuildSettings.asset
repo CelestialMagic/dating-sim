@@ -44,4 +44,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Library Minigame.unity
     guid: c6025e78c24914729b181cc86d427906
+  - enabled: 1
+    path: Assets/Jane Act 1 Intro.unity
+    guid: 503789211cfbe4a67a781d46f096ef28
   m_configObjects: {}
