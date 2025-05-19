@@ -1874,6 +1874,8 @@ MonoBehaviour:
   _backgroundHandler: {fileID: 697626964}
   _skits:
   - {fileID: 11400000, guid: 6d267e46c779c420c81b3abab87e5395, type: 2}
+  - {fileID: 11400000, guid: 1bbf4dae1e9df46529a8b92b2cbaaeee, type: 2}
+  - {fileID: 11400000, guid: 3491e91a744a942fe80a85bdca7550bf, type: 2}
   _currentLineIndex: 0
   _currentSkitIndex: 0
   _timeBetweenCharacters: 0.05

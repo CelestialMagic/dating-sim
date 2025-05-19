@@ -10,216 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a0315219a1dc2de42851a0d312cdb6c0, type: 3}
-  m_Name: JaneAct1ScriptIntro
+  m_Name: Jane Act 1 End
   m_EditorClassIdentifier: 
   _spriteCount: 1
   _dialogueLines:
   - hasBackground: 0
     background: {fileID: 0}
-    _line: (First day of the new quarter)
-    _speakerProperties:
-    - _speakerType: 0
-      _name: 
-      _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
-    _characterSpriteSettings: []
-  - hasBackground: 0
-    background: {fileID: 0}
-    _line: '(Man, school''s always such a drag. Dreary assignments, boring lectures.
-      I find myself barely smiling anymore.)
-
-'
-    _speakerProperties:
-    - _speakerType: 1
-      _name: 
-      _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
-    _characterSpriteSettings: []
-  - hasBackground: 0
-    background: {fileID: 0}
-    _line: "(Seems like everyday there\u2019s a test to study for, a project to have
-      meetings on, or a new paper to write. I\u2019m not sure if I\u2019ll survive
-      another quarter of this.)\n"
-    _speakerProperties:
-    - _speakerType: 1
-      _name: 
-      _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
-    _characterSpriteSettings: []
-  - hasBackground: 0
-    background: {fileID: 0}
-    _line: "(Today I\u2019m at the library. I decided that for my last GE botany
-      would suffice. Who would\u2019ve thought that you needed so many books for
-      botany?)\n"
-    _speakerProperties:
-    - _speakerType: 1
-      _name: 
-      _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
-    _characterSpriteSettings: []
-  - hasBackground: 0
-    background: {fileID: 0}
-    _line: "(I\u2019ve got most of my books now, I just need to find the last one-)\n"
-    _speakerProperties:
-    - _speakerType: 1
-      _name: 
-      _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
-    _characterSpriteSettings: []
-  - hasBackground: 0
-    background: {fileID: 0}
-    _line: While going down the aisle, you accidentally bump into someone.
-    _speakerProperties:
-    - _speakerType: 0
-      _name: 
-      _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
-    _characterSpriteSettings:
-    - _spriteIndex: 0
-      IsSubject:
-        _isEnabled: 1
-        _value: 0
-      IsRevealed:
-        _isEnabled: 1
-        _value: 0
-      HasArrived:
-        _isEnabled: 1
-        _value: 1
-      StartingAnchorPosition:
-        _isEnabled: 0
-        _value: {x: 0, y: 0}
-      StartingDimensions:
-        _isEnabled: 1
-        _value: {x: 750, y: 900}
-      ImageSearchParameters:
-        _isEnabled: 1
-        _value:
-          _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
-          _imageType: 0
-          _version: 1
-  - hasBackground: 0
-    background: {fileID: 0}
-    _line: Owee!
-    _speakerProperties:
-    - _speakerType: 2
-      _name: 
-      _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
-    _characterSpriteSettings:
-    - _spriteIndex: 0
-      IsSubject:
-        _isEnabled: 1
-        _value: 0
-      IsRevealed:
-        _isEnabled: 1
-        _value: 0
-      HasArrived:
-        _isEnabled: 1
-        _value: 1
-      StartingAnchorPosition:
-        _isEnabled: 0
-        _value: {x: 0, y: 0}
-      StartingDimensions:
-        _isEnabled: 1
-        _value: {x: 750, y: 900}
-      ImageSearchParameters:
-        _isEnabled: 1
-        _value:
-          _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
-          _imageType: 0
-          _version: 1
-  - hasBackground: 0
-    background: {fileID: 0}
-    _line: "It\u2019s\u2026 Jane! She\u2019s been a classmate of yours for a few
-      classes, but you\u2019ve never really had a chance to talk with each other."
-    _speakerProperties:
-    - _speakerType: 0
-      _name: 
-      _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
-    _characterSpriteSettings:
-    - _spriteIndex: 0
-      IsSubject:
-        _isEnabled: 1
-        _value: 0
-      IsRevealed:
-        _isEnabled: 1
-        _value: 1
-      HasArrived:
-        _isEnabled: 1
-        _value: 1
-      StartingAnchorPosition:
-        _isEnabled: 0
-        _value: {x: 0, y: 0}
-      StartingDimensions:
-        _isEnabled: 1
-        _value: {x: 750, y: 900}
-      ImageSearchParameters:
-        _isEnabled: 1
-        _value:
-          _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
-          _imageType: 0
-          _version: 1
-  - hasBackground: 0
-    background: {fileID: 0}
-    _line: "It\u2019s the first time you\u2019ve met her outside of class, and finally
-      an opportunity to talk! But she seems to have some pretty bad bags under her
-      eyes, is she getting enough sleep?"
-    _speakerProperties:
-    - _speakerType: 0
-      _name: 
-      _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
-    _characterSpriteSettings:
-    - _spriteIndex: 0
-      IsSubject:
-        _isEnabled: 1
-        _value: 0
-      IsRevealed:
-        _isEnabled: 1
-        _value: 1
-      HasArrived:
-        _isEnabled: 1
-        _value: 1
-      StartingAnchorPosition:
-        _isEnabled: 0
-        _value: {x: 0, y: 0}
-      StartingDimensions:
-        _isEnabled: 1
-        _value: {x: 750, y: 900}
-      ImageSearchParameters:
-        _isEnabled: 1
-        _value:
-          _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
-          _imageType: 0
-          _version: 1
-  - hasBackground: 0
-    background: {fileID: 0}
-    _line: "You both apologize and begin helping each other pick up the scattered
-      books. You notice that she had a few hunting books and a journal, but also
-      a book with a white lily drawn on it. It\u2019s the book you\u2019ve been looking
-      for."
-    _speakerProperties:
-    - _speakerType: 0
-      _name: 
-      _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
-    _characterSpriteSettings:
-    - _spriteIndex: 0
-      IsSubject:
-        _isEnabled: 1
-        _value: 0
-      IsRevealed:
-        _isEnabled: 1
-        _value: 1
-      HasArrived:
-        _isEnabled: 1
-        _value: 1
-      StartingAnchorPosition:
-        _isEnabled: 0
-        _value: {x: 0, y: 0}
-      StartingDimensions:
-        _isEnabled: 1
-        _value: {x: 750, y: 900}
-      ImageSearchParameters:
-        _isEnabled: 1
-        _value:
-          _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
-          _imageType: 0
-          _version: 1
-  - hasBackground: 0
-    background: {fileID: 0}
-    _line: "Thanks for the help, stranger. I don\u2019t believe I caught a name?"
+    _line: ...
     _speakerProperties:
     - _speakerType: 2
       _name: 
@@ -249,7 +46,7 @@ MonoBehaviour:
           _version: 1
   - hasBackground: 0
     background: {fileID: 0}
-    _line: What a charming little name! Mines LJ.
+    _line: ...
     _speakerProperties:
     - _speakerType: 2
       _name: 
@@ -279,11 +76,12 @@ MonoBehaviour:
           _version: 1
   - hasBackground: 0
     background: {fileID: 0}
-    _line: LJ? I thought your name was Jane?
+    _line: Oh silly me, you need this book for your class right? Here, take it. You
+      need it more than I do after all.
     _speakerProperties:
-    - _speakerType: 1
+    - _speakerType: 2
       _name: 
-      _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+      _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
     _characterSpriteSettings:
     - _spriteIndex: 0
       IsSubject:
@@ -305,11 +103,42 @@ MonoBehaviour:
         _isEnabled: 1
         _value:
           _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
-          _imageType: 0
+          _imageType: 1
           _version: 1
   - hasBackground: 0
     background: {fileID: 0}
-    _line: Well the J is for Jane. The L stands for something quite funny!
+    _line: Oh, thank you!
+    _speakerProperties:
+    - _speakerType: 1
+      _name: 
+      _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
+    _characterSpriteSettings:
+    - _spriteIndex: 0
+      IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 1
+        _value: {x: 750, y: 900}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
+          _imageType: 1
+          _version: 1
+  - hasBackground: 0
+    background: {fileID: 0}
+    _line: Looking around, you notice that your conversation seems to be disturbing
+      your fellow students, and more importantly, the librarian.
     _speakerProperties:
     - _speakerType: 2
       _name: 
@@ -325,6 +154,279 @@ MonoBehaviour:
       HasArrived:
         _isEnabled: 1
         _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 1
+        _value: {x: 750, y: 900}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
+          _imageType: 1
+          _version: 1
+  - hasBackground: 0
+    background: {fileID: 0}
+    _line: Well you have had quite the pleasant conversation. How about we continue
+      this later somewhere else?
+    _speakerProperties:
+    - _speakerType: 2
+      _name: 
+      _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
+    _characterSpriteSettings:
+    - _spriteIndex: 0
+      IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 1
+        _value: {x: 750, y: 900}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
+          _imageType: 1
+          _version: 1
+  - hasBackground: 0
+    background: {fileID: 0}
+    _line: '!!!'
+    _speakerProperties:
+    - _speakerType: 1
+      _name: 
+      _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
+    _characterSpriteSettings:
+    - _spriteIndex: 0
+      IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 1
+        _value: {x: 750, y: 900}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
+          _imageType: 1
+          _version: 1
+  - hasBackground: 0
+    background: {fileID: 0}
+    _line: "Y\u2019know, the county fair is in town this week. How about we meet
+      up tomorrow around 4:00 pm? You should be out of your classes by then."
+    _speakerProperties:
+    - _speakerType: 2
+      _name: 
+      _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
+    _characterSpriteSettings:
+    - _spriteIndex: 0
+      IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 1
+        _value: {x: 750, y: 900}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
+          _imageType: 1
+          _version: 1
+  - hasBackground: 0
+    background: {fileID: 0}
+    _line: "Um\u2026 Sure!"
+    _speakerProperties:
+    - _speakerType: 1
+      _name: 
+      _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
+    _characterSpriteSettings:
+    - _spriteIndex: 0
+      IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 1
+        _value: {x: 750, y: 900}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
+          _imageType: 1
+          _version: 1
+  - hasBackground: 0
+    background: {fileID: 0}
+    _line: "Then it\u2019s a date! See you then."
+    _speakerProperties:
+    - _speakerType: 2
+      _name: 
+      _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
+    _characterSpriteSettings:
+    - _spriteIndex: 0
+      IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 1
+        _value: {x: 750, y: 900}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
+          _imageType: 1
+          _version: 1
+  - hasBackground: 0
+    background: {fileID: 0}
+    _line: "LJ hands you the textbook before skipping down the aisle. Seems she\u2019s
+      quite happy with the outcome."
+    _speakerProperties:
+    - _speakerType: 0
+      _name: 
+      _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
+    _characterSpriteSettings:
+    - _spriteIndex: 0
+      IsSubject:
+        _isEnabled: 1
+        _value: 0
+      IsRevealed:
+        _isEnabled: 1
+        _value: 0
+      HasArrived:
+        _isEnabled: 1
+        _value: 0
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 1
+        _value: {x: 750, y: 900}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
+          _imageType: 1
+          _version: 1
+  - hasBackground: 0
+    background: {fileID: 0}
+    _line: "That\u2019s one way of getting a date, as awkward as it was."
+    _speakerProperties:
+    - _speakerType: 0
+      _name: 
+      _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
+    _characterSpriteSettings:
+    - _spriteIndex: 0
+      IsSubject:
+        _isEnabled: 1
+        _value: 0
+      IsRevealed:
+        _isEnabled: 1
+        _value: 0
+      HasArrived:
+        _isEnabled: 1
+        _value: 0
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 1
+        _value: {x: 750, y: 900}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
+          _imageType: 1
+          _version: 1
+  - hasBackground: 0
+    background: {fileID: 0}
+    _line: (The county fair huh? Guess she did say she liked clowns.)
+    _speakerProperties:
+    - _speakerType: 1
+      _name: 
+      _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
+    _characterSpriteSettings:
+    - _spriteIndex: 0
+      IsSubject:
+        _isEnabled: 1
+        _value: 0
+      IsRevealed:
+        _isEnabled: 1
+        _value: 0
+      HasArrived:
+        _isEnabled: 1
+        _value: 0
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 1
+        _value: {x: 750, y: 900}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
+          _imageType: 1
+          _version: 1
+  - hasBackground: 0
+    background: {fileID: 0}
+    _line: (Wait, how did she know when my classes ended?)
+    _speakerProperties:
+    - _speakerType: 1
+      _name: 
+      _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
+    _characterSpriteSettings:
+    - _spriteIndex: 0
+      IsSubject:
+        _isEnabled: 1
+        _value: 0
+      IsRevealed:
+        _isEnabled: 1
+        _value: 0
+      HasArrived:
+        _isEnabled: 1
+        _value: 0
       StartingAnchorPosition:
         _isEnabled: 0
         _value: {x: 0, y: 0}
