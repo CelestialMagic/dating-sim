@@ -13,13 +13,14 @@ public class ChoiceSkit : Skit
 
     [Header("Choice Skit Properties")]
     [SerializeField] private DialogueLine _questionLine;    // 
+    [Space]
     [SerializeField] private ChoiceOption[] _choiceOptions; // 
 
     #endregion
 
     #region Private Fields
 
-    private int _choiceIndex = -1;  //
+    private ChoiceOption _selectedOption;
 
     #endregion
 
@@ -40,12 +41,13 @@ public class ChoiceSkit : Skit
     /// <param name="index">Index of the dialogue line in skit.</param>
     public override DialogueLine GetLine(int index)
     {
+        //return index == 0 ? _questionLine : _selectedOption == null ? null : _selectedOption.GetLine(index - 1);
         if (index == 0)
             return _questionLine;
-        else if (_choiceIndex >= 0 && _choiceIndex < _choiceOptions.Length)
-            return _choiceOptions[_choiceIndex].GetLine(index - 1);
-        else
+        else if (_selectedOption == null)
             return null;
+        else
+            return _selectedOption.GetLine(index - 1);
     }
 
     /// <summary>
@@ -54,10 +56,7 @@ public class ChoiceSkit : Skit
     /// <returns>Number of lines in skit</returns>
     public override int GetLineCount()
     {
-        if (_choiceIndex < 0 || _choiceIndex >= _choiceOptions.Length)
-            return 1;
-        else
-            return _choiceOptions[_choiceIndex].GetLineCount();
+        return 1 + (_selectedOption == null ? 0 : _selectedOption.GetLineCount());
     }
 
     /// <summary>
@@ -67,6 +66,7 @@ public class ChoiceSkit : Skit
     public override void SetupSkit()
     {
         base.SetupSkit();
+        
         foreach (ChoiceOption option in _choiceOptions)
             option.SetupChoice();
 
@@ -81,7 +81,7 @@ public class ChoiceSkit : Skit
     {
         base.Process();
 
-        _choiceIndex = -1;
+        _selectedOption = null;
 
         int choiceCount = _choiceOptions.Length;
         CHOICE_SPAWNER.SetSpawnedCount(choiceCount);
@@ -90,27 +90,19 @@ public class ChoiceSkit : Skit
             Button choiceButton = CHOICE_SPAWNER.GetSpawned(i);
             _choiceOptions[i].ModifyButton(choiceButton);
             choiceButton.onClick.RemoveAllListeners();
-            choiceButton.onClick.AddListener(() => ChooseChoice(i));
+
+            int buttonIndex = i;
+            choiceButton.onClick.AddListener(() => _selectedOption = _choiceOptions[buttonIndex]);
+            choiceButton.onClick.AddListener(() => _selectedOption.ProcessChoice());
+            choiceButton.onClick.AddListener(() => DIALOGUE_DISPLAY.ToggleChoiceHolder(false));
+            choiceButton.onClick.AddListener(() => DIALOGUE_DISPLAY.ToggleProceedHolder(true));
+            choiceButton.onClick.AddListener(() => DIALOGUE_HANDLER.ProceedWithText());
         }
+
+        DIALOGUE_HANDLER.OnEndLine.AddListener(() => DIALOGUE_DISPLAY.ToggleProceedHolder(false));
+        DIALOGUE_HANDLER.OnEndLine.AddListener(() => DIALOGUE_DISPLAY.ToggleChoiceHolder(true));
 
         _questionLine.ProcessSpeakerNames();
-    }
-
-    #endregion
-
-    #region Public Methods
-
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <param name="newIndex"></param>
-    public void ChooseChoice(int newIndex)
-    {
-        if (newIndex >= 0 && newIndex < _choiceOptions.Length)
-        {
-            _choiceIndex = newIndex;
-            _choiceOptions[newIndex].ProcessChoice();
-        }
     }
 
     #endregion

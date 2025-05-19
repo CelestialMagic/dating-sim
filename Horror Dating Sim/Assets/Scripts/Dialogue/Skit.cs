@@ -22,6 +22,16 @@ public abstract class Skit : ScriptableObject
     /// </summary>
     public static SpawnInParent<CharacterSprite> SPRITE_SPAWNER;
 
+    /// <summary>
+    /// 
+    /// </summary>
+    public static DialogueDisplay DIALOGUE_DISPLAY;
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public static DialogueHandler DIALOGUE_HANDLER;
+
     #endregion
 
     #region Public Methods
@@ -46,6 +56,10 @@ public abstract class Skit : ScriptableObject
     {
         if (SPRITE_SPAWNER == null)
             SPRITE_SPAWNER = FindObjectOfType<SpawnInParent<CharacterSprite>>();
+        if (DIALOGUE_DISPLAY == null)
+            DIALOGUE_DISPLAY = FindObjectOfType<DialogueDisplay>();
+        if (DIALOGUE_HANDLER == null)
+            DIALOGUE_HANDLER = FindObjectOfType<DialogueHandler>();
     }
 
     /// <summary>

@@ -53,6 +53,8 @@ public class DialogueSkit : Skit
 
         foreach (DialogueLine line in _dialogueLines)
             line.ProcessSpeakerNames();
+
+        DIALOGUE_HANDLER.OnEndLine.RemoveAllListeners();
     }
 
     #endregion

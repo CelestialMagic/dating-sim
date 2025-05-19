@@ -8,7 +8,7 @@ using TMPro;
 /// Author: William Min
 /// </summary>
 [System.Serializable]
-public struct ChoiceOption
+public class ChoiceOption
 {
     #region Serialized Fields
 
@@ -16,9 +16,9 @@ public struct ChoiceOption
 
     [Header("Choice Button Properties")]
     [TextArea] [SerializeField] private string _choicePrompt;   // 
-    [SerializeField] private ToggledField<Vector2> _localPosition;  // Local position of button in space.
-    [SerializeField] private ToggledField<Vector2> _dimensions;     // Dimensions of button.
-    [SerializeField] private ToggledField<Vector2> _localScale;     // Lacl scale of button in space.
+    [SerializeField] private ToggledField<Vector2> _localPosition;  // Local position of button in space
+    [SerializeField] private ToggledField<Vector2> _dimensions;     // Dimensions of button
+    [SerializeField] private ToggledField<Vector2> _localScale;     // Lacl scale of button in space
 
     #endregion
 
