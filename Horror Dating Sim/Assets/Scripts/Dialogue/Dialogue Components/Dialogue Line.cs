@@ -18,6 +18,9 @@ public class DialogueLine
     [Space]
     [SerializeField] private SpriteSettings[] _characterSpriteSettings; // 
 
+    [SerializeField] private bool hasBackground; //A bool representing whether a line has a background or not (Jessie)
+    [SerializeField] private Sprite background;//A Sprite for a background change (Jessie)
+
     #endregion
 
     #region Private Fields
@@ -51,6 +54,22 @@ public class DialogueLine
     /// <summary>
     /// 
     /// </summary>
+    /// 
+
+//Returns whether a line has a background or not (Jessie)
+    public bool GetHasBackground()
+    {
+        return hasBackground;
+    }
+
+//Returns the background attached to the line (to be used by background handler) (Jessie)
+    public Sprite GetBackground()
+    {
+        return background;
+    }
+
+
+
     public void ProcessSpeakerNames()
     {
         int indexLength = _speakerProperties.Length;

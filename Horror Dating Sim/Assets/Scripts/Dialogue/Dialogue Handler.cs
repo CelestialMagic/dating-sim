@@ -13,6 +13,8 @@ public class DialogueHandler : MonoBehaviour
     #region Serialized Fields
 
     [Header("Dialogue Handler Properties")]
+
+    [SerializeField] private BackgroundHandler _backgroundHandler; //The scene's background handler (Jessie)
     [SerializeField] private Skit[] _skits;                         // List of skits to play in scene
     [SerializeField] private int _currentLineIndex = 0;             // Index of current line in skit
     [SerializeField] private int _currentSkitIndex = 0;             // Index of current skit
@@ -299,6 +301,15 @@ public class DialogueHandler : MonoBehaviour
         // Sets up dialogue box display
         _onChangeName(_currentLine.SpeakerNamesDisplay);
         _currentLine.ToggleCharacterSprites(Skit.SPRITE_SPAWNER.GetAllSpawned());
+
+//Possible logic for loading a background into handler (Jessie)
+
+        if (_currentLine.GetHasBackground())
+        {
+            _backgroundHandler.SetSelectedBackdrop(_currentLine.GetBackground());
+            _backgroundHandler.SetCanFadeAway(true);
+        }
+
 
         _currentTextCoroutine = StartCoroutine(_typeLine()); // Starts line typing
 

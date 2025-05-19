@@ -20,16 +20,21 @@ public class BackgroundHandler : TitleCard
         selectedBackdrop = sprite; 
     }
 
+    public void SetCanFadeAway(bool value)
+    {
+        canFadeAway = value; 
+    }
+
 /*
-    [SerializeField]
-    private List<BackgroundObject> backgrounds;
+            [SerializeField]
+            private List<BackgroundObject> backgrounds;
 
-    [SerializeField]
-    private int backgroundIndex;
-*/
+            [SerializeField]
+            private int backgroundIndex;
+        */
 
-    
-    
+
+
     //FadeAway() is called using Update
     protected override void Update()
     {
