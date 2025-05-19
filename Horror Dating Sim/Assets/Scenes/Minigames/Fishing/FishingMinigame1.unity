@@ -781,7 +781,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 1615974118}
-  originalTime: 5
+  originalTime: 30
   typingManager: {fileID: 0}
   lostCanvas: {fileID: 2072361046}
   minigameCanvas: {fileID: 0}
