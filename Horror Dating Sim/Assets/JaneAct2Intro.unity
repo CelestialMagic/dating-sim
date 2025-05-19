@@ -687,7 +687,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 254cc7576630e4a0f8bf79553df47a11, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 5715fb557e5dc4573abe4f8148c8291f, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1133,7 +1133,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2363c29ffb5a84ad494486a3209afe06, type: 3}
+  m_Sprite: {fileID: 2678536715169244732, guid: e040303ffa49b4606841e2deaa4e383b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1873,9 +1873,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _backgroundHandler: {fileID: 697626964}
   _skits:
-  - {fileID: 11400000, guid: 6d267e46c779c420c81b3abab87e5395, type: 2}
-  - {fileID: 11400000, guid: 1bbf4dae1e9df46529a8b92b2cbaaeee, type: 2}
-  - {fileID: 11400000, guid: 3491e91a744a942fe80a85bdca7550bf, type: 2}
+  - {fileID: 11400000, guid: 50cb6565a6c174dd9896dfef308f3e11, type: 2}
+  - {fileID: 11400000, guid: c580842e68f504c3e83d81e1cddef161, type: 2}
   _currentLineIndex: 0
   _currentSkitIndex: 0
   _timeBetweenCharacters: 0.05

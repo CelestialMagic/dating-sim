@@ -16,8 +16,7 @@ MonoBehaviour:
   _questionLine:
     hasBackground: 0
     background: {fileID: 0}
-    _line: "I think I\u2019ve seen you around a few times, but I guess we\u2019ve
-      never formally talked."
+    _line: "Well, let\u2019s get started! Where should we go first?"
     _speakerProperties:
     - _speakerType: 2
       _name: 
@@ -47,7 +46,7 @@ MonoBehaviour:
           _version: 1
   _choiceOptions:
   - _skitFromChoice: {fileID: 11400000, guid: d16ae27ba18454eb0831d7aa3d2087b5, type: 2}
-    _choicePrompt: Nice Journal. I like the stripes.
+    _choicePrompt: "The food! I\u2019m starving."
     _localPosition:
       _isEnabled: 1
       _value: {x: -75, y: 100}
@@ -58,7 +57,7 @@ MonoBehaviour:
       _isEnabled: 1
       _value: {x: 2, y: 2}
   - _skitFromChoice: {fileID: 11400000, guid: 57ef00e41b419410baa7f88d1eb19553, type: 2}
-    _choicePrompt: Are you also in the botany class? I recognize that book.
+    _choicePrompt: How about the carnival games?
     _localPosition:
       _isEnabled: 1
       _value: {x: -75, y: -100}

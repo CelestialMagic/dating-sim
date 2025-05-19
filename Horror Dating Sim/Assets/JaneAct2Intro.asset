@@ -26,9 +26,9 @@ MonoBehaviour:
     background: {fileID: 0}
     _line: Wow, you got here even before I did!
     _speakerProperties:
-    - _speakerType: 1
+    - _speakerType: 2
       _name: 
-      _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+      _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
     _characterSpriteSettings:
     - _spriteIndex: 0
       IsSubject:
