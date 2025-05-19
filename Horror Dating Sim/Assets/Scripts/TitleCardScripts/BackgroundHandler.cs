@@ -12,22 +12,35 @@ public class BackgroundHandler : TitleCard
     private bool canFadeIn, canFadeAway;
 
     [SerializeField]
+    private Image backgroundImage;
+
+    private Sprite selectedBackdrop; 
+
+    public void SetSelectedBackdrop(Sprite sprite){
+        selectedBackdrop = sprite; 
+    }
+
+/*
+    [SerializeField]
     private List<BackgroundObject> backgrounds;
 
     [SerializeField]
     private int backgroundIndex;
+*/
 
-    [SerializeField]
-    private Image backgroundImage;
+    
     
     //FadeAway() is called using Update
     protected override void Update()
     {
+        /*
         if (backgrounds[backgroundIndex].GetIndex() == dialogueHandler.GetCurrentIndex() && !backgrounds[backgroundIndex].GetHasBeenTransitioned())
         {
             canFadeAway = true;
             backgrounds[backgroundIndex].SetHasBeenTransitioned(true);
         }
+        */
+
         if (canFadeIn)
             FadeIn();
         else if (canFadeAway)
@@ -47,7 +60,8 @@ public class BackgroundHandler : TitleCard
             if (startingAlpha == fadedOutValue)
             {
                 canFadeAway = false;
-                backgroundImage.sprite = backgrounds[backgroundIndex].GetBackground(); 
+                //backgroundImage.sprite = backgrounds[backgroundIndex].GetBackground();
+                backgroundImage.sprite = selectedBackdrop;  
                 canFadeIn = true; 
             }
 
@@ -62,8 +76,9 @@ public class BackgroundHandler : TitleCard
             if (startingAlpha == fadedInValue)
             {
                 canFadeIn = false;
-                if(backgroundIndex + 1 != backgrounds.Count )
+                /*if(backgroundIndex + 1 != backgrounds.Count )
                     backgroundIndex++;
+                */
             }
 
         }
