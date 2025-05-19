@@ -73,7 +73,7 @@ MonoBehaviour:
         _isEnabled: 1
         _value:
           _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
-          _imageType: 1
+          _imageType: 0
           _version: 1
   - hasBackground: 0
     background: {fileID: 0}
@@ -103,7 +103,7 @@ MonoBehaviour:
         _isEnabled: 1
         _value:
           _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
-          _imageType: 1
+          _imageType: 0
           _version: 1
   - hasBackground: 0
     background: {fileID: 0}
@@ -225,7 +225,7 @@ MonoBehaviour:
         _isEnabled: 1
         _value:
           _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
-          _imageType: 1
+          _imageType: 0
           _version: 1
   - hasBackground: 0
     background: {fileID: 0}
@@ -255,7 +255,7 @@ MonoBehaviour:
         _isEnabled: 1
         _value:
           _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
-          _imageType: 1
+          _imageType: 0
           _version: 1
   - hasBackground: 0
     background: {fileID: 0}
@@ -315,5 +315,5 @@ MonoBehaviour:
         _isEnabled: 1
         _value:
           _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
-          _imageType: 1
+          _imageType: 0
           _version: 1

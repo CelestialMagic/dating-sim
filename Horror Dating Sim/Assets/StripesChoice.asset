@@ -73,7 +73,7 @@ MonoBehaviour:
         _isEnabled: 1
         _value:
           _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
-          _imageType: 1
+          _imageType: 0
           _version: 1
   - hasBackground: 0
     background: {fileID: 0}
@@ -103,7 +103,7 @@ MonoBehaviour:
         _isEnabled: 1
         _value:
           _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
-          _imageType: 1
+          _imageType: 0
           _version: 1
   - hasBackground: 0
     background: {fileID: 0}
@@ -133,13 +133,44 @@ MonoBehaviour:
         _isEnabled: 1
         _value:
           _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
-          _imageType: 1
+          _imageType: 3
           _version: 1
   - hasBackground: 0
     background: {fileID: 0}
     _line: "Oh, sorry\u2026"
     _speakerProperties:
     - _speakerType: 1
+      _name: 
+      _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
+    _characterSpriteSettings:
+    - _spriteIndex: 0
+      IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 1
+        _value: {x: 750, y: 900}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
+          _imageType: 3
+          _version: 1
+  - hasBackground: 0
+    background: {fileID: 0}
+    _line: "Don\u2019t be, I knew you were looking at my shoes. They\u2019re quite
+      strange, aren\u2019t they? Do you know what they are?"
+    _speakerProperties:
+    - _speakerType: 2
       _name: 
       _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
     _characterSpriteSettings:
@@ -194,5 +225,5 @@ MonoBehaviour:
         _isEnabled: 1
         _value:
           _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
-          _imageType: 1
+          _imageType: 0
           _version: 1

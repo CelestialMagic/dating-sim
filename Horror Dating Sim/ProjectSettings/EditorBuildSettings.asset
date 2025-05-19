@@ -41,4 +41,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Ben Act 1 Intro.unity
     guid: 10ed5e6c1f46849eea8f2344c3c66668
+  - enabled: 1
+    path: Assets/Library Minigame.unity
+    guid: c6025e78c24914729b181cc86d427906
   m_configObjects: {}

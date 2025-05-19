@@ -15,4 +15,10 @@ MonoBehaviour:
   _characterName: Jane
   _characterImages:
   - _spriteType: 0
-    _imageSprite: {fileID: 0}
+    _imageSprite: {fileID: 21300000, guid: 22d30ecc121ba475491fbf001f06b380, type: 3}
+  - _spriteType: 1
+    _imageSprite: {fileID: 21300000, guid: c8c5c6a6b49874bf6bbb4e567d2b5416, type: 3}
+  - _spriteType: 3
+    _imageSprite: {fileID: 21300000, guid: 47f412e6d824a4bfe87e1832b3ec2640, type: 3}
+  - _spriteType: 4
+    _imageSprite: {fileID: 21300000, guid: 42bb6a19d952d4000b121b653162fb0d, type: 3}
