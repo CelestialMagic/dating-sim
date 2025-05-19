@@ -12,14 +12,15 @@ public class DialogueLine
 {
     #region Serialized Fields
 
+    [SerializeField] private bool hasBackground; //A bool representing whether a line has a background or not (Jessie)
+    [SerializeField] private Sprite background;//A Sprite for a background change (Jessie)
+
     [TextArea] [SerializeField] private string _line; // 
     [Space]
     [SerializeField] private SpeakerProperties[] _speakerProperties; // 
     [Space]
     [SerializeField] private SpriteSettings[] _characterSpriteSettings; // 
 
-    [SerializeField] private bool hasBackground; //A bool representing whether a line has a background or not (Jessie)
-    [SerializeField] private Sprite background;//A Sprite for a background change (Jessie)
 
     #endregion
 

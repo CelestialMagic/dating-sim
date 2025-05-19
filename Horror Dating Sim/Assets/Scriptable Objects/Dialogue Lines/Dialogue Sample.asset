@@ -117,6 +117,8 @@ MonoBehaviour:
           _profile: {fileID: 0}
           _imageType: 0
           _version: 1
+    hasBackground: 1
+    background: {fileID: 21300000, guid: 7bd4bcbb61b0d4783ac5cb2ee942b424, type: 3}
   - _line: "We need more\tsustenance..."
     _speakerProperties:
     - _speakerType: 2
@@ -170,6 +172,8 @@ MonoBehaviour:
           _profile: {fileID: 0}
           _imageType: 0
           _version: 0
+    hasBackground: 0
+    background: {fileID: 0}
   - _line: '<color=red>Nice to see you! <sprite=0></color> '
     _speakerProperties:
     - _speakerType: 1
@@ -220,6 +224,8 @@ MonoBehaviour:
           _profile: {fileID: 0}
           _imageType: 0
           _version: 0
+    hasBackground: 0
+    background: {fileID: 0}
   - _line: 'I''ll be hiking at the <color=blue><b>mountain</b></color>.
 
       <i>Would
@@ -273,6 +279,8 @@ MonoBehaviour:
           _profile: {fileID: 0}
           _imageType: 0
           _version: 0
+    hasBackground: 0
+    background: {fileID: 0}
   - _line: Let's> <Name> <color=yellow><<see>></color>   <see slide.
     _speakerProperties:
     - _speakerType: 2
@@ -323,9 +331,13 @@ MonoBehaviour:
           _profile: {fileID: 0}
           _imageType: 0
           _version: 0
+    hasBackground: 1
+    background: {fileID: 21300000, guid: 7bded4cd43262420580b1df6669ee2f4, type: 3}
   - _line: Let's> <Name> <color=yellow><<see>></color>   <see slide.
     _speakerProperties:
     - _speakerType: 1
       _name: 
       _profile: {fileID: 0}
     _characterSpriteSettings: []
+    hasBackground: 0
+    background: {fileID: 0}
