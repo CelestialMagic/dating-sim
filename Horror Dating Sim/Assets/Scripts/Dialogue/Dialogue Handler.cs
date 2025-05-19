@@ -115,20 +115,10 @@ public class DialogueHandler : MonoBehaviour
         _firstTime = true;
         _hasSkimmedLine = true;
 
-        if (_currentSkitIndex < 0)
-            _currentSkitIndex = 0;
-        else if (_currentSkitIndex >= _skitCount)
-            _currentSkitIndex = _skitCount - 1;
-
-        if (_currentLineIndex < 0)
-            _currentLineIndex = 0;
-        else if (_currentLineIndex >= _currentLineCount)
-            _currentLineIndex = _currentLineCount - 1;
-
         _currentSkit.Process();
         _onBeginSkit?.Invoke();
 
-        _onChangeDialogue += s => Debug.Log("Played Gibber Sound Before Skip.");
+        //_onChangeDialogue += s => Debug.Log("Played Gibber Sound Before Skip.");
 
         _onEndLine.AddListener(() => Debug.Log("Ended Line"));
         _onBeginLine.AddListener(() => Debug.Log("Started Line"));

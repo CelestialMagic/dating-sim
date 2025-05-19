@@ -90,14 +90,6 @@ public class CharacterSprite : MonoBehaviour
         _hasArrived.ActOnValue();
     }
 
-    // Sets sprite toggles
-    private void OnEnable()
-    {
-        IsSubject = false;
-        IsRevealed = false;
-        HasArrived = false;
-    }
-
     #endregion
 
     #region Public Methods
@@ -127,9 +119,9 @@ public class CharacterSprite : MonoBehaviour
     /// </summary>
     public void ResetSprite()
     {
-        IsSubject = false;
-        IsRevealed = false;
-        HasArrived = false;
+        if (IsSubject) IsSubject = false;
+        if (IsRevealed) IsRevealed = false;
+        if (HasArrived) HasArrived = false;
         transform.localScale = Vector3.zero;
         if (_spriteTransform == null) _spriteTransform = _spriteImage.rectTransform;
         _spriteImage.sprite = null;
