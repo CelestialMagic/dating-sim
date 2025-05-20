@@ -22,3 +22,5 @@ MonoBehaviour:
     _imageSprite: {fileID: 21300000, guid: 47f412e6d824a4bfe87e1832b3ec2640, type: 3}
   - _spriteType: 4
     _imageSprite: {fileID: 21300000, guid: 42bb6a19d952d4000b121b653162fb0d, type: 3}
+  - _spriteType: 2
+    _imageSprite: {fileID: 21300000, guid: 8a41aa79519e945fd80478db0f2b9237, type: 3}

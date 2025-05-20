@@ -45,7 +45,7 @@ MonoBehaviour:
           _imageType: 0
           _version: 1
   _choiceOptions:
-  - _skitFromChoice: {fileID: 11400000, guid: d16ae27ba18454eb0831d7aa3d2087b5, type: 2}
+  - _skitFromChoice: {fileID: 11400000, guid: 3bb1a9712f5504ed4a7f9984199e0700, type: 2}
     _choicePrompt: "The food! I\u2019m starving."
     _localPosition:
       _isEnabled: 1
@@ -56,7 +56,7 @@ MonoBehaviour:
     _localScale:
       _isEnabled: 1
       _value: {x: 2, y: 2}
-  - _skitFromChoice: {fileID: 11400000, guid: 57ef00e41b419410baa7f88d1eb19553, type: 2}
+  - _skitFromChoice: {fileID: 11400000, guid: 00cea27b41c3648cea679869ab78f18a, type: 2}
     _choicePrompt: How about the carnival games?
     _localPosition:
       _isEnabled: 1
