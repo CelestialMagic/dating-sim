@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _spriteCount: 0
   _questionLine:
+    hasBackground: 0
+    background: {fileID: 0}
     _line: What should I do?
     _speakerProperties:
     - _speakerType: 1
@@ -27,11 +29,29 @@ MonoBehaviour:
       _isEnabled: 1
       _value: {x: 100, y: 100}
     _dimensions:
-      _isEnabled: 0
-      _value: {x: 0, y: 0}
+      _isEnabled: 1
+      _value: {x: 600, y: 300}
     _localScale:
       _isEnabled: 0
       _value: {x: 0, y: 0}
+    _buttonSprite:
+      _isEnabled: 0
+      _value: {fileID: 21300000, guid: 31e59811a5d454c3197ca1377c029179, type: 3}
+    _buttonBaseColor:
+      _isEnabled: 1
+      _value: {r: 0.6490427, g: 1, b: 0.4943396, a: 1}
+    _pixelMultiplier:
+      _isEnabled: 1
+      _value: 0.1
+    _font:
+      _isEnabled: 0
+      _value: {fileID: 11400000, guid: 5b7435f164e344a8fb510bd23494a21a, type: 2}
+    _fontVectorColor:
+      _isEnabled: 1
+      _value: {r: 0.1830188, g: 1, b: 0.55496395, a: 1}
+    _fontSize:
+      _isEnabled: 1
+      _value: 174.1
   - _skitFromChoice: {fileID: 11400000, guid: 1c4672b3ed41e784481385603cf2b259, type: 2}
     _choicePrompt: Hurt
     _localPosition:
@@ -43,14 +63,50 @@ MonoBehaviour:
     _localScale:
       _isEnabled: 0
       _value: {x: 0, y: 0}
+    _buttonSprite:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    _buttonBaseColor:
+      _isEnabled: 0
+      _value: {r: 0, g: 0, b: 0, a: 0}
+    _pixelMultiplier:
+      _isEnabled: 0
+      _value: 0
+    _font:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    _fontVectorColor:
+      _isEnabled: 0
+      _value: {r: 0, g: 0, b: 0, a: 0}
+    _fontSize:
+      _isEnabled: 0
+      _value: 0
   - _skitFromChoice: {fileID: 11400000, guid: 7934bd3ce7c88f6438bc0c4e87900e0c, type: 2}
     _choicePrompt: Nothing
     _localPosition:
       _isEnabled: 1
-      _value: {x: -100, y: 50}
+      _value: {x: -357.43, y: 50}
     _dimensions:
       _isEnabled: 1
       _value: {x: 400, y: 400}
     _localScale:
       _isEnabled: 0
       _value: {x: 0, y: 0}
+    _buttonSprite:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    _buttonBaseColor:
+      _isEnabled: 0
+      _value: {r: 0, g: 0, b: 0, a: 0}
+    _pixelMultiplier:
+      _isEnabled: 0
+      _value: 0
+    _font:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    _fontVectorColor:
+      _isEnabled: 0
+      _value: {r: 0, g: 0, b: 0, a: 0}
+    _fontSize:
+      _isEnabled: 0
+      _value: 0
