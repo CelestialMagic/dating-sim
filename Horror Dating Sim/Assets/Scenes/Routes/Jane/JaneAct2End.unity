@@ -983,8 +983,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad:
-    _sceneAsset: {fileID: 102900000, guid: 1f0a0e0e719684b00beb592ba88a4c69, type: 3}
-    _sceneName: FunhouseTyping2
+    _sceneAsset: {fileID: 102900000, guid: ad5689379d35f433aae48d3cafc550f4, type: 3}
+    _sceneName: JaneAct3Intro
 --- !u!4 &605408011
 Transform:
   m_ObjectHideFlags: 0

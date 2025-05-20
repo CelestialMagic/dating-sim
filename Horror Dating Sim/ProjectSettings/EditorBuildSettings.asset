@@ -39,36 +39,39 @@ EditorBuildSettings:
     path: Assets/JaneAct1Intro.unity
     guid: 74eff6cb9b89c4da594dea4c93e582be
   - enabled: 1
-    path: Assets/Ben Act 1 Intro.unity
+    path: Assets/Scenes/Routes/Ben/Ben Act 1 Intro.unity
     guid: 10ed5e6c1f46849eea8f2344c3c66668
   - enabled: 1
-    path: Assets/Library Minigame.unity
+    path: Assets/Scenes/Minigames/Typing/Library Minigame.unity
     guid: c6025e78c24914729b181cc86d427906
   - enabled: 1
-    path: Assets/Jane Act 1 Intro.unity
+    path: Assets/Scenes/Routes/Jane/Jane Act 1 Intro.unity
     guid: 503789211cfbe4a67a781d46f096ef28
   - enabled: 1
-    path: Assets/FinalFishingMinigame.unity
+    path: Assets/Scenes/Minigames/Fishing/FinalFishingMinigame.unity
     guid: 22f831cdfd74f44bdb4eb5b73ae1cda7
   - enabled: 1
-    path: Assets/CatchBenFishing.unity
+    path: Assets/Scenes/Minigames/Fishing/CatchBenFishing.unity
     guid: efae1388499bf4313a7393421a55468d
   - enabled: 1
-    path: Assets/JaneAct2FunhousePart1.unity
+    path: Assets/Scenes/Routes/Jane/JaneAct2FunhousePart1.unity
     guid: 6dbbfdedbd98e48a58c2375487dbfde9
   - enabled: 1
-    path: Assets/FunhouseTyping3.unity
+    path: Assets/Scenes/Minigames/Typing/FunhouseTyping3.unity
     guid: 379ea020c213e4273aa4504c10617a06
   - enabled: 1
-    path: Assets/FunhouseTyping2.unity
+    path: Assets/Scenes/Minigames/Typing/FunhouseTyping2.unity
     guid: 1f0a0e0e719684b00beb592ba88a4c69
   - enabled: 1
-    path: Assets/JaneAct2Intro.unity
+    path: Assets/Scenes/Routes/Jane/JaneAct2Intro.unity
     guid: b3baa3d89aee541aeaeb89c029b7ce96
   - enabled: 1
-    path: Assets/JaneAct2FunhousePart2.unity
+    path: Assets/Scenes/Routes/Jane/JaneAct2FunhousePart2.unity
     guid: ec124d0641c5d47029ae19169df6d634
   - enabled: 1
-    path: Assets/JaneAct2End.unity
+    path: Assets/Scenes/Routes/Jane/JaneAct2End.unity
     guid: 811a1526e33db42e48a7bc04c9dceb5e
+  - enabled: 1
+    path: Assets/Scenes/Routes/Jane/JaneAct3Intro.unity
+    guid: ad5689379d35f433aae48d3cafc550f4
   m_configObjects: {}
