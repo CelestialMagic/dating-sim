@@ -355,9 +355,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You're Done
+  m_text: Jane Caught You
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3a4caa17b09534b379155140715ff0d1, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f12ba9bb9c35c4c1c8f17450c30c57ee, type: 2}
   m_sharedMaterial: {fileID: -4129847082125772981, guid: 3a4caa17b09534b379155140715ff0d1, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -421,7 +421,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &206498202
@@ -464,7 +464,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!199 &214786487
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -5669,7 +5669,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 615cc4e5660c14231a476689b72c892c, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.5
-  m_Pitch: 1
+  m_Pitch: 1.2
   Loop: 1
   Mute: 0
   Spatialize: 0
@@ -5816,8 +5816,8 @@ MonoBehaviour:
   typingManager: {fileID: 1415415400}
   lostCanvas: {fileID: 1799052854}
   minigameCanvas: {fileID: 16687491}
-  nextScene: 
-  resetScene: Funhouse Typing Minigame
+  nextScene: JaneAct2End
+  resetScene: FunhouseTyping2
 --- !u!1 &996090478
 GameObject:
   m_ObjectHideFlags: 0

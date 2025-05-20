@@ -53,4 +53,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/CatchBenFishing.unity
     guid: efae1388499bf4313a7393421a55468d
+  - enabled: 1
+    path: Assets/JaneAct2FunhousePart1.unity
+    guid: 6dbbfdedbd98e48a58c2375487dbfde9
+  - enabled: 1
+    path: Assets/FunhouseTyping3.unity
+    guid: 379ea020c213e4273aa4504c10617a06
+  - enabled: 1
+    path: Assets/FunhouseTyping2.unity
+    guid: 1f0a0e0e719684b00beb592ba88a4c69
+  - enabled: 1
+    path: Assets/JaneAct2Intro.unity
+    guid: b3baa3d89aee541aeaeb89c029b7ce96
+  - enabled: 1
+    path: Assets/JaneAct2FunhousePart2.unity
+    guid: ec124d0641c5d47029ae19169df6d634
+  - enabled: 1
+    path: Assets/JaneAct2End.unity
+    guid: 811a1526e33db42e48a7bc04c9dceb5e
   m_configObjects: {}

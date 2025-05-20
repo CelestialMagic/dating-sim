@@ -5419,7 +5419,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: ebfb934bce8314bd0b26a97318c56eec, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 615cc4e5660c14231a476689b72c892c, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 0.75
@@ -5816,8 +5816,8 @@ MonoBehaviour:
   typingManager: {fileID: 1415415400}
   lostCanvas: {fileID: 1799052854}
   minigameCanvas: {fileID: 16687491}
-  nextScene: 
-  resetScene: Funhouse Typing Minigame
+  nextScene: JaneAct2FunhousePart1
+  resetScene: FunhouseTyping1
 --- !u!1 &996090478
 GameObject:
   m_ObjectHideFlags: 0

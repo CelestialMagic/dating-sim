@@ -8,6 +8,7 @@ public class AutoAdvanceCard : TitleCard
     void Start()
     {
         startFade = true; 
+        dialogueHandler.ProceedWithText();
     }
 
 }

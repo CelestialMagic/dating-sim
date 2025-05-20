@@ -986,7 +986,7 @@ MonoBehaviour:
   typingManager: {fileID: 1415415399}
   lostCanvas: {fileID: 1799052854}
   minigameCanvas: {fileID: 16687491}
-  nextScene: 
+  nextScene: JaneAct2Intro
   resetScene: Library Minigame
 --- !u!1 &827086639
 GameObject:

@@ -690,7 +690,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 615cc4e5660c14231a476689b72c892c, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: 1.5
   Loop: 1
   Mute: 0
   Spatialize: 0
@@ -1873,7 +1873,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _backgroundHandler: {fileID: 697626964}
   _skits:
-  - {fileID: 11400000, guid: 9d72ad4dd58a4413b86bcc7285a288e7, type: 2}
+  - {fileID: 11400000, guid: 604dc82c9312148579845e6ea3988156, type: 2}
   _currentLineIndex: 0
   _currentSkitIndex: 0
   _timeBetweenCharacters: 0.05
