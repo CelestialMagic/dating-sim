@@ -74,4 +74,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Routes/Jane/JaneAct3Intro.unity
     guid: ad5689379d35f433aae48d3cafc550f4
+  - enabled: 1
+    path: Assets/Scenes/Routes/Ben/BenAct2Introduction.unity
+    guid: 91b05b14d8d2441c483cee0ca6bcdcae
   m_configObjects: {}

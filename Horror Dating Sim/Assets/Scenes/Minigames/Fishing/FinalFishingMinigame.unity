@@ -7122,6 +7122,7 @@ GameObject:
   - component: {fileID: 1882971065}
   - component: {fileID: 1882971067}
   - component: {fileID: 1882971066}
+  - component: {fileID: 1882971068}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -7245,6 +7246,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1882971064}
   m_CullTransparentMesh: 1
+--- !u!114 &1882971068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1882971064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08af46f9dc6f748f9aa8a1d81748ee67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textToWobble: {fileID: 1882971066}
+  firstModifier: 15
+  secondModifier: 15
 --- !u!1 &1899540555
 GameObject:
   m_ObjectHideFlags: 0
