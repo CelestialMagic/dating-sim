@@ -54,16 +54,16 @@ MonoBehaviour:
       _isEnabled: 1
       _value: {x: 300, y: 100}
     _localScale:
-      _isEnabled: 0
-      _value: {x: 0, y: 0}
+      _isEnabled: 1
+      _value: {x: 2, y: 2}
   - _skitFromChoice: {fileID: 11400000, guid: 6d85f43f8a3954b5b8c81ffcc7d0e940, type: 2}
     _choicePrompt: Yeah, once or twice.
     _localPosition:
       _isEnabled: 1
-      _value: {x: -75, y: -50}
+      _value: {x: -75, y: -100}
     _dimensions:
       _isEnabled: 1
       _value: {x: 300, y: 100}
     _localScale:
-      _isEnabled: 0
-      _value: {x: 0, y: 0}
+      _isEnabled: 1
+      _value: {x: 2, y: 2}
