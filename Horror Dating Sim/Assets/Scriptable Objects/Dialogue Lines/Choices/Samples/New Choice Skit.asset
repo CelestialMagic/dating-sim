@@ -18,7 +18,7 @@ MonoBehaviour:
     background: {fileID: 0}
     _line: What should I do?
     _speakerProperties:
-    - _speakerType: 1
+    - _speakerType: 0
       _name: 
       _profile: {fileID: 0}
     _characterSpriteSettings: []
