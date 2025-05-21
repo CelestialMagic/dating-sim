@@ -16,6 +16,8 @@ MonoBehaviour:
   _dialogueLines:
   - hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: (First day of the new quarter)
     _speakerProperties:
     - _speakerType: 0
@@ -24,6 +26,8 @@ MonoBehaviour:
     _characterSpriteSettings: []
   - hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: '(Man, school''s always such a drag. Dreary assignments, boring lectures.
       I find myself barely smiling anymore.)
 
@@ -35,6 +39,8 @@ MonoBehaviour:
     _characterSpriteSettings: []
   - hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: "(Seems like everyday there\u2019s a test to study for, a project to have
       meetings on, or a new paper to write. I\u2019m not sure if I\u2019ll survive
       another quarter of this.)\n"
@@ -45,6 +51,8 @@ MonoBehaviour:
     _characterSpriteSettings: []
   - hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: "(Today I\u2019m at the library. I decided that for my last GE botany
       would suffice. Who would\u2019ve thought that you needed so many books for
       botany?)\n"
@@ -55,6 +63,8 @@ MonoBehaviour:
     _characterSpriteSettings: []
   - hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: "(I\u2019ve got most of my books now, I just need to find the last one-)\n"
     _speakerProperties:
     - _speakerType: 1
@@ -63,6 +73,8 @@ MonoBehaviour:
     _characterSpriteSettings: []
   - hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: While going down the aisle, you accidentally bump into someone.
     _speakerProperties:
     - _speakerType: 0
@@ -93,6 +105,8 @@ MonoBehaviour:
           _version: 1
   - hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: Owee!
     _speakerProperties:
     - _speakerType: 2
@@ -123,6 +137,8 @@ MonoBehaviour:
           _version: 1
   - hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: "It\u2019s\u2026 Jane! She\u2019s been a classmate of yours for a few
       classes, but you\u2019ve never really had a chance to talk with each other."
     _speakerProperties:
@@ -154,6 +170,8 @@ MonoBehaviour:
           _version: 1
   - hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: "It\u2019s the first time you\u2019ve met her outside of class, and finally
       an opportunity to talk! But she seems to have some pretty bad bags under her
       eyes, is she getting enough sleep?"
@@ -186,6 +204,8 @@ MonoBehaviour:
           _version: 1
   - hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: "You both apologize and begin helping each other pick up the scattered
       books. You notice that she had a few hunting books and a journal, but also
       a book with a white lily drawn on it. It\u2019s the book you\u2019ve been looking
@@ -219,6 +239,8 @@ MonoBehaviour:
           _version: 1
   - hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: "Thanks for the help, stranger. I don\u2019t believe I caught a name?"
     _speakerProperties:
     - _speakerType: 2
@@ -249,6 +271,8 @@ MonoBehaviour:
           _version: 1
   - hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: What a charming little name! Mines LJ.
     _speakerProperties:
     - _speakerType: 2
@@ -279,6 +303,8 @@ MonoBehaviour:
           _version: 1
   - hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: LJ? I thought your name was Jane?
     _speakerProperties:
     - _speakerType: 1
@@ -309,6 +335,8 @@ MonoBehaviour:
           _version: 1
   - hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: Well the J is for Jane. The L stands for something quite funny!
     _speakerProperties:
     - _speakerType: 2
