@@ -56,6 +56,24 @@ MonoBehaviour:
     _localScale:
       _isEnabled: 1
       _value: {x: 2, y: 2}
+    _buttonSprite:
+      _isEnabled: 1
+      _value: {fileID: 0}
+    _buttonBaseColor:
+      _isEnabled: 1
+      _value: {r: 0.23113209, g: 0.5091807, b: 1, a: 0.5176471}
+    _pixelMultiplier:
+      _isEnabled: 0
+      _value: 0
+    _font:
+      _isEnabled: 1
+      _value: {fileID: 11400000, guid: 4e14870e8187e48b9bbea349e71254c6, type: 2}
+    _fontVectorColor:
+      _isEnabled: 1
+      _value: {r: 1, g: 1, b: 1, a: 1}
+    _fontSize:
+      _isEnabled: 0
+      _value: 0
   - _skitFromChoice: {fileID: 11400000, guid: 6d85f43f8a3954b5b8c81ffcc7d0e940, type: 2}
     _choicePrompt: Yeah, once or twice.
     _localPosition:
@@ -67,3 +85,21 @@ MonoBehaviour:
     _localScale:
       _isEnabled: 1
       _value: {x: 2, y: 2}
+    _buttonSprite:
+      _isEnabled: 1
+      _value: {fileID: 0}
+    _buttonBaseColor:
+      _isEnabled: 1
+      _value: {r: 0.23113209, g: 0.5091807, b: 1, a: 0.5176471}
+    _pixelMultiplier:
+      _isEnabled: 0
+      _value: 0
+    _font:
+      _isEnabled: 1
+      _value: {fileID: 11400000, guid: 4e14870e8187e48b9bbea349e71254c6, type: 2}
+    _fontVectorColor:
+      _isEnabled: 1
+      _value: {r: 1, g: 1, b: 1, a: 1}
+    _fontSize:
+      _isEnabled: 0
+      _value: 0
