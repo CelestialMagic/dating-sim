@@ -15,6 +15,7 @@ public class DialogueHandler : MonoBehaviour
     [Header("Dialogue Handler Properties")]
 
     [SerializeField] private BackgroundHandler _backgroundHandler; //The scene's background handler (Jessie)
+    [SerializeField] private AudioSource _sfxAudioSource; //An audio source dedicated to SFX (Jessie)
     [SerializeField] private Skit[] _skits;                         // List of skits to play in scene
     [SerializeField] private int _currentLineIndex = 0;             // Index of current line in skit
     [SerializeField] private int _currentSkitIndex = 0;             // Index of current skit
@@ -308,6 +309,11 @@ public class DialogueHandler : MonoBehaviour
         {
             _backgroundHandler.SetSelectedBackdrop(_currentLine.GetBackground());
             _backgroundHandler.SetCanFadeAway(true);
+        }
+ //Possible logic for loading a SFX for certain lines (Jessie)
+        if (_currentLine.GetHasSFX())
+        {
+            _sfxAudioSource.PlayOneShot(_currentLine.GetSoundEffect());
         }
 
 

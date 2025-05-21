@@ -15,6 +15,9 @@ public class DialogueLine
     [SerializeField] private bool hasBackground; //A bool representing whether a line has a background or not (Jessie)
     [SerializeField] private Sprite background;//A Sprite for a background change (Jessie)
 
+    [SerializeField] private bool hasSFX; //A bool indicating if a line has a SFX (Jessie)
+    [SerializeField] private AudioClip soundEffect;//An AudioClip for a SFX (Jessie)
+
     [TextArea] [SerializeField] private string _line; // 
     [Space]
     [SerializeField] private SpeakerProperties[] _speakerProperties; // 
@@ -67,6 +70,16 @@ public class DialogueLine
     public Sprite GetBackground()
     {
         return background;
+    }
+
+    public bool GetHasSFX()
+    {
+        return hasSFX;
+    }
+
+    public AudioClip GetSoundEffect()
+    {
+        return soundEffect; 
     }
 
 
