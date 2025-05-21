@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _spriteCount: 1
   _dialogueLines:
-  - _line: Save me!
+  - hasBackground: 0
+    background: {fileID: 0}
+    _line: Save me!
     _speakerProperties:
     - _speakerType: 2
       _name: 

@@ -23,25 +23,31 @@ public class ToggledFieldDrawer : PropertyDrawer
     {
         EditorGUI.BeginProperty(position, label, property);
 
-        EditorGUI.indentLevel++;
+        int indentDelta = 4;
+        EditorGUI.indentLevel += indentDelta;
 
-        float fieldWidth = position.width / 2;
-        float bufferWidth = position.width / 16;
-        float toggleWidth = fieldWidth / 2;
-
+        float variableWidth = position.width * 3 / 8;
+        float enabledPrefixWidth = variableWidth * 3 / 4;
+        float enabledFieldWidth = variableWidth / 8;
         float offsetSize = 10;
 
         SerializedProperty isEnabled = property.FindPropertyRelative("_isEnabled");
 
-        EditorGUI.PropertyField(new Rect(position.x + bufferWidth, position.y, toggleWidth - offsetSize, position.height), isEnabled, new GUIContent(property.displayName));
+        EditorGUI.PrefixLabel(new Rect(position.x, position.y, enabledPrefixWidth - offsetSize, position.height), new GUIContent(property.displayName));
+        EditorGUI.PropertyField(new Rect(position.x + enabledPrefixWidth, position.y, enabledFieldWidth - offsetSize, position.height), isEnabled, GUIContent.none);
 
         if (isEnabled.boolValue)
         {
+            float valueWidth = position.width * 5 / 8;
+            float valuePrefixWidth = valueWidth / 4;
+            float valueFieldWidth = valueWidth * 3 / 4;
+
             SerializedProperty value = property.FindPropertyRelative("_value");
-            EditorGUI.PropertyField(new Rect(position.x + fieldWidth, position.y, fieldWidth - offsetSize, position.height), value, GUIContent.none);
+            EditorGUI.PrefixLabel(new Rect(position.x + variableWidth, position.y, valuePrefixWidth - offsetSize, position.height), new GUIContent(value.displayName));
+            EditorGUI.PropertyField(new Rect(position.x + variableWidth + valuePrefixWidth, position.y, valueFieldWidth - offsetSize, position.height), value, GUIContent.none);
         }
 
-        EditorGUI.indentLevel--;
+        EditorGUI.indentLevel -= indentDelta;
 
         EditorGUI.EndProperty();
     }

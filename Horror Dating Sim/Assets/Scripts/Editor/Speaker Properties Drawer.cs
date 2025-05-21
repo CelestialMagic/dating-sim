@@ -14,6 +14,7 @@ using UnityEditor;
 public class SpeakerPropertiesDrawer : PropertyDrawer
 {
     private const int STRING_NAME_ENUM_INDEX = (int)SpeakerProperties.SpeakerType.STRING_NAME;
+    private const int PLAYER_NAME_ENUM_INDEX = (int)SpeakerProperties.SpeakerType.PLAYER;
     private const int CHARACTER_NAME_ENUM_INDEX = (int)SpeakerProperties.SpeakerType.CHARACTER_NAME;
 
     /// <summary>
@@ -26,30 +27,20 @@ public class SpeakerPropertiesDrawer : PropertyDrawer
     {
         EditorGUI.BeginProperty(position, label, property);
 
-        int indent = EditorGUI.indentLevel;
-        EditorGUI.indentLevel = 0;
+        int indentDelta = 1;
+        EditorGUI.indentLevel += indentDelta;
 
         float variableWidth = position.width / 2;
         float typePrefixWidth = variableWidth * 5 / 16;
-        float typeFieldWidth = variableWidth / 2;
+        float typeFieldWidth = variableWidth * 11 / 16;
         float offsetSize = 10;
 
         SerializedProperty speakerType = property.FindPropertyRelative("_speakerType");
         EditorGUI.PrefixLabel(new Rect(position.x, position.y, typePrefixWidth - offsetSize, position.height), new GUIContent(speakerType.displayName));
         EditorGUI.PropertyField(new Rect(position.x + typePrefixWidth, position.y, typeFieldWidth - offsetSize, position.height), speakerType, GUIContent.none);
 
-        SerializedProperty revealedProperty = null;
-
-        switch (speakerType.enumValueIndex)
-        {
-            case STRING_NAME_ENUM_INDEX:
-                revealedProperty = property.FindPropertyRelative("_name");
-                break;
-
-            case CHARACTER_NAME_ENUM_INDEX:
-                revealedProperty = property.FindPropertyRelative("_profile");
-                break;
-        }
+        int enumIndex = speakerType.enumValueIndex;
+        SerializedProperty revealedProperty = enumIndex == PLAYER_NAME_ENUM_INDEX ? null : property.FindPropertyRelative(enumIndex == STRING_NAME_ENUM_INDEX ? "_name" : "_profile");
 
         float valuePrefixWidth = variableWidth * 3 / 16;
         float valueFieldWidth = variableWidth * 13 / 16;
@@ -60,7 +51,7 @@ public class SpeakerPropertiesDrawer : PropertyDrawer
             EditorGUI.PropertyField(new Rect(position.x + variableWidth + valuePrefixWidth, position.y, valueFieldWidth - offsetSize, position.height), revealedProperty, GUIContent.none);
         }
 
-        EditorGUI.indentLevel = indent;
+        EditorGUI.indentLevel -= indentDelta;
 
         EditorGUI.EndProperty();
     }
