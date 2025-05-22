@@ -983,8 +983,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad:
-    _sceneAsset: {fileID: 102900000, guid: c8fe12444fcd0448da7425afae13f3e7, type: 3}
-    _sceneName: FishingMinigame1
+    _sceneAsset: {fileID: 102900000, guid: 91b05b14d8d2441c483cee0ca6bcdcae, type: 3}
+    _sceneName: BenAct2Introduction
 --- !u!4 &605408011
 Transform:
   m_ObjectHideFlags: 0
@@ -1876,6 +1876,7 @@ MonoBehaviour:
   _skits:
   - {fileID: 11400000, guid: aab4a7a591eee4b5d826cbc110eafc5c, type: 2}
   - {fileID: 11400000, guid: 481030c597bae49869845ff66e425915, type: 2}
+  - {fileID: 11400000, guid: 66633483a91a146cdb7afed84e0c3c18, type: 2}
   _currentLineIndex: 0
   _currentSkitIndex: 0
   _timeBetweenCharacters: 0.05
