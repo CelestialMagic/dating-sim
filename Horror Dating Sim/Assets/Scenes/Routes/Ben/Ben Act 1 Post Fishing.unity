@@ -180,7 +180,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Start
+  m_text: Continue
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 06e8d28f043d4467099eaa6418a49b66, type: 2}
   m_sharedMaterial: {fileID: 1399657967587244100, guid: 06e8d28f043d4467099eaa6418a49b66, type: 2}
@@ -860,7 +860,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a44375a4d7fce482988797530d1be6d3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: de5d207350c794be486f4fffe7f061b2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1133,7 +1133,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -5138589274392714549, guid: c151bd297a4624e8bb76b021b95d976f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: de5d207350c794be486f4fffe7f061b2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1556,7 +1556,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &952762357
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1874,10 +1874,8 @@ MonoBehaviour:
   _backgroundHandler: {fileID: 697626964}
   _sfxAudioSource: {fileID: 0}
   _skits:
-  - {fileID: 11400000, guid: d9cd28b574e244b6c890cef0ec77fd36, type: 2}
-  - {fileID: 11400000, guid: 0e2c90124ef1448cbb0e1ca900a418b8, type: 2}
-  - {fileID: 11400000, guid: cfad92abb706146d1b624c3467892ebe, type: 2}
-  - {fileID: 11400000, guid: 44219f49a1086468f85b2bd17b9f1203, type: 2}
+  - {fileID: 11400000, guid: aab4a7a591eee4b5d826cbc110eafc5c, type: 2}
+  - {fileID: 11400000, guid: 481030c597bae49869845ff66e425915, type: 2}
   _currentLineIndex: 0
   _currentSkitIndex: 0
   _timeBetweenCharacters: 0.05
@@ -2127,7 +2125,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 37, y: -274}
+  m_AnchoredPosition: {x: 18, y: -170}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1521441911
