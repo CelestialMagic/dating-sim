@@ -1875,9 +1875,7 @@ MonoBehaviour:
   _backgroundHandler: {fileID: 697626964}
   _sfxAudioSource: {fileID: 1389154687}
   _skits:
-  - {fileID: 11400000, guid: 50cb6565a6c174dd9896dfef308f3e11, type: 2}
-  - {fileID: 11400000, guid: c580842e68f504c3e83d81e1cddef161, type: 2}
-  - {fileID: 11400000, guid: f746829c2aba5450eb10b8ee56e7b304, type: 2}
+  - {fileID: 11400000, guid: 9cd455c0c01ec48b2b8dce05267ce4e2, type: 2}
   _currentLineIndex: 0
   _currentSkitIndex: 0
   _timeBetweenCharacters: 0.05
