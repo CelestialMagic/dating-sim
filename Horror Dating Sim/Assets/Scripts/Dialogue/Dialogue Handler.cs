@@ -23,11 +23,11 @@ public class DialogueHandler : MonoBehaviour
 
     [Header("Dialogue Handler Events")]
     [SerializeField] private UnityEvent _onSkipDialogue = new UnityEvent();     // 
-    [SerializeField] private UnityEvent _onBeginLine = new UnityEvent();   // 
-    [SerializeField] private UnityEvent _onEndLine = new UnityEvent();   // 
-    [SerializeField] private UnityEvent _onBeginSkit = new UnityEvent();    //
-    [SerializeField] private UnityEvent _onEndSkit = new UnityEvent();     // 
-    [SerializeField] private UnityEvent _onFinishAllSkits = new UnityEvent(); //
+    [SerializeField] private UnityEvent _onBeginLine = new UnityEvent();        // 
+    [SerializeField] private UnityEvent _onEndLine = new UnityEvent();          // 
+    [SerializeField] private UnityEvent _onBeginSkit = new UnityEvent();        //
+    [SerializeField] private UnityEvent _onEndSkit = new UnityEvent();          // 
+    [SerializeField] private UnityEvent _onFinishAllSkits = new UnityEvent();   //
 
     #endregion
 
@@ -63,8 +63,8 @@ public class DialogueHandler : MonoBehaviour
 
     #region Constants
 
-    private static readonly string[] RICH_TEXT_WITHOUT_INDEX_SPACE = new string[] { "b", "i", "size", "color" }; // Rich text types that are not considered as individual characters
-    private static readonly string[] RICH_TEXT_WITH_INDEX_SPACE = new string[] { "sprite" }; // Rich text types that are considered as individual characters
+    private static readonly string[] RICH_TEXT_WITHOUT_INDEX_SPACE = new string[] { "b", "i", "size", "color" };    // Rich text types that are not considered as individual characters
+    private static readonly string[] RICH_TEXT_WITH_INDEX_SPACE = new string[] { "sprite" };                        // Rich text types that are considered as individual characters
 
     #endregion
 
@@ -318,7 +318,6 @@ public class DialogueHandler : MonoBehaviour
 
 
         _currentTextCoroutine = StartCoroutine(_typeLine()); // Starts line typing
-
         _onBeginLine?.Invoke();
     }
 
