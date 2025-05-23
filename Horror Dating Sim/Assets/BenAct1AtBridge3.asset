@@ -10,116 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a0315219a1dc2de42851a0d312cdb6c0, type: 3}
-  m_Name: BenFishingInviteAct1
+  m_Name: BenAct1AtBridge3
   m_EditorClassIdentifier: 
   _spriteCount: 1
   _dialogueLines:
   - hasBackground: 0
-    background: {fileID: 0}
+    background: {fileID: 21300000, guid: de5d207350c794be486f4fffe7f061b2, type: 3}
     hasSFX: 0
     soundEffect: {fileID: 0}
-    _line: Y'know, I was actually thinking of going fishing at this local spot I
-      know near campus this afternoon. If you don't have classes, wanna come with
-      me?
-    _speakerProperties:
-    - _speakerType: 2
-      _name: 
-      _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
-    _characterSpriteSettings:
-    - _spriteIndex: 0
-      IsSubject:
-        _isEnabled: 1
-        _value: 1
-      IsRevealed:
-        _isEnabled: 1
-        _value: 1
-      HasArrived:
-        _isEnabled: 1
-        _value: 1
-      StartingAnchorPosition:
-        _isEnabled: 0
-        _value: {x: 0, y: 0}
-      StartingDimensions:
-        _isEnabled: 1
-        _value: {x: 750, y: 900}
-      ImageSearchParameters:
-        _isEnabled: 1
-        _value:
-          _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
-          _imageType: 4
-          _version: 1
-  - hasBackground: 0
-    background: {fileID: 0}
-    hasSFX: 0
-    soundEffect: {fileID: 0}
-    _line: (This is the perfect chance to get close to Ben. I've gotta seize this
-      opportunity!)
-    _speakerProperties:
-    - _speakerType: 1
-      _name: 
-      _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
-    _characterSpriteSettings:
-    - _spriteIndex: 0
-      IsSubject:
-        _isEnabled: 1
-        _value: 1
-      IsRevealed:
-        _isEnabled: 1
-        _value: 1
-      HasArrived:
-        _isEnabled: 1
-        _value: 1
-      StartingAnchorPosition:
-        _isEnabled: 0
-        _value: {x: 0, y: 0}
-      StartingDimensions:
-        _isEnabled: 1
-        _value: {x: 750, y: 900}
-      ImageSearchParameters:
-        _isEnabled: 1
-        _value:
-          _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
-          _imageType: 0
-          _version: 1
-  - hasBackground: 0
-    background: {fileID: 0}
-    hasSFX: 0
-    soundEffect: {fileID: 0}
-    _line: Sure, I'd love to!
-    _speakerProperties:
-    - _speakerType: 1
-      _name: 
-      _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
-    _characterSpriteSettings:
-    - _spriteIndex: 0
-      IsSubject:
-        _isEnabled: 1
-        _value: 1
-      IsRevealed:
-        _isEnabled: 1
-        _value: 1
-      HasArrived:
-        _isEnabled: 1
-        _value: 1
-      StartingAnchorPosition:
-        _isEnabled: 0
-        _value: {x: 0, y: 0}
-      StartingDimensions:
-        _isEnabled: 1
-        _value: {x: 750, y: 900}
-      ImageSearchParameters:
-        _isEnabled: 1
-        _value:
-          _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
-          _imageType: 4
-          _version: 1
-  - hasBackground: 0
-    background: {fileID: 0}
-    hasSFX: 0
-    soundEffect: {fileID: 0}
-    _line: Well alright! Here, gimme your phone number. I'll text ya the GPS location
-      for the spot, and we'll meet up around 3:00. Oh, and I'll bring the gear we
-      need, too, so don't worry about that.
+    _line: Ah, but look at me, rambling on and on like this. How was your first time
+      fishing?
     _speakerProperties:
     - _speakerType: 2
       _name: 
@@ -151,7 +51,8 @@ MonoBehaviour:
     background: {fileID: 0}
     hasSFX: 0
     soundEffect: {fileID: 0}
-    _line: See you then, Ben!
+    _line: I had a lot of fun, Ben! But I think my favorite part was just getting
+      to spend time with you!
     _speakerProperties:
     - _speakerType: 1
       _name: 
@@ -183,8 +84,74 @@ MonoBehaviour:
     background: {fileID: 0}
     hasSFX: 0
     soundEffect: {fileID: 0}
-    _line: Ben hefts his bag over one shoulder, then saunters out of class. He seems
-      just as excited as you are about this.
+    _line: That's... nice of you to say, actually.  I had a fun time hanging out
+      with you, too! We oughta do this again soon.
+    _speakerProperties:
+    - _speakerType: 2
+      _name: 
+      _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+    _characterSpriteSettings:
+    - _spriteIndex: 0
+      IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 1
+        _value: {x: 750, y: 900}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+          _imageType: 4
+          _version: 1
+  - hasBackground: 0
+    background: {fileID: 0}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
+    _line: I've gotta head home, though. I wanted to make dinner tonight, and it's
+      getting a little late. So hey, see you at class tomorrow!
+    _speakerProperties:
+    - _speakerType: 2
+      _name: 
+      _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+    _characterSpriteSettings:
+    - _spriteIndex: 0
+      IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 1
+        _value: {x: 750, y: 900}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+          _imageType: 1
+          _version: 1
+  - hasBackground: 0
+    background: {fileID: 0}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
+    _line: Ben cheerfully waved you goodbye, touting your fishing rods over his shoulder
+      as he walked away.
     _speakerProperties:
     - _speakerType: 0
       _name: 
@@ -210,14 +177,14 @@ MonoBehaviour:
         _isEnabled: 1
         _value:
           _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
-          _imageType: 0
+          _imageType: 1
           _version: 1
   - hasBackground: 1
     background: {fileID: 21300000, guid: a877b818a040d48cfad7800ec1022fdd, type: 3}
     hasSFX: 0
     soundEffect: {fileID: 0}
-    _line: Guess it takes a certain kind of person to agree to a... well, a fishing
-      date.
+    _line: Seems like that went pretty well! Maybe it's not gonna be so hard to get
+      close to Ben after all?
     _speakerProperties:
     - _speakerType: 0
       _name: 
@@ -243,5 +210,5 @@ MonoBehaviour:
         _isEnabled: 1
         _value:
           _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
-          _imageType: 0
+          _imageType: 1
           _version: 1

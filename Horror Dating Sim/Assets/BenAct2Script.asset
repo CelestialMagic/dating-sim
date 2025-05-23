@@ -16,6 +16,8 @@ MonoBehaviour:
   _dialogueLines:
   - hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: '(Another day of marine biology. I''m honestly really enjoying my time
       in this class. Wonder what''s contributing more, the material, or...)
 
@@ -27,6 +29,8 @@ MonoBehaviour:
     _characterSpriteSettings: []
   - hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: You catch the corner of Ben's gaze, and he grins and waves back at you.
     _speakerProperties:
     - _speakerType: 0
@@ -57,6 +61,8 @@ MonoBehaviour:
           _version: 1
   - hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: '(Nope, wasn''t even a question, was it?)
 
 '
@@ -89,6 +95,8 @@ MonoBehaviour:
           _version: 1
   - hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: '(I could go on like this forever...)
 
 '
@@ -121,6 +129,8 @@ MonoBehaviour:
           _version: 1
   - hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: fa412503881584f72aa046457d254bad, type: 3}
     _line: '(Oh, that''s the bell. Let''s go see what Ben''s up to today.)
 
 '
@@ -153,6 +163,8 @@ MonoBehaviour:
           _version: 1
   - hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: Heya! What'd you think of the lecture today? I felt super engaged!
     _speakerProperties:
     - _speakerType: 2
@@ -183,6 +195,8 @@ MonoBehaviour:
           _version: 1
   - hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: Yeah, I honestly didn't think we'd talk about divers and how they help
       with marine biology research, but I guess it makes sense.
     _speakerProperties:
@@ -214,6 +228,8 @@ MonoBehaviour:
           _version: 1
   - hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: Although, the part about oxygen tanks got me a little on edge, honestly.
     _speakerProperties:
     - _speakerType: 1
@@ -244,6 +260,8 @@ MonoBehaviour:
           _version: 1
   - hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: Oh, I totally get you. Framing the whole diving experience as being in
       a claustrophobic space with limited oxygen... yeah, it kinda takes the magic
       out of it, huh?
@@ -276,6 +294,8 @@ MonoBehaviour:
           _version: 1
   - hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: I think I know just the thing to cheer you up, though!
     _speakerProperties:
     - _speakerType: 2
@@ -306,6 +326,8 @@ MonoBehaviour:
           _version: 1
   - hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: '(Whoa... He''s concerned about me? That''s so sweet...)
 
 '
@@ -338,6 +360,8 @@ MonoBehaviour:
           _version: 1
   - hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: What is it, Ben?
     _speakerProperties:
     - _speakerType: 1
@@ -368,6 +392,8 @@ MonoBehaviour:
           _version: 1
   - hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: I'm holding a little get-together with a few buddies at my house later.
       You wanna come with? It'll be a super low-key kinda thing, so if you're not
       good with crowds, that shouldn't be an issue.
@@ -400,6 +426,8 @@ MonoBehaviour:
           _version: 1
   - hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: Oh, and we've got a pool, too! If you like swimming as much as you like
       fishing, hehe.
     _speakerProperties:
@@ -431,6 +459,8 @@ MonoBehaviour:
           _version: 1
   - hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: Sounds great! I'd love to spend some time with you today!
     _speakerProperties:
     - _speakerType: 1
@@ -461,6 +491,8 @@ MonoBehaviour:
           _version: 1
   - hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: '(Going to Ben''s house... to hang out with him? Am I dreaming?)
 
 '
@@ -493,6 +525,8 @@ MonoBehaviour:
           _version: 1
   - hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: Alright, sweet! We're gonna meet up at around 8pm, so be ready around
       then. Oh, and here's my address. Do you have a car? I can come pick you up
       if nah.
@@ -525,6 +559,8 @@ MonoBehaviour:
           _version: 1
   - hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: No, I've got a car, so don't worry about it. I bet you'll be busy enough
       as it is getting things ready.
     _speakerProperties:
@@ -556,6 +592,8 @@ MonoBehaviour:
           _version: 1
   - hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: Aw, that's nice of you. Well, I guess I'll catch you later then!
     _speakerProperties:
     - _speakerType: 2

@@ -785,7 +785,7 @@ MonoBehaviour:
   typingManager: {fileID: 0}
   lostCanvas: {fileID: 2072361046}
   minigameCanvas: {fileID: 0}
-  nextScene: BenAct2Introduction
+  nextScene: Ben Act 1 Post Fishing
   resetScene: FishingMinigame1
   catcher: {fileID: 2085601509}
   firstMinigameEndScreen: {fileID: 2069587522}
