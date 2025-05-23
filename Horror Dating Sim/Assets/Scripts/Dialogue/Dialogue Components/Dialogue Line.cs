@@ -12,6 +12,7 @@ public class DialogueLine
 {
     #region Serialized Fields
 
+    [SerializeField] private ToggledField<Sprite> _newBackground;
     [SerializeField] private bool hasBackground; //A bool representing whether a line has a background or not (Jessie)
     [SerializeField] private Sprite background;//A Sprite for a background change (Jessie)
 
@@ -56,17 +57,16 @@ public class DialogueLine
     #region Public Methods
 
     /// <summary>
-    /// 
+    /// Returns whether a line has a background or not (Jessie)
     /// </summary>
-    /// 
-
-//Returns whether a line has a background or not (Jessie)
     public bool GetHasBackground()
     {
         return hasBackground;
     }
 
-//Returns the background attached to the line (to be used by background handler) (Jessie)
+    /// <summary>
+    /// Returns the background attached to the line (to be used by background handler) (Jessie)
+    /// </summary>
     public Sprite GetBackground()
     {
         return background;
@@ -122,6 +122,18 @@ public class DialogueLine
             _characterSpriteSettings[i].UpdateCharacterSprites(characterSprites);
             i++;
         }
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="bkHandler"></param>
+    public void ChangeBackground(BackgroundHandler bkHandler)
+    {
+        if (!_newBackground.IsEnabled) return;
+
+        bkHandler.SetSelectedBackdrop(_newBackground.Value);
+        bkHandler.SetCanFadeAway(true);
     }
 
     #endregion
