@@ -6,22 +6,22 @@ public class TitleCard : MonoBehaviour
     [SerializeField]
     protected CanvasGroup panel; 
 
-    //[SerializeField]
-    //protected DialogueHandler dialogueHandler; 
+    [SerializeField]
+    protected DialogueHandler dialogueHandler; 
 
     [SerializeField]
     protected float startingAlpha, endingAlpha, fadeRate;
 
     protected bool startFade = false; 
 
-    /*
+
 //Sets the FadeOnClick() value to true
     public void FadeOnClick(){
         if(dialogueHandler != null)
             dialogueHandler.ProceedWithText(); 
         startFade = true;
     }
-    */
+
 
     //FadeAway() is called using Update
     protected virtual void Update()

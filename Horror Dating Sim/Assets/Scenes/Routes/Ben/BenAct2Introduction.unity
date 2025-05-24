@@ -983,8 +983,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad:
-    _sceneAsset: {fileID: 102900000, guid: c8fe12444fcd0448da7425afae13f3e7, type: 3}
-    _sceneName: FishingMinigame1
+    _sceneAsset: {fileID: 102900000, guid: efae1388499bf4313a7393421a55468d, type: 3}
+    _sceneName: CatchBenFishing
 --- !u!4 &605408011
 Transform:
   m_ObjectHideFlags: 0
