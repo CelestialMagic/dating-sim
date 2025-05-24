@@ -5817,7 +5817,7 @@ MonoBehaviour:
   lostCanvas: {fileID: 1799052854}
   minigameCanvas: {fileID: 16687491}
   nextScene: 
-  resetScene: Funhouse Typing Minigame
+  resetScene: Act3TypingRescue
 --- !u!1 &996090478
 GameObject:
   m_ObjectHideFlags: 0
@@ -6805,7 +6805,7 @@ MonoBehaviour:
   typeSound: {fileID: 8300000, guid: 38103d283518b4f17ab11f2a7a828b7e, type: 3}
   wonMinigame: 0
   backgroundMusic: {fileID: 779869372}
-  pitchModifier: 0.1
+  pitchModifier: -0.01
 --- !u!1 &1486435771
 GameObject:
   m_ObjectHideFlags: 0
