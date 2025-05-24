@@ -57,7 +57,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Routes/Jane/JaneAct2FunhousePart1.unity
     guid: 6dbbfdedbd98e48a58c2375487dbfde9
   - enabled: 1
-    path: Assets/Scenes/Minigames/Typing/FunhouseTyping3.unity
+    path: Assets/Scenes/Minigames/Typing/Act3TypingRescue.unity
     guid: 379ea020c213e4273aa4504c10617a06
   - enabled: 1
     path: Assets/Scenes/Minigames/Typing/FunhouseTyping2.unity
