@@ -80,4 +80,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Routes/Ben/Ben Act 1 Post Fishing.unity
     guid: 3f621f2d2be284cefa2e7b26ddcff76f
+  - enabled: 1
+    path: Assets/JaneAct1PostMinigame.unity
+    guid: 15f76d12b35564faab431984a411e3b0
   m_configObjects: {}

@@ -14,8 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _spriteCount: 0
   _questionLine:
+    _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
     hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: "Well, let\u2019s get started! Where should we go first?"
     _speakerProperties:
     - _speakerType: 2
@@ -56,6 +61,24 @@ MonoBehaviour:
     _localScale:
       _isEnabled: 1
       _value: {x: 2, y: 2}
+    _buttonSprite:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    _buttonBaseColor:
+      _isEnabled: 1
+      _value: {r: 0.39894086, g: 0.15908687, b: 0.5188679, a: 0.70980394}
+    _pixelMultiplier:
+      _isEnabled: 0
+      _value: 0
+    _font:
+      _isEnabled: 1
+      _value: {fileID: 11400000, guid: 06e8d28f043d4467099eaa6418a49b66, type: 2}
+    _fontVectorColor:
+      _isEnabled: 1
+      _value: {r: 1, g: 1, b: 1, a: 1}
+    _fontSize:
+      _isEnabled: 0
+      _value: 0
   - _skitFromChoice: {fileID: 11400000, guid: 00cea27b41c3648cea679869ab78f18a, type: 2}
     _choicePrompt: How about the carnival games?
     _localPosition:
@@ -67,3 +90,21 @@ MonoBehaviour:
     _localScale:
       _isEnabled: 1
       _value: {x: 2, y: 2}
+    _buttonSprite:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    _buttonBaseColor:
+      _isEnabled: 1
+      _value: {r: 0.39894086, g: 0.15908687, b: 0.5188679, a: 0.70980394}
+    _pixelMultiplier:
+      _isEnabled: 0
+      _value: 0
+    _font:
+      _isEnabled: 1
+      _value: {fileID: 11400000, guid: 06e8d28f043d4467099eaa6418a49b66, type: 2}
+    _fontVectorColor:
+      _isEnabled: 1
+      _value: {r: 1, g: 1, b: 1, a: 1}
+    _fontSize:
+      _isEnabled: 0
+      _value: 0
