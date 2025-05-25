@@ -23,7 +23,7 @@ public class TypingTimer : MonoBehaviour
     protected GameObject lostCanvas, minigameCanvas; 
 
     [SerializeField]
-    protected string nextScene, resetScene;
+    protected SceneField nextScene, resetScene;
 
     // Start is called before the first frame update
     protected void Start()

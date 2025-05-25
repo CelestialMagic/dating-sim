@@ -785,8 +785,12 @@ MonoBehaviour:
   typingManager: {fileID: 0}
   lostCanvas: {fileID: 2072361046}
   minigameCanvas: {fileID: 0}
-  nextScene: Ben Act 1 Post Fishing
-  resetScene: FishingMinigame1
+  nextScene:
+    _sceneAsset: {fileID: 102900000, guid: 3f621f2d2be284cefa2e7b26ddcff76f, type: 3}
+    _sceneName: Ben Act 1 Post Fishing
+  resetScene:
+    _sceneAsset: {fileID: 102900000, guid: c8fe12444fcd0448da7425afae13f3e7, type: 3}
+    _sceneName: FishingMinigame1
   catcher: {fileID: 2085601509}
   firstMinigameEndScreen: {fileID: 2069587522}
   caughtFishText: {fileID: 1707882499}
