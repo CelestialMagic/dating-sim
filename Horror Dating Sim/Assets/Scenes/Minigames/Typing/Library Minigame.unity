@@ -987,8 +987,8 @@ MonoBehaviour:
   lostCanvas: {fileID: 1799052854}
   minigameCanvas: {fileID: 16687491}
   nextScene:
-    _sceneAsset: {fileID: 0}
-    _sceneName: 
+    _sceneAsset: {fileID: 102900000, guid: 15f76d12b35564faab431984a411e3b0, type: 3}
+    _sceneName: JaneAct1PostMinigame
   resetScene:
     _sceneAsset: {fileID: 102900000, guid: c6025e78c24914729b181cc86d427906, type: 3}
     _sceneName: Library Minigame
