@@ -32,8 +32,8 @@ MonoBehaviour:
       _value: {fileID: 0}
     hasBackground: 0
     background: {fileID: 0}
-    hasSFX: 0
-    soundEffect: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: 7387dbd5cb7a1344db519bae272ac6a1, type: 3}
     _line: While going down the aisle, you accidentally bump into someone.
     _speakerProperties:
     - _speakerType: 0

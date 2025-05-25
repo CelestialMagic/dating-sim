@@ -83,4 +83,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/JaneAct1PostMinigame.unity
     guid: 15f76d12b35564faab431984a411e3b0
+  - enabled: 1
+    path: Assets/FunhouseTyping3Act2.unity
+    guid: 85ec094abfeed475da6373dd599e3d5d
   m_configObjects: {}
