@@ -20,28 +20,38 @@ public class SelectableObject : MonoBehaviour
     private SpriteRenderer renderer; 
 
     [SerializeField]
-    private Color selectedColor, unSelectedColor, highlightingColor; 
+    private Color selectedColor, unSelectedColor, highlightingColor;
+
+    [SerializeField]
+    private Sprite corruptedBen, corruptedJane;
+
+    [SerializeField]
+    private SpriteRenderer janeRenderer, benRenderer; 
 
     public bool isSelected = false; 
+    
+    
 
 
-      public void Start(){
+      public void Start()
+    {
         playerData = FindObjectOfType<PlayerData>();
-        name.text = character.characterName;  
-        UnselectCharacter(); 
+        name.text = character.characterName;
+        UnselectCharacter();
         ToggleTextVisibility(false);
         //saveDataJSON = FindObjectOfType<SaveDataJSON>(); 
-        switch(character.internalName){
+        switch (character.internalName)
+        {
             case CharacterSelect.CharacterName.Ben:
-                if(playerData.FinishedBen)
-                    gameObject.SetActive(false);
+                if (playerData.FinishedBen)
+                    benRenderer.sprite = corruptedBen; 
                 break;
             case CharacterSelect.CharacterName.Jane:
-                if(playerData.FinishedJane)
-                    gameObject.SetActive(false);
+                if (playerData.FinishedJane)
+                    janeRenderer.sprite = corruptedJane;
                 break;
             default:
-            break; 
+                break;
         }
 
     }
