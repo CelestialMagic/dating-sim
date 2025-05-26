@@ -5816,8 +5816,12 @@ MonoBehaviour:
   typingManager: {fileID: 1415415400}
   lostCanvas: {fileID: 1799052854}
   minigameCanvas: {fileID: 16687491}
-  nextScene: 
-  resetScene: Act3TypingRescue
+  nextScene:
+    _sceneAsset: {fileID: 102900000, guid: 15f0a747209504d54baac9af22d45d43, type: 3}
+    _sceneName: Act3FoundJane
+  resetScene:
+    _sceneAsset: {fileID: 102900000, guid: 379ea020c213e4273aa4504c10617a06, type: 3}
+    _sceneName: Act3TypingRescue
 --- !u!1 &996090478
 GameObject:
   m_ObjectHideFlags: 0

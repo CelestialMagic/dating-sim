@@ -20,7 +20,7 @@ MonoBehaviour:
     hasBackground: 0
     background: {fileID: -6439997768508307955, guid: 50daf5d284d9d44fca379f1c4fcc52a4, type: 3}
     hasSFX: 1
-    soundEffect: {fileID: 8300000, guid: ec0297d7beb5751408bbc852309a6341, type: 3}
+    soundEffect: {fileID: 8300000, guid: 0fd10244b77d12c49b736fcb75ab559d, type: 3}
     _line: 'The dim interior of the mirror maze has been illuminated by the dancing
       glow of flames.
 

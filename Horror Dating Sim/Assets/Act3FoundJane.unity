@@ -860,7 +860,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 56af92d5708594195a5654b7b1035207, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 605cabcc21dac45adac73aa55fd791ef, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -983,8 +983,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad:
-    _sceneAsset: {fileID: 102900000, guid: 379ea020c213e4273aa4504c10617a06, type: 3}
-    _sceneName: Act3TypingRescue
+    _sceneAsset: {fileID: 102900000, guid: b2e3e9214b5a14e5cb41a54ca1d7d8b8, type: 3}
+    _sceneName: Act3TypingEscape
 --- !u!4 &605408011
 Transform:
   m_ObjectHideFlags: 0
@@ -1875,7 +1875,9 @@ MonoBehaviour:
   _backgroundHandler: {fileID: 697626964}
   _sfxAudioSource: {fileID: 1389154687}
   _skits:
-  - {fileID: 11400000, guid: 9cd455c0c01ec48b2b8dce05267ce4e2, type: 2}
+  - {fileID: 11400000, guid: 8ffabdde5eb754218920f352cba6e645, type: 2}
+  - {fileID: 11400000, guid: ef6f48152a3744585942b9466e243520, type: 2}
+  - {fileID: 11400000, guid: 3121f489f1b6e4bdfa2509de6ff30bf0, type: 2}
   _currentLineIndex: 0
   _currentSkitIndex: 0
   _timeBetweenCharacters: 0.05

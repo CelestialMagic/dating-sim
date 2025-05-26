@@ -19,12 +19,10 @@ MonoBehaviour:
       _value: {fileID: 0}
     hasBackground: 0
     background: {fileID: -6439997768508307955, guid: 50daf5d284d9d44fca379f1c4fcc52a4, type: 3}
-    hasSFX: 1
+    hasSFX: 0
     soundEffect: {fileID: 8300000, guid: ec0297d7beb5751408bbc852309a6341, type: 3}
-    _line: 'The dim interior of the mirror maze has been illuminated by the dancing
-      glow of flames.
-
-'
+    _line: The hazy smoke has now filled most of the upper parts of the maze, though
+      thankfully the roof is quite high
     _speakerProperties:
     - _speakerType: 0
       _name: 
@@ -58,11 +56,9 @@ MonoBehaviour:
     hasBackground: 0
     background: {fileID: -6439997768508307955, guid: 50daf5d284d9d44fca379f1c4fcc52a4, type: 3}
     hasSFX: 1
-    soundEffect: {fileID: 8300000, guid: 7387dbd5cb7a1344db519bae272ac6a1, type: 3}
-    _line: 'The mirrors reflect the fire in all directions, it almost seems like
-      you are engulfed in flames.
-
-'
+    soundEffect: {fileID: 8300000, guid: 0fd10244b77d12c49b736fcb75ab559d, type: 3}
+    _line: The fire has turned this place into an oven, and the further you go the
+      more sweat drips from you face
     _speakerProperties:
     - _speakerType: 0
       _name: 
@@ -132,9 +128,9 @@ MonoBehaviour:
     background: {fileID: -6439997768508307955, guid: 50daf5d284d9d44fca379f1c4fcc52a4, type: 3}
     hasSFX: 0
     soundEffect: {fileID: 8300000, guid: 864f776918aa55846a971ba0ed5722e1, type: 3}
-    _line: "I\u2019m\u2026 I\u2019m over here"
+    _line: You hear only sobs as a response.
     _speakerProperties:
-    - _speakerType: 2
+    - _speakerType: 0
       _name: 
       _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
     _characterSpriteSettings:
@@ -167,7 +163,7 @@ MonoBehaviour:
     background: {fileID: -6439997768508307955, guid: 50daf5d284d9d44fca379f1c4fcc52a4, type: 3}
     hasSFX: 0
     soundEffect: {fileID: 8300000, guid: 864f776918aa55846a971ba0ed5722e1, type: 3}
-    _line: (I need to get to her!)
+    _line: "LJ! I\u2019m almost there, just hold on!"
     _speakerProperties:
     - _speakerType: 1
       _name: 
@@ -183,6 +179,77 @@ MonoBehaviour:
       HasArrived:
         _isEnabled: 1
         _value: 0
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 1
+        _value: {x: 750, y: 900}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
+          _imageType: 2
+          _version: 1
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
+    background: {fileID: -6439997768508307955, guid: 50daf5d284d9d44fca379f1c4fcc52a4, type: 3}
+    hasSFX: 0
+    soundEffect: {fileID: 8300000, guid: 864f776918aa55846a971ba0ed5722e1, type: 3}
+    _line: "You turn the corner and finally get a good look at LJ since the flames
+      began bathing the mirrors\u2019 reflections."
+    _speakerProperties:
+    - _speakerType: 0
+      _name: 
+      _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
+    _characterSpriteSettings:
+    - _spriteIndex: 0
+      IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 0
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 1
+        _value: {x: 750, y: 900}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
+          _imageType: 2
+          _version: 1
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
+    background: {fileID: -6439997768508307955, guid: 50daf5d284d9d44fca379f1c4fcc52a4, type: 3}
+    hasSFX: 0
+    soundEffect: {fileID: 8300000, guid: 864f776918aa55846a971ba0ed5722e1, type: 3}
+    _line: "She looks\u2026 different."
+    _speakerProperties:
+    - _speakerType: 1
+      _name: 
+      _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
+    _characterSpriteSettings:
+    - _spriteIndex: 0
+      IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 0
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
       StartingAnchorPosition:
         _isEnabled: 0
         _value: {x: 0, y: 0}
