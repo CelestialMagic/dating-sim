@@ -90,10 +90,10 @@ EditorBuildSettings:
     path: Assets/Act3TypingEscape.unity
     guid: b2e3e9214b5a14e5cb41a54ca1d7d8b8
   - enabled: 1
-    path: Assets/Act3FoundJane.unity
+    path: Assets/Scenes/Routes/Jane/Act3FoundJane.unity
     guid: 15f0a747209504d54baac9af22d45d43
   - enabled: 1
-    path: Assets/Act3JaneFinalChoice.unity
+    path: Assets/Scenes/Routes/Jane/Act3JaneFinalChoice.unity
     guid: d2e0d95bcab70451abdea1c742e7342d
   - enabled: 1
     path: Assets/JaneRouteEnding.unity

@@ -67,8 +67,8 @@ MonoBehaviour:
       _value: {fileID: 0}
     hasBackground: 0
     background: {fileID: 0}
-    hasSFX: 0
-    soundEffect: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: 941907831ba7e9d45a62b6713def1365, type: 3}
     _line: Owee!
     _speakerProperties:
     - _speakerType: 2
@@ -213,8 +213,8 @@ MonoBehaviour:
       _value: {fileID: 0}
     hasBackground: 0
     background: {fileID: 0}
-    hasSFX: 0
-    soundEffect: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: e89260e1d815f6542bdb5c26a6f04496, type: 3}
     _line: "Thanks for the help, stranger. I don\u2019t believe I caught a name?"
     _speakerProperties:
     - _speakerType: 2
