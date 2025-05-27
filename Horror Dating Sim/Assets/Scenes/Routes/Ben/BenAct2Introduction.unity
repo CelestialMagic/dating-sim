@@ -1876,6 +1876,7 @@ MonoBehaviour:
   _sfxAudioSource: {fileID: 1389154687}
   _skits:
   - {fileID: 11400000, guid: 8b9afa5b920454d269e0c883fdbb3e72, type: 2}
+  - {fileID: 11400000, guid: 13d546cefe748458aafce95aa8710661, type: 2}
   _currentLineIndex: 0
   _currentSkitIndex: 0
   _timeBetweenCharacters: 0.05
