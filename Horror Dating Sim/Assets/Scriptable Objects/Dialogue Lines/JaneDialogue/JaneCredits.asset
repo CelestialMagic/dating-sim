@@ -31,7 +31,7 @@ MonoBehaviour:
       _isEnabled: 0
       _value: {fileID: 0}
     hasBackground: 1
-    background: {fileID: -6032657434026858933, guid: 64d783936dea949c3968f281a3d3ebf3, type: 3}
+    background: {fileID: -6439997768508307955, guid: 50daf5d284d9d44fca379f1c4fcc52a4, type: 3}
     hasSFX: 0
     soundEffect: {fileID: 0}
     _line: Background Art, Typing Minigame Programming, and Background Music by Jessie
