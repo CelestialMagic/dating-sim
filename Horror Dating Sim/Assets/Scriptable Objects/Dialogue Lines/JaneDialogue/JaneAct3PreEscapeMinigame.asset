@@ -56,7 +56,7 @@ MonoBehaviour:
     hasBackground: 0
     background: {fileID: -6439997768508307955, guid: 50daf5d284d9d44fca379f1c4fcc52a4, type: 3}
     hasSFX: 1
-    soundEffect: {fileID: 8300000, guid: 0fd10244b77d12c49b736fcb75ab559d, type: 3}
+    soundEffect: {fileID: 8300000, guid: e9b9fe5c87579bb4794461639be15a92, type: 3}
     _line: "No\u2026 I don\u2019t think we should leave."
     _speakerProperties:
     - _speakerType: 2
@@ -90,8 +90,8 @@ MonoBehaviour:
       _value: {fileID: 0}
     hasBackground: 0
     background: {fileID: -6439997768508307955, guid: 50daf5d284d9d44fca379f1c4fcc52a4, type: 3}
-    hasSFX: 0
-    soundEffect: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: b54e63490631c3f44bffc69ac5d24936, type: 3}
     _line: "It\u2019s safe here, see? If we try to leave, we\u2019ll only get hurt\u2026"
     _speakerProperties:
     - _speakerType: 2

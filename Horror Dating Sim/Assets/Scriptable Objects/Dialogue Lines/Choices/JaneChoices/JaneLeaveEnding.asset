@@ -19,8 +19,8 @@ MonoBehaviour:
       _value: {fileID: 0}
     hasBackground: 0
     background: {fileID: 0}
-    hasSFX: 0
-    soundEffect: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: 7b6970945a5e00e4fb3a95aa6e33e7c7, type: 3}
     _line: "No\u2026 no\u2026"
     _speakerProperties:
     - _speakerType: 2
@@ -54,8 +54,8 @@ MonoBehaviour:
       _value: {fileID: 0}
     hasBackground: 0
     background: {fileID: 0}
-    hasSFX: 0
-    soundEffect: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: 9a9f43e971388954a9521b6dd330413d, type: 3}
     _line: "It\u2019s dangerous to leave! Don\u2019t leave me!"
     _speakerProperties:
     - _speakerType: 2

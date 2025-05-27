@@ -19,8 +19,8 @@ MonoBehaviour:
       _value: {fileID: 0}
     hasBackground: 0
     background: {fileID: 0}
-    hasSFX: 0
-    soundEffect: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: 9aa2d0bb9236f714399116f5f180cc38, type: 3}
     _line: "Thank you\u2026"
     _speakerProperties:
     - _speakerType: 2
@@ -160,8 +160,8 @@ MonoBehaviour:
       _value: {fileID: 0}
     hasBackground: 0
     background: {fileID: 0}
-    hasSFX: 0
-    soundEffect: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: e1bf9a8a6b4ddeb4696b4c16b5edd506, type: 3}
     _line: "You know\u2026 I never did tell you about the L in my name."
     _speakerProperties:
     - _speakerType: 2
@@ -195,8 +195,8 @@ MonoBehaviour:
       _value: {fileID: 0}
     hasBackground: 0
     background: {fileID: 0}
-    hasSFX: 0
-    soundEffect: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: 3fb9ab5b82476f54b86eb768edc3388a, type: 3}
     _line: It stands for Laughing. People always said that my laugh was off putting,
       which was how I got the name.
     _speakerProperties:
@@ -231,8 +231,8 @@ MonoBehaviour:
       _value: {fileID: 0}
     hasBackground: 0
     background: {fileID: 0}
-    hasSFX: 0
-    soundEffect: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: cc8598d2953223d4f89df9f72db34f92, type: 3}
     _line: "But I like to think that it\u2019s because no matter where or how I am,
       I can still laugh."
     _speakerProperties:
