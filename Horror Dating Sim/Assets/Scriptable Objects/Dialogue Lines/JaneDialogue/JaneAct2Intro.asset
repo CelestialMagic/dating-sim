@@ -33,7 +33,7 @@ MonoBehaviour:
     hasBackground: 0
     background: {fileID: 0}
     hasSFX: 1
-    soundEffect: {fileID: 8300000, guid: 3fb9ab5b82476f54b86eb768edc3388a, type: 3}
+    soundEffect: {fileID: 8300000, guid: e4c8cbc10b46e674692a9b60911baaa5, type: 3}
     _line: Wow, you got here even before I did!
     _speakerProperties:
     - _speakerType: 2

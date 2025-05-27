@@ -19,8 +19,8 @@ MonoBehaviour:
       _value: {fileID: 0}
     hasBackground: 0
     background: {fileID: 0}
-    hasSFX: 0
-    soundEffect: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: e9b9fe5c87579bb4794461639be15a92, type: 3}
     _line: We should stay here... it's safe...
     _speakerProperties:
     - _speakerType: 2

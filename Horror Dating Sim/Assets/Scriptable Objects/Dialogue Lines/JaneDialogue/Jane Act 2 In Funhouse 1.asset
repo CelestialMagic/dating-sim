@@ -14,8 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _spriteCount: 1
   _dialogueLines:
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: -6439997768508307955, guid: 50daf5d284d9d44fca379f1c4fcc52a4, type: 3}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: (I see it! The exit!)
     _speakerProperties:
     - _speakerType: 1
@@ -44,8 +49,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
           _imageType: 2
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: e4c8cbc10b46e674692a9b60911baaa5, type: 3}
     _line: "Didn\u2019t think it\u2019d be that easy, did\u2019ja?"
     _speakerProperties:
     - _speakerType: 2
@@ -74,8 +84,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
           _imageType: 1
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: '(How did she get ahead of me?)
 
 '
@@ -106,8 +121,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
           _imageType: 1
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 2776784822358741141, guid: 7ab77a45d12464d2fa5f9195f5bb053d, type: 3}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: '(Wait, I can still win! I just have to lose her in the maze!)
 
 '
@@ -138,8 +158,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
           _imageType: 1
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 2776784822358741141, guid: 7ab77a45d12464d2fa5f9195f5bb053d, type: 3}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: You turn around and head back into the maze
     _speakerProperties:
     - _speakerType: 0
@@ -168,8 +193,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
           _imageType: 2
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 2776784822358741141, guid: 7ab77a45d12464d2fa5f9195f5bb053d, type: 3}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: d8089d3734fb882439e96202b8ff4372, type: 3}
     _line: "Ohhohoh. You\u2019re making this a lot more fun!"
     _speakerProperties:
     - _speakerType: 2
@@ -198,8 +228,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
           _imageType: 1
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 2776784822358741141, guid: 7ab77a45d12464d2fa5f9195f5bb053d, type: 3}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: 503eddc58a259cd4785f2da5b675dd6e, type: 3}
     _line: "(LJ let out a rather unsettling laugh, but at least she\u2019s enjoying
       the fair finally.)"
     _speakerProperties:

@@ -126,8 +126,8 @@ MonoBehaviour:
       _value: {fileID: 0}
     hasBackground: 0
     background: {fileID: -6439997768508307955, guid: 50daf5d284d9d44fca379f1c4fcc52a4, type: 3}
-    hasSFX: 0
-    soundEffect: {fileID: 8300000, guid: 864f776918aa55846a971ba0ed5722e1, type: 3}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: a43952877c1bf7b4993b3cb2669127ca, type: 3}
     _line: You hear only sobs as a response.
     _speakerProperties:
     - _speakerType: 0

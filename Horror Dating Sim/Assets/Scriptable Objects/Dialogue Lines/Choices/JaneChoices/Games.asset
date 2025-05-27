@@ -14,8 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _spriteCount: 1
   _dialogueLines:
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: e1bf9a8a6b4ddeb4696b4c16b5edd506, type: 3}
     _line: Right into the meat of it. I love it!
     _speakerProperties:
     - _speakerType: 2
@@ -44,8 +49,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
           _imageType: 1
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: You head over to the carnival games.
     _speakerProperties:
     - _speakerType: 0
@@ -74,8 +84,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
           _imageType: 0
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: Though LJ seemed ecstatic on the way over, seems something has gotten
       her down since
     _speakerProperties:
@@ -105,8 +120,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
           _imageType: 2
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: "What\u2019s wrong?"
     _speakerProperties:
     - _speakerType: 1
@@ -135,8 +155,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
           _imageType: 2
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: f9f1412e2ebd12d49a15e4db911089d2, type: 3}
     _line: "Hmm? Oh it\u2019s nothing."
     _speakerProperties:
     - _speakerType: 2
@@ -165,8 +190,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
           _imageType: 3
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: f300f6f637051434a99e353b8ee75b79, type: 3}
     _line: "It\u2019s just, all of these games seem rather crudely put together"
     _speakerProperties:
     - _speakerType: 2
@@ -195,8 +225,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
           _imageType: 3
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: f9f1412e2ebd12d49a15e4db911089d2, type: 3}
     _line: "The water guns barely have enough pressure since it\u2019s all coming
       from a water truck, and all those helium tanks stacked together look very old
       and overused."
@@ -227,8 +262,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
           _imageType: 3
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: f300f6f637051434a99e353b8ee75b79, type: 3}
     _line: "And those open flame torches? Their supports look like they\u2019re about
       to collapse any minute.."
     _speakerProperties:
@@ -258,8 +298,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
           _imageType: 3
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: "I\u2019m sure everything here passed safety regulations."
     _speakerProperties:
     - _speakerType: 1
@@ -288,8 +333,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
           _imageType: 2
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: The tanks have long lifespans compared to what they contain, and the torches
       will probably snuff from lack of fuel out before they hit the ground if their
       supports give out.
@@ -320,8 +370,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
           _imageType: 2
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: 3fb9ab5b82476f54b86eb768edc3388a, type: 3}
     _line: "I guess that\u2019s fine then\u2026"
     _speakerProperties:
     - _speakerType: 2

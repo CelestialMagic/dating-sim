@@ -20,7 +20,7 @@ MonoBehaviour:
     hasBackground: 0
     background: {fileID: 0}
     hasSFX: 0
-    soundEffect: {fileID: 0}
+    soundEffect: {fileID: 8300000, guid: f300f6f637051434a99e353b8ee75b79, type: 3}
     _line: "*Sniff* Is that you\u2026?"
     _speakerProperties:
     - _speakerType: 2

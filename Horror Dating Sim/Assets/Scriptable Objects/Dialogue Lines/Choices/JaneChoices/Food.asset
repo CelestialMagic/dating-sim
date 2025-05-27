@@ -14,8 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _spriteCount: 1
   _dialogueLines:
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: 9aa2d0bb9236f714399116f5f180cc38, type: 3}
     _line: Aww. Did ya skip lunch?
     _speakerProperties:
     - _speakerType: 2
@@ -44,8 +49,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
           _imageType: 1
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: e89260e1d815f6542bdb5c26a6f04496, type: 3}
     _line: "Either way, the food stalls are over there, so let\u2019s go!"
     _speakerProperties:
     - _speakerType: 2
@@ -74,8 +84,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
           _imageType: 0
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: You head over to the food stalls.
     _speakerProperties:
     - _speakerType: 0
@@ -104,8 +119,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
           _imageType: 0
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: Though LJ seemed ecstatic on the way over, seems something has gotten
       her down since
     _speakerProperties:
@@ -135,8 +155,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
           _imageType: 2
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: "What\u2019s wrong?"
     _speakerProperties:
     - _speakerType: 1
@@ -165,8 +190,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
           _imageType: 2
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: f9f1412e2ebd12d49a15e4db911089d2, type: 3}
     _line: "Hmm? Oh it\u2019s nothing."
     _speakerProperties:
     - _speakerType: 2
@@ -195,8 +225,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
           _imageType: 3
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: f300f6f637051434a99e353b8ee75b79, type: 3}
     _line: "It\u2019s just, I never got how the food workers here are safe. You\u2019re
       making a bunch of food with hot machines in little tents."
     _speakerProperties:
@@ -226,8 +261,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
           _imageType: 3
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: f9f1412e2ebd12d49a15e4db911089d2, type: 3}
     _line: No sprinklers, ventilation, or even a fire extinguisher from the looks
       of it.
     _speakerProperties:
@@ -257,8 +297,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
           _imageType: 3
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: f300f6f637051434a99e353b8ee75b79, type: 3}
     _line: "Not to mention food regulations. I don\u2019t see a single certificate
       anywhere."
     _speakerProperties:
@@ -288,8 +333,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
           _imageType: 3
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: "I think county fairs have food inspectors\u2026?"
     _speakerProperties:
     - _speakerType: 1
@@ -318,8 +368,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
           _imageType: 2
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: "They have gloves and masks so there shouldn\u2019t be any contact issues.
       They also got long sleeves, so the workers are at least safe from bumping into
       the hot food or machines."
@@ -350,11 +405,16 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
           _imageType: 2
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: e1bf9a8a6b4ddeb4696b4c16b5edd506, type: 3}
     _line: "I guess that\u2019s reassuring\u2026"
     _speakerProperties:
-    - _speakerType: 1
+    - _speakerType: 2
       _name: 
       _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
     _characterSpriteSettings:

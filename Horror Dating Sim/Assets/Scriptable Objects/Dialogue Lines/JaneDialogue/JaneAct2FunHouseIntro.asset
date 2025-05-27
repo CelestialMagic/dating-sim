@@ -14,8 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _spriteCount: 1
   _dialogueLines:
-  - hasBackground: 1
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 1
     background: {fileID: -6439997768508307955, guid: 50daf5d284d9d44fca379f1c4fcc52a4, type: 3}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: ...
     _speakerProperties:
     - _speakerType: 2
@@ -44,8 +49,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
           _imageType: 2
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: '(Shoot, gotta do something to turn this around!)
 
 '
@@ -76,8 +86,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
           _imageType: 2
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: "Oh, I know what would be fun! Let\u2019s go check out the fun house over
       there!"
     _speakerProperties:
@@ -107,8 +122,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
           _imageType: 2
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 2776784822358741141, guid: 7ab77a45d12464d2fa5f9195f5bb053d, type: 3}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: e4c8cbc10b46e674692a9b60911baaa5, type: 3}
     _line: The fun house? The inside is just a mirror maze.
     _speakerProperties:
     - _speakerType: 2
@@ -137,8 +157,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
           _imageType: 3
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 2776784822358741141, guid: 7ab77a45d12464d2fa5f9195f5bb053d, type: 3}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: Still pretty fun right?
     _speakerProperties:
     - _speakerType: 1
@@ -167,8 +192,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
           _imageType: 2
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 2776784822358741141, guid: 7ab77a45d12464d2fa5f9195f5bb053d, type: 3}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: 479b8b60a21fc224f9e77808b146ba17, type: 3}
     _line: Heh heh.
     _speakerProperties:
     - _speakerType: 2
@@ -197,8 +227,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
           _imageType: 1
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 2776784822358741141, guid: 7ab77a45d12464d2fa5f9195f5bb053d, type: 3}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: e1bf9a8a6b4ddeb4696b4c16b5edd506, type: 3}
     _line: Sure, let's check it out.
     _speakerProperties:
     - _speakerType: 2
@@ -227,8 +262,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
           _imageType: 1
           _version: 1
-  - hasBackground: 1
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 1
     background: {fileID: 2776784822358741141, guid: 7ab77a45d12464d2fa5f9195f5bb053d, type: 3}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: The two of you walk over to the fun house.
     _speakerProperties:
     - _speakerType: 0
@@ -257,8 +297,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
           _imageType: 1
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 2776784822358741141, guid: 7ab77a45d12464d2fa5f9195f5bb053d, type: 3}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: f9f1412e2ebd12d49a15e4db911089d2, type: 3}
     _line: "I don\u2019t know, the structure doesn\u2019t look too stable. I also
       don\u2019t see any piping connected to it\u2026"
     _speakerProperties:
@@ -288,8 +333,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
           _imageType: 2
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 2776784822358741141, guid: 7ab77a45d12464d2fa5f9195f5bb053d, type: 3}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: '(I need to take her mind off of worrying about everything.)
 
 '
@@ -320,8 +370,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
           _imageType: 2
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 2776784822358741141, guid: 7ab77a45d12464d2fa5f9195f5bb053d, type: 3}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: How about a game to make it more fun?
     _speakerProperties:
     - _speakerType: 1
@@ -350,8 +405,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
           _imageType: 2
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 2776784822358741141, guid: 7ab77a45d12464d2fa5f9195f5bb053d, type: 3}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: e4c8cbc10b46e674692a9b60911baaa5, type: 3}
     _line: A game?
     _speakerProperties:
     - _speakerType: 2
@@ -380,8 +440,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
           _imageType: 3
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 2776784822358741141, guid: 7ab77a45d12464d2fa5f9195f5bb053d, type: 3}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: e1bf9a8a6b4ddeb4696b4c16b5edd506, type: 3}
     _line: "Actually, yeah! Let\u2019s play a game of tag!"
     _speakerProperties:
     - _speakerType: 2
@@ -410,8 +475,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
           _imageType: 1
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 2776784822358741141, guid: 7ab77a45d12464d2fa5f9195f5bb053d, type: 3}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: Tag?
     _speakerProperties:
     - _speakerType: 1
@@ -440,8 +510,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
           _imageType: 1
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 2776784822358741141, guid: 7ab77a45d12464d2fa5f9195f5bb053d, type: 3}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: 701900cac7c1ba14183145c14b89cade, type: 3}
     _line: "Yep! You go in first, and then after 10 seconds I\u2019ll go in after
       you. If you get to the otherside first, you win! If I tag you, you lose!"
     _speakerProperties:
@@ -471,8 +546,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
           _imageType: 1
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 2776784822358741141, guid: 7ab77a45d12464d2fa5f9195f5bb053d, type: 3}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: 503eddc58a259cd4785f2da5b675dd6e, type: 3}
     _line: "10\u2026 9\u2026 8\u2026"
     _speakerProperties:
     - _speakerType: 2
@@ -501,8 +581,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
           _imageType: 1
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 2776784822358741141, guid: 7ab77a45d12464d2fa5f9195f5bb053d, type: 3}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: '(Oh shoot! Gotta go fast!)
 
 '
@@ -533,8 +618,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
           _imageType: 1
           _version: 1
-  - hasBackground: 1
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 1
     background: {fileID: 21300000, guid: aac14344e63764e679d6274c237e9600, type: 3}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: You rush into the fun house, and are almost instantly lost in the halls
       of mirrors
     _speakerProperties:
@@ -564,8 +654,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
           _imageType: 1
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 21300000, guid: aac14344e63764e679d6274c237e9600, type: 3}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: "It\u2019s surprisingly a lot bigger on the inside than it seemed."
     _speakerProperties:
     - _speakerType: 1
@@ -594,8 +689,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
           _imageType: 1
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 21300000, guid: aac14344e63764e679d6274c237e9600, type: 3}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: d8089d3734fb882439e96202b8ff4372, type: 3}
     _line: Ready or not, here I come!
     _speakerProperties:
     - _speakerType: 2
@@ -624,8 +724,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
           _imageType: 1
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 21300000, guid: aac14344e63764e679d6274c237e9600, type: 3}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: As you hurry through the maze, you could hear the jingling of shoes echo
       all around you.
     _speakerProperties:
