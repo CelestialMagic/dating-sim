@@ -248,8 +248,8 @@ MonoBehaviour:
       _value: {fileID: 0}
     hasBackground: 0
     background: {fileID: 0}
-    hasSFX: 0
-    soundEffect: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: 936be7ab2cfc0e04b95cb6f5f8de6487, type: 3}
     _line: What a charming little name! Mines LJ.
     _speakerProperties:
     - _speakerType: 2
@@ -318,8 +318,8 @@ MonoBehaviour:
       _value: {fileID: 0}
     hasBackground: 0
     background: {fileID: 0}
-    hasSFX: 0
-    soundEffect: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: 701900cac7c1ba14183145c14b89cade, type: 3}
     _line: Well the J is for Jane. The L stands for something quite funny!
     _speakerProperties:
     - _speakerType: 2

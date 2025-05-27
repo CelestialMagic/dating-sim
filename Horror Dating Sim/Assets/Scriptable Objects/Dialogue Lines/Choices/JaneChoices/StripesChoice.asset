@@ -19,8 +19,8 @@ MonoBehaviour:
       _value: {fileID: 0}
     hasBackground: 0
     background: {fileID: 0}
-    hasSFX: 0
-    soundEffect: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: c31b4322968920248af201fed14f1cfd, type: 3}
     _line: Stripes are nice.
     _speakerProperties:
     - _speakerType: 2
@@ -125,8 +125,8 @@ MonoBehaviour:
       _value: {fileID: 0}
     hasBackground: 0
     background: {fileID: 0}
-    hasSFX: 0
-    soundEffect: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: ab78415b7393c364f8a53ab18ef8e6c6, type: 3}
     _line: My eyes are up here.
     _speakerProperties:
     - _speakerType: 2
@@ -195,8 +195,8 @@ MonoBehaviour:
       _value: {fileID: 0}
     hasBackground: 0
     background: {fileID: 0}
-    hasSFX: 0
-    soundEffect: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: d4dd208c17c557a4784bb8fedb1e2541, type: 3}
     _line: "Don\u2019t be, I knew you were looking at my shoes. They\u2019re quite
       strange, aren\u2019t they? Do you know what they are?"
     _speakerProperties:
@@ -302,8 +302,8 @@ MonoBehaviour:
       _value: {fileID: 0}
     hasBackground: 0
     background: {fileID: 0}
-    hasSFX: 0
-    soundEffect: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: d3b7a49d595deb14097f8fd4c7c6a83c, type: 3}
     _line: "Good guess, they\u2019re actually clown shoes!"
     _speakerProperties:
     - _speakerType: 2
@@ -372,8 +372,8 @@ MonoBehaviour:
       _value: {fileID: 0}
     hasBackground: 0
     background: {fileID: 0}
-    hasSFX: 0
-    soundEffect: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: 9aa2d0bb9236f714399116f5f180cc38, type: 3}
     _line: I guess you could say clowns are festive.
     _speakerProperties:
     - _speakerType: 2

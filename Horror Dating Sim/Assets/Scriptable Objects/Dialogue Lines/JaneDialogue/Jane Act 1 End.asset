@@ -23,7 +23,7 @@ MonoBehaviour:
     soundEffect: {fileID: 0}
     _line: ...
     _speakerProperties:
-    - _speakerType: 2
+    - _speakerType: 1
       _name: 
       _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
     _characterSpriteSettings:
@@ -89,8 +89,8 @@ MonoBehaviour:
       _value: {fileID: 0}
     hasBackground: 0
     background: {fileID: 0}
-    hasSFX: 0
-    soundEffect: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: cc8598d2953223d4f89df9f72db34f92, type: 3}
     _line: Oh silly me, you need this book for your class right? Here, take it. You
       need it more than I do after all.
     _speakerProperties:
@@ -165,7 +165,7 @@ MonoBehaviour:
     _line: Looking around, you notice that your conversation seems to be disturbing
       your fellow students, and more importantly, the librarian.
     _speakerProperties:
-    - _speakerType: 2
+    - _speakerType: 0
       _name: 
       _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
     _characterSpriteSettings:
@@ -196,8 +196,8 @@ MonoBehaviour:
       _value: {fileID: 0}
     hasBackground: 0
     background: {fileID: 0}
-    hasSFX: 0
-    soundEffect: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: e1bf9a8a6b4ddeb4696b4c16b5edd506, type: 3}
     _line: Well you have had quite the pleasant conversation. How about we continue
       this later somewhere else?
     _speakerProperties:
@@ -267,8 +267,8 @@ MonoBehaviour:
       _value: {fileID: 0}
     hasBackground: 0
     background: {fileID: 0}
-    hasSFX: 0
-    soundEffect: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: c31b4322968920248af201fed14f1cfd, type: 3}
     _line: "Y\u2019know, the county fair is in town this week. How about we meet
       up tomorrow around 4:00 pm? You should be out of your classes by then."
     _speakerProperties:
@@ -338,8 +338,8 @@ MonoBehaviour:
       _value: {fileID: 0}
     hasBackground: 0
     background: {fileID: 0}
-    hasSFX: 0
-    soundEffect: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: e1bf9a8a6b4ddeb4696b4c16b5edd506, type: 3}
     _line: "Then it\u2019s a date! See you then."
     _speakerProperties:
     - _speakerType: 2
