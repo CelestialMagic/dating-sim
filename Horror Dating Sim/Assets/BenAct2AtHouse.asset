@@ -15,10 +15,10 @@ MonoBehaviour:
   _spriteCount: 1
   _dialogueLines:
   - _newBackground:
-      _isEnabled: 1
+      _isEnabled: 0
       _value: {fileID: 3747074008050554254, guid: e1757e1fdf5674d6394134d88d65fb8e, type: 3}
-    hasBackground: 0
-    background: {fileID: 0}
+    hasBackground: 1
+    background: {fileID: 3747074008050554254, guid: e1757e1fdf5674d6394134d88d65fb8e, type: 3}
     hasSFX: 0
     soundEffect: {fileID: 0}
     _line: A few hours later, at Ben's house...
@@ -85,10 +85,10 @@ MonoBehaviour:
           _imageType: 1
           _version: 1
   - _newBackground:
-      _isEnabled: 1
+      _isEnabled: 0
       _value: {fileID: 21300000, guid: f4ec4e5eca95145dabda9d7966da008b, type: 3}
-    hasBackground: 0
-    background: {fileID: 0}
+    hasBackground: 1
+    background: {fileID: 21300000, guid: f4ec4e5eca95145dabda9d7966da008b, type: 3}
     hasSFX: 0
     soundEffect: {fileID: 0}
     _line: '(Ben''s place is... pretty homey. I wonder if he''s leasing with friends
@@ -103,13 +103,13 @@ MonoBehaviour:
     - _spriteIndex: 0
       IsSubject:
         _isEnabled: 1
-        _value: 1
+        _value: 0
       IsRevealed:
         _isEnabled: 1
-        _value: 1
+        _value: 0
       HasArrived:
         _isEnabled: 1
-        _value: 1
+        _value: 0
       StartingAnchorPosition:
         _isEnabled: 0
         _value: {x: 0, y: 0}
