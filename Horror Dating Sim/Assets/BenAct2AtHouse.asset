@@ -18,7 +18,7 @@ MonoBehaviour:
       _isEnabled: 0
       _value: {fileID: 3747074008050554254, guid: e1757e1fdf5674d6394134d88d65fb8e, type: 3}
     hasBackground: 1
-    background: {fileID: 3747074008050554254, guid: e1757e1fdf5674d6394134d88d65fb8e, type: 3}
+    background: {fileID: 1301510501040859950, guid: 83b70cb574e994b5f95ef33b62faf112, type: 3}
     hasSFX: 0
     soundEffect: {fileID: 0}
     _line: A few hours later, at Ben's house...
@@ -87,7 +87,7 @@ MonoBehaviour:
   - _newBackground:
       _isEnabled: 0
       _value: {fileID: 21300000, guid: f4ec4e5eca95145dabda9d7966da008b, type: 3}
-    hasBackground: 1
+    hasBackground: 0
     background: {fileID: 21300000, guid: f4ec4e5eca95145dabda9d7966da008b, type: 3}
     hasSFX: 0
     soundEffect: {fileID: 0}
@@ -121,4 +121,400 @@ MonoBehaviour:
         _value:
           _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
           _imageType: 0
+          _version: 1
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 21300000, guid: f4ec4e5eca95145dabda9d7966da008b, type: 3}
+    hasBackground: 0
+    background: {fileID: 21300000, guid: f4ec4e5eca95145dabda9d7966da008b, type: 3}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
+    _line: Ben ushers you into his living room.
+    _speakerProperties:
+    - _speakerType: 0
+      _name: 
+      _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+    _characterSpriteSettings:
+    - _spriteIndex: 0
+      IsSubject:
+        _isEnabled: 1
+        _value: 0
+      IsRevealed:
+        _isEnabled: 1
+        _value: 0
+      HasArrived:
+        _isEnabled: 1
+        _value: 0
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 1
+        _value: {x: 750, y: 900}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+          _imageType: 0
+          _version: 1
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 21300000, guid: f4ec4e5eca95145dabda9d7966da008b, type: 3}
+    hasBackground: 1
+    background: {fileID: 21300000, guid: f4ec4e5eca95145dabda9d7966da008b, type: 3}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
+    _line: Hope you didn't hit too much traffic on your way. But uh, yeah, welcome
+      to my house! Make yourself at home, and don't mind my buds, either.
+    _speakerProperties:
+    - _speakerType: 2
+      _name: 
+      _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+    _characterSpriteSettings:
+    - _spriteIndex: 0
+      IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 1
+        _value: {x: 750, y: 900}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+          _imageType: 1
+          _version: 1
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 21300000, guid: f4ec4e5eca95145dabda9d7966da008b, type: 3}
+    hasBackground: 0
+    background: {fileID: 21300000, guid: f4ec4e5eca95145dabda9d7966da008b, type: 3}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
+    _line: (Hmm... doesn't seem like there are too many people here at all. I wonder
+      if that's because Ben was looking out for me, or...)
+    _speakerProperties:
+    - _speakerType: 1
+      _name: 
+      _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+    _characterSpriteSettings:
+    - _spriteIndex: 0
+      IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 1
+        _value: {x: 750, y: 900}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+          _imageType: 0
+          _version: 1
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 21300000, guid: f4ec4e5eca95145dabda9d7966da008b, type: 3}
+    hasBackground: 0
+    background: {fileID: 21300000, guid: f4ec4e5eca95145dabda9d7966da008b, type: 3}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
+    _line: '(Nah, no need to overthink it. Time to enjoy a little quality time.)
+
+'
+    _speakerProperties:
+    - _speakerType: 1
+      _name: 
+      _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+    _characterSpriteSettings:
+    - _spriteIndex: 0
+      IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 1
+        _value: {x: 750, y: 900}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+          _imageType: 0
+          _version: 1
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 21300000, guid: f4ec4e5eca95145dabda9d7966da008b, type: 3}
+    hasBackground: 0
+    background: {fileID: 21300000, guid: f4ec4e5eca95145dabda9d7966da008b, type: 3}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
+    _line: So, Ben, what do you wanna do? Got any party games or anything?
+    _speakerProperties:
+    - _speakerType: 1
+      _name: 
+      _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+    _characterSpriteSettings:
+    - _spriteIndex: 0
+      IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 1
+        _value: {x: 750, y: 900}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+          _imageType: 0
+          _version: 1
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 21300000, guid: f4ec4e5eca95145dabda9d7966da008b, type: 3}
+    hasBackground: 0
+    background: {fileID: 21300000, guid: f4ec4e5eca95145dabda9d7966da008b, type: 3}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
+    _line: Well, no, not really. I kinda just wanted to see you, I dunno. Based on
+      how eager you were to come along, maybe you're feeling the same?
+    _speakerProperties:
+    - _speakerType: 2
+      _name: 
+      _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+    _characterSpriteSettings:
+    - _spriteIndex: 0
+      IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 1
+        _value: {x: 750, y: 900}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+          _imageType: 4
+          _version: 1
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 21300000, guid: f4ec4e5eca95145dabda9d7966da008b, type: 3}
+    hasBackground: 0
+    background: {fileID: 21300000, guid: f4ec4e5eca95145dabda9d7966da008b, type: 3}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
+    _line: '(No. Way. Is he... saying what I think he''s saying?)
+
+'
+    _speakerProperties:
+    - _speakerType: 1
+      _name: 
+      _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+    _characterSpriteSettings:
+    - _spriteIndex: 0
+      IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 1
+        _value: {x: 750, y: 900}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+          _imageType: 4
+          _version: 1
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 21300000, guid: f4ec4e5eca95145dabda9d7966da008b, type: 3}
+    hasBackground: 0
+    background: {fileID: 21300000, guid: f4ec4e5eca95145dabda9d7966da008b, type: 3}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
+    _line: Ah. Uhh... you wanna maybe take this outside, then? The stars are pretty
+      this time of night.
+    _speakerProperties:
+    - _speakerType: 1
+      _name: 
+      _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+    _characterSpriteSettings:
+    - _spriteIndex: 0
+      IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 1
+        _value: {x: 750, y: 900}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+          _imageType: 4
+          _version: 1
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 21300000, guid: f4ec4e5eca95145dabda9d7966da008b, type: 3}
+    hasBackground: 0
+    background: {fileID: 21300000, guid: f4ec4e5eca95145dabda9d7966da008b, type: 3}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
+    _line: Ooh, that's a good idea, yeah! Here, the backyard's this way. That's where
+      that pool I mentioned earlier is, too.
+    _speakerProperties:
+    - _speakerType: 2
+      _name: 
+      _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+    _characterSpriteSettings:
+    - _spriteIndex: 0
+      IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 1
+        _value: {x: 750, y: 900}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+          _imageType: 1
+          _version: 1
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 21300000, guid: f4ec4e5eca95145dabda9d7966da008b, type: 3}
+    hasBackground: 1
+    background: {fileID: 7198068466479746110, guid: 8978da17e2ba548938c5827a2855bbf5, type: 3}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
+    _line: You follow Ben to the backyard. He seems a little tense as he leads you
+      to the edge of the pool.
+    _speakerProperties:
+    - _speakerType: 0
+      _name: 
+      _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+    _characterSpriteSettings:
+    - _spriteIndex: 0
+      IsSubject:
+        _isEnabled: 1
+        _value: 0
+      IsRevealed:
+        _isEnabled: 1
+        _value: 0
+      HasArrived:
+        _isEnabled: 1
+        _value: 0
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 1
+        _value: {x: 750, y: 900}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+          _imageType: 1
+          _version: 1
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 21300000, guid: f4ec4e5eca95145dabda9d7966da008b, type: 3}
+    hasBackground: 0
+    background: {fileID: 7198068466479746110, guid: 8978da17e2ba548938c5827a2855bbf5, type: 3}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
+    _line: Ah, don't mind me, I'm just gonna dip my feet in the water. I know it's
+      a cool night out, but I just love the feeling of the water.
+    _speakerProperties:
+    - _speakerType: 2
+      _name: 
+      _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+    _characterSpriteSettings:
+    - _spriteIndex: 0
+      IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 1
+        _value: {x: 750, y: 900}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+          _imageType: 1
           _version: 1
