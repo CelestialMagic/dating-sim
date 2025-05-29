@@ -14,7 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _spriteCount: 1
   _dialogueLines:
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
     hasSFX: 0
     soundEffect: {fileID: 0}
@@ -27,7 +30,10 @@ MonoBehaviour:
       _name: 
       _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
     _characterSpriteSettings: []
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
     hasSFX: 0
     soundEffect: {fileID: 0}
@@ -59,7 +65,10 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
           _imageType: 1
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
     hasSFX: 0
     soundEffect: {fileID: 0}
@@ -93,7 +102,10 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
           _imageType: 0
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
     hasSFX: 0
     soundEffect: {fileID: 0}
@@ -127,7 +139,10 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
           _imageType: 0
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
     hasSFX: 1
     soundEffect: {fileID: 8300000, guid: fa412503881584f72aa046457d254bad, type: 3}
@@ -161,10 +176,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
           _imageType: 0
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
-    hasSFX: 0
-    soundEffect: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: 57219506f5822de43b8c7a9d4e6b1e3d, type: 3}
     _line: Heya! What'd you think of the lecture today? I felt super engaged!
     _speakerProperties:
     - _speakerType: 2
@@ -193,7 +211,10 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
           _imageType: 1
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
     hasSFX: 0
     soundEffect: {fileID: 0}
@@ -226,7 +247,10 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
           _imageType: 0
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
     hasSFX: 0
     soundEffect: {fileID: 0}
@@ -258,10 +282,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
           _imageType: 0
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
-    hasSFX: 0
-    soundEffect: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: b949ebd089be19a4e8da79030c7a5172, type: 3}
     _line: Oh, I totally get you. Framing the whole diving experience as being in
       a claustrophobic space with limited oxygen... yeah, it kinda takes the magic
       out of it, huh?
@@ -292,10 +319,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
           _imageType: 6
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
-    hasSFX: 0
-    soundEffect: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: fb2d001fa4be1164b9783460ec0c5df1, type: 3}
     _line: I think I know just the thing to cheer you up, though!
     _speakerProperties:
     - _speakerType: 2
@@ -324,7 +354,10 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
           _imageType: 1
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
     hasSFX: 0
     soundEffect: {fileID: 0}
@@ -358,7 +391,10 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
           _imageType: 1
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
     hasSFX: 0
     soundEffect: {fileID: 0}
@@ -390,10 +426,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
           _imageType: 1
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
-    hasSFX: 0
-    soundEffect: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: f45c87f50355e3a4e933dfae013f360b, type: 3}
     _line: I'm holding a little get-together with a few buddies at my house later.
       You wanna come with? It'll be a super low-key kinda thing, so if you're not
       good with crowds, that shouldn't be an issue.
@@ -424,10 +463,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
           _imageType: 4
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
-    hasSFX: 0
-    soundEffect: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: e0490554704e0794598069fedb191f38, type: 3}
     _line: Oh, and we've got a pool, too! If you like swimming as much as you like
       fishing, hehe.
     _speakerProperties:
@@ -457,7 +499,10 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
           _imageType: 1
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
     hasSFX: 0
     soundEffect: {fileID: 0}
@@ -489,7 +534,10 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
           _imageType: 4
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
     hasSFX: 0
     soundEffect: {fileID: 0}
@@ -523,13 +571,16 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
           _imageType: 4
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
-    hasSFX: 0
-    soundEffect: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: 57219506f5822de43b8c7a9d4e6b1e3d, type: 3}
     _line: Alright, sweet! We're gonna meet up at around 8pm, so be ready around
       then. Oh, and here's my address. Do you have a car? I can come pick you up
-      if nah.
+      if not.
     _speakerProperties:
     - _speakerType: 2
       _name: 
@@ -557,7 +608,10 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
           _imageType: 1
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
     hasSFX: 0
     soundEffect: {fileID: 0}
@@ -590,10 +644,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
           _imageType: 0
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
-    hasSFX: 0
-    soundEffect: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: 7ab41a35e21fc7846a577c574f8693cb, type: 3}
     _line: Aw, that's nice of you. Well, I guess I'll catch you later then!
     _speakerProperties:
     - _speakerType: 2

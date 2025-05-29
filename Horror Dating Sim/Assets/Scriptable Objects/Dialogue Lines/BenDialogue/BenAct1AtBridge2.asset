@@ -14,10 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _spriteCount: 1
   _dialogueLines:
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 21300000, guid: de5d207350c794be486f4fffe7f061b2, type: 3}
-    hasSFX: 0
-    soundEffect: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: 57219506f5822de43b8c7a9d4e6b1e3d, type: 3}
     _line: Wow, you're a natural! I'd hardly believe this is your first time fishing!
     _speakerProperties:
     - _speakerType: 2
@@ -46,10 +49,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
           _imageType: 4
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
-    hasSFX: 0
-    soundEffect: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: f45c87f50355e3a4e933dfae013f360b, type: 3}
     _line: I love coming to this spot to fish. It's a little out of the way, but
       it's nice and quiet, and the breeze feels so good when it's this sunny out.
     _speakerProperties:
@@ -79,10 +85,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
           _imageType: 1
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
-    hasSFX: 0
-    soundEffect: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: b949ebd089be19a4e8da79030c7a5172, type: 3}
     _line: Really, the only problem I have with it is the fact that it's a river
       spot. I love fishing in the ocean too, but it's a lot harder to do that, especially
       for a college student.

@@ -14,16 +14,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _spriteCount: 1
   _dialogueLines:
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: (First day of the new quarter)
     _speakerProperties:
     - _speakerType: 0
       _name: 
       _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
     _characterSpriteSettings: []
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: (Man, school's always such a drag. Day-in and day-out, it's hard to even
       keep my eyes open in class anymore. At least, that's how it's been for the
       last few quarters...)
@@ -32,8 +42,13 @@ MonoBehaviour:
       _name: 
       _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
     _characterSpriteSettings: []
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: '(But this quarter? I''m finally in the same class as him!)
 
 '
@@ -64,8 +79,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
           _imageType: 0
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: '(This guy''s name is Ben Trawler. I''ve heard of him on a few occasions
       since last quarter, but this is my first time seeing him in the flesh.)
 
@@ -97,8 +117,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
           _imageType: 0
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: '(Oh, shoot. The professor''s coming in now. Guess I''d better get ready
       for class.)
 
@@ -130,8 +155,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
           _imageType: 0
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: '(Hm, that... actually wasn''t too bad! I only took this marine biology
       class to fulfill my general education requirements, but it''s honestly kinda
       interesting.)
@@ -164,8 +194,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
           _imageType: 0
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: '(I couldn''t help but notice that Ben was sitting at attention, nodding
       along to everything the teacher said, too. Maybe he likes marine life?)
 
@@ -197,8 +232,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
           _imageType: 0
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: (It's a bit scary, but... I'm gonna go talk to him. Can't hit a homer
       if you don't swing the bat, right?)
     _speakerProperties:
@@ -228,8 +268,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
           _imageType: 0
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: Ben is packing up to leave. You call his name, and he turns to look at
       you.
     _speakerProperties:
@@ -259,8 +304,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
           _imageType: 0
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: fb2d001fa4be1164b9783460ec0c5df1, type: 3}
     _line: Oh, hey there. I don't think we've met before, have we?
     _speakerProperties:
     - _speakerType: 2
@@ -289,8 +339,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
           _imageType: 0
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: e0490554704e0794598069fedb191f38, type: 3}
     _line: My name's Ben, though I guess you already knew that, huh? What's yours?
     _speakerProperties:
     - _speakerType: 2
@@ -319,8 +374,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
           _imageType: 1
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: 7ab41a35e21fc7846a577c574f8693cb, type: 3}
     _line: Nice to meet you. So what can I do for you? You interested in marine biology,
       too?
     _speakerProperties:
@@ -350,8 +410,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
           _imageType: 1
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
     _line: You explain to Ben how you noticed him paying such acute attention to
       the lecture, and got curious.
     _speakerProperties:
@@ -381,8 +446,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
           _imageType: 0
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: 57219506f5822de43b8c7a9d4e6b1e3d, type: 3}
     _line: Oh, that's what it was, huh? Yeah, I'm pretty big on fishing! That's actually
       why I took this class in the first place.
     _speakerProperties:
@@ -412,8 +482,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
           _imageType: 1
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: e643483e11de3ff4d85defdb6bbe7629, type: 3}
     _line: I, uh, figured if I knew a little more about the fish I was catching,
       it'd make things easier for me. I'm not all that good at fishing yet, but I'm
       not throwing in the towel yet.

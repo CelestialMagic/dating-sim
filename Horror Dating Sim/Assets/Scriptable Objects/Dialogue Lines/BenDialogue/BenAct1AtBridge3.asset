@@ -14,10 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _spriteCount: 1
   _dialogueLines:
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 21300000, guid: de5d207350c794be486f4fffe7f061b2, type: 3}
-    hasSFX: 0
-    soundEffect: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: fb2d001fa4be1164b9783460ec0c5df1, type: 3}
     _line: Ah, but look at me, rambling on and on like this. How was your first time
       fishing?
     _speakerProperties:
@@ -47,7 +50,10 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
           _imageType: 1
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
     hasSFX: 0
     soundEffect: {fileID: 0}
@@ -80,10 +86,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
           _imageType: 0
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
-    hasSFX: 0
-    soundEffect: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: 57219506f5822de43b8c7a9d4e6b1e3d, type: 3}
     _line: That's... nice of you to say, actually.  I had a fun time hanging out
       with you, too! We oughta do this again soon.
     _speakerProperties:
@@ -113,10 +122,13 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
           _imageType: 4
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
-    hasSFX: 0
-    soundEffect: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: e643483e11de3ff4d85defdb6bbe7629, type: 3}
     _line: I've gotta head home, though. I wanted to make dinner tonight, and it's
       getting a little late. So hey, see you at class tomorrow!
     _speakerProperties:
@@ -146,7 +158,10 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
           _imageType: 1
           _version: 1
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
     hasSFX: 0
     soundEffect: {fileID: 0}
@@ -179,7 +194,10 @@ MonoBehaviour:
           _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
           _imageType: 1
           _version: 1
-  - hasBackground: 1
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 1
     background: {fileID: 21300000, guid: a877b818a040d48cfad7800ec1022fdd, type: 3}
     hasSFX: 0
     soundEffect: {fileID: 0}

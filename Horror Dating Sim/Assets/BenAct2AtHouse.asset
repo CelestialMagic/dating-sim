@@ -54,8 +54,8 @@ MonoBehaviour:
       _value: {fileID: 0}
     hasBackground: 0
     background: {fileID: 0}
-    hasSFX: 0
-    soundEffect: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: 57219506f5822de43b8c7a9d4e6b1e3d, type: 3}
     _line: Ah, great, you made it! Come in, come in!
     _speakerProperties:
     - _speakerType: 2
@@ -162,8 +162,8 @@ MonoBehaviour:
       _value: {fileID: 21300000, guid: f4ec4e5eca95145dabda9d7966da008b, type: 3}
     hasBackground: 1
     background: {fileID: 21300000, guid: f4ec4e5eca95145dabda9d7966da008b, type: 3}
-    hasSFX: 0
-    soundEffect: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: e0490554704e0794598069fedb191f38, type: 3}
     _line: Hope you didn't hit too much traffic on your way. But uh, yeah, welcome
       to my house! Make yourself at home, and don't mind my buds, either.
     _speakerProperties:
@@ -306,8 +306,8 @@ MonoBehaviour:
       _value: {fileID: 21300000, guid: f4ec4e5eca95145dabda9d7966da008b, type: 3}
     hasBackground: 0
     background: {fileID: 21300000, guid: f4ec4e5eca95145dabda9d7966da008b, type: 3}
-    hasSFX: 0
-    soundEffect: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: f45c87f50355e3a4e933dfae013f360b, type: 3}
     _line: Well, no, not really. I kinda just wanted to see you, I dunno. Based on
       how eager you were to come along, maybe you're feeling the same?
     _speakerProperties:
@@ -415,8 +415,8 @@ MonoBehaviour:
       _value: {fileID: 21300000, guid: f4ec4e5eca95145dabda9d7966da008b, type: 3}
     hasBackground: 0
     background: {fileID: 21300000, guid: f4ec4e5eca95145dabda9d7966da008b, type: 3}
-    hasSFX: 0
-    soundEffect: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: 7ab41a35e21fc7846a577c574f8693cb, type: 3}
     _line: Ooh, that's a good idea, yeah! Here, the backyard's this way. That's where
       that pool I mentioned earlier is, too.
     _speakerProperties:
@@ -487,8 +487,8 @@ MonoBehaviour:
       _value: {fileID: 21300000, guid: f4ec4e5eca95145dabda9d7966da008b, type: 3}
     hasBackground: 0
     background: {fileID: 7198068466479746110, guid: 8978da17e2ba548938c5827a2855bbf5, type: 3}
-    hasSFX: 0
-    soundEffect: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: b949ebd089be19a4e8da79030c7a5172, type: 3}
     _line: Ah, don't mind me, I'm just gonna dip my feet in the water. I know it's
       a cool night out, but I just love the feeling of the water.
     _speakerProperties:
@@ -523,8 +523,8 @@ MonoBehaviour:
       _value: {fileID: 21300000, guid: f4ec4e5eca95145dabda9d7966da008b, type: 3}
     hasBackground: 0
     background: {fileID: 7198068466479746110, guid: 8978da17e2ba548938c5827a2855bbf5, type: 3}
-    hasSFX: 0
-    soundEffect: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: f45c87f50355e3a4e933dfae013f360b, type: 3}
     _line: You know, for as long as I can remember, I've liked the ocean, actually.
     _speakerProperties:
     - _speakerType: 2
@@ -558,8 +558,8 @@ MonoBehaviour:
       _value: {fileID: 21300000, guid: f4ec4e5eca95145dabda9d7966da008b, type: 3}
     hasBackground: 0
     background: {fileID: 7198068466479746110, guid: 8978da17e2ba548938c5827a2855bbf5, type: 3}
-    hasSFX: 0
-    soundEffect: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: f45c87f50355e3a4e933dfae013f360b, type: 3}
     _line: I can't really pinpoint why. It's just... I dunno, it's so fascinating
       to me to think about all the different forms of life we've never even seen,
       just because they're underwater.
@@ -595,8 +595,8 @@ MonoBehaviour:
       _value: {fileID: 21300000, guid: f4ec4e5eca95145dabda9d7966da008b, type: 3}
     hasBackground: 0
     background: {fileID: 7198068466479746110, guid: 8978da17e2ba548938c5827a2855bbf5, type: 3}
-    hasSFX: 0
-    soundEffect: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: 7ab41a35e21fc7846a577c574f8693cb, type: 3}
     _line: We talked about freshwater and saltwater fish the other day, right? I
       really think I want to become a diver and study marine biology.
     _speakerProperties:
@@ -631,8 +631,8 @@ MonoBehaviour:
       _value: {fileID: 21300000, guid: f4ec4e5eca95145dabda9d7966da008b, type: 3}
     hasBackground: 0
     background: {fileID: 7198068466479746110, guid: 8978da17e2ba548938c5827a2855bbf5, type: 3}
-    hasSFX: 0
-    soundEffect: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: b949ebd089be19a4e8da79030c7a5172, type: 3}
     _line: Honestly, no one's ever given me the time of day when I've brought this
       stuff up. I've got friends, sure, but I don't honestly feel much of a connection
       to them.
@@ -668,8 +668,8 @@ MonoBehaviour:
       _value: {fileID: 21300000, guid: f4ec4e5eca95145dabda9d7966da008b, type: 3}
     hasBackground: 0
     background: {fileID: 7198068466479746110, guid: 8978da17e2ba548938c5827a2855bbf5, type: 3}
-    hasSFX: 0
-    soundEffect: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: e0490554704e0794598069fedb191f38, type: 3}
     _line: But you? I'm still not really sure if you're just placating me or if you're
       really interested in what I've got to say, but you're actually listening to
       what I have to say.
@@ -705,8 +705,8 @@ MonoBehaviour:
       _value: {fileID: 21300000, guid: f4ec4e5eca95145dabda9d7966da008b, type: 3}
     hasBackground: 0
     background: {fileID: 7198068466479746110, guid: 8978da17e2ba548938c5827a2855bbf5, type: 3}
-    hasSFX: 0
-    soundEffect: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: 57219506f5822de43b8c7a9d4e6b1e3d, type: 3}
     _line: I... like that. I like... you, if I'm really being honest. We've only
       been friends a few days, but I feel closer to you than anyone else I've known
       for a long time.
@@ -777,8 +777,8 @@ MonoBehaviour:
       _value: {fileID: 21300000, guid: f4ec4e5eca95145dabda9d7966da008b, type: 3}
     hasBackground: 0
     background: {fileID: 7198068466479746110, guid: 8978da17e2ba548938c5827a2855bbf5, type: 3}
-    hasSFX: 0
-    soundEffect: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: e0490554704e0794598069fedb191f38, type: 3}
     _line: Yeah, I think I do. Would you, uh, like to g-
     _speakerProperties:
     - _speakerType: 2
@@ -917,8 +917,8 @@ MonoBehaviour:
       _value: {fileID: 21300000, guid: f4ec4e5eca95145dabda9d7966da008b, type: 3}
     hasBackground: 0
     background: {fileID: 7198068466479746110, guid: 8978da17e2ba548938c5827a2855bbf5, type: 3}
-    hasSFX: 0
-    soundEffect: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: 750dad2c35d71a44fb6d408b4d245bf8, type: 3}
     _line: Huh...? Oh, crud, I don't feel so great all of a sudden. Maybe I stayed
       up too late studying...?
     _speakerProperties:
@@ -988,8 +988,8 @@ MonoBehaviour:
       _value: {fileID: 21300000, guid: f4ec4e5eca95145dabda9d7966da008b, type: 3}
     hasBackground: 0
     background: {fileID: 7198068466479746110, guid: 8978da17e2ba548938c5827a2855bbf5, type: 3}
-    hasSFX: 0
-    soundEffect: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: 8761e788d2911dc46aea67b19efc1c48, type: 3}
     _line: Time almost seemed to slow down as Ben's unconscious body rolled into
       the pool.
     _speakerProperties:

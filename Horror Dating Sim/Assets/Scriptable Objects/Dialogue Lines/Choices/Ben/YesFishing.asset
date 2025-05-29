@@ -14,8 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _spriteCount: 1
   _dialogueLines:
-  - hasBackground: 0
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
     background: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: e0490554704e0794598069fedb191f38, type: 3}
     _line: Sweet! I think we're gonna get along just fine!
     _speakerProperties:
     - _speakerType: 2
