@@ -180,10 +180,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Start
+  m_text: Continue
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 06e8d28f043d4467099eaa6418a49b66, type: 2}
-  m_sharedMaterial: {fileID: 1399657967587244100, guid: 06e8d28f043d4467099eaa6418a49b66, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4e14870e8187e48b9bbea349e71254c6, type: 2}
+  m_sharedMaterial: {fileID: 2151618881952311473, guid: 4e14870e8187e48b9bbea349e71254c6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -687,7 +687,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: fe6e1a134bf9e4a5a89fef42b7de298e, type: 3}
+  m_audioClip: {fileID: 8300000, guid: fbce8f9b4354248469d90aea6b98a8e5, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.4
   m_Pitch: 1
@@ -853,14 +853,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.7830189, g: 0.7830189, b: 0.7830189, a: 1}
+  m_Color: {r: 0.7735849, g: 0.7735849, b: 0.7735849, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b2f249fcb804341eca2df828e83c7759, type: 3}
+  m_Sprite: {fileID: 7198068466479746110, guid: 8978da17e2ba548938c5827a2855bbf5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1133,7 +1133,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -5138589274392714549, guid: c151bd297a4624e8bb76b021b95d976f, type: 3}
+  m_Sprite: {fileID: 7198068466479746110, guid: 8978da17e2ba548938c5827a2855bbf5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1556,7 +1556,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &952762357
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1876,7 +1876,6 @@ MonoBehaviour:
   _sfxAudioSource: {fileID: 1389154687}
   _skits:
   - {fileID: 11400000, guid: 8b9afa5b920454d269e0c883fdbb3e72, type: 2}
-  - {fileID: 11400000, guid: 13d546cefe748458aafce95aa8710661, type: 2}
   _currentLineIndex: 0
   _currentSkitIndex: 0
   _timeBetweenCharacters: 0.05
@@ -2222,7 +2221,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 37, y: -274}
+  m_AnchoredPosition: {x: 37, y: -149}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1521441911
@@ -2294,7 +2293,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.21258256, g: 0.16491634, b: 0.3207547, a: 1}
+  m_Color: {r: 0.23113209, g: 0.5091807, b: 1, a: 0.5176471}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

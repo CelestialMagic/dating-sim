@@ -98,4 +98,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/JaneRouteEnding.unity
     guid: a14490d253d9d4766aa073fc43c32eaa
+  - enabled: 1
+    path: Assets/BenAct2PostPool.unity
+    guid: 322abf1713dbc4b7cb58a338ce148a73
   m_configObjects: {}
