@@ -30,3 +30,5 @@ MonoBehaviour:
     _imageSprite: {fileID: 21300000, guid: afb78c2ab7db341e1bd2c0ac2e7675bf, type: 3}
   - _spriteType: 7
     _imageSprite: {fileID: 21300000, guid: 03f64e3fefab744ec8ec2852e9c7bfbb, type: 3}
+  - _spriteType: 8
+    _imageSprite: {fileID: 21300000, guid: 568d3b1bec80e4db29161f6cd746c82a, type: 3}

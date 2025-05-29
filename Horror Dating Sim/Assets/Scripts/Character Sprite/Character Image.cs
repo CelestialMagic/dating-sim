@@ -30,6 +30,8 @@ public struct CharacterImage
         DISTORTED,
         DISGUSTED,
         CRYING,
+        EYESCLOSED,
+
 
     }
 
