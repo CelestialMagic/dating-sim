@@ -355,7 +355,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You're Done
+  m_text: No Escape
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a4caa17b09534b379155140715ff0d1, type: 2}
   m_sharedMaterial: {fileID: -4129847082125772981, guid: 3a4caa17b09534b379155140715ff0d1, type: 2}
@@ -5589,8 +5589,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -7435,7 +7435,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: 21300000, guid: aac14344e63764e679d6274c237e9600, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 605cabcc21dac45adac73aa55fd791ef, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

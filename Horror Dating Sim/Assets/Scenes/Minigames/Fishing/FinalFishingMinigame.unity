@@ -5620,8 +5620,8 @@ MonoBehaviour:
     _sceneAsset: {fileID: 0}
     _sceneName: 
   resetScene:
-    _sceneAsset: {fileID: 0}
-    _sceneName: 
+    _sceneAsset: {fileID: 102900000, guid: 22f831cdfd74f44bdb4eb5b73ae1cda7, type: 3}
+    _sceneName: FinalFishingMinigame
   catcher: {fileID: 2085601509}
   firstMinigameEndScreen: {fileID: 2069587522}
   caughtFishText: {fileID: 1707882499}
