@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ff7994881be9148d5bdf88178bdcb254, type: 3}
-  m_Name: LibraryMinigame
+  m_Name: FunhouseRescueTyping
   m_EditorClassIdentifier: 
-  sentence: Not all those who wander are lost. Tolkein. The only way out of the labyrinth
-    of suffering is to forgive. Green.
+  sentence: Sing a song of hope she will reach out and hold me. Ashes Ashes we all
+    fall down. Stinging smoke and debris, swinging, choking, no seeing.

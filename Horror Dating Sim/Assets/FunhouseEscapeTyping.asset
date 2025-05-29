@@ -10,7 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ff7994881be9148d5bdf88178bdcb254, type: 3}
-  m_Name: LibraryMinigame
+  m_Name: FunhouseEscapeTyping
   m_EditorClassIdentifier: 
-  sentence: Not all those who wander are lost. Tolkein. The only way out of the labyrinth
-    of suffering is to forgive. Green.
+  sentence: "You wouldn't leave without me would you? Not a second time that is?
+    To burn? Haha! We could burn together! You set my heart aflame, shouldn\u2019t
+    I do the same??"

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ff7994881be9148d5bdf88178bdcb254, type: 3}
-  m_Name: LibraryMinigame
+  m_Name: Funhouse3TypingPrompt 2
   m_EditorClassIdentifier: 
-  sentence: Not all those who wander are lost. Tolkein. The only way out of the labyrinth
-    of suffering is to forgive. Green.
+  sentence: Mirrors mirrors that make the walls, who's the quickest of them all?
+    Reality flees as swift as my feet when love is struck with sudden heat.

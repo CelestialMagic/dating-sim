@@ -5812,7 +5812,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 1814003278}
-  originalTime: 25
+  originalTime: 30
   typingManager: {fileID: 1415415400}
   lostCanvas: {fileID: 1799052854}
   minigameCanvas: {fileID: 16687491}
@@ -6804,7 +6804,7 @@ MonoBehaviour:
   inputField: {fileID: 1409514326}
   promptText: {fileID: 1103089295}
   storyTracker: {fileID: 772245064}
-  typingPrompt: {fileID: 11400000, guid: 728bbffc44e6e4b22b8e387bd5bf0b9a, type: 2}
+  typingPrompt: {fileID: 11400000, guid: ae4772c92ad4243249cb1a4bd0665248, type: 2}
   audioSource: {fileID: 1257045964}
   typeSound: {fileID: 8300000, guid: 38103d283518b4f17ab11f2a7a828b7e, type: 3}
   wonMinigame: 0

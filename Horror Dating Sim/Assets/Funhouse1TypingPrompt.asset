@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ff7994881be9148d5bdf88178bdcb254, type: 3}
-  m_Name: LibraryMinigame
+  m_Name: Funhouse1TypingPrompt
   m_EditorClassIdentifier: 
-  sentence: Not all those who wander are lost. Tolkein. The only way out of the labyrinth
-    of suffering is to forgive. Green.
+  sentence: Had we but the world enough, and time to hide away these feels of mine,
+    to wander halls of you and me, with giggles stifled hastily.
