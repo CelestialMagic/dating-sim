@@ -1877,6 +1877,7 @@ MonoBehaviour:
   _skits:
   - {fileID: 11400000, guid: 8b9afa5b920454d269e0c883fdbb3e72, type: 2}
   - {fileID: 11400000, guid: 13d546cefe748458aafce95aa8710661, type: 2}
+  - {fileID: 11400000, guid: ea1b71367770644108eaa32f6e223325, type: 2}
   _currentLineIndex: 0
   _currentSkitIndex: 0
   _timeBetweenCharacters: 0.05

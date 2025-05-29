@@ -6804,7 +6804,7 @@ MonoBehaviour:
   inputField: {fileID: 1409514326}
   promptText: {fileID: 1103089295}
   storyTracker: {fileID: 772245064}
-  typingPrompt: {fileID: 11400000, guid: 68bb0a57ec4a54df3832db4f19cdad01, type: 2}
+  typingPrompt: {fileID: 11400000, guid: 8345747497726463590a8a2f1949f32e, type: 2}
   audioSource: {fileID: 1257045964}
   typeSound: {fileID: 8300000, guid: 38103d283518b4f17ab11f2a7a828b7e, type: 3}
   wonMinigame: 0

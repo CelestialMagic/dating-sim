@@ -1,0 +1,200 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0315219a1dc2de42851a0d312cdb6c0, type: 3}
+  m_Name: BenAct2Rescue
+  m_EditorClassIdentifier: 
+  _spriteCount: 1
+  _dialogueLines:
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 21300000, guid: f4ec4e5eca95145dabda9d7966da008b, type: 3}
+    hasBackground: 0
+    background: {fileID: 7198068466479746110, guid: 8978da17e2ba548938c5827a2855bbf5, type: 3}
+    hasSFX: 0
+    soundEffect: {fileID: 8300000, guid: 8761e788d2911dc46aea67b19efc1c48, type: 3}
+    _line: No... BEN!!!!!!!
+    _speakerProperties:
+    - _speakerType: 1
+      _name: 
+      _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+    _characterSpriteSettings:
+    - _spriteIndex: 0
+      IsSubject:
+        _isEnabled: 1
+        _value: 0
+      IsRevealed:
+        _isEnabled: 1
+        _value: 0
+      HasArrived:
+        _isEnabled: 1
+        _value: 0
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 1
+        _value: {x: 750, y: 900}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+          _imageType: 6
+          _version: 1
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 21300000, guid: f4ec4e5eca95145dabda9d7966da008b, type: 3}
+    hasBackground: 0
+    background: {fileID: 7198068466479746110, guid: 8978da17e2ba548938c5827a2855bbf5, type: 3}
+    hasSFX: 0
+    soundEffect: {fileID: 8300000, guid: 8761e788d2911dc46aea67b19efc1c48, type: 3}
+    _line: '(He... he suddenly passed out, and now he''s at the bottom of the pool.
+      I need to do something, and fast.)
+
+'
+    _speakerProperties:
+    - _speakerType: 1
+      _name: 
+      _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+    _characterSpriteSettings:
+    - _spriteIndex: 0
+      IsSubject:
+        _isEnabled: 1
+        _value: 0
+      IsRevealed:
+        _isEnabled: 1
+        _value: 0
+      HasArrived:
+        _isEnabled: 1
+        _value: 0
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 1
+        _value: {x: 750, y: 900}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+          _imageType: 6
+          _version: 1
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 21300000, guid: f4ec4e5eca95145dabda9d7966da008b, type: 3}
+    hasBackground: 1
+    background: {fileID: 21300000, guid: 3d23ffa656da9496282fb442b310666a, type: 3}
+    hasSFX: 0
+    soundEffect: {fileID: 8300000, guid: 8761e788d2911dc46aea67b19efc1c48, type: 3}
+    _line: (But I can't swim, or I'd dive in myself. Looks like his friends passed
+      out, too. There has to be some tool I can use to get him out of there...)
+    _speakerProperties:
+    - _speakerType: 1
+      _name: 
+      _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+    _characterSpriteSettings:
+    - _spriteIndex: 0
+      IsSubject:
+        _isEnabled: 1
+        _value: 0
+      IsRevealed:
+        _isEnabled: 1
+        _value: 0
+      HasArrived:
+        _isEnabled: 1
+        _value: 0
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 1
+        _value: {x: 750, y: 900}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+          _imageType: 6
+          _version: 1
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 21300000, guid: f4ec4e5eca95145dabda9d7966da008b, type: 3}
+    hasBackground: 1
+    background: {fileID: 21300000, guid: 9842872c5beef417a896f64b9fc1ff8e, type: 3}
+    hasSFX: 0
+    soundEffect: {fileID: 8300000, guid: 8761e788d2911dc46aea67b19efc1c48, type: 3}
+    _line: '(Ah! His fishing rod! It might not be the most... orthodox of solutions,
+      but I know the line will hold.)
+
+'
+    _speakerProperties:
+    - _speakerType: 1
+      _name: 
+      _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+    _characterSpriteSettings:
+    - _spriteIndex: 0
+      IsSubject:
+        _isEnabled: 1
+        _value: 0
+      IsRevealed:
+        _isEnabled: 1
+        _value: 0
+      HasArrived:
+        _isEnabled: 1
+        _value: 0
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 1
+        _value: {x: 750, y: 900}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+          _imageType: 6
+          _version: 1
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 21300000, guid: f4ec4e5eca95145dabda9d7966da008b, type: 3}
+    hasBackground: 1
+    background: {fileID: 21300000, guid: 9842872c5beef417a896f64b9fc1ff8e, type: 3}
+    hasSFX: 0
+    soundEffect: {fileID: 8300000, guid: 8761e788d2911dc46aea67b19efc1c48, type: 3}
+    _line: '(Hang in there, Ben. I''m going to save you.)
+
+'
+    _speakerProperties:
+    - _speakerType: 1
+      _name: 
+      _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+    _characterSpriteSettings:
+    - _spriteIndex: 0
+      IsSubject:
+        _isEnabled: 1
+        _value: 0
+      IsRevealed:
+        _isEnabled: 1
+        _value: 0
+      HasArrived:
+        _isEnabled: 1
+        _value: 0
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 1
+        _value: {x: 750, y: 900}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+          _imageType: 6
+          _version: 1

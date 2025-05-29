@@ -786,8 +786,8 @@ MonoBehaviour:
   lostCanvas: {fileID: 2072361046}
   minigameCanvas: {fileID: 0}
   nextScene:
-    _sceneAsset: {fileID: 102900000, guid: 322abf1713dbc4b7cb58a338ce148a73, type: 3}
-    _sceneName: BenAct2PostPool
+    _sceneAsset: {fileID: 102900000, guid: dd6c5043df878450697634112a5d01e8, type: 3}
+    _sceneName: Ben Act 3 Intro
   resetScene:
     _sceneAsset: {fileID: 102900000, guid: efae1388499bf4313a7393421a55468d, type: 3}
     _sceneName: CatchBenFishing
