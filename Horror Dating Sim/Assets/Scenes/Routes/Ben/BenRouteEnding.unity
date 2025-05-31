@@ -860,7 +860,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 56af92d5708594195a5654b7b1035207, type: 3}
+  m_Sprite: {fileID: 21300000, guid: dc6d974471b354a81a8990609ad12061, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1177,7 +1177,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9fcd6be438e3d4236854a2980d12401c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7bded4cd43262420580b1df6669ee2f4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1207,6 +1207,50 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
+--- !u!1 &695260466
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 695260468}
+  - component: {fileID: 695260467}
+  m_Layer: 0
+  m_Name: BenEnding
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &695260467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695260466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a014f905c9c51433d9a516c136817fbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &695260468
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695260466}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 961.64923, y: 195.87584, z: -7.5642033}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &697626963
 GameObject:
   m_ObjectHideFlags: 0
@@ -1316,8 +1360,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: '[Dialgoue Here]'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 06e8d28f043d4467099eaa6418a49b66, type: 2}
-  m_sharedMaterial: {fileID: 1399657967587244100, guid: 06e8d28f043d4467099eaa6418a49b66, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4e14870e8187e48b9bbea349e71254c6, type: 2}
+  m_sharedMaterial: {fileID: 2151618881952311473, guid: 4e14870e8187e48b9bbea349e71254c6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1933,7 +1977,7 @@ MonoBehaviour:
   _backgroundHandler: {fileID: 697626964}
   _sfxAudioSource: {fileID: 1389154687}
   _skits:
-  - {fileID: 11400000, guid: c0ede608cc66f44e69853b65c7ef0283, type: 2}
+  - {fileID: 11400000, guid: 0882589ffb5684842a651888a81b6f09, type: 2}
   _currentLineIndex: 0
   _currentSkitIndex: 0
   _timeBetweenCharacters: 0.05
@@ -2966,3 +3010,4 @@ SceneRoots:
   - {fileID: 1354892174}
   - {fileID: 395461998}
   - {fileID: 601471093}
+  - {fileID: 695260468}

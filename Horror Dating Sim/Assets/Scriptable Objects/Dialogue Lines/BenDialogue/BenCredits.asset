@@ -30,8 +30,8 @@ MonoBehaviour:
   - _newBackground:
       _isEnabled: 0
       _value: {fileID: 0}
-    hasBackground: 1
-    background: {fileID: -6439997768508307955, guid: 50daf5d284d9d44fca379f1c4fcc52a4, type: 3}
+    hasBackground: 0
+    background: {fileID: 21300000, guid: de5d207350c794be486f4fffe7f061b2, type: 3}
     hasSFX: 0
     soundEffect: {fileID: 0}
     _line: Background Art, Typing Minigame Programming, and Background Music by Jessie
@@ -67,7 +67,7 @@ MonoBehaviour:
       _isEnabled: 0
       _value: {fileID: 0}
     hasBackground: 1
-    background: {fileID: 2776784822358741141, guid: 7ab77a45d12464d2fa5f9195f5bb053d, type: 3}
+    background: {fileID: 1301510501040859950, guid: 83b70cb574e994b5f95ef33b62faf112, type: 3}
     hasSFX: 0
     soundEffect: {fileID: 0}
     _line: Ben Sprites by Kyle Imoto
@@ -102,7 +102,7 @@ MonoBehaviour:
       _isEnabled: 0
       _value: {fileID: 0}
     hasBackground: 1
-    background: {fileID: 21300000, guid: aac14344e63764e679d6274c237e9600, type: 3}
+    background: {fileID: 21300000, guid: 3d23ffa656da9496282fb442b310666a, type: 3}
     hasSFX: 0
     soundEffect: {fileID: 0}
     _line: Dialogue System By Will Min
@@ -172,7 +172,7 @@ MonoBehaviour:
       _isEnabled: 0
       _value: {fileID: 0}
     hasBackground: 1
-    background: {fileID: 21300000, guid: 605cabcc21dac45adac73aa55fd791ef, type: 3}
+    background: {fileID: 7198068466479746110, guid: 8978da17e2ba548938c5827a2855bbf5, type: 3}
     hasSFX: 0
     soundEffect: {fileID: 0}
     _line: Ben Dialogue and Story written by Alex Bennett
@@ -242,7 +242,7 @@ MonoBehaviour:
       _isEnabled: 0
       _value: {fileID: 0}
     hasBackground: 1
-    background: {fileID: 21300000, guid: 9fcd6be438e3d4236854a2980d12401c, type: 3}
+    background: {fileID: 21300000, guid: 9842872c5beef417a896f64b9fc1ff8e, type: 3}
     hasSFX: 0
     soundEffect: {fileID: 0}
     _line: Buried in Love Logo by Joseph Gil
