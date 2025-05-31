@@ -1,0 +1,302 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0315219a1dc2de42851a0d312cdb6c0, type: 3}
+  m_Name: BenAct3Intro
+  m_EditorClassIdentifier: 
+  _spriteCount: 1
+  _dialogueLines:
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
+    background: {fileID: 21300000, guid: de5d207350c794be486f4fffe7f061b2, type: 3}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: 4c662b242ac19de4982d2324d88befb0, type: 3}
+    _line: 'Somehow, you''ve managed to pull Ben from the pool. After rolling him
+      onto his back, you grab his wrist to check his pulse. His arm is icy cold.
+
+'
+    _speakerProperties:
+    - _speakerType: 0
+      _name: 
+      _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+    _characterSpriteSettings:
+    - _spriteIndex: 0
+      IsSubject:
+        _isEnabled: 1
+        _value: 0
+      IsRevealed:
+        _isEnabled: 1
+        _value: 0
+      HasArrived:
+        _isEnabled: 1
+        _value: 0
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 1
+        _value: {x: 750, y: 900}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+          _imageType: 1
+          _version: 1
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
+    background: {fileID: 21300000, guid: de5d207350c794be486f4fffe7f061b2, type: 3}
+    hasSFX: 0
+    soundEffect: {fileID: 8300000, guid: fb2d001fa4be1164b9783460ec0c5df1, type: 3}
+    _line: ...It's faint, but I can feel his pulse. So I wasn't too late...
+    _speakerProperties:
+    - _speakerType: 1
+      _name: 
+      _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+    _characterSpriteSettings:
+    - _spriteIndex: 0
+      IsSubject:
+        _isEnabled: 1
+        _value: 0
+      IsRevealed:
+        _isEnabled: 1
+        _value: 0
+      HasArrived:
+        _isEnabled: 1
+        _value: 0
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 1
+        _value: {x: 750, y: 900}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+          _imageType: 1
+          _version: 1
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
+    background: {fileID: 21300000, guid: de5d207350c794be486f4fffe7f061b2, type: 3}
+    hasSFX: 0
+    soundEffect: {fileID: 8300000, guid: fb2d001fa4be1164b9783460ec0c5df1, type: 3}
+    _line: He's still unconscious, but I think I remember how to do basic CPR. Let's
+      see, start with chest compressions...?
+    _speakerProperties:
+    - _speakerType: 1
+      _name: 
+      _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+    _characterSpriteSettings:
+    - _spriteIndex: 0
+      IsSubject:
+        _isEnabled: 1
+        _value: 0
+      IsRevealed:
+        _isEnabled: 1
+        _value: 0
+      HasArrived:
+        _isEnabled: 1
+        _value: 0
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 1
+        _value: {x: 750, y: 900}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+          _imageType: 1
+          _version: 1
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
+    background: {fileID: 21300000, guid: de5d207350c794be486f4fffe7f061b2, type: 3}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: f45c87f50355e3a4e933dfae013f360b, type: 3}
+    _line: There's no need for that. I'm awake. Oh, but I do appreciate the attempt.
+    _speakerProperties:
+    - _speakerType: 0
+      _name: ???
+      _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+    _characterSpriteSettings:
+    - _spriteIndex: 0
+      IsSubject:
+        _isEnabled: 1
+        _value: 0
+      IsRevealed:
+        _isEnabled: 1
+        _value: 0
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 1
+        _value: {x: 750, y: 900}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+          _imageType: 1
+          _version: 1
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
+    background: {fileID: 21300000, guid: de5d207350c794be486f4fffe7f061b2, type: 3}
+    hasSFX: 0
+    soundEffect: {fileID: 8300000, guid: f45c87f50355e3a4e933dfae013f360b, type: 3}
+    _line: Ben! Are you... okay...?
+    _speakerProperties:
+    - _speakerType: 1
+      _name: 
+      _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+    _characterSpriteSettings:
+    - _spriteIndex: 0
+      IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 0
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 1
+        _value: {x: 750, y: 900}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+          _imageType: 1
+          _version: 1
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
+    background: {fileID: 21300000, guid: de5d207350c794be486f4fffe7f061b2, type: 3}
+    hasSFX: 0
+    soundEffect: {fileID: 8300000, guid: f45c87f50355e3a4e933dfae013f360b, type: 3}
+    _line: Your voice trails off as you look into Ben's half-lidded eyes. Ben slowly
+      shambles to his feet, but something seems off about him.
+    _speakerProperties:
+    - _speakerType: 0
+      _name: 
+      _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+    _characterSpriteSettings:
+    - _spriteIndex: 0
+      IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 1
+        _value: {x: 750, y: 900}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+          _imageType: 8
+          _version: 1
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
+    background: {fileID: 21300000, guid: de5d207350c794be486f4fffe7f061b2, type: 3}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: c5bd785ac00c4f84081018104479ab80, type: 3}
+    _line: Never better, actually. My head feels unbelievably clear.
+    _speakerProperties:
+    - _speakerType: 2
+      _name: 
+      _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+    _characterSpriteSettings:
+    - _spriteIndex: 0
+      IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 1
+        _value: {x: 750, y: 900}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+          _imageType: 8
+          _version: 1
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
+    background: {fileID: 21300000, guid: de5d207350c794be486f4fffe7f061b2, type: 3}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: b04128cb7f4652f48bed8fb43019e038, type: 3}
+    _line: I feel like for the longest time I've had water plugging my ears, but
+      it's finally been shaken out. Guess that's kinda ironic after what just happened.
+    _speakerProperties:
+    - _speakerType: 2
+      _name: 
+      _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+    _characterSpriteSettings:
+    - _spriteIndex: 0
+      IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 1
+        _value: {x: 750, y: 900}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+          _imageType: 8
+          _version: 1
