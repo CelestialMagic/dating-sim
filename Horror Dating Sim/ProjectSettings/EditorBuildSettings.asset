@@ -81,13 +81,13 @@ EditorBuildSettings:
     path: Assets/Scenes/Routes/Ben/Ben Act 1 Post Fishing.unity
     guid: 3f621f2d2be284cefa2e7b26ddcff76f
   - enabled: 1
-    path: Assets/JaneAct1PostMinigame.unity
+    path: Assets/Scenes/Routes/Jane/JaneAct1PostMinigame.unity
     guid: 15f76d12b35564faab431984a411e3b0
   - enabled: 1
-    path: Assets/FunhouseTyping3Act2.unity
+    path: Assets/Scenes/Minigames/Typing/FunhouseTyping3Act2.unity
     guid: 85ec094abfeed475da6373dd599e3d5d
   - enabled: 1
-    path: Assets/Act3TypingEscape.unity
+    path: Assets/Scenes/Minigames/Typing/Act3TypingEscape.unity
     guid: b2e3e9214b5a14e5cb41a54ca1d7d8b8
   - enabled: 1
     path: Assets/Scenes/Routes/Jane/Act3FoundJane.unity
@@ -96,12 +96,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Routes/Jane/Act3JaneFinalChoice.unity
     guid: d2e0d95bcab70451abdea1c742e7342d
   - enabled: 1
-    path: Assets/JaneRouteEnding.unity
+    path: Assets/Scenes/Routes/Jane/JaneRouteEnding.unity
     guid: a14490d253d9d4766aa073fc43c32eaa
   - enabled: 1
-    path: Assets/BenAct2PostPool.unity
+    path: Assets/Scenes/Routes/Ben/BenAct2PostPool.unity
     guid: 322abf1713dbc4b7cb58a338ce148a73
   - enabled: 1
-    path: Assets/Ben Act 3 Intro.unity
+    path: Assets/Scenes/Routes/Ben/Ben Act 3 Intro.unity
     guid: dd6c5043df878450697634112a5d01e8
+  - enabled: 1
+    path: Assets/Scenes/Routes/Ben/BenRouteEnding.unity
+    guid: 3db91ae54a2e54d7e9d602085b404209
   m_configObjects: {}
