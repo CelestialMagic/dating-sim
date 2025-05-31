@@ -3094,9 +3094,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Type the words you see on screen as fast as you can. Finish the sentences
-    before time runs out! \nTip: You can type in lowercase, but be sure to remember
-    punctuation!"
+  m_text: "Type the words you see on screen before time runs out! \nTip: You can
+    type in lowercase, but be sure to remember punctuation! \nWords auto-advance,
+    so do not press the Spacebar or Enter!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 06e8d28f043d4467099eaa6418a49b66, type: 2}
   m_sharedMaterial: {fileID: 1399657967587244100, guid: 06e8d28f043d4467099eaa6418a49b66, type: 2}
@@ -3123,8 +3123,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 14
-  m_fontSizeBase: 14
+  m_fontSize: 12
+  m_fontSizeBase: 12
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
