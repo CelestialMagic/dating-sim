@@ -19,7 +19,7 @@ public class DistortionToggle : MonoBehaviour
     protected bool previousValue;//Used to determine when to switch between normal and distorted versions
 
     [SerializeField]
-    private SpriteRenderer backgroundArt;//Used for scenes where a sprite is used
+    protected SpriteRenderer backgroundArt;//Used for scenes where a sprite is used
 
     [SerializeField]
     protected List<TMP_Text> textToChangeFont;//A list of text to change fonts
@@ -44,14 +44,16 @@ public class DistortionToggle : MonoBehaviour
     protected virtual void DistortionEvent(bool canDistort){
         if(canDistort == true){
             audioSource.Stop();
-            backgroundArt.sprite = distortedBackground;
+            if(backgroundArt != null)
+                backgroundArt.sprite = distortedBackground;
             audioSource.clip = distortedMusic;
             audioSource.Play();
             SwapFonts(distortedFont);
             
         }else{
             audioSource.Stop();
-            backgroundArt.sprite = normalBackground;
+            if(backgroundArt != null)
+                backgroundArt.sprite = normalBackground;
             audioSource.clip = normalMusic;
             audioSource.Play();
             SwapFonts(normalFont);
