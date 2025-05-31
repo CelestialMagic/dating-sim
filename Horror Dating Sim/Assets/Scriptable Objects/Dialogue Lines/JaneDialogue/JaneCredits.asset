@@ -206,11 +206,46 @@ MonoBehaviour:
   - _newBackground:
       _isEnabled: 0
       _value: {fileID: 0}
-    hasBackground: 1
+    hasBackground: 0
     background: {fileID: 21300000, guid: 605cabcc21dac45adac73aa55fd791ef, type: 3}
     hasSFX: 0
     soundEffect: {fileID: 0}
     _line: Jane Dialogue and Story written by Tyler Wang
+    _speakerProperties:
+    - _speakerType: 0
+      _name: 
+      _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
+    _characterSpriteSettings:
+    - _spriteIndex: 0
+      IsSubject:
+        _isEnabled: 1
+        _value: 0
+      IsRevealed:
+        _isEnabled: 1
+        _value: 0
+      HasArrived:
+        _isEnabled: 1
+        _value: 0
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 1
+        _value: {x: 750, y: 900}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
+          _imageType: 1
+          _version: 1
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 1
+    background: {fileID: 21300000, guid: 9fcd6be438e3d4236854a2980d12401c, type: 3}
+    hasSFX: 0
+    soundEffect: {fileID: 0}
+    _line: Buried in Love Logo by Joseph Gil
     _speakerProperties:
     - _speakerType: 0
       _name: 
