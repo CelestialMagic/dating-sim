@@ -7276,6 +7276,7 @@ GameObject:
   - component: {fileID: 1899540556}
   - component: {fileID: 1899540558}
   - component: {fileID: 1899540557}
+  - component: {fileID: 1899540559}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -7322,7 +7323,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You Were Too Late
+  m_text: You failed the test...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a4caa17b09534b379155140715ff0d1, type: 2}
   m_sharedMaterial: {fileID: -4129847082125772981, guid: 3a4caa17b09534b379155140715ff0d1, type: 2}
@@ -7349,8 +7350,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 48
+  m_fontSizeBase: 48
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -7399,6 +7400,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1899540555}
   m_CullTransparentMesh: 1
+--- !u!114 &1899540559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899540555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08af46f9dc6f748f9aa8a1d81748ee67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textToWobble: {fileID: 1899540557}
+  firstModifier: 0
+  secondModifier: 20
 --- !u!1 &2050871007
 GameObject:
   m_ObjectHideFlags: 0
