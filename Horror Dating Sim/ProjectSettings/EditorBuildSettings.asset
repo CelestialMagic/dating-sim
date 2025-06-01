@@ -107,4 +107,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Routes/Ben/BenRouteEnding.unity
     guid: 3db91ae54a2e54d7e9d602085b404209
+  - enabled: 1
+    path: Assets/BenAct3FinalChoice.unity
+    guid: acc8a925bc291406e94e2ba7674c2d61
   m_configObjects: {}

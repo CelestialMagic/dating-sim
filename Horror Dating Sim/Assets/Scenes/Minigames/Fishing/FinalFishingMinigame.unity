@@ -5617,8 +5617,8 @@ MonoBehaviour:
   lostCanvas: {fileID: 2072361046}
   minigameCanvas: {fileID: 0}
   nextScene:
-    _sceneAsset: {fileID: 0}
-    _sceneName: 
+    _sceneAsset: {fileID: 102900000, guid: acc8a925bc291406e94e2ba7674c2d61, type: 3}
+    _sceneName: BenAct3FinalChoice
   resetScene:
     _sceneAsset: {fileID: 102900000, guid: 22f831cdfd74f44bdb4eb5b73ae1cda7, type: 3}
     _sceneName: FinalFishingMinigame
