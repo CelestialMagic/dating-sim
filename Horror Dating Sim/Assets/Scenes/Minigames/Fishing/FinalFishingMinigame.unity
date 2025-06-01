@@ -7323,7 +7323,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You failed the test...
+  m_text: Surely, you can do better than that?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3a4caa17b09534b379155140715ff0d1, type: 2}
   m_sharedMaterial: {fileID: -4129847082125772981, guid: 3a4caa17b09534b379155140715ff0d1, type: 2}
@@ -7350,8 +7350,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 48
-  m_fontSizeBase: 48
+  m_fontSize: 36
+  m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
