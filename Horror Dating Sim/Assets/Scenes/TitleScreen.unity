@@ -1343,7 +1343,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f30876215201422f9430128c05c7fb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentRoute: 0
+  CurrentRoute: 2
   CurrentScene: 
   FinishedJane: 0
   FinishedBen: 0
