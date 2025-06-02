@@ -519,7 +519,7 @@ MonoBehaviour:
         _isEnabled: 1
         _value:
           _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
-          _imageType: 5
+          _imageType: 9
           _version: 1
   - _newBackground:
       _isEnabled: 0
@@ -555,7 +555,7 @@ MonoBehaviour:
         _isEnabled: 1
         _value:
           _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
-          _imageType: 5
+          _imageType: 9
           _version: 1
   - _newBackground:
       _isEnabled: 0
@@ -590,7 +590,7 @@ MonoBehaviour:
         _isEnabled: 1
         _value:
           _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
-          _imageType: 5
+          _imageType: 9
           _version: 1
   - _newBackground:
       _isEnabled: 0
@@ -626,7 +626,7 @@ MonoBehaviour:
         _isEnabled: 1
         _value:
           _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
-          _imageType: 5
+          _imageType: 9
           _version: 1
   - _newBackground:
       _isEnabled: 0
@@ -664,7 +664,7 @@ MonoBehaviour:
         _isEnabled: 1
         _value:
           _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
-          _imageType: 5
+          _imageType: 9
           _version: 1
   - _newBackground:
       _isEnabled: 0
@@ -700,7 +700,7 @@ MonoBehaviour:
         _isEnabled: 1
         _value:
           _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
-          _imageType: 5
+          _imageType: 9
           _version: 1
   - _newBackground:
       _isEnabled: 0
@@ -736,7 +736,7 @@ MonoBehaviour:
         _isEnabled: 1
         _value:
           _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
-          _imageType: 5
+          _imageType: 9
           _version: 1
   - _newBackground:
       _isEnabled: 0
@@ -774,7 +774,7 @@ MonoBehaviour:
         _isEnabled: 1
         _value:
           _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
-          _imageType: 5
+          _imageType: 9
           _version: 1
   - _newBackground:
       _isEnabled: 0
@@ -810,7 +810,7 @@ MonoBehaviour:
         _isEnabled: 1
         _value:
           _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
-          _imageType: 5
+          _imageType: 9
           _version: 1
   - _newBackground:
       _isEnabled: 0
@@ -846,7 +846,7 @@ MonoBehaviour:
         _isEnabled: 1
         _value:
           _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
-          _imageType: 5
+          _imageType: 9
           _version: 1
   - _newBackground:
       _isEnabled: 0
@@ -884,7 +884,7 @@ MonoBehaviour:
         _isEnabled: 1
         _value:
           _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
-          _imageType: 5
+          _imageType: 9
           _version: 1
   - _newBackground:
       _isEnabled: 0
@@ -922,7 +922,7 @@ MonoBehaviour:
         _isEnabled: 1
         _value:
           _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
-          _imageType: 5
+          _imageType: 9
           _version: 1
   - _newBackground:
       _isEnabled: 0
@@ -960,5 +960,5 @@ MonoBehaviour:
         _isEnabled: 1
         _value:
           _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
-          _imageType: 5
+          _imageType: 9
           _version: 1

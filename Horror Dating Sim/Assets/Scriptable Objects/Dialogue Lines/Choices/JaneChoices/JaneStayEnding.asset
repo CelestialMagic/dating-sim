@@ -47,7 +47,7 @@ MonoBehaviour:
         _isEnabled: 1
         _value:
           _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
-          _imageType: 1
+          _imageType: 9
           _version: 1
   - _newBackground:
       _isEnabled: 0
@@ -82,7 +82,7 @@ MonoBehaviour:
         _isEnabled: 1
         _value:
           _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
-          _imageType: 1
+          _imageType: 9
           _version: 1
   - _newBackground:
       _isEnabled: 0
@@ -117,7 +117,7 @@ MonoBehaviour:
         _isEnabled: 1
         _value:
           _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
-          _imageType: 1
+          _imageType: 9
           _version: 1
   - _newBackground:
       _isEnabled: 0
@@ -153,7 +153,7 @@ MonoBehaviour:
         _isEnabled: 1
         _value:
           _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
-          _imageType: 1
+          _imageType: 9
           _version: 1
   - _newBackground:
       _isEnabled: 0
@@ -188,7 +188,7 @@ MonoBehaviour:
         _isEnabled: 1
         _value:
           _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
-          _imageType: 1
+          _imageType: 5
           _version: 1
   - _newBackground:
       _isEnabled: 0
@@ -224,7 +224,7 @@ MonoBehaviour:
         _isEnabled: 1
         _value:
           _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
-          _imageType: 1
+          _imageType: 5
           _version: 1
   - _newBackground:
       _isEnabled: 0
@@ -260,7 +260,7 @@ MonoBehaviour:
         _isEnabled: 1
         _value:
           _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
-          _imageType: 1
+          _imageType: 5
           _version: 1
   - _newBackground:
       _isEnabled: 0
@@ -295,5 +295,5 @@ MonoBehaviour:
         _isEnabled: 1
         _value:
           _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
-          _imageType: 1
+          _imageType: 5
           _version: 1

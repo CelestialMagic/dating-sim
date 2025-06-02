@@ -24,3 +24,9 @@ MonoBehaviour:
     _imageSprite: {fileID: 21300000, guid: 42bb6a19d952d4000b121b653162fb0d, type: 3}
   - _spriteType: 2
     _imageSprite: {fileID: 21300000, guid: 8a41aa79519e945fd80478db0f2b9237, type: 3}
+  - _spriteType: 5
+    _imageSprite: {fileID: 21300000, guid: 51d3b4e2f575540d5ae0088d87e05de9, type: 3}
+  - _spriteType: 9
+    _imageSprite: {fileID: 21300000, guid: e58723bdb365a476c8de2f7c659346d3, type: 3}
+  - _spriteType: 10
+    _imageSprite: {fileID: 21300000, guid: 0e230cb8d99744369ba604209fcf8921, type: 3}

@@ -47,7 +47,7 @@ MonoBehaviour:
         _isEnabled: 1
         _value:
           _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
-          _imageType: 0
+          _imageType: 9
           _version: 1
   _choiceOptions:
   - _skitFromChoice: {fileID: 11400000, guid: 19d88c160228a4ec4adbe7089e390b1f, type: 2}
