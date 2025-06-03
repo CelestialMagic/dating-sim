@@ -59,7 +59,7 @@ MonoBehaviour:
     background: {fileID: -6439997768508307955, guid: 50daf5d284d9d44fca379f1c4fcc52a4, type: 3}
     hasSFX: 1
     soundEffect: {fileID: 8300000, guid: 7387dbd5cb7a1344db519bae272ac6a1, type: 3}
-    _line: 'The mirrors reflect the fire in all directions, it almost seems like
+    _line: 'The mirrors reflect the fire in all directions. It almost seems like
       you are engulfed in flames.
 
 '

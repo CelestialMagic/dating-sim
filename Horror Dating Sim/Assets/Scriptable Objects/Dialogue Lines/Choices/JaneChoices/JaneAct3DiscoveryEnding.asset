@@ -21,7 +21,7 @@ MonoBehaviour:
     background: {fileID: 0}
     hasSFX: 1
     soundEffect: {fileID: 8300000, guid: f300f6f637051434a99e353b8ee75b79, type: 3}
-    _line: "*Sniff* \u201CYou\u2026 you actually came back."
+    _line: "*Sniff* You\u2026 you actually came back."
     _speakerProperties:
     - _speakerType: 2
       _name: 

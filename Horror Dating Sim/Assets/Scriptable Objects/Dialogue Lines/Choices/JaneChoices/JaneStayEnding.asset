@@ -127,7 +127,7 @@ MonoBehaviour:
     hasSFX: 0
     soundEffect: {fileID: 0}
     _line: Every part of your body is screaming for you to break free and get away,
-      but even if you tried there is no escape now.
+      but even if you tried, there is no escape now.
     _speakerProperties:
     - _speakerType: 0
       _name: 
@@ -197,7 +197,7 @@ MonoBehaviour:
     background: {fileID: 0}
     hasSFX: 1
     soundEffect: {fileID: 8300000, guid: 3fb9ab5b82476f54b86eb768edc3388a, type: 3}
-    _line: It stands for Laughing. People always said that my laugh was off putting,
+    _line: It stands for Laughing. People always said that my laugh was off-putting,
       which was how I got the name.
     _speakerProperties:
     - _speakerType: 2

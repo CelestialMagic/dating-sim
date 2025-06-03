@@ -57,8 +57,8 @@ MonoBehaviour:
     background: {fileID: -6439997768508307955, guid: 50daf5d284d9d44fca379f1c4fcc52a4, type: 3}
     hasSFX: 1
     soundEffect: {fileID: 8300000, guid: 0fd10244b77d12c49b736fcb75ab559d, type: 3}
-    _line: The fire has turned this place into an oven, and the further you go the
-      more sweat drips from you face
+    _line: The fire has turned this place into an oven, and the further you go, the
+      more sweat drips from you face.
     _speakerProperties:
     - _speakerType: 0
       _name: 
