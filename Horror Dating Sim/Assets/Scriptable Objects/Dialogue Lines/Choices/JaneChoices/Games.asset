@@ -92,7 +92,7 @@ MonoBehaviour:
     hasSFX: 0
     soundEffect: {fileID: 0}
     _line: Though LJ seemed ecstatic on the way over, seems something has gotten
-      her down since
+      her down since.
     _speakerProperties:
     - _speakerType: 0
       _name: 
@@ -162,7 +162,7 @@ MonoBehaviour:
     background: {fileID: 0}
     hasSFX: 1
     soundEffect: {fileID: 8300000, guid: f9f1412e2ebd12d49a15e4db911089d2, type: 3}
-    _line: "Hmm? Oh it\u2019s nothing."
+    _line: "Hmm? Oh, it\u2019s nothing."
     _speakerProperties:
     - _speakerType: 2
       _name: 
@@ -197,7 +197,7 @@ MonoBehaviour:
     background: {fileID: 0}
     hasSFX: 1
     soundEffect: {fileID: 8300000, guid: f300f6f637051434a99e353b8ee75b79, type: 3}
-    _line: "It\u2019s just, all of these games seem rather crudely put together"
+    _line: "It\u2019s just, all of these games seem rather crudely put together."
     _speakerProperties:
     - _speakerType: 2
       _name: 
@@ -270,7 +270,7 @@ MonoBehaviour:
     hasSFX: 1
     soundEffect: {fileID: 8300000, guid: f300f6f637051434a99e353b8ee75b79, type: 3}
     _line: "And those open flame torches? Their supports look like they\u2019re about
-      to collapse any minute.."
+      to collapse any minute."
     _speakerProperties:
     - _speakerType: 2
       _name: 
@@ -341,7 +341,7 @@ MonoBehaviour:
     hasSFX: 0
     soundEffect: {fileID: 0}
     _line: The tanks have long lifespans compared to what they contain, and the torches
-      will probably snuff from lack of fuel out before they hit the ground if their
+      will probably snuff out from lack of fuel before they hit the ground if their
       supports give out.
     _speakerProperties:
     - _speakerType: 1

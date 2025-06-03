@@ -127,7 +127,7 @@ MonoBehaviour:
     hasSFX: 0
     soundEffect: {fileID: 0}
     _line: Though LJ seemed ecstatic on the way over, seems something has gotten
-      her down since
+      her down since.
     _speakerProperties:
     - _speakerType: 0
       _name: 
@@ -197,7 +197,7 @@ MonoBehaviour:
     background: {fileID: 0}
     hasSFX: 1
     soundEffect: {fileID: 8300000, guid: f9f1412e2ebd12d49a15e4db911089d2, type: 3}
-    _line: "Hmm? Oh it\u2019s nothing."
+    _line: "Hmm? Oh, it\u2019s nothing."
     _speakerProperties:
     - _speakerType: 2
       _name: 
@@ -375,7 +375,7 @@ MonoBehaviour:
     background: {fileID: 0}
     hasSFX: 0
     soundEffect: {fileID: 0}
-    _line: "They have gloves and masks so there shouldn\u2019t be any contact issues.
+    _line: "They have gloves and masks, so there shouldn\u2019t be any contact issues.
       They also got long sleeves, so the workers are at least safe from bumping into
       the hot food or machines."
     _speakerProperties:
