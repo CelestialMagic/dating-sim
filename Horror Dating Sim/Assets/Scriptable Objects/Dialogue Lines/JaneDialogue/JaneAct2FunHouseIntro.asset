@@ -164,7 +164,7 @@ MonoBehaviour:
     background: {fileID: 2776784822358741141, guid: 7ab77a45d12464d2fa5f9195f5bb053d, type: 3}
     hasSFX: 0
     soundEffect: {fileID: 0}
-    _line: Still pretty fun right?
+    _line: Still pretty fun, right?
     _speakerProperties:
     - _speakerType: 1
       _name: 
@@ -517,7 +517,7 @@ MonoBehaviour:
     background: {fileID: 2776784822358741141, guid: 7ab77a45d12464d2fa5f9195f5bb053d, type: 3}
     hasSFX: 1
     soundEffect: {fileID: 8300000, guid: 701900cac7c1ba14183145c14b89cade, type: 3}
-    _line: "Yep! You go in first, and then after 10 seconds I\u2019ll go in after
+    _line: "Yep! You go in first, and then after 10 seconds, I\u2019ll go in after
       you. If you get to the otherside first, you win! If I tag you, you lose!"
     _speakerProperties:
     - _speakerType: 2
@@ -626,7 +626,7 @@ MonoBehaviour:
     hasSFX: 0
     soundEffect: {fileID: 0}
     _line: You rush into the fun house, and are almost instantly lost in the halls
-      of mirrors
+      of mirrors.
     _speakerProperties:
     - _speakerType: 1
       _name: 
@@ -729,8 +729,8 @@ MonoBehaviour:
       _value: {fileID: 0}
     hasBackground: 0
     background: {fileID: 21300000, guid: aac14344e63764e679d6274c237e9600, type: 3}
-    hasSFX: 0
-    soundEffect: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: 16dd97d58a4424c10bd7200fd746c9b5, type: 3}
     _line: As you hurry through the maze, you could hear the jingling of shoes echo
       all around you.
     _speakerProperties:
