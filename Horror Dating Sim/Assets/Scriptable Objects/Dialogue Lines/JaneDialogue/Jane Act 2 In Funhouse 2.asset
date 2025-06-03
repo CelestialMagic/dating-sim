@@ -56,7 +56,7 @@ MonoBehaviour:
     background: {fileID: 0}
     hasSFX: 0
     soundEffect: {fileID: 0}
-    _line: '(Her shoes should be telling me where she is! But somehow it just makes
+    _line: '(Her shoes should be telling me where she is! But somehow, it just makes
       her less noticeable!)
 
 '
@@ -94,9 +94,9 @@ MonoBehaviour:
     background: {fileID: 0}
     hasSFX: 0
     soundEffect: {fileID: 0}
-    _line: Every now and then you catch each other in reflections, but whether or
-      not any of those were close calls was hard to tell given how polished all the
-      mirrors are.
+    _line: Every now and then, you catch each other in reflections, but whether or
+      not any of those were close calls was hard to tell, given how polished all
+      the mirrors are.
     _speakerProperties:
     - _speakerType: 0
       _name: 
@@ -131,7 +131,7 @@ MonoBehaviour:
     background: {fileID: 2776784822358741141, guid: 7ab77a45d12464d2fa5f9195f5bb053d, type: 3}
     hasSFX: 0
     soundEffect: {fileID: 0}
-    _line: Her footsteps despite the jingling are as light as a fox, and her speed
+    _line: Her footsteps, despite the jingling, are as light as a fox, and her speed
       is almost the same.
     _speakerProperties:
     - _speakerType: 0
