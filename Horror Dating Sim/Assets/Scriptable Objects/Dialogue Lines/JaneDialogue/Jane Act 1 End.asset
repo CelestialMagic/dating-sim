@@ -91,8 +91,8 @@ MonoBehaviour:
     background: {fileID: 0}
     hasSFX: 1
     soundEffect: {fileID: 8300000, guid: cc8598d2953223d4f89df9f72db34f92, type: 3}
-    _line: Oh silly me, you need this book for your class right? Here, take it. You
-      need it more than I do after all.
+    _line: Oh, silly me! You need this book for your class, right? Here, take it.
+      You need it more than I do, after all.
     _speakerProperties:
     - _speakerType: 2
       _name: 
@@ -198,7 +198,7 @@ MonoBehaviour:
     background: {fileID: 0}
     hasSFX: 1
     soundEffect: {fileID: 8300000, guid: e1bf9a8a6b4ddeb4696b4c16b5edd506, type: 3}
-    _line: Well you have had quite the pleasant conversation. How about we continue
+    _line: Well, you have had quite the pleasant conversation. How about we continue
       this later somewhere else?
     _speakerProperties:
     - _speakerType: 2
@@ -446,7 +446,7 @@ MonoBehaviour:
     background: {fileID: 0}
     hasSFX: 0
     soundEffect: {fileID: 0}
-    _line: (The county fair huh? Guess she did say she liked clowns.)
+    _line: (The county fair, huh? Guess she did say she liked clowns.)
     _speakerProperties:
     - _speakerType: 1
       _name: 

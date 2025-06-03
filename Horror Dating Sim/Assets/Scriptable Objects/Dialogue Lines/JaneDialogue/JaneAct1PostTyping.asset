@@ -21,7 +21,7 @@ MonoBehaviour:
     background: {fileID: 0}
     hasSFX: 0
     soundEffect: {fileID: 0}
-    _line: "(I\u2019ve got most of my books now, I just need to find the last one-)\n"
+    _line: "(I\u2019ve got most of my books. Now, I just need to find the last one-)\n"
     _speakerProperties:
     - _speakerType: 1
       _name: 
@@ -141,8 +141,8 @@ MonoBehaviour:
     hasSFX: 0
     soundEffect: {fileID: 0}
     _line: "It\u2019s the first time you\u2019ve met her outside of class, and finally
-      an opportunity to talk! But she seems to have some pretty bad bags under her
-      eyes, is she getting enough sleep?"
+      had an opportunity to talk! But she seems to have some pretty bad bags under
+      her eyes. Is she getting enough sleep?"
     _speakerProperties:
     - _speakerType: 0
       _name: 
@@ -250,7 +250,7 @@ MonoBehaviour:
     background: {fileID: 0}
     hasSFX: 1
     soundEffect: {fileID: 8300000, guid: 936be7ab2cfc0e04b95cb6f5f8de6487, type: 3}
-    _line: What a charming little name! Mines LJ.
+    _line: What a charming little name! Mine's LJ.
     _speakerProperties:
     - _speakerType: 2
       _name: 
@@ -320,7 +320,7 @@ MonoBehaviour:
     background: {fileID: 0}
     hasSFX: 1
     soundEffect: {fileID: 8300000, guid: 701900cac7c1ba14183145c14b89cade, type: 3}
-    _line: Well the J is for Jane. The L stands for something quite funny!
+    _line: Well, the J is for Jane. The L stands for something quite funny!
     _speakerProperties:
     - _speakerType: 2
       _name: 

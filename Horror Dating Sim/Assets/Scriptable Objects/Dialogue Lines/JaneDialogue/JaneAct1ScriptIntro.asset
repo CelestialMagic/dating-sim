@@ -65,7 +65,7 @@ MonoBehaviour:
     background: {fileID: 0}
     hasSFX: 0
     soundEffect: {fileID: 0}
-    _line: "(Today I\u2019m at the library. I decided that for my last GE botany
+    _line: "(Today, I\u2019m at the library. I decided that for my last GE, botany
       would suffice. Who would\u2019ve thought that you needed so many books for
       botany?)\n"
     _speakerProperties:

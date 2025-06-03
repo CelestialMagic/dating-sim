@@ -304,7 +304,7 @@ MonoBehaviour:
     background: {fileID: 0}
     hasSFX: 1
     soundEffect: {fileID: 8300000, guid: d3b7a49d595deb14097f8fd4c7c6a83c, type: 3}
-    _line: "Good guess, they\u2019re actually clown shoes!"
+    _line: "Good guess. They\u2019re actually clown shoes!"
     _speakerProperties:
     - _speakerType: 2
       _name: 
