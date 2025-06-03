@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff7994881be9148d5bdf88178bdcb254, type: 3}
   m_Name: FunhouseEscapeTyping
   m_EditorClassIdentifier: 
-  sentence: You wouldn't leave without me would you? Not a second time that is? To
-    burn? Haha! We could burn together! You set my heart aflame, shouldn't I do the
-    same??
+  sentence: You wouldn't leave without me, would you? Not a second time, that is?
+    To burn? Haha! We could burn together! You set my heart aflame. Shouldn't I do
+    the same??
