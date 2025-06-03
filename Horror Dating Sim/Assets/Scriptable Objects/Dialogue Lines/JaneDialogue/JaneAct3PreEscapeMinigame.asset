@@ -234,7 +234,7 @@ MonoBehaviour:
     soundEffect: {fileID: 0}
     _line: You attempt to start running and find yourself seemingly pursued by Jane.
     _speakerProperties:
-    - _speakerType: 1
+    - _speakerType: 0
       _name: 
       _profile: {fileID: 11400000, guid: 1603b509e368b9145a3d489efc3e9ea1, type: 2}
     _characterSpriteSettings:

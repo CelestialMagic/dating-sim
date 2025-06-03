@@ -22,7 +22,7 @@ MonoBehaviour:
     hasSFX: 0
     soundEffect: {fileID: 8300000, guid: ec0297d7beb5751408bbc852309a6341, type: 3}
     _line: The hazy smoke has now filled most of the upper parts of the maze, though
-      thankfully the roof is quite high
+      thankfully the roof is quite high.
     _speakerProperties:
     - _speakerType: 0
       _name: 
