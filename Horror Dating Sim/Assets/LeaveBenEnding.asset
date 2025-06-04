@@ -21,7 +21,7 @@ MonoBehaviour:
     background: {fileID: 0}
     hasSFX: 1
     soundEffect: {fileID: 8300000, guid: 7e17a07d65431114291170285ee67f41, type: 3}
-    _line: Aw, really? We gotta change that!
+    _line: Oh...
     _speakerProperties:
     - _speakerType: 2
       _name: 
@@ -48,4 +48,795 @@ MonoBehaviour:
         _value:
           _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
           _imageType: 5
+          _version: 1
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
+    background: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: e0490554704e0794598069fedb191f38, type: 3}
+    _line: Yeah, uh, that makes sense. A little forward of me, huh. Ha ha...
+    _speakerProperties:
+    - _speakerType: 2
+      _name: 
+      _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+    _characterSpriteSettings:
+    - _spriteIndex: 0
+      IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 1
+        _value: {x: 750, y: 900}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+          _imageType: 5
+          _version: 1
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
+    background: {fileID: 0}
+    hasSFX: 0
+    soundEffect: {fileID: 8300000, guid: e0490554704e0794598069fedb191f38, type: 3}
+    _line: Ben is visibly hurt, but he's trying his best not to show it. Despite
+      his compromised appearance, you feel a pang of guilt for the poor guy.
+    _speakerProperties:
+    - _speakerType: 0
+      _name: 
+      _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+    _characterSpriteSettings:
+    - _spriteIndex: 0
+      IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 1
+        _value: {x: 750, y: 900}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+          _imageType: 5
+          _version: 1
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
+    background: {fileID: 0}
+    hasSFX: 0
+    soundEffect: {fileID: 8300000, guid: e0490554704e0794598069fedb191f38, type: 3}
+    _line: But for his safety and your own, you feel this is the best option. Now
+      to leave, and get him some help.
+    _speakerProperties:
+    - _speakerType: 0
+      _name: 
+      _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+    _characterSpriteSettings:
+    - _spriteIndex: 0
+      IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 1
+        _value: {x: 750, y: 900}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+          _imageType: 5
+          _version: 1
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
+    background: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: f45c87f50355e3a4e933dfae013f360b, type: 3}
+    _line: Oh, uh, don't you worry about that.
+    _speakerProperties:
+    - _speakerType: 2
+      _name: 
+      _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+    _characterSpriteSettings:
+    - _spriteIndex: 0
+      IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 1
+        _value: {x: 750, y: 900}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+          _imageType: 5
+          _version: 1
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
+    background: {fileID: 0}
+    hasSFX: 0
+    soundEffect: {fileID: 8300000, guid: f45c87f50355e3a4e933dfae013f360b, type: 3}
+    _line: ?!
+    _speakerProperties:
+    - _speakerType: 1
+      _name: 
+      _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+    _characterSpriteSettings:
+    - _spriteIndex: 0
+      IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 1
+        _value: {x: 750, y: 900}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+          _imageType: 5
+          _version: 1
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
+    background: {fileID: 0}
+    hasSFX: 0
+    soundEffect: {fileID: 8300000, guid: f45c87f50355e3a4e933dfae013f360b, type: 3}
+    _line: Ben's gaze yet again pierces through you. It's as though he knows exactly
+      what you're thinking right now.
+    _speakerProperties:
+    - _speakerType: 0
+      _name: 
+      _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+    _characterSpriteSettings:
+    - _spriteIndex: 0
+      IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 1
+        _value: {x: 750, y: 900}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+          _imageType: 5
+          _version: 1
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
+    background: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: 57219506f5822de43b8c7a9d4e6b1e3d, type: 3}
+    _line: Like I said earlier, the only thing I really needed was your cooperation.
+      And you were kind enough to give that to me already.
+    _speakerProperties:
+    - _speakerType: 2
+      _name: 
+      _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+    _characterSpriteSettings:
+    - _spriteIndex: 0
+      IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 1
+        _value: {x: 750, y: 900}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+          _imageType: 5
+          _version: 1
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
+    background: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: b949ebd089be19a4e8da79030c7a5172, type: 3}
+    _line: Thanks for indulging my little game. I guess you could call it one last
+      bit of fishing between friends.
+    _speakerProperties:
+    - _speakerType: 2
+      _name: 
+      _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+    _characterSpriteSettings:
+    - _spriteIndex: 0
+      IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 1
+        _value: {x: 750, y: 900}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+          _imageType: 5
+          _version: 1
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
+    background: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: f45c87f50355e3a4e933dfae013f360b, type: 3}
+    _line: But I'm really quite alright. Nothing wrong with me at all, see?
+    _speakerProperties:
+    - _speakerType: 2
+      _name: 
+      _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+    _characterSpriteSettings:
+    - _spriteIndex: 0
+      IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 1
+        _value: {x: 750, y: 900}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+          _imageType: 5
+          _version: 1
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
+    background: {fileID: 0}
+    hasSFX: 0
+    soundEffect: {fileID: 8300000, guid: f45c87f50355e3a4e933dfae013f360b, type: 3}
+    _line: You stare at Ben blankly. Blinking your eyes, his appearance seems to
+      revert back to normal for a moment.
+    _speakerProperties:
+    - _speakerType: 0
+      _name: 
+      _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+    _characterSpriteSettings:
+    - _spriteIndex: 0
+      IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 1
+        _value: {x: 750, y: 900}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+          _imageType: 4
+          _version: 1
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
+    background: {fileID: 0}
+    hasSFX: 0
+    soundEffect: {fileID: 8300000, guid: f45c87f50355e3a4e933dfae013f360b, type: 3}
+    _line: All that is to say... well, goodbye. I truly enjoyed the time we spent
+      together. Although I doubt we'll ever see each other again, it was fun while
+      it lasted.
+    _speakerProperties:
+    - _speakerType: 2
+      _name: 
+      _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+    _characterSpriteSettings:
+    - _spriteIndex: 0
+      IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 1
+      HasArrived:
+        _isEnabled: 1
+        _value: 1
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 1
+        _value: {x: 750, y: 900}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+          _imageType: 9
+          _version: 1
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
+    background: {fileID: 0}
+    hasSFX: 1
+    soundEffect: {fileID: 8300000, guid: 80cf6c42690270f4cb33f622149f455f, type: 3}
+    _line: Ben's gaze softens for a moment as he looks at you one last time. Then,
+      he turns toward the pool and jumps in, arms at his sides.
+    _speakerProperties:
+    - _speakerType: 0
+      _name: 
+      _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+    _characterSpriteSettings:
+    - _spriteIndex: 0
+      IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 0
+      HasArrived:
+        _isEnabled: 1
+        _value: 0
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 1
+        _value: {x: 750, y: 900}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+          _imageType: 9
+          _version: 1
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
+    background: {fileID: 0}
+    hasSFX: 0
+    soundEffect: {fileID: 8300000, guid: 52718351f1297a647a7bffcb0c4a4b0f, type: 3}
+    _line: Ben? Ben!
+    _speakerProperties:
+    - _speakerType: 1
+      _name: 
+      _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+    _characterSpriteSettings:
+    - _spriteIndex: 0
+      IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 0
+      HasArrived:
+        _isEnabled: 1
+        _value: 0
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 1
+        _value: {x: 750, y: 900}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+          _imageType: 9
+          _version: 1
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
+    background: {fileID: 0}
+    hasSFX: 0
+    soundEffect: {fileID: 8300000, guid: 52718351f1297a647a7bffcb0c4a4b0f, type: 3}
+    _line: You rush to the water's edge and peer in, but Ben is nowhere to be seen.
+      It's as if he was never there at all.
+    _speakerProperties:
+    - _speakerType: 0
+      _name: 
+      _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+    _characterSpriteSettings:
+    - _spriteIndex: 0
+      IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 0
+      HasArrived:
+        _isEnabled: 1
+        _value: 0
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 1
+        _value: {x: 750, y: 900}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+          _imageType: 9
+          _version: 1
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 1
+    background: {fileID: 21300000, guid: a877b818a040d48cfad7800ec1022fdd, type: 3}
+    hasSFX: 0
+    soundEffect: {fileID: 8300000, guid: 52718351f1297a647a7bffcb0c4a4b0f, type: 3}
+    _line: Befuddled, and more than a little unnerved, you manage to compose yourself
+      enough to drive home.
+    _speakerProperties:
+    - _speakerType: 0
+      _name: 
+      _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+    _characterSpriteSettings:
+    - _spriteIndex: 0
+      IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 0
+      HasArrived:
+        _isEnabled: 1
+        _value: 0
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 1
+        _value: {x: 750, y: 900}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+          _imageType: 9
+          _version: 1
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
+    background: {fileID: 21300000, guid: a877b818a040d48cfad7800ec1022fdd, type: 3}
+    hasSFX: 0
+    soundEffect: {fileID: 8300000, guid: 52718351f1297a647a7bffcb0c4a4b0f, type: 3}
+    _line: It's going to be hard to deal with the leftover feelings you had for Ben.
+      Given time, you're sure you'll recover, but it's certain to take time, and
+      plenty of it.
+    _speakerProperties:
+    - _speakerType: 0
+      _name: 
+      _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+    _characterSpriteSettings:
+    - _spriteIndex: 0
+      IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 0
+      HasArrived:
+        _isEnabled: 1
+        _value: 0
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 1
+        _value: {x: 750, y: 900}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+          _imageType: 9
+          _version: 1
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
+    background: {fileID: 21300000, guid: a877b818a040d48cfad7800ec1022fdd, type: 3}
+    hasSFX: 0
+    soundEffect: {fileID: 8300000, guid: 52718351f1297a647a7bffcb0c4a4b0f, type: 3}
+    _line: But Ben wouldn't want you to be sad. That's not the kind of person he
+      is, or was.
+    _speakerProperties:
+    - _speakerType: 0
+      _name: 
+      _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+    _characterSpriteSettings:
+    - _spriteIndex: 0
+      IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 0
+      HasArrived:
+        _isEnabled: 1
+        _value: 0
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 1
+        _value: {x: 750, y: 900}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+          _imageType: 9
+          _version: 1
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 1
+    background: {fileID: 21300000, guid: 84bce586771c7480dae76c4532954736, type: 3}
+    hasSFX: 0
+    soundEffect: {fileID: 8300000, guid: 52718351f1297a647a7bffcb0c4a4b0f, type: 3}
+    _line: As you get ready for bed after such an arduous day, the aquarium in your
+      room catches the corner of your eye.
+    _speakerProperties:
+    - _speakerType: 0
+      _name: 
+      _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+    _characterSpriteSettings:
+    - _spriteIndex: 0
+      IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 0
+      HasArrived:
+        _isEnabled: 1
+        _value: 0
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 1
+        _value: {x: 750, y: 900}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+          _imageType: 9
+          _version: 1
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
+    background: {fileID: 21300000, guid: 84bce586771c7480dae76c4532954736, type: 3}
+    hasSFX: 0
+    soundEffect: {fileID: 8300000, guid: 52718351f1297a647a7bffcb0c4a4b0f, type: 3}
+    _line: You had bought it partway into the class, having been inspired by a lesson
+      on underwater ecosystems.
+    _speakerProperties:
+    - _speakerType: 0
+      _name: 
+      _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+    _characterSpriteSettings:
+    - _spriteIndex: 0
+      IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 0
+      HasArrived:
+        _isEnabled: 1
+        _value: 0
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 1
+        _value: {x: 750, y: 900}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+          _imageType: 9
+          _version: 1
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
+    background: {fileID: 21300000, guid: 84bce586771c7480dae76c4532954736, type: 3}
+    hasSFX: 0
+    soundEffect: {fileID: 8300000, guid: 52718351f1297a647a7bffcb0c4a4b0f, type: 3}
+    _line: Looking a little closer, you notice a small statuette that wasn't there
+      before. It's dressed in green, with eyes made of clear blue beads that glow
+      in the moonlight.
+    _speakerProperties:
+    - _speakerType: 0
+      _name: 
+      _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+    _characterSpriteSettings:
+    - _spriteIndex: 0
+      IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 0
+      HasArrived:
+        _isEnabled: 1
+        _value: 0
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 1
+        _value: {x: 750, y: 900}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+          _imageType: 9
+          _version: 1
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 0
+    background: {fileID: 21300000, guid: 84bce586771c7480dae76c4532954736, type: 3}
+    hasSFX: 0
+    soundEffect: {fileID: 8300000, guid: 52718351f1297a647a7bffcb0c4a4b0f, type: 3}
+    _line: It was probably just something your roommate got to freshen up your aquarium,
+      you rationalize, semi-conscious.
+    _speakerProperties:
+    - _speakerType: 0
+      _name: 
+      _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+    _characterSpriteSettings:
+    - _spriteIndex: 0
+      IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 0
+      HasArrived:
+        _isEnabled: 1
+        _value: 0
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 1
+        _value: {x: 750, y: 900}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+          _imageType: 9
+          _version: 1
+  - _newBackground:
+      _isEnabled: 0
+      _value: {fileID: 0}
+    hasBackground: 1
+    background: {fileID: 21300000, guid: a877b818a040d48cfad7800ec1022fdd, type: 3}
+    hasSFX: 0
+    soundEffect: {fileID: 8300000, guid: 52718351f1297a647a7bffcb0c4a4b0f, type: 3}
+    _line: Closing your eyes to finally sleep, your head is filled with thoughts
+      of what could have been, and what cannot be. You drift into a fitful slumber,
+      thinking only of Ben.
+    _speakerProperties:
+    - _speakerType: 0
+      _name: 
+      _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+    _characterSpriteSettings:
+    - _spriteIndex: 0
+      IsSubject:
+        _isEnabled: 1
+        _value: 1
+      IsRevealed:
+        _isEnabled: 1
+        _value: 0
+      HasArrived:
+        _isEnabled: 1
+        _value: 0
+      StartingAnchorPosition:
+        _isEnabled: 0
+        _value: {x: 0, y: 0}
+      StartingDimensions:
+        _isEnabled: 1
+        _value: {x: 750, y: 900}
+      ImageSearchParameters:
+        _isEnabled: 1
+        _value:
+          _profile: {fileID: 11400000, guid: cef2e72371f654a43b43317c22347f40, type: 2}
+          _imageType: 9
           _version: 1
