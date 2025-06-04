@@ -245,7 +245,7 @@ MonoBehaviour:
     background: {fileID: 21300000, guid: 9fcd6be438e3d4236854a2980d12401c, type: 3}
     hasSFX: 0
     soundEffect: {fileID: 0}
-    _line: Buried in Love Logo by Joseph Gil
+    _line: Buried in Love Logo and UI Dialogue Borders by Joseph Gil
     _speakerProperties:
     - _speakerType: 0
       _name: 
