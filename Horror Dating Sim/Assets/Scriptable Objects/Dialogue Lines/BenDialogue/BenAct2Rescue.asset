@@ -164,7 +164,7 @@ MonoBehaviour:
   - _newBackground:
       _isEnabled: 0
       _value: {fileID: 21300000, guid: f4ec4e5eca95145dabda9d7966da008b, type: 3}
-    hasBackground: 1
+    hasBackground: 0
     background: {fileID: 21300000, guid: 9842872c5beef417a896f64b9fc1ff8e, type: 3}
     hasSFX: 0
     soundEffect: {fileID: 8300000, guid: 8761e788d2911dc46aea67b19efc1c48, type: 3}
