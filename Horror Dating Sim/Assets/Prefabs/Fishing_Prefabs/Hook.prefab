@@ -162,6 +162,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   starthookSpeed: 1
-  reelSpeed: 50
+  reelSpeed: 5
   cage: {fileID: 0}
   fullHook: 0
