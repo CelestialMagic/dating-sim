@@ -2227,10 +2227,6 @@ PrefabInstance:
       propertyPath: cage
       value: 
       objectReference: {fileID: 2085601504}
-    - target: {fileID: 2523309359934644832, guid: 1aa0d4ef4f1414f309ac12053ba74f16, type: 3}
-      propertyPath: reelSpeed
-      value: 1000
-      objectReference: {fileID: 0}
     - target: {fileID: 3305226288932968324, guid: 1aa0d4ef4f1414f309ac12053ba74f16, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2274,10 +2270,6 @@ PrefabInstance:
     - target: {fileID: 5248622864465807195, guid: 1aa0d4ef4f1414f309ac12053ba74f16, type: 3}
       propertyPath: m_Name
       value: Hook
-      objectReference: {fileID: 0}
-    - target: {fileID: 7347389904366260940, guid: 1aa0d4ef4f1414f309ac12053ba74f16, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2342,8 +2334,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Guide your hook using the WASD keys to catch as many fish as possible before
-    time runs out!
+  m_text: Guide your hook using the WASD keys. Hold Space to reel in your fish. Catch
+    as many fish as possible in the time limit!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4e14870e8187e48b9bbea349e71254c6, type: 2}
   m_sharedMaterial: {fileID: 2151618881952311473, guid: 4e14870e8187e48b9bbea349e71254c6, type: 2}
