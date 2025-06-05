@@ -24,28 +24,23 @@ public class Hook : MonoBehaviour
     {
         CheckReel();
 
-        if (isReeling)
-        {
-            Reel();
-        }
-
-        else
-        {
-            Move();
-        }
     }
 
     private void FixedUpdate()
     {
-        if (isReeling == false)
+
+        if (isReeling)
         {
-            rb.MovePosition(rb.position + (hookSpeed * Time.fixedDeltaTime * move));
+            Reel();
+            rb.MovePosition(move);
         }
 
         else
         {
-            rb.MovePosition(move);
+            rb.MovePosition(rb.position + (hookSpeed * Time.fixedDeltaTime * move));
+            Move();
         }
+        
     }
 
     private void Move()
