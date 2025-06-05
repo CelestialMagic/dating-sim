@@ -70,7 +70,7 @@ MonoBehaviour:
     background: {fileID: 1301510501040859950, guid: 83b70cb574e994b5f95ef33b62faf112, type: 3}
     hasSFX: 0
     soundEffect: {fileID: 0}
-    _line: Ben Sprites by Kyle Imoto
+    _line: Ben Sprites and Typing Minigame Prompts by Kyle Imoto
     _speakerProperties:
     - _speakerType: 0
       _name: 
