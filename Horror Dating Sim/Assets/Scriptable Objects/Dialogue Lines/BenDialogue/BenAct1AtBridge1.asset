@@ -233,7 +233,7 @@ MonoBehaviour:
     background: {fileID: 0}
     hasSFX: 1
     soundEffect: {fileID: 8300000, guid: 7ab41a35e21fc7846a577c574f8693cb, type: 3}
-    _line: So? Feeling a little less nervous?
+    _line: So? Ready to give it a try?
     _speakerProperties:
     - _speakerType: 2
       _name: 
